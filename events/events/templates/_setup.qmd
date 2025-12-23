@@ -6,6 +6,7 @@
 #| warning: false
 
 library(htmltools)
+library(rlang)
 
 # Get parameters from the parent document
 event <- rmarkdown::metadata
