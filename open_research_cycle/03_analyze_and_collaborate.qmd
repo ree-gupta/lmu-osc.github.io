@@ -1,0 +1,174 @@
+---
+title: "3. Analyze & Collaborate"
+description: "Create reproducible analyses, use version control, document code, and establish collaboration workflows"
+phase_order: 3
+sidebar: open-research-cycle
+---
+
+This phase focuses on creating reproducible, well-documented analyses that can be understood and verified by collaborators and the broader research community.
+
+## a. Reproducible Data Analysis
+
+::: {.callout-tip}
+## Learn More
+- [Introduction to R](https://lmu-osc.github.io/introduction-to-R/) (3h)
+- [Writing readable code](https://osf.io/sbncz/files/osfstorage) (1h)
+- [Version control with Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) (2h)
+- [Collaborative version control with GitHub](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/) (1h)
+- [R package management with renv](https://lmu-osc.github.io/introduction-to-renv/) (1.5h)
+:::
+
+Data processing and analysis should be **reproducible**, meaning others can rederive your results on a different computer. This is most easily achieved by:
+
+- **Avoiding point-and-click processes** (which can't be traced)
+- **Using programming/scripting** (which creates a traceable record)
+- **Documenting your workflow** thoroughly
+
+::: {.callout-note}
+Your scripts and analyses are dynamic—they will change due to error corrections, new ideas, and feedback. Process automation saves time when making revisions.
+:::
+
+### Version Control with Git
+
+Use **Git** to track every change to your files:
+
+- Each change is recorded with a meaningful commit message
+- You can revert to previous versions if needed
+- Collaborate with others without overwriting work
+- Maintain a complete history of your project
+
+**Best practices:**
+
+- Use platforms like **GitHub** (for public projects) or **GitLab** (for secure, private projects)
+- Write meaningful commit messages
+- Commit frequently with logical changesets
+- Never commit sensitive data
+
+### Reproducible Workflows in R
+
+If using R, each project should:
+
+- Be based on an **RStudio project** (.Rproj file)
+- Follow a **standard folder structure**
+- Use **relative paths** (not absolute paths)
+- Use **renv** for package management
+- Be under **Git version control**
+
+### Writing Readable Code
+
+Your code should be:
+
+- **Structured**: Use clear organization and logical flow
+- **Commented**: Explain *why* you made decisions (not just *what* the code does)
+- **Styled**: Follow language-specific style guides (e.g., using `styler` or `lintr` for R)
+- **Modular**: Create functions to avoid code duplication
+- **Reproducible**: Set seeds for random number generation
+
+::: {.callout-important}
+## No Sensitive Information in Code
+Never include passwords, patient information, or other sensitive data in code comments or scripts.
+:::
+
+## b. Data Dictionaries & README Files
+
+::: {.callout-tip}
+## Learn More
+[FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/) (2h tutorial)
+:::
+
+**README files** and **data dictionaries** (codebooks) are crucial documentation:
+
+### Data Dictionary
+
+A data dictionary describes each variable in your dataset:
+
+- Variable names
+- Variable descriptions
+- Data types
+- Units of measurement
+- Coding schemes (e.g., 1 = Male, 2 = Female)
+- Missing value codes
+
+### README File
+
+A README explains how to use your repository:
+
+- Project overview and purpose
+- Directory structure
+- How to run the code (in what order)
+- Software dependencies
+- Data sources and citations
+- Contact information
+
+Start these documents early and update them regularly—first for your own use, then for your team, and finally for external users before publication.
+
+## c. Literate Programming
+
+::: {.callout-tip}
+## Learn More
+- [Literate programming with Quarto](https://lmu-osc.github.io/introduction-to-Quarto/) (2.5h)
+- [Reference management with Zotero](https://lmu-osc.github.io/introduction-to-zotero/) (1h)
+:::
+
+**Literate programming** alternates plain language (e.g., English) with programming code to provide context to results, tables, and figures.
+
+With tools like **Quarto**, you can create:
+
+- Reproducible presentations
+- Dynamic reports
+- Executable manuscripts
+- Project websites
+
+**Benefits:**
+
+- Results and figures automatically update when code changes
+- Combines narrative text, code, and output in one document
+- Can render to multiple formats (HTML, PDF, Word, PowerPoint)
+- Integrates with reference managers like Zotero
+
+Your analysis code should include a **Quarto reproducible report** that documents how results were generated. This facilitates:
+
+- Reproducibility checks (sometimes required by journals)
+- Code reuse by other researchers
+- Easier collaboration and revision
+
+## d. Code Repository Checklist
+
+Before sharing your code repository, ensure it includes:
+
+### Essential Components
+
+- ✓ Standard folder structure
+- ✓ Version control with Git (shared with team via GitLab/GitHub)
+- ✓ Package management (e.g., renv for R projects)
+- ✓ Raw and/or processed data (when appropriate)
+- ✓ Descriptive README file
+- ✓ Data dictionary/codebook
+- ✓ Reproducible report (e.g., Quarto document)
+
+### Code Quality
+
+- ✓ Metadata/header identifying author and purpose
+- ✓ Clear structure for readability
+- ✓ Informative comments (without sensitive information)
+- ✓ Meaningful, consistent naming conventions
+- ✓ Style following language guidelines
+- ✓ Functions to avoid code duplication
+- ✓ Seeds set for reproducibility
+
+---
+
+### Checkpoint: Repository & Code Peer Review
+
+Have your repository and code peer-reviewed by:
+
+- A team member
+- Your direct supervisor
+- A code review specialist
+
+Reviewers should check:
+
+- **Functionality**: Does the code work as described?
+- **Reproducibility**: Can results be reproduced on a different computer?
+- **Clarity**: Is the code well-documented and understandable?
+- **Best practices**: Does it follow established guidelines?

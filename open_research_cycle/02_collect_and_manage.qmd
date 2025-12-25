@@ -1,0 +1,114 @@
+---
+title: "2. Collect & Manage"
+description: "Implement FAIR data management, use standard protocols, ensure storage & backup, and perform quality control"
+phase_order: 2
+sidebar: open-research-cycle
+---
+
+This phase covers best practices for collecting, organizing, storing, and quality-checking your research data.
+
+## a. FAIR Data Management
+
+::: {.callout-tip}
+## Learn More
+[FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/) (2h tutorial)
+:::
+
+Before starting to work with data, apply FAIR principles throughout your research:
+
+- **Findable**: Assign persistent identifiers (DOIs), use searchable metadata
+- **Accessible**: Make data open or accessible with clear access procedures
+- **Interoperable**: Use standard terminology and stable file formats
+- **Reusable**: Provide rich documentation and data usage licenses
+
+Following these practices allows you, collaborators, and external researchers to access, understand, and reuse your data.
+
+## b. Data Acquisition & Storage
+
+### Standard Protocols
+
+- Follow established protocols for data collection in your field
+- Document any deviations from standard procedures
+- Maintain detailed records of data collection processes
+
+### Data Backup: The 3-2-1 Rule
+
+For all research data, follow the **3-2-1 rule**:
+
+- **3 copies** of the data
+- **2 different media types** (e.g., external drive, cloud storage)
+- **1 copy stored off-site** or on a separate location
+
+::: {.callout-warning}
+Never store research data only on personal laptops or single storage devices. Ensure regular backups to protect against data loss.
+:::
+
+### File Organization
+
+- Use consistent, descriptive naming conventions
+- Organize files in a logical directory structure
+- Document your file organization system
+- Transfer data regularly to secure storage locations
+
+## c. Anonymize Your Dataset
+
+Most research involving human participants requires careful data anonymization.
+
+::: {.callout-important}
+## Sensitive Information
+Ensure all personally identifiable information (PII) is removed:
+- Participant names, addresses, phone numbers
+- Facial features in images
+- Hidden metadata in files (e.g., DICOM, NIfTI headers)
+:::
+
+**Your responsibilities:**
+
+- Review and test anonymization procedures
+- Check tables, image files, and metadata
+- Consult with your research team if unsure
+- Verify (pseudo)anonymization before sharing data
+
+Different data types may require different anonymization approaches. Always confirm that your data is properly anonymized before moving to collaborative analysis or sharing stages.
+
+## d. Quality Control
+
+::: {.callout-note}
+## Timing
+Perform quality checks **before** starting statistical analyses to exclude data points that might severely bias your results.
+:::
+
+### General QC Principles
+
+When performing quality control, especially with team members:
+
+1. **Train your team**: Schedule a meeting to walk everyone through QC procedures
+2. **Track progress**: Use shared documents to monitor QC completion
+3. **Assign tasks clearly**: Make sure everyone knows their responsibilities
+4. **Review flagged cases**: Meet with the project leader to discuss questionable data points
+5. **Document decisions**: Keep clear records of inclusion/exclusion criteria
+
+### QC Documentation
+
+Before moving forward, ensure you have:
+
+- ✓ Data stored in the appropriate format and location
+- ✓ Data sufficiently anonymized for the next stage
+- ✓ Complete documentation of data acquisition
+- ✓ List of all flagged subjects from QC
+- ✓ Final exclusion criteria with justifications
+
+### Domain-Specific QC
+
+Quality control procedures vary by field and data type. For specialized data (e.g., neuroimaging, sequencing data), follow established discipline-specific QC protocols. Check with your research community for:
+
+- Standard QC metrics
+- Visualization tools
+- Automated QC pipelines
+- Reporting guidelines
+
+---
+
+### Checkpoint: Data Quality Validation Meeting
+
+Meet with your team to demonstrate that your data has undergone quality checks, is properly stored and formatted, and review the final exclusion criteria.

@@ -1,3 +1,188 @@
 ---
 title: "Open Research Cycle"
+page-navigation: false
+toc: false
+css: open_research_cycle/styles.css
+format:
+  html:
+    page-layout: article
+include-in-header:
+  - text: |
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 ---
+
+The Open Research Cycle is based on the Open Research Cycle by Ihle (2025), which in turn is based on the research data lifecycle model by Michener (2015). The checklist has been adapted and extended by the LMU Open Science Center to include additional open research practices beyond data management. In addition to the four main phases, we have added checkpoints for group discussions and reflections after each phase to ensure team alignment and address any challenges in adopting open practices.
+
+<div class="grid align-items-center gap-4">
+
+<div class="g-col-12 g-col-md-7">
+<!-- Cycle Image (Left Side) -->
+
+```{r}
+#| echo: false
+#| results: "asis"
+#| warning: false
+cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\n")
+```
+
+<br>
+
+*Figure: Open Research Cycle. Based on Ihle, M. (2025). Open research cycle. LMU Open Science Center. [https://doi.org/10.5281/zenodo.15630230](https://doi.org/10.5281/zenodo.15630230)*
+
+</div>
+
+<div class="g-col-12 g-col-md-5">
+<!-- Interactive Menu (Right Side) -->
+<div class="phase-menu">
+  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase1">
+    <i class="bi bi-clipboard-data"></i> 
+    <span>1. Plan & Design</span>
+  </button>
+  
+  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase2">
+    <i class="bi bi-hdd-network"></i> 
+    <span>2. Collect & Manage</span>
+  </button>
+  
+  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase3">
+    <i class="bi bi-graph-up"></i> 
+    <span>3. Analyze & Collaborate</span>
+  </button>
+  
+  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase4">
+    <i class="bi bi-share"></i> 
+    <span>4. Preserve & Share</span>
+  </button>
+</div>
+
+</div>
+
+</div>
+
+<div style="text-align: center; margin-top: 4rem;">
+  <a href="training.html" style="color: #00883A; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
+    <i class="bi bi-arrow-left"></i> Back to Training Overview
+  </a>
+</div>
+
+<!-- Modals for Pop-out Content -->
+<!-- Wrapped in raw HTML block to prevent rendering issues -->
+
+```{=html}
+<!-- Phase 1 Modal -->
+<div class="modal fade" id="modalPhase1" tabindex="-1" aria-labelledby="modalPhase1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase1Label">
+          <i class="bi bi-clipboard-data me-2"></i> 1. Plan & Design
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Explore existing resources, write data management plans, design studies, and prepare preregistrations.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="open_research_cycle/01_plan_and_design.html" class="btn btn-primary">Go to Phase 1</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 2 Modal -->
+<div class="modal fade" id="modalPhase2" tabindex="-1" aria-labelledby="modalPhase2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase2Label">
+          <i class="bi bi-hdd-network me-2"></i> 2. Collect & Manage
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Implement FAIR data management, use standard protocols, ensure storage & backup, and perform quality control.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="open_research_cycle/02_collect_and_manage.html" class="btn btn-primary">Go to Phase 2</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 3 Modal -->
+<div class="modal fade" id="modalPhase3" tabindex="-1" aria-labelledby="modalPhase3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase3Label">
+          <i class="bi bi-graph-up me-2"></i> 3. Analyze & Collaborate
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Create reproducible analyses, use version control, document code, and establish collaboration workflows.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="open_research_cycle/03_analyze_and_collaborate.html" class="btn btn-primary">Go to Phase 3</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 4 Modal -->
+<div class="modal fade" id="modalPhase4" tabindex="-1" aria-labelledby="modalPhase4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase4Label">
+          <i class="bi bi-share me-2"></i> 4. Preserve & Share
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Publish data, archive code, ensure open access articles, and obtain DOIs for citations.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="open_research_cycle/04_preserve_and_share.html" class="btn btn-primary">Go to Phase 4</a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+<!-- <script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to trigger modal
+  function triggerModal(phaseId) {
+    var modalId = '#modalPhase' + phaseId.split('-')[1];
+    var modalEl = document.querySelector(modalId);
+    if (modalEl) {
+      var modal = new bootstrap.Modal(modalEl);
+      modal.show();
+    }
+  }
+
+  // Add click listeners to SVG groups
+  ['phase-1', 'phase-2', 'phase-3', 'phase-4'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('click', function() {
+        triggerModal(id);
+      });
+      // Add keyboard accessibility
+      el.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          triggerModal(id);
+        }
+      });
+    }
+  });
+});
+</script> -->

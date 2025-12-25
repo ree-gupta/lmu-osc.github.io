@@ -1,0 +1,221 @@
+---
+title: "4. Preserve & Share"
+description: "Publish data, archive code, ensure open access articles, and obtain DOIs for citations"
+phase_order: 4
+sidebar: open-research-cycle
+---
+
+This final phase focuses on making your research outputs—code, data, and publications—accessible, citable, and preserved for the long term.
+
+## Link Your Research Outputs
+
+When prompted on repositories and article submission systems, always link your work to:
+
+- **[ORCID](https://orcid.org/)**: Your unique researcher identifier
+- **ROR ID**: Your institution's unique identifier (e.g., [LMU: https://ror.org/05591te55](https://ror.org/05591te55))
+- **Funder IDs**: Grant numbers and funder ROR IDs
+
+This ensures proper credit attribution and helps track research impact.
+
+## a. Publish Your Code
+
+::: {.callout-tip}
+## Learn More
+- [Code publishing tutorial](https://lmu-osc.github.io/code-publishing/) (2.5h)
+- [Data simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/) (2h)
+:::
+
+### Preparing Your Code Repository
+
+Before making your code public:
+
+1. **Remove sensitive data**: If working with sensitive data, create a fresh repository that never contained the data
+2. **Add simulated or synthetic data**: Provide example data that allows others to run your code
+3. **Update README**: Write for external users, explaining how to use the repository
+4. **Add a license**: Choose an appropriate open source license (e.g., MIT, GPL)
+5. **Finalize documentation**: Ensure data dictionary and README are complete
+
+### Publishing to GitHub & Zenodo
+
+::: {.callout-note}
+## Workflow
+**Private & Secure** (during research) → **Public & Citable** (at publication)
+
+Use secure platforms (e.g., institutional GitLab) during research, then publish to public platforms when ready.
+:::
+
+**Steps:**
+
+1. Create a **GitHub** repository with your polished code
+2. Link GitHub to **Zenodo**
+3. Create a **release** on GitHub
+4. Zenodo automatically archives and assigns a **DOI**
+5. Add the DOI to your manuscript
+
+::: {.callout-tip}
+## Timing Options
+- **For reviewers**: Publish when submitting to journals that require reproducibility checks
+- **At acceptance**: Publish only after manuscript acceptance
+:::
+
+### Important Checks
+
+Before publishing:
+
+- ✓ No sensitive information in code or history
+- ✓ README written for external users
+- ✓ Data dictionary finalized
+- ✓ License added
+- ✓ Example data included (simulated/synthetic)
+- ✓ All dependencies documented
+
+## b. Publish Your Data
+
+::: {.callout-important}
+Research data is as important as the results it produces. Sharing data enables reuse, collaboration, and verification of findings.
+:::
+
+### Data Sharing Decision Tree
+
+Use decision tools like the [OxWIN Data Sharing Decision Tree](https://oxwin.org/) to assess if and how you can share your data.
+
+### Open Data Repositories
+
+**When data can be shared openly:**
+
+- Choose a **discipline-specific repository** (find them on [re3data.org](https://www.re3data.org/))
+- Or use subject-agnostic repositories:
+  - [Zenodo](https://zenodo.org/)
+  - [OSF](https://osf.io/)
+  - [DataCite](https://datacite.org/)
+
+**Requirements:**
+
+- Complete anonymization of personal data
+- Proper licensing (e.g., CC0, CC BY)
+- Ethics committee approval for data sharing
+- FAIR-compliant metadata
+
+### Restricted Access Data
+
+**When data contains sensitive information:**
+
+Some repositories allow **metadata-only** publication with controlled data access:
+
+- Publish comprehensive non-sensitive **metadata** (study design, methods, variables)
+- Store actual data on secure institutional servers
+- Provide clear **data access request procedures**
+- Use Data Access Agreements (DAAs) for approved requests
+
+::: {.callout-warning}
+Consult with your institution's data protection office and ethics committee before sharing any human participant data.
+:::
+
+## c. Open Access Publications
+
+::: {.callout-tip}
+## Learn More
+[Open access lecture](https://osf.io/k52ny/files/osfstorage) (40 min)
+:::
+
+### Green Open Access (Free Options)
+
+Increase accessibility of your articles without paying fees:
+
+1. **Publish conceptual figures** under CC BY 4.0 license (e.g., on OSF) so you can reuse them freely
+2. **Submit a preprint** to:
+   - Discipline-specific preprint servers (e.g., bioRxiv, medRxiv, arXiv)
+   - [LMU institutional repository](https://epub.ub.uni-muenchen.de/)
+3. **Upload a postprint** (accepted manuscript version) when allowed by the journal
+
+::: {.callout-note}
+Check journal policies on [Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) or the journal's self-archiving page.
+:::
+
+### Preprint vs. Postprint
+
+- **Preprint**: Manuscript before peer review
+  - Upload at submission for early feedback
+  - Update with revised versions during review
+
+- **Postprint**: Accepted manuscript (not formatted by publisher)
+  - Upload after acceptance
+  - May have embargo period
+
+- **Published version**: Final formatted article
+  - Usually requires payment or special agreements
+  - Request CC BY license when possible
+
+### Gold Open Access
+
+If paying Article Processing Charges (APCs):
+
+- Request **CC BY license** for maximum reusability
+- Check institutional agreements that may cover costs
+- Contact [LMU Open Access team](mailto:open-access@ub.uni-muenchen.de) for support
+
+## d. Lift Preregistration Embargo
+
+If you preregistered your study with an embargo:
+
+- Make the preregistration public
+- Obtain the DOI
+- Cite it in your published article
+
+## e. Acknowledge Contributions
+
+### CRediT Taxonomy
+
+Use the [CRediT (Contributor Roles Taxonomy)](https://credit.niso.org/) to specify who did what:
+
+- Conceptualization
+- Data curation
+- Formal analysis
+- Funding acquisition
+- Investigation
+- Methodology
+- Project administration
+- Resources
+- Software
+- Supervision
+- Validation
+- Visualization
+- Writing—original draft
+- Writing—review & editing
+
+### Method Reporting with Initials for Transparency (MeRIT)
+
+When multiple team members contribute to methods, add initials in the Methods section to identify who performed each step.
+
+---
+
+### Checkpoint: Manuscript Submission
+
+Submit your manuscript with DOI links to:
+
+- Preregistration (if applicable)
+- Code repository
+- Data repository or metadata record
+
+Ensure you have consent from all co-authors for all parts of the manuscript before submission.
+
+---
+
+## Additional Resources
+
+### LMU Support Services
+
+- **Open Access**: [open-access@ub.uni-muenchen.de](mailto:open-access@ub.uni-muenchen.de)
+- **Research Data Management**: [rdm@ub.uni-muenchen.de](mailto:rdm@ub.uni-muenchen.de)
+- **Statistical Consulting**: [StaBLab](https://www.stablab.stat.uni-muenchen.de/)
+
+### Guidelines & Policies
+
+- [LMU Guidelines for Good Scientific Practice](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/dezernat-vi/sachgebiet-vi5/ombudsperson-fuer-gute-wissenschaftliche-praxis/index.html)
+- [LMU Open Access Information](https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/index.html)
+- [FAIR Principles](https://www.go-fair.org/fair-principles/)
+
+::: {.callout-tip}
+## After Publication
+Once published, provide the citation and PDF to all co-authors. Update preprints with links to the final published version.
+:::
