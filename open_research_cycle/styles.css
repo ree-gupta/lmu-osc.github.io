@@ -689,6 +689,12 @@ svg text, svg tspan {
   border-radius: 9999px;
   font-weight: 600;
   letter-spacing: 0.025em;
+  text-decoration: none;
+}
+
+.orc-card-tool-badge:hover {
+  text-decoration: none;
+  opacity: 0.9;
 }
 
 .orc-card-tool-badge.recommended {

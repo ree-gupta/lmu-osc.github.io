@@ -1,114 +1,505 @@
 ---
-title: "2. Collect & Manage"
-description: "Implement FAIR data management, use standard protocols, ensure storage & backup, and perform quality control"
+title: "Collect & Manage"
+description: "Implement FAIR data management, organize research outputs, maintain version control, and ensure quality"
 phase_order: 2
 sidebar: open-research-cycle
+page-layout: full
+css: styles.css
 ---
 
-This phase covers best practices for collecting, organizing, storing, and quality-checking your research data.
+::: {.orc-hero}
 
-## a. FAIR Data Management
+<div class="orc-hero-bg-icon"><i class="bi bi-hdd-stack"></i></div>
 
-::: {.callout-tip}
-## Learn More
-[FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/) (2h tutorial)
+## Organize Your Research Workflow
+
+Data collection and management aren't just administrative tasks—they're the foundation of reproducible research. This phase covers practices for capturing, organizing, documenting, and maintaining research outputs throughout your project.
+
+**What you'll find here:** Strategies for FAIR data management, tools for version control and documentation, and approaches to organizing research materials effectively.
+
+::: {.orc-button-group}
+<a href="#" class="btn btn-light btn-lg"><i class="bi bi-download"></i> Download RDM Checklist</a>
+<a href="#" class="btn btn-outline-light btn-lg"><i class="bi bi-book"></i> View Best Practices Guide</a>
+:::
 :::
 
-Before starting to work with data, apply FAIR principles throughout your research:
+---
 
-- **Findable**: Assign persistent identifiers (DOIs), use searchable metadata
-- **Accessible**: Make data open or accessible with clear access procedures
-- **Interoperable**: Use standard terminology and stable file formats
-- **Reusable**: Provide rich documentation and data usage licenses
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Data Management & Sharing
 
-Following these practices allows you, collaborators, and external researchers to access, understand, and reuse your data.
-
-## b. Data Acquisition & Storage
-
-### Standard Protocols
-
-- Follow established protocols for data collection in your field
-- Document any deviations from standard procedures
-- Maintain detailed records of data collection processes
-
-### Data Backup: The 3-2-1 Rule
-
-For all research data, follow the **3-2-1 rule**:
-
-- **3 copies** of the data
-- **2 different media types** (e.g., external drive, cloud storage)
-- **1 copy stored off-site** or on a separate location
-
-::: {.callout-warning}
-Never store research data only on personal laptops or single storage devices. Ensure regular backups to protect against data loss.
+- [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/) (2h) - Managing data following FAIR principles
+- [Data Sharing](https://osf.io/wv6zy/files/osfstorage) (1h) - Lecture on sharing research data
+- [Report Detailed Methods & Protocols](https://www.youtube.com/watch?v=yCJecqRJAuw&list=PLXv4D3Ns3UNxnlpiKgHt4Gf4lxTRGsAjT&index=6) (30 min) - ReproducibiliTeach lecture
+- [Write Reusable Protocols](https://www.youtube.com/watch?v=JKQJC2zMSJM&list=PLXv4D3Ns3UNxnlpiKgHt4Gf4lxTRGsAjT&index=7) (30 min) - ReproducibiliTeach lecture
+- [RDMkit](https://rdmkit.elixir-europe.org/) - Discipline-specific data management guidance
 :::
+
+---
+
+## <i class="bi bi-collection"></i> Core Data Management Activities
+
+Effective data management involves multiple interconnected practices working together.
+
+::: {.orc-grid-feature}
+
+::: {.orc-card-feature}
+### <i class="bi bi-folder-check"></i> Organization & Storage
+
+Common practices:
+
+- Consistent file naming conventions
+- Logical directory structures
+- Regular backups (3-2-1 rule)
+- Secure storage solutions
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-journal-text"></i> Documentation
+
+Researchers often maintain:
+
+- Electronic lab notebooks
+- Data dictionaries and codebooks
+- README files for datasets
+- Metadata standards
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-git"></i> Version Control
+
+Essential for tracking:
+
+- Code and script changes
+- Document revisions
+- Collaborative workflows
+- Analysis reproducibility
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-shield-check"></i> Quality & Security
+
+Maintaining integrity through:
+
+- Quality control procedures
+- Data validation checks
+- Access controls
+- Anonymization protocols
+:::
+
+:::
+
+---
+
+## <i class="bi bi-diagram-3"></i> Data Management Approaches
+
+Different aspects of data management require different tools and strategies.
+
+::: {.panel-tabset}
+
+### FAIR Principles
+
+Applying FAIR principles ensures your data is useful beyond your immediate project.
+
+**The FAIR Framework:**
+
+<div class="orc-grid-tools">
+
+<div class="orc-card">
+<strong><i class="bi bi-search"></i> Findable</strong>
+
+<ul>
+<li>Persistent identifiers (DOIs)</li>
+<li>Rich metadata descriptions</li>
+<li>Searchable repositories</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-unlock"></i> Accessible</strong>
+
+<ul>
+<li>Standard retrieval protocols</li>
+<li>Clear access procedures</li>
+<li>Metadata remains accessible</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-arrow-left-right"></i> Interoperable</strong>
+
+<ul>
+<li>Standard data formats</li>
+<li>Controlled vocabularies</li>
+<li>Common terminologies</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-recycle"></i> Reusable</strong>
+
+<ul>
+<li>Rich documentation</li>
+<li>Clear usage licenses</li>
+<li>Provenance information</li>
+</ul>
+</div>
+
+</div>
 
 ### File Organization
 
-- Use consistent, descriptive naming conventions
-- Organize files in a logical directory structure
-- Document your file organization system
-- Transfer data regularly to secure storage locations
+<details class="orc-details-panel">
+<summary><i class="bi bi-folder2-open"></i> Naming Conventions</summary>
 
-## c. Anonymize Your Dataset
+Consistent file naming makes data findable and understandable.
 
-Most research involving human participants requires careful data anonymization.
+**Best practices:**
 
-::: {.callout-important}
-## Sensitive Information
-Ensure all personally identifiable information (PII) is removed:
-- Participant names, addresses, phone numbers
-- Facial features in images
-- Hidden metadata in files (e.g., DICOM, NIfTI headers)
+- Use descriptive, meaningful names
+- Include dates (YYYY-MM-DD format)
+- Avoid spaces (use underscores or hyphens)
+- Use version numbers (v01, v02)
+- Keep names short but informative
+
+**Example:**
+```
+2025-01-15_experiment-A_participant-001_v02.csv
+```
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-diagram-3-fill"></i> Directory Structure & Backups</summary>
+
+**Organization patterns:**
+
+- By data type (raw/, processed/, analyzed/)
+- By date or session (2025-01/, 2025-02/)
+- By subject or condition (control/, treatment/)
+
+**3-2-1 Backup Rule:**
+
+- **3 copies** of your data (original + 2 backups)
+- **2 different media types** (local drive + cloud)
+- **1 copy stored off-site** (cloud or separate location)
+
+::: {.callout-warning style="margin-top: 1rem;"}
+Never rely on a single device for your only copy of research data.
 :::
 
-**Your responsibilities:**
+</details>
 
-- Review and test anonymization procedures
-- Check tables, image files, and metadata
-- Consult with your research team if unsure
-- Verify (pseudo)anonymization before sharing data
+### Documentation
 
-Different data types may require different anonymization approaches. Always confirm that your data is properly anonymized before moving to collaborative analysis or sharing stages.
+<details class="orc-details-panel">
+<summary><i class="bi bi-book"></i> README Files</summary>
 
-## d. Quality Control
+README files are essential for understanding your data and code.
 
-::: {.callout-note}
-## Timing
-Perform quality checks **before** starting statistical analyses to exclude data points that might severely bias your results.
+**What to include:**
+
+- Project title and description
+- Authors and date of collection
+- File organization explanation
+- Data collection methods
+- Variable definitions
+- Known issues or limitations
+
+::: {.callout-tip style="margin-top: 1rem;"}
+Write README files for your future self—you'll return months or years later.
 :::
 
-### General QC Principles
+</details>
 
-When performing quality control, especially with team members:
+<details class="orc-details-panel">
+<summary><i class="bi bi-table"></i> Data Dictionaries</summary>
 
-1. **Train your team**: Schedule a meeting to walk everyone through QC procedures
-2. **Track progress**: Use shared documents to monitor QC completion
-3. **Assign tasks clearly**: Make sure everyone knows their responsibilities
-4. **Review flagged cases**: Meet with the project leader to discuss questionable data points
-5. **Document decisions**: Keep clear records of inclusion/exclusion criteria
+Data dictionaries define all variables in your dataset.
 
-### QC Documentation
+**Essential elements:**
 
-Before moving forward, ensure you have:
+- Variable name (as it appears in data)
+- Full variable label/description
+- Data type (numeric, string, date)
+- Allowed values or ranges
+- Units of measurement
+- Missing data codes
 
-- ✓ Data stored in the appropriate format and location
-- ✓ Data sufficiently anonymized for the next stage
-- ✓ Complete documentation of data acquisition
-- ✓ List of all flagged subjects from QC
-- ✓ Final exclusion criteria with justifications
+**Example:**
+```
+Variable: age_years
+Description: Participant age at data collection
+Type: Numeric
+Range: 18-65
+Units: Years
+Missing: -99
+```
 
-### Domain-Specific QC
+</details>
 
-Quality control procedures vary by field and data type. For specialized data (e.g., neuroimaging, sequencing data), follow established discipline-specific QC protocols. Check with your research community for:
+### Version Control
 
-- Standard QC metrics
-- Visualization tools
-- Automated QC pipelines
-- Reporting guidelines
+Version control systems track changes to files over time, enabling collaboration and reproducibility.
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Version Control with Git
+
+[Introduction to Git and GitHub](https://lmu-osc.github.io/introduction-to-git/) (3h) - Learn version control fundamentals for research projects.
+:::
+
+**Why use version control:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- Track all changes to files
+- Revert to previous versions
+- Collaborate without conflicts
+- Maintain parallel versions
+</div>
+
+<div>
+
+- Document why changes were made
+- Backup all project history
+- Share code reliably
+- Enable reproducibility
+</div>
+
+</div>
+
+**Common workflows:**
+
+- Code and scripts: Track all analysis code
+- Documentation: Version control for manuscripts, protocols
+- Small data files: Track metadata, data dictionaries
+- Configuration files: Manage software parameters
+
+::: {.callout-warning style="margin-top: 1rem;"}
+Large data files (>100MB) should not be stored directly in Git. Use Git LFS or data repositories instead.
+:::
+
+### Quality & Security
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-check-circle"></i> Quality Control</summary>
+
+Quality control identifies errors and issues before analysis.
+
+**Common QC checks:**
+
+1. **Completeness**: Check for missing data
+2. **Range checks**: Verify values within expected ranges
+3. **Consistency**: Check logical relationships
+4. **Duplicates**: Identify duplicate records
+5. **Format**: Ensure consistent data types
+
+**Document QC decisions:**
+
+- Procedures and criteria
+- Cases flagged or excluded
+- Reasons for exclusions
+- Date and reviewer
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-shield-lock"></i> Data Security & Anonymization</summary>
+
+**Access Control:**
+
+- Use permission levels (read-only, read-write, admin)
+- Limit access to sensitive data
+- Remove access when collaborators leave
+- Use institutional authentication systems
+
+**Anonymization for human participant data:**
+
+Remove personally identifiable information (PII):
+
+- Names, addresses, contact information
+- Dates of birth, ages over 89
+- Geographic identifiers smaller than state
+- Social security numbers, medical records
+- Facial features in photographs
+
+**Anonymization approaches:**
+
+- **De-identification**: Remove direct identifiers
+- **Pseudonymization**: Replace with codes
+- **Aggregation**: Report group-level data
+- **Perturbation**: Add noise to prevent re-identification
+
+::: {.callout-important style="margin-top: 1rem;"}
+Test anonymization on sample data first. Have a colleague review for remaining identifiers.
+:::
+
+</details>
+
+:::
 
 ---
 
-### Checkpoint: Data Quality Validation Meeting
+## <i class="bi bi-tools"></i> Tools & Resources
 
-Meet with your team to demonstrate that your data has undergone quality checks, is properly stored and formatted, and review the final exclusion criteria.
+### <i class="bi bi-journal-code"></i> Electronic Lab Notebooks
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-journal-richtext"></i></div>
+<h4>[Jupyter Notebooks](https://jupyter.org/)</h4>
+<p>Combine code, output, and narrative text</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Interactive documents for data science workflows. Supports Python, R, Julia. Share via JupyterHub or export to HTML/PDF.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-text"></i></div>
+<h4>[RMarkdown / Quarto](https://quarto.org/)</h4>
+<p>Literate programming for reproducible research</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Create documents combining code, results, and prose. Supports multiple languages. Output to various formats.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-folder2"></i></div>
+<h4>[eLabFTW](https://www.elabftw.net/)</h4>
+<p>Open-source electronic lab notebook</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free, self-hosted ELN with timestamping, templates, and database features.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-git"></i> Version Control Systems
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+<h4>[GitHub](https://github.com/)</h4>
+<p>Popular Git hosting with collaboration features</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free public repositories, GitHub Actions for automation, extensive integrations.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/gitlab" alt="GitLab"></div>
+<h4>[LRZ GitLab](https://gitlab.lrz.de/)</h4>
+<p>Institutional Git hosting for LMU</p>
+<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Private repositories hosted by LRZ. Use LMU credentials. Suitable for active research projects.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF](https://osf.io/)</h4>
+<p>Research project management platform</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Combines version control, storage, and collaboration. Integrates with GitHub, Dropbox, and other services.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-cloud"></i> Data Storage & Backup
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-server"></i></div>
+<h4>[LRZ Sync+Share](https://syncandshare.lrz.de/)</h4>
+<p>LMU cloud storage service</p>
+<a href="https://syncandshare.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>50GB+ storage per user. GDPR-compliant. Desktop and mobile sync clients available.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-archive"></i></div>
+<h4>[LRZ DSS](https://dssweb.dss.lrz.de/)</h4>
+<p>Long-term archival storage</p>
+<a href="https://dssweb.dss.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Tape-based backup for large datasets. Contact LRZ for access and quotas.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-database"></i></div>
+<h4>[re3data](https://www.re3data.org/)</h4>
+<p>Registry of data repositories</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Search to find repositories suited to your data type and discipline.</p>
+</details>
+</div>
+
+:::
+
+---
+
+::: {.callout-tip}
+## Our Recommendation: Data Management Support at LMU
+
+**LMU University Library Data Management Services** provides guidance on organizing and storing research data.
+
+- **Contact**: rdm@ub.uni-muenchen.de
+- **Services**: Storage recommendations, metadata guidance, repository selection, DMP support
+:::
+
+---
+
+## <i class="bi bi-clipboard-check"></i> Data Management Checklist
+
+::: {.orc-gradient-box}
+
+**Throughout Data Collection:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Follow file naming conventions
+- [ ] Maintain organized directory structure
+- [ ] Document data collection procedures
+- [ ] Back up data regularly (3-2-1 rule)
+</div>
+
+<div>
+
+- [ ] Keep electronic lab notebook current
+- [ ] Version control for code and scripts
+- [ ] Update data dictionary as needed
+- [ ] Apply quality control procedures
+</div>
+
+</div>
+
+**Before Moving to Analysis:**
+
+- [ ] All raw data backed up in multiple locations
+- [ ] Data anonymized (if required)
+- [ ] README files document project organization
+- [ ] Data dictionary defines all variables
+- [ ] QC completed and documented
+- [ ] Version control repository up to date
+
+:::

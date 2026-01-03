@@ -27,10 +27,14 @@ Research planning isn't about following a rigid checklist—it's about building 
 
 ::: {.callout-note appearance="simple" icon="mortarboard"}
 ## Learn More: Foundational Concepts
+
 Before diving into planning, these lectures provide essential context on research credibility and reproducibility:
 
-- [What Makes Science Irreplicable](https://osf.io/mguqj/files/osfstorage) (1h) - Understanding threats to replicability
-- [How to Make Science Credible](https://osf.io/rhtgn/files/osfstorage) (1h) - Introduction to open research practices
+- [Replicability Crisis](https://osf.io/mguqj/files/osfstorage) (1h) - Understanding threats to replicability
+- [Credible Research](https://osf.io/rhtgn/files/osfstorage) (40 min) - Introduction to open research practices
+- [Assessing Research Replicability](https://osf.io/dnym9/files/osfstorage) (1h) - Evaluating replication studies *(optional)*
+- [Data Simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/) (2h) - Power analysis through simulation
+- [Advanced Power Analyses](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/) (6h) - Complex simulation designs *(optional)*
 :::
 
 ---
@@ -335,9 +339,9 @@ The open research ecosystem offers numerous platforms and tools to support plann
 
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><i class="bi bi-folder-check"></i></div>
-<h4>[RDMO](https://rdmorganiser.github.io/)</h4>
+<h4>[RDMO](https://rdmo.ub.lmu.de/)</h4>
 <p>Research Data Management Organiser</p>
-<div class="orc-card-tool-badge recommended">Supported at LMU</div>
+<a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
 <details class="orc-card-details">
 <summary>Read more</summary>
 <p>Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.</p>
@@ -441,7 +445,7 @@ The open research ecosystem offers numerous platforms and tools to support plann
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/gitlab" alt="GitLab"></div>
 <h4>[LRZ GitLab](https://gitlab.lrz.de/)</h4>
 <p>Secure institutional Git hosting</p>
-<div class="orc-card-tool-badge recommended">Supported at LMU</div>
+<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
 <details class="orc-card-details">
 <summary>Read more</summary>
 <p>LRZ-hosted private repositories for active research. Use LRZ credentials to access.</p>
@@ -458,7 +462,7 @@ The open research ecosystem offers numerous platforms and tools to support plann
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/zotero" alt="Zotero"></div>
 <h4>[Zotero](https://www.zotero.org/)</h4>
 <p>Free, open-source reference manager</p>
-<div class="orc-card-tool-badge recommended">Tutorial available</div>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="orc-card-tool-badge recommended">Tutorial available</a>
 <details class="orc-card-details">
 <summary>Read more</summary>
 <p>Browser plugin for automatic citation capture. Works with Word, RStudio, Google Docs. Group libraries for collaboration.</p>
