@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.29">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility">
+
+<title>Analyze &amp; Collaborate – LMU Open Science Center</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../open_research_cycle/04_preserve_and_share.html" rel="next">
+<link href="../open_research_cycle/02_collect_and_manage.html" rel="prev">
+<link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-31cbfed28c33b3c01ed69ad445604aa8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.analytics.osc.lmu.de/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+<link rel="stylesheet" href="../custom-navbar.css">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../footer/footer-style.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about/about.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="../people/management.html">
+ <span class="dropdown-text">Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../people/staff.html">
+ <span class="dropdown-text">Staff</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../people/scientific-board.html">
+ <span class="dropdown-text">Scientific Board</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../people/advisory-board.html">
+ <span class="dropdown-text">Advisory Board</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../people/members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../people/fellows.html">
+ <span class="dropdown-text">Fellows</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../people/alumnae.html">
+ <span class="dropdown-text">Alumnae</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-partners" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">Partners</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
+        <li>
+    <a class="dropdown-item" href="../partners/institutional_members.html">
+ <span class="dropdown-text">Institutional members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../partners/local_os_intiatives.html">
+ <span class="dropdown-text">Local Open Science Initiatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../partners/other_lmu_support_services.html">
+ <span class="dropdown-text">Other LMU Support Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../partners/externals.html">
+ <span class="dropdown-text">External Partners</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../partners/funders.html">
+ <span class="dropdown-text">Funders</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../training.html"> <i class="bi bi-mortarboard" role="img">
+</i> 
+<span class="menu-text">Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../events/index.html"> <i class="bi bi-calendar-event" role="img">
+</i> 
+<span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../news.html"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text">News</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/lmu-osc" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../open_research_cycle/01_plan_and_design.html">Phases</a></li><li class="breadcrumb-item"><a href="../open_research_cycle/03_analyze_and_collaborate.html">Analyze &amp; Collaborate</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../open-research-cycle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open Research Cycle</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Phases</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../open_research_cycle/01_plan_and_design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plan &amp; Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../open_research_cycle/02_collect_and_manage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collect &amp; Manage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../open_research_cycle/03_analyze_and_collaborate.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Analyze &amp; Collaborate</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../open_research_cycle/04_preserve_and_share.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preserve &amp; Share</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#core-analysis-activities" id="toc-core-analysis-activities" class="nav-link active" data-scroll-target="#core-analysis-activities"><i class="bi bi-cpu"></i> Core Analysis Activities</a></li>
+  <li><a href="#reproducible-analysis-frameworks" id="toc-reproducible-analysis-frameworks" class="nav-link" data-scroll-target="#reproducible-analysis-frameworks"><i class="bi bi-diagram-2"></i> Reproducible Analysis Frameworks</a></li>
+  <li><a href="#tools-resources" id="toc-tools-resources" class="nav-link" data-scroll-target="#tools-resources"><i class="bi bi-tools"></i> Tools &amp; Resources</a>
+  <ul class="collapse">
+  <li><a href="#statistical-software" id="toc-statistical-software" class="nav-link" data-scroll-target="#statistical-software"><i class="bi bi-bar-chart-line"></i> Statistical Software</a></li>
+  <li><a href="#computational-notebooks" id="toc-computational-notebooks" class="nav-link" data-scroll-target="#computational-notebooks"><i class="bi bi-file-earmark-code"></i> Computational Notebooks</a></li>
+  <li><a href="#collaborative-platforms" id="toc-collaborative-platforms" class="nav-link" data-scroll-target="#collaborative-platforms"><i class="bi bi-people"></i> Collaborative Platforms</a></li>
+  <li><a href="#environment-management" id="toc-environment-management" class="nav-link" data-scroll-target="#environment-management"><i class="bi bi-box-seam"></i> Environment Management</a></li>
+  </ul></li>
+  <li><a href="#analysis-collaboration-checklist" id="toc-analysis-collaboration-checklist" class="nav-link" data-scroll-target="#analysis-collaboration-checklist"><i class="bi bi-clipboard-check"></i> Analysis &amp; Collaboration Checklist</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/open_research_cycle/03_analyze_and_collaborate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../open_research_cycle/01_plan_and_design.html">Phases</a></li><li class="breadcrumb-item"><a href="../open_research_cycle/03_analyze_and_collaborate.html">Analyze &amp; Collaborate</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Analyze &amp; Collaborate</h1>
+</div>
+
+<div>
+  <div class="description">
+    Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility
+  </div>
+</div>
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="orc-hero">
+<div class="orc-hero-bg-icon">
+<i class="bi bi-graph-up"></i>
+</div>
+<section id="build-reproducible-analysis-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="build-reproducible-analysis-workflows">Build Reproducible Analysis Workflows</h2>
+<p>Analysis and collaboration transform data into knowledge—but only if your work can be understood, verified, and built upon. This phase covers practices for creating transparent, reproducible analyses and collaborating effectively with your research team.</p>
+<p><strong>What you’ll find here:</strong> Approaches to computational reproducibility, tools for literate programming, strategies for code documentation, and platforms for collaborative workflows.</p>
+<div class="orc-button-group">
+<p><a href="#" class="btn btn-light btn-lg"><i class="bi bi-download"></i> Download Analysis Checklist</a> <a href="#" class="btn btn-outline-light btn-lg"><i class="bi bi-book"></i> View Code Review Guide</a></p>
+</div>
+</section>
+</div>
+<hr>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learn More: Reproducible Analyses
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://lmu-osc.github.io/introduction-to-R/">Introduction to R</a> (3h) - Statistical programming fundamentals</li>
+<li><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Version Control with Git</a> (1.5h) - Git within RStudio</li>
+<li><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">Collaborative GitHub</a> (1h) - Team workflows</li>
+<li><a href="https://osf.io/sbncz/files/osfstorage">Writing Readable Code</a> (45 min) - Clean code practices</li>
+<li><a href="https://lmu-osc.github.io/introduction-to-Quarto/">Introduction to Quarto</a> (2h) - Literate programming</li>
+<li><a href="https://lmu-osc.github.io/introduction-to-renv/">R Package Management with renv</a> (1h) - Manage dependencies</li>
+<li><a href="https://www.youtube.com/watch?v=Q1kHG842HoI">Git Branching and Merging</a> (1h) - Advanced Git workflows <em>(optional)</em></li>
+</ul>
+</div>
+</div>
+<hr>
+<section id="core-analysis-activities" class="level2">
+<h2 class="anchored" data-anchor-id="core-analysis-activities"><i class="bi bi-cpu"></i> Core Analysis Activities</h2>
+<p>Reproducible analysis requires attention to multiple aspects of your workflow.</p>
+<div class="orc-grid-feature">
+<section id="computational-workflows" class="level3 orc-card-feature">
+<h3 class="anchored" data-anchor-id="computational-workflows"><i class="bi bi-code-square"></i> Computational Workflows</h3>
+<p>Creating traceable analyses:</p>
+<ul>
+<li>Scripted workflows (not point-and-click)</li>
+<li>Automated pipelines</li>
+<li>Environment management</li>
+<li>Dependency tracking</li>
+</ul>
+</section>
+<section id="code-documentation" class="level3 orc-card-feature">
+<h3 class="anchored" data-anchor-id="code-documentation"><i class="bi bi-file-earmark-code"></i> Code Documentation</h3>
+<p>Making code understandable:</p>
+<ul>
+<li>Inline comments explaining decisions</li>
+<li>Function documentation</li>
+<li>Workflow documentation (README)</li>
+<li>Analysis narratives</li>
+</ul>
+</section>
+<section id="collaboration" class="level3 orc-card-feature">
+<h3 class="anchored" data-anchor-id="collaboration"><i class="bi bi-people-fill"></i> Collaboration</h3>
+<p>Working effectively with teams:</p>
+<ul>
+<li>Shared code repositories</li>
+<li>Code review processes</li>
+<li>Collaborative writing platforms</li>
+<li>Communication tools</li>
+</ul>
+</section>
+<section id="quality-assurance" class="level3 orc-card-feature">
+<h3 class="anchored" data-anchor-id="quality-assurance"><i class="bi bi-check2-circle"></i> Quality Assurance</h3>
+<p>Ensuring analysis quality:</p>
+<ul>
+<li>Code testing and validation</li>
+<li>Peer code review</li>
+<li>Reproducibility checks</li>
+<li>Statistical consulting</li>
+</ul>
+</section>
+</div>
+<hr>
+</section>
+<section id="reproducible-analysis-frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="reproducible-analysis-frameworks"><i class="bi bi-diagram-2"></i> Reproducible Analysis Frameworks</h2>
+<p>Different research contexts require different reproducibility approaches.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Computational Reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Code Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Literate Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Version Control &amp; Collaboration</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Statistical Analysis &amp; Quality</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Computational reproducibility ensures others can rerun your analysis and obtain the same results.</p>
+<p><strong>Core principles:</strong></p>
+<div class="orc-grid-tools">
+<div class="orc-card">
+<p><strong><i class="bi bi-code-slash"></i> Scripted Workflows</strong></p>
+<ul>
+<li>
+Avoid manual data manipulation
+</li>
+<li>
+Use scripts instead of point-and-click
+</li>
+<li>
+Document all analysis steps
+</li>
+</ul>
+</div>
+<div class="orc-card">
+<p><strong><i class="bi bi-gear"></i> Environment Control</strong></p>
+<ul>
+<li>
+Track software versions
+</li>
+<li>
+Manage package dependencies
+</li>
+<li>
+Use containers when appropriate
+</li>
+</ul>
+</div>
+<div class="orc-card">
+<p><strong><i class="bi bi-folder2-open"></i> Organized Structure</strong></p>
+<ul>
+<li>
+Consistent project organization
+</li>
+<li>
+Relative (not absolute) paths
+</li>
+<li>
+Clear file naming
+</li>
+</ul>
+</div>
+<div class="orc-card">
+<p><strong><i class="bi bi-arrow-clockwise"></i> Random Seeds</strong></p>
+<ul>
+<li>
+Set seeds for random processes
+</li>
+<li>
+Document stochastic procedures
+</li>
+<li>
+Enable exact replication
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-chat-left-text"></i> Inline Comments
+</summary>
+<p>Comments explain <em>why</em> you made decisions, not just <em>what</em> the code does.</p>
+<p><strong>What to comment:</strong></p>
+<ul>
+<li>Rationale for methodological choices</li>
+<li>Explanation of complex algorithms</li>
+<li>Context for non-obvious code</li>
+<li>Known limitations or workarounds</li>
+<li>Citations to methods or papers</li>
+</ul>
+<p><strong>What not to comment:</strong></p>
+<ul>
+<li>Obvious code</li>
+<li>Outdated information</li>
+<li>Sensitive information</li>
+</ul>
+</details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-journal-code"></i> README Files
+</summary>
+<p>README files are essential for understanding how to use your code repository.</p>
+<p><strong>Required elements:</strong></p>
+<ul>
+<li><strong>Project title and description</strong></li>
+<li><strong>How to run the analysis</strong>: Step-by-step instructions</li>
+<li><strong>Software requirements</strong>: Language versions, dependencies</li>
+<li><strong>Input data</strong>: Where to obtain or how to access</li>
+<li><strong>Output</strong>: What files are produced</li>
+<li><strong>Project structure</strong>: Explanation of directories</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Analysis of Treatment Effects</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Requirements</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>R version 4.3+</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Packages listed in renv.lock</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Running the Analysis</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Install dependencies: <span class="in">`renv::restore()`</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Run scripts in order: 01_preprocessing.R, 02_analysis.R</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Literate programming combines code, results, and narrative text in a single document.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learn More: Literate Programming
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://lmu-osc.github.io/introduction-to-Quarto/">Introduction to Quarto</a> (2.5h) - Create reproducible documents combining code, results, and prose.</p>
+</div>
+</div>
+<p><strong>Common tools:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<p><strong>Computational notebooks:</strong></p>
+<ul>
+<li>Jupyter Notebooks (Python, R, Julia)</li>
+<li>R Markdown / Quarto</li>
+<li>Observable (JavaScript)</li>
+</ul>
+</div>
+<div>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Results auto-update with code changes</li>
+<li>Combine analysis and reporting</li>
+<li>Output to multiple formats</li>
+<li>Facilitate reproducibility</li>
+</ul>
+</div>
+</div>
+<p><strong>What to include in analysis notebooks:</strong></p>
+<ol type="1">
+<li>Introduction: Research question</li>
+<li>Methods: Statistical procedures</li>
+<li>Data loading: Source and preprocessing</li>
+<li>Main analysis: Tests and models</li>
+<li>Results: Tables and figures</li>
+<li>Session info: Software versions</li>
+</ol>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-git"></i> Git Best Practices
+</summary>
+<p>Version control is essential for tracking changes to analysis code.</p>
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Learn More: Version Control
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Version Control with Git</a> (2h)</li>
+<li><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">Collaborative GitHub Workflows</a> (1h)</li>
+</ul>
+</div>
+</div>
+<p><strong>Key practices:</strong></p>
+<ul>
+<li>Commit frequently with logical changesets</li>
+<li>Write meaningful commit messages</li>
+<li>Never commit large data files</li>
+<li>Never commit sensitive information</li>
+<li>Use branches for experimental analyses</li>
+<li>Tag releases for publications</li>
+</ul>
+<p><strong>Good commit message:</strong></p>
+<pre><code>Add power analysis for sample size justification
+
+- Implemented simulation-based power calculation
+- Tested effect sizes (d = 0.3, 0.5, 0.8)</code></pre>
+</details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-people"></i> Collaboration &amp; Review
+</summary>
+<p><strong>Collaboration workflows:</strong></p>
+<ul>
+<li><strong>Centralized workflow</strong>: Simple, one main branch</li>
+<li><strong>Feature branch workflow</strong>: Each analysis on separate branch</li>
+<li><strong>Pull request review</strong>: Review before merging</li>
+</ul>
+<p><strong>Code review checklist:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Code runs without errors</label></li>
+<li><label><input type="checkbox">Methods match analysis plan</label></li>
+<li><label><input type="checkbox">Results reproducible on different machine</label></li>
+<li><label><input type="checkbox">Code well-organized and commented</label></li>
+<li><label><input type="checkbox">No sensitive data included</label></li>
+</ul>
+<p><strong>What reviewers check:</strong></p>
+<ol type="1">
+<li>Functionality and correctness</li>
+<li>Reproducibility</li>
+<li>Readability and organization</li>
+<li>Best practices</li>
+</ol>
+</details>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-calculator"></i> Analysis Planning
+</summary>
+<p>Plan analyses before looking at outcome data to avoid biases.</p>
+<p><strong>Analysis plans should specify:</strong></p>
+<ul>
+<li>Statistical tests to be used</li>
+<li>Variables and transformations</li>
+<li>Handling of missing data</li>
+<li>Outlier criteria and treatment</li>
+<li>Multiple comparisons corrections</li>
+</ul>
+<p><strong>Exploratory vs.&nbsp;confirmatory:</strong></p>
+<ul>
+<li><strong>Confirmatory</strong>: Tests specified in preregistration</li>
+<li><strong>Exploratory</strong>: Additional analyses not prespecified</li>
+<li>Clearly label which is which</li>
+</ul>
+</details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-check-circle"></i> Quality Assurance
+</summary>
+<p><strong>Code quality practices:</strong></p>
+<ul>
+<li>Follow style guides (Tidyverse for R, PEP 8 for Python)</li>
+<li>Use automated styling tools (styler, black, lintr)</li>
+<li>Consistent naming conventions</li>
+<li>Descriptive variable names</li>
+<li>Limit line length (80-100 characters)</li>
+</ul>
+<p><strong>Statistical consulting:</strong></p>
+<p>Consider consulting for complex designs, advanced methods, or results interpretation.</p>
+<div class="callout callout-style-default callout-tip callout-titled" style="margin-top: 1rem;">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Our Recommendation: Statistical Consulting at LMU
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>StaBLab (LMU Statistical Consulting Unit)</strong> provides expert guidance on statistical analyses.</p>
+<ul>
+<li><strong>Contact</strong>: kontakt@stablab.stat.uni-muenchen.de</li>
+<li><strong>Services</strong>: Analysis planning, method selection, power analysis</li>
+</ul>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="tools-resources" class="level2">
+<h2 class="anchored" data-anchor-id="tools-resources"><i class="bi bi-tools"></i> Tools &amp; Resources</h2>
+<section id="statistical-software" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-software"><i class="bi bi-bar-chart-line"></i> Statistical Software</h3>
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/r" alt="R">
+</div>
+<h4 class="anchored">
+<a href="https://posit.co/">R / RStudio</a>
+</h4>
+<p>
+Statistical programming environment
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Free, open-source language for statistics and data science. Extensive package ecosystem. RStudio IDE provides integrated development environment.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/python" alt="Python">
+</div>
+<h4 class="anchored">
+<a href="https://www.python.org/">Python</a>
+</h4>
+<p>
+General-purpose programming with data science libraries
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Powerful libraries like NumPy, pandas, scikit-learn. Popular in machine learning and computational research.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-calculator-fill"></i>
+</div>
+<h4 class="anchored">
+<a href="https://jasp-stats.org/">JASP</a>
+</h4>
+<p>
+GUI for statistical analysis
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Free, open-source alternative to SPSS. Bayesian and frequentist analyses. Produces reproducible output.
+</p>
+</details>
+</div>
+</div>
+</section>
+<section id="computational-notebooks" class="level3">
+<h3 class="anchored" data-anchor-id="computational-notebooks"><i class="bi bi-file-earmark-code"></i> Computational Notebooks</h3>
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-journal-code"></i>
+</div>
+<h4 class="anchored">
+<a href="https://jupyter.org/">Jupyter</a>
+</h4>
+<p>
+Interactive notebooks for Python, R, Julia
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Web-based notebooks combining code, output, and markdown. JupyterLab provides full IDE. Share via JupyterHub or export formats.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-file-richtext"></i>
+</div>
+<h4 class="anchored">
+<a href="https://quarto.org/">Quarto</a>
+</h4>
+<p>
+Next-gen literate programming
+</p>
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Multi-language support (R, Python, Julia, JavaScript). Render to multiple formats. Ideal for reproducible manuscripts and presentations.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-graph-up"></i>
+</div>
+<h4 class="anchored">
+<a href="https://observablehq.com/">Observable</a>
+</h4>
+<p>
+JavaScript notebooks for data visualization
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Reactive notebooks with powerful visualization libraries. Ideal for interactive data exploration and communication.
+</p>
+</details>
+</div>
+</div>
+</section>
+<section id="collaborative-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="collaborative-platforms"><i class="bi bi-people"></i> Collaborative Platforms</h3>
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/github" alt="GitHub">
+</div>
+<h4 class="anchored">
+<a href="https://github.com/">GitHub</a>
+</h4>
+<p>
+Code hosting and collaboration
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Public and private repositories. Pull request workflows. GitHub Actions for automation. Issue tracking and project boards.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/gitlab" alt="GitLab">
+</div>
+<h4 class="anchored">
+<a href="https://gitlab.lrz.de/">LRZ GitLab</a>
+</h4>
+<p>
+Institutional Git hosting
+</p>
+<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Private repositories for LMU research. CI/CD pipelines. Integrated issue tracking and code review.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/osf" alt="OSF">
+</div>
+<h4 class="anchored">
+<a href="https://osf.io/">OSF</a>
+</h4>
+<p>
+Research project management
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Combines storage, version control, and collaboration. Preregistration support. DOIs for projects and components.
+</p>
+</details>
+</div>
+</div>
+</section>
+<section id="environment-management" class="level3">
+<h3 class="anchored" data-anchor-id="environment-management"><i class="bi bi-box-seam"></i> Environment Management</h3>
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-archive"></i>
+</div>
+<h4 class="anchored">
+<a href="https://rstudio.github.io/renv/">renv</a>
+</h4>
+<p>
+R package management
+</p>
+<a href="https://lmu-osc.github.io/introduction-to-renv/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Isolate package dependencies per project. Create reproducible R environments. Works with RStudio projects.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/anaconda" alt="Conda">
+</div>
+<h4 class="anchored">
+<a href="https://docs.conda.io/">Conda</a>
+</h4>
+<p>
+Python environment manager
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Manage Python packages and environments. Cross-platform. Includes scientific computing packages.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/docker" alt="Docker">
+</div>
+<h4 class="anchored">
+<a href="https://www.docker.com/">Docker</a>
+</h4>
+<p>
+Containerization for full reproducibility
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Package entire computational environment. Ensures exact software versions. Ideal for complex workflows.
+</p>
+</details>
+</div>
+</div>
+<hr>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Our Recommendation: Computational Resources at LMU
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>LRZ Compute Cloud</strong> provides computational resources for data-intensive analyses.</p>
+<ul>
+<li><strong>Services</strong>: Virtual machines, high-performance computing, storage</li>
+<li><strong>Access</strong>: Available to LMU researchers</li>
+<li><strong>Support</strong>: <a href="https://www.lrz.de/services/compute/">LRZ Service Desk</a></li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="analysis-collaboration-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-collaboration-checklist"><i class="bi bi-clipboard-check"></i> Analysis &amp; Collaboration Checklist</h2>
+<div class="orc-gradient-box">
+<p><strong>Before Starting Analysis:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">Analysis plan documented</label></li>
+<li><label><input type="checkbox">Project uses version control (Git)</label></li>
+<li><label><input type="checkbox">Directory structure organized</label></li>
+<li><label><input type="checkbox">Dependencies managed</label></li>
+</ul>
+</div>
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">README file initiated</label></li>
+<li><label><input type="checkbox">Data dictionary available</label></li>
+<li><label><input type="checkbox">Code style guide chosen</label></li>
+<li><label><input type="checkbox">Collaboration workflow established</label></li>
+</ul>
+</div>
+</div>
+<p><strong>During Analysis:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">Scripts well-commented</label></li>
+<li><label><input type="checkbox">Commit changes regularly</label></li>
+<li><label><input type="checkbox">Random seeds set</label></li>
+<li><label><input type="checkbox">Intermediate results saved</label></li>
+</ul>
+</div>
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">Analysis decisions documented</label></li>
+<li><label><input type="checkbox">Code reviewed by collaborators</label></li>
+<li><label><input type="checkbox">Results cross-checked</label></li>
+<li><label><input type="checkbox">Figures reproducible</label></li>
+</ul>
+</div>
+</div>
+<p><strong>Before Sharing:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Code runs without errors on fresh environment</label></li>
+<li><label><input type="checkbox">README provides complete instructions</label></li>
+<li><label><input type="checkbox">All functions documented</label></li>
+<li><label><input type="checkbox">Session info captured</label></li>
+<li><label><input type="checkbox">Sensitive information removed</label></li>
+<li><label><input type="checkbox">Code peer-reviewed</label></li>
+</ul>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="../open_research_cycle/02_collect_and_manage.html" class="pagination-link" aria-label="Collect &amp; Manage">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Collect &amp; Manage</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../open_research_cycle/04_preserve_and_share.html" class="pagination-link" aria-label="Preserve &amp; Share">
+        <span class="nav-page-text">Preserve &amp; Share</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/open_research_cycle/03_analyze_and_collaborate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<footer class="osc-footer-card py-5">
+  <div class="osc-footer-container">
+
+    <div class="gy-4 osc-footer-row">
+
+      <!-- Postal Address -->
+      <div class="col-12 col-md-3 osc-footer-address">
+        <strong>Ludwig-Maximilians-Universität<br>LMU Open Science Center</strong>
+        <p class="mb-0">
+          Leopoldstr. 13<br>
+          80802 München
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-12 col-md-3 osc-footer-contact">
+        <strong class="mb-0">Contact</strong>
+        <ul class="list-unstyled mt-1 mb-0 osc-footer-contact-list">
+          <li>
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="osc-footer-link text-decoration-none text-white">
+              <i class="bi bi-envelope me-1"></i>Prof. Dr. Felix Schönbrodt (Managing Director)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:malika.ihle@lmu.de" class="osc-footer-link text-decoration-none text-white">
+              <i class="bi bi-envelope me-1"></i>Dr. Malika Ihle (Coordinator)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:osc@lmu.de" class="osc-footer-link text-decoration-none text-white">
+              <i class="bi bi-envelope me-1"></i>OSC team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-12 col-md-3 osc-footer-join">
+        <strong class="">Join Us</strong>
+        <ul class="list-unstyled mt-1 mb-0 osc-footer-links-list">
+          <li>
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="osc-footer-link text-white text-decoration-underline">
+              Subscribe to our announcement list
+            </a>
+          </li>
+          <li>
+            <a href="../about/joinus.html" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+              Become a member
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+              LMU chat on Matrix
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social icons -->
+      <div class="d-flex gap-2 ps-3 justify-content-end osc-footer-socials">
+            <a href="https://www.github.com/lmu-osc" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-github text-white"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-linkedin text-white"></i>
+            </a>
+            <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-bluesky text-white"></i>
+            </a>
+            <a href="https://scicomm.xyz/web/@lmu_osc" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-mastodon text-white"></i>
+            </a>
+      </div>
+
+    </div>
+
+    <hr class="osc-footer-hr my-4">
+
+    <!-- Extra links -->
+    <div class="d-flex flex-wrap gap-3 osc-footer-extra-links">
+      <a href="../imprint.html" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
+      <span class="text-white">|</span>
+      <a href="#" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
+      <span class="text-white">|</span>
+      <a href="../accessibilty.html" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+</body></html>
