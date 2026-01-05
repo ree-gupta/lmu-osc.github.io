@@ -35,6 +35,7 @@ Before diving into planning, these lectures provide essential context on researc
 - [Assessing Research Replicability](https://osf.io/dnym9/files/osfstorage) (1h) - Evaluating replication studies *(optional)*
 - [Data Simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/) (2h) - Power analysis through simulation
 - [Advanced Power Analyses](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/) (6h) - Complex simulation designs *(optional)*
+- [8-Step Checklist for Credible Research](https://www.psychologicalscience.org/observer/eight-easy-steps-for-improving-the-credibility-of-research) by Nosek et al. - Practical steps for improving research credibility
 :::
 
 ---
@@ -42,11 +43,6 @@ Before diving into planning, these lectures provide essential context on researc
 ## <i class="bi bi-search"></i> Exploring Existing Work
 
 Many researchers start by reviewing what resources and prior work exist in their domain.
-
-::: {.callout-note appearance="simple" icon="mortarboard"}
-## Learn More: Reference Management
-[Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/) (1h) - Learn to organize literature with a free, open-source reference manager that integrates with Word, RStudio, and Google Docs.
-:::
 
 ::: {.orc-grid-feature}
 
@@ -96,6 +92,11 @@ Resources for research funding:
 
 :::
 
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Reference Management
+[Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/) (1h) - Learn to organize literature with a free, open-source reference manager that integrates with Word, RStudio, and Google Docs.
+:::
+
 ---
 
 ## <i class="bi bi-clipboard-check"></i> Planning Framework Options
@@ -124,6 +125,31 @@ Many researchers document their hypotheses, methods, and analysis plans before d
 [How to Prepare a Preregistration](https://lmu-osc.github.io/introduction-to-preregistration/) (2h) - Step-by-step guide to creating preregistrations using OSF and other platforms.
 :::
 
+**Helpful templates & guides:**
+
+- [Pre-analysis checklist](https://blogs.worldbank.org/en/impactevaluations/a-pre-analysis-plan-checklist) by David McKenzie
+- [Pre-analysis plan template](https://www.bitss.org/resource/alejandro-ganimians-pre-analysis-plan-template/) by Alejandro Ganimian
+- [OSF Guide to Preregistration](https://help.osf.io/article/158-preregistration) - Step-by-step instructions
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-file-earmark-check"></i> Registered Reports</summary>
+
+Registered Reports are a publishing format where peer review occurs **before** data collection. If accepted, the journal commits to publishing regardless of results.
+
+**Benefits:**
+
+- Eliminates publication bias
+- Separates hypothesis quality from results
+- Provides in-principle acceptance before conducting research
+
+**Resources:**
+
+- [What are Registered Reports?](https://www.cos.io/initiatives/registered-reports) - COS overview and rationale
+- [Journals accepting Registered Reports](https://www.cos.io/initiatives/registered-reports#702702cd-d4f3-4de9-bbb5-eb468e0dc804) - Growing list of participating journals
+- [Author & Reviewer Guidelines](https://osf.io/pukzy/) - Templates and guidance for submissions
+
 </details>
 
 <details class="orc-details-panel">
@@ -143,6 +169,7 @@ Statistical power analysis helps determine appropriate sample sizes for detectin
 
 - [Introduction to Data Simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/) (2h) - Create simulated datasets to test your analysis plans
 - [Simulations for Advanced Power Analyses](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/) (6h, can pick specific chapters) - Power analysis for complex statistical models including mixed models and factorial designs
+- [Power Analysis Workshop](https://www.nicebread.de/workshop-on-power-analysis-by-simulation-in-r/) by Felix Schönbrodt - Comprehensive workshop materials on simulation-based power analysis
 :::
 
 ::: {.callout-tip}
@@ -230,6 +257,11 @@ Depending on the research type, various ethical and compliance considerations ma
 - Animal welfare protocols (where applicable)
 - Biosafety and environmental safety reviews
 
+**Consent form templates for open data sharing:**
+
+- [German templates](https://osf.io/mgwk8/wiki/Consent%20form%20templates%20for%20open%20data/) - Dyadic and non-dyadic experiments (OSC collection)
+- [English templates](https://osf.io/adkj4/) - COS Reproducible Research collection
+
 ::: {.callout-note}
 ## Documentation
 Many labs maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference.
@@ -263,6 +295,8 @@ The open research ecosystem offers numerous platforms and tools to support plann
 
 ### <i class="bi bi-file-earmark-text"></i> Preregistration Platforms
 
+Platforms to publicly register your study design and analysis plan before data collection:
+
 ::: {.orc-grid-tools}
 
 <div class="orc-card-tool">
@@ -295,11 +329,54 @@ The open research ecosystem offers numerous platforms and tools to support plann
 </details>
 </div>
 
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-currency-dollar"></i></div>
+<h4>[AEA RCT Registry](https://www.socialscienceregistry.org/)</h4>
+<p>Economics & social sciences</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>American Economic Association registry for randomized controlled trials in economics and social sciences.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-globe2"></i></div>
+<h4>[RIDIE](https://ridie.3ieimpact.org/)</h4>
+<p>Development impact evaluations</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Registry for International Development Impact Evaluations. Open to experimental and observational studies.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-building"></i></div>
+<h4>[EGAP Registry](https://egap.org/registry/)</h4>
+<p>Governance & politics research</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Evidence in Governance and Politics registry for social science research designs.</p>
+</details>
+</div>
+
 :::
 
 ### <i class="bi bi-calculator"></i> Power Analysis Tools
 
+Software for calculating sample sizes and statistical power:
+
 ::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/r" alt="R"></div>
+<h4>R packages</h4>
+<p>[pwr](https://cran.r-project.org/package=pwr), [simr](https://cran.r-project.org/package=simr), [Superpower](https://github.com/arcaldwell49/Superpower)</p>
+<a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Simulation-based power for mixed models and factorial designs.</p>
+</details>
+</div>
 
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
@@ -308,16 +385,6 @@ The open research ecosystem offers numerous platforms and tools to support plann
 <details class="orc-card-details">
 <summary>Read more</summary>
 <p>Free software for t-tests, F-tests, correlations, and more with graphical displays.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/r" alt="R"></div>
-<h4>R packages</h4>
-<p>[pwr](https://cran.r-project.org/package=pwr), [simr](https://cran.r-project.org/package=simr), [Superpower](https://github.com/arcaldwell49/Superpower)</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Simulation-based power for mixed models and factorial designs.</p>
 </details>
 </div>
 
@@ -334,6 +401,8 @@ The open research ecosystem offers numerous platforms and tools to support plann
 :::
 
 ### <i class="bi bi-folder2-open"></i> Data Management Planning
+
+Tools to create and manage data management plans for your research:
 
 ::: {.orc-grid-tools}
 
@@ -369,9 +438,21 @@ The open research ecosystem offers numerous platforms and tools to support plann
 </details>
 </div>
 
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-robot"></i></div>
+<h4>[DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/)</h4>
+<p>Automated data documentation assistant</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>From ZPID (Leibniz Institute for Psychology) - helps document and manage research data from the start of the research cycle. Includes DMP creation assistance and a knowledge base for research data management.</p>
+</details>
+</div>
+
 :::
 
 ### <i class="bi bi-search"></i> Literature & Prior Work Discovery
+
+Platforms to find and explore existing research in your field:
 
 ::: {.orc-grid-tools}
 
@@ -407,7 +488,47 @@ The open research ecosystem offers numerous platforms and tools to support plann
 
 :::
 
+### <i class="bi bi-check2-circle"></i> Evaluate Research Quality
+
+Tools to assess the credibility and impact of research you've found:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-bar-chart-line"></i></div>
+<h4>[Altmetric](https://www.altmetric.com/)</h4>
+<p>Track article attention & discussions</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Shows mentions in news, social media, policy documents, and peer reviews. Available as browser add-on.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-chat-square-text"></i></div>
+<h4>[PubPeer](https://pubpeer.com/)</h4>
+<p>Post-publication peer review</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Community comments on published papers. Browser add-on alerts you to discussions. Integrated in Altmetric scores.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-clipboard-check"></i></div>
+<h4>[Curate Science](https://curatescience.org/)</h4>
+<p>Replication reports & transparency</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Database of replication studies and transparency ratings for psychology research.</p>
+</details>
+</div>
+
+:::
+
 ### <i class="bi bi-database"></i> Data & Code Repositories
+
+Repositories for discovering existing datasets and code to build upon:
 
 ::: {.orc-grid-tools}
 
@@ -455,6 +576,8 @@ The open research ecosystem offers numerous platforms and tools to support plann
 :::
 
 ### <i class="bi bi-journal-text"></i> Reference Management
+
+Tools to organize, annotate, and cite your literature:
 
 ::: {.orc-grid-tools}
 
