@@ -292,7 +292,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#preprint-servers" id="toc-preprint-servers" class="nav-link" data-scroll-target="#preprint-servers"><i class="bi bi-file-earmark-text"></i> Preprint Servers</a></li>
   <li><a href="#publishing-support" id="toc-publishing-support" class="nav-link" data-scroll-target="#publishing-support"><i class="bi bi-info-circle"></i> Publishing Support</a></li>
   </ul></li>
-  <li><a href="#preservation-checklist" id="toc-preservation-checklist" class="nav-link" data-scroll-target="#preservation-checklist"><i class="bi bi-check2-square"></i> Preservation Checklist</a></li>
+  <li><a href="#preservation-checklist" id="toc-preservation-checklist" class="nav-link" data-scroll-target="#preservation-checklist"><i class="bi bi-clipboard-check"></i> Preservation Checklist</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/open_research_cycle/04_preserve_and_share.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -635,6 +635,19 @@ Warning
 </ul>
 <p>Benefits: transparent contribution tracking, proper attribution, career development.</p>
 </details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-file-earmark-lock"></i> Understanding Licensing
+</summary>
+<p>“When thinking about what one can, must, or should do with Open Material and Open Data, one has to differentiate on the one hand legally-enforceable rules (which are handled with legal licenses) and, on the other hand, rules and standards of the scientific community. If a piece of work is in the public domain (e.g., a CC0 license) there is no legal requirement to give attribution, but as a scientist one still has the ethical obligation to give a proper citation.”</p>
+<p>— <a href="https://opennessinitiative.org/licensing-issues/">PRO Initiative on Licensing</a></p>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><a href="https://opendefinition.org/licenses/">Open Definition</a> - Comprehensive list of conformant licenses for content and data</li>
+<li><a href="https://choosealicense.com/">Choose a License</a> - Simple tool for selecting code licenses</li>
+<li><a href="https://creativecommons.org/choose/">Creative Commons License Chooser</a> - Select appropriate CC license for your needs</li>
+</ul>
+</details>
 </div>
 </div>
 </div>
@@ -644,6 +657,17 @@ Warning
 <h2 class="anchored" data-anchor-id="tools-platforms"><i class="bi bi-tools"></i> Tools &amp; Platforms</h2>
 <section id="data-repositories" class="level3">
 <h3 class="anchored" data-anchor-id="data-repositories"><i class="bi bi-database"></i> Data Repositories</h3>
+<p>Platforms for archiving research data with persistent identifiers and long-term preservation.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Finding the right repository:</strong> Use <a href="https://www.re3data.org/">re3data.org</a> to search 3,000+ research data repositories by discipline, data type, and certification standards.</p>
+</div>
+</div>
+</div>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -685,40 +709,78 @@ Complete research projects, preregistrations, file versioning, collaboration too
 </div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
-<i class="bi bi-search"></i>
+<i class="bi bi-leaf"></i>
 </div>
 <h4 class="anchored">
-<a href="https://www.re3data.org/">re3data</a>
+<a href="https://datadryad.org/">Dryad</a>
 </h4>
 <p>
-Registry of 3000+ research data repositories
+Curated repository for research data
 </p>
 <details class="orc-card-details">
 <summary>
 Read more
 </summary>
 <p>
-Find discipline-specific repositories. Filter by data type, subject, and certification standards.
+Nonprofit, open data repository. Human curation, CC0 license for maximum reuse. Integrates with many journals.
 </p>
 </details>
 </div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
-<img src="https://cdn.simpleicons.org/ludwig-maximilians-universitat-munchen" alt="LMU">
+<i class="bi bi-share-fill"></i>
 </div>
 <h4 class="anchored">
-<a href="https://epub.ub.uni-muenchen.de/">LMU Repository</a>
+<a href="https://figshare.com/">Figshare</a>
 </h4>
 <p>
-Institutional repository for LMU researchers
+All research outputs with visualization
 </p>
-<a href="https://epub.ub.uni-muenchen.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
 <details class="orc-card-details">
 <summary>
 Read more
 </summary>
 <p>
-Long-term preservation for LMU publications, dissertations, and research data. DOI assignment available.
+Free unlimited public storage. Figures, datasets, videos, code. DOI assignment, embeddable visualizations.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-database"></i>
+</div>
+<h4 class="anchored">
+<a href="https://dataverse.harvard.edu/">Harvard Dataverse</a>
+</h4>
+<p>
+Open source research data repository
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Free data sharing. Create your own dataverse (collection). Structured metadata, DOI assignment, versioning.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-building"></i>
+</div>
+<h4 class="anchored">
+<a href="https://data.ub.uni-muenchen.de/">Open Data LMU</a>
+</h4>
+<p>
+LMU research data repository
+</p>
+<a href="https://data.ub.uni-muenchen.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Dedicated repository for LMU research data. DOI assignment, long-term preservation, FAIR-compliant metadata.
 </p>
 </details>
 </div>
@@ -726,7 +788,28 @@ Long-term preservation for LMU publications, dissertations, and research data. D
 </section>
 <section id="code-archives" class="level3">
 <h3 class="anchored" data-anchor-id="code-archives"><i class="bi bi-code-square"></i> Code Archives</h3>
+<p>Platforms for publishing and archiving research code with version control and DOI assignment:</p>
 <div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/gitlab" alt="GitLab">
+</div>
+<h4 class="anchored">
+<a href="https://gitlab.lrz.de/">LRZ GitLab</a>
+</h4>
+<p>
+Secure institutional Git hosting for active research
+</p>
+<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Private repositories during research. Enhanced security, CI/CD pipelines. Transfer to GitHub when ready to publish.
+</p>
+</details>
+</div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="https://cdn.simpleicons.org/github" alt="GitHub">
@@ -737,6 +820,7 @@ Long-term preservation for LMU publications, dissertations, and research data. D
 <p>
 Version control and collaboration platform
 </p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
 <details class="orc-card-details">
 <summary>
 Read more
@@ -765,31 +849,31 @@ Link repository to Zenodo, create release, DOI automatically assigned. Long-term
 </p>
 </details>
 </div>
+</div>
+</section>
+<section id="preprint-servers" class="level3">
+<h3 class="anchored" data-anchor-id="preprint-servers"><i class="bi bi-file-earmark-text"></i> Preprint Servers</h3>
+<p>Share manuscripts before peer review to get early feedback and establish priority:</p>
+<div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
-<img src="https://cdn.simpleicons.org/gitlab" alt="GitLab">
+<img src="https://cdn.simpleicons.org/osf" alt="OSF">
 </div>
 <h4 class="anchored">
-<a href="https://gitlab.lrz.de/">LRZ GitLab</a>
+<a href="https://osf.io/preprints/">OSF Preprints</a>
 </h4>
 <p>
-Secure institutional Git hosting for active research
+Multidisciplinary preprint service
 </p>
-<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
 <details class="orc-card-details">
 <summary>
 Read more
 </summary>
 <p>
-Private repositories during research. Enhanced security, CI/CD pipelines. Transfer to GitHub when ready to publish.
+All disciplines welcome. Integration with OSF projects, flexible requirements.
 </p>
 </details>
 </div>
-</div>
-</section>
-<section id="preprint-servers" class="level3">
-<h3 class="anchored" data-anchor-id="preprint-servers"><i class="bi bi-file-earmark-text"></i> Preprint Servers</h3>
-<div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <i class="bi bi-file-earmark-medical"></i>
@@ -847,33 +931,15 @@ Established 1991. Moderation system, LaTeX support. Standard in quantitative fie
 </p>
 </details>
 </div>
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon">
-<img src="https://cdn.simpleicons.org/osf" alt="OSF">
-</div>
-<h4 class="anchored">
-<a href="https://osf.io/preprints/">OSF Preprints</a>
-</h4>
-<p>
-Multidisciplinary preprint service
-</p>
-<details class="orc-card-details">
-<summary>
-Read more
-</summary>
-<p>
-All disciplines welcome. Integration with OSF projects, flexible requirements.
-</p>
-</details>
-</div>
 </div>
 </section>
 <section id="publishing-support" class="level3">
 <h3 class="anchored" data-anchor-id="publishing-support"><i class="bi bi-info-circle"></i> Publishing Support</h3>
+<p>Tools to find open access journals, check publisher policies, and manage researcher identity:</p>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
-<img src="https://cdn.simpleicons.org/ludwig-maximilians-universitat-munchen" alt="LMU">
+<i class="bi bi-building"></i>
 </div>
 <h4 class="anchored">
 <a href="https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/">LMU Open Access</a>
@@ -893,6 +959,25 @@ Contact: <a href="mailto:open-access@ub.uni-muenchen.de">open-access@ub.uni-muen
 </div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
+<i class="bi bi-journal-bookmark"></i>
+</div>
+<h4 class="anchored">
+<a href="https://doaj.org/">DOAJ</a>
+</h4>
+<p>
+Directory of Open Access Journals
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Quality-controlled directory of peer-reviewed OA journals. Publication charges, licensing, and editorial information for 20,000+ journals.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
 <i class="bi bi-shield-check"></i>
 </div>
 <h4 class="anchored">
@@ -907,6 +992,25 @@ Read more
 </summary>
 <p>
 Database of publisher policies. Check what versions you can archive and under what conditions.
+</p>
+</details>
+</div>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-search"></i>
+</div>
+<h4 class="anchored">
+<a href="https://openpolicyfinder.jisc.ac.uk/">Open Policy Finder</a>
+</h4>
+<p>
+Check journal OA policies
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Search tool for journal policies on open access, self-archiving, and funder compliance. Check rights retention options.
 </p>
 </details>
 </div>
@@ -937,7 +1041,7 @@ Free account, publication tracking, portable across institutions, integrates wit
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span><img src="https://cdn.simpleicons.org/ludwig-maximilians-universitat-munchen" style="height: 1em; width: 1em; vertical-align: -0.125em;"> LMU Support Services
+<span class="screen-reader-only">Tip</span><i class="bi bi-building"></i> LMU Support Services
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -955,31 +1059,49 @@ Free account, publication tracking, portable across institutions, integrates wit
 </section>
 </section>
 <section id="preservation-checklist" class="level2">
-<h2 class="anchored" data-anchor-id="preservation-checklist"><i class="bi bi-check2-square"></i> Preservation Checklist</h2>
+<h2 class="anchored" data-anchor-id="preservation-checklist"><i class="bi bi-clipboard-check"></i> Preservation Checklist</h2>
 <div class="orc-gradient-box">
 <p><strong>Before Publication:</strong></p>
+<div class="orc-grid-2col">
+<div>
 <ul class="task-list">
-<li><label><input type="checkbox">Data deposited in appropriate repository with metadata</label></li>
-<li><label><input type="checkbox">Code published on GitHub with documentation and license</label></li>
+<li><label><input type="checkbox">Data deposited in appropriate repository</label></li>
+<li><label><input type="checkbox">Metadata complete and discoverable</label></li>
+<li><label><input type="checkbox">Code published with documentation</label></li>
 <li><label><input type="checkbox">DOIs obtained for data and code</label></li>
-<li><label><input type="checkbox">All authors have ORCIDs linked</label></li>
-<li><label><input type="checkbox">Licenses applied (CC0/CC BY for data, MIT/Apache for code)</label></li>
-<li><label><input type="checkbox">Sensitive data removed and anonymization verified</label></li>
-<li><label><input type="checkbox">Ethics approval for data sharing if required</label></li>
 </ul>
-<p><strong>At Submission:</strong></p>
+</div>
+<div>
 <ul class="task-list">
-<li><label><input type="checkbox">Data Availability Statement includes all DOIs</label></li>
-<li><label><input type="checkbox">Code availability and reproducibility materials linked</label></li>
-<li><label><input type="checkbox">Manuscript links to ORCID, ROR, funder IDs</label></li>
-<li><label><input type="checkbox">Author contributions specified using CRediT</label></li>
-<li><label><input type="checkbox">Open access option selected if available</label></li>
+<li><label><input type="checkbox">All authors have ORCIDs linked</label></li>
+<li><label><input type="checkbox">Licenses applied (CC0/CC BY, MIT/Apache)</label></li>
+<li><label><input type="checkbox">Sensitive data removed and verified</label></li>
+<li><label><input type="checkbox">Ethics approval for sharing (if required)</label></li>
 </ul>
+</div>
+</div>
+<p><strong>At Submission:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">Data Availability Statement with DOIs</label></li>
+<li><label><input type="checkbox">Code availability materials linked</label></li>
+<li><label><input type="checkbox">Open access option selected</label></li>
+</ul>
+</div>
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">ORCID, ROR, funder IDs included</label></li>
+<li><label><input type="checkbox">Author contributions (CRediT) specified</label></li>
+<li><label><input type="checkbox">Preprint posted (if applicable)</label></li>
+</ul>
+</div>
+</div>
 <p><strong>After Acceptance:</strong></p>
 <ul class="task-list">
 <li><label><input type="checkbox">Postprint uploaded to institutional repository</label></li>
 <li><label><input type="checkbox">Preprint updated with link to published version</label></li>
-<li><label><input type="checkbox">Repository READMEs updated with publication citation</label></li>
+<li><label><input type="checkbox">Repository READMEs updated with citation</label></li>
 <li><label><input type="checkbox">Co-authors receive final citation and PDF</label></li>
 </ul>
 <p><strong>Long-term:</strong></p>
