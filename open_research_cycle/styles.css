@@ -14,6 +14,7 @@
   5. Cards (Base, Tool, Feature)
   6. Interactive Details Panels
   7. Callouts (Quarto overrides)
+  7b. Panel Tabsets (Quarto overrides)
   8. Phase Menu & Buttons
   9. SVG Diagram Interactivity
   10. Bootstrap Modal Overrides
@@ -469,9 +470,9 @@ h3 i {
    ======================================== */
 
 .orc-details-panel {
-  border-left: 4px solid var(--orc-purple);
+  border-left: 4px solid var(--orc-green);
   margin: 1.5rem 0;
-  background: linear-gradient(to right, rgba(102, 126, 234, 0.05), transparent);
+  background: linear-gradient(to right, rgba(0, 136, 58, 0.05), transparent);
   border-radius: 0 var(--orc-radius-sm) var(--orc-radius-sm) 0;
   padding: 1rem 1rem 1rem 1.5rem;
 }
@@ -493,7 +494,7 @@ h3 i {
 
 .orc-details-panel summary i {
   margin-right: 0.75rem;
-  color: var(--orc-purple);
+  color: var(--orc-green);
   font-size: 1.25rem;
 }
 
@@ -580,6 +581,46 @@ div.callout-note.callout-style-simple .callout-icon .bi {
 /* Callouts inside details panels */
 details .callout {
   margin-top: 1rem;
+}
+
+/* ========================================
+   7b. PANEL TABSETS (Quarto Overrides)
+   ======================================== */
+
+/* Tab navigation styling */
+.panel-tabset .nav-tabs {
+  border-bottom: 2px solid var(--orc-gray-200);
+}
+
+.panel-tabset .nav-tabs .nav-link {
+  color: var(--orc-gray-600);
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  transition: var(--orc-transition-fast);
+  margin-bottom: -2px;
+}
+
+.panel-tabset .nav-tabs .nav-link:hover {
+  color: var(--orc-green);
+  border-bottom-color: var(--orc-green-light);
+  background: transparent;
+}
+
+.panel-tabset .nav-tabs .nav-link.active {
+  color: var(--orc-green);
+  border-bottom-color: var(--orc-green);
+  background: transparent;
+  font-weight: 600;
+}
+
+/* Tab content panel styling */
+.panel-tabset .tab-content {
+  padding: 1.5rem 0;
+  border-left: 3px solid var(--orc-green-light);
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 /* ========================================
