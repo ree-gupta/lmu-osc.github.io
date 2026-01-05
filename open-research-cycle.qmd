@@ -22,10 +22,8 @@ The Open Research Cycle is based on the [Open Research Cycle by Ihle (2025)](htt
 - **LMU support services**: Local expertise and infrastructure available to researchers at LMU
 - **Practical recommendations**: Actionable guidance for implementing open practices in your workflow
 
-<div class="grid align-items-center gap-4">
-
-<div class="g-col-12 g-col-md-7">
-<!-- Cycle Image (Left Side) -->
+<!-- Centered Cycle Diagram -->
+<div class="cycle-container">
 
 ```{r}
 #| echo: false
@@ -34,38 +32,31 @@ The Open Research Cycle is based on the [Open Research Cycle by Ihle (2025)](htt
 cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\n")
 ```
 
-<br>
-
 *Figure: Open Research Cycle. Based on Ihle, M. (2025). Open research cycle. LMU Open Science Center. [https://doi.org/10.5281/zenodo.15630230](https://doi.org/10.5281/zenodo.15630230)*
 
 </div>
 
-<div class="g-col-12 g-col-md-5">
-<!-- Interactive Menu (Right Side) -->
-<div class="phase-menu">
-  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase1">
-    <i class="bi bi-clipboard-data"></i> 
+<!-- Horizontal Phase Button Strip -->
+<div class="phase-menu-horizontal">
+  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase1">
+    <i class="bi bi-clipboard-data"></i>
     <span>1. Plan & Design</span>
   </button>
-  
-  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase2">
-    <i class="bi bi-hdd-network"></i> 
+
+  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase2">
+    <i class="bi bi-hdd-network"></i>
     <span>2. Collect & Manage</span>
   </button>
-  
-  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase3">
-    <i class="bi bi-graph-up"></i> 
+
+  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase3">
+    <i class="bi bi-graph-up"></i>
     <span>3. Analyze & Collaborate</span>
   </button>
-  
-  <button type="button" class="phase-btn" data-bs-toggle="modal" data-bs-target="#modalPhase4">
-    <i class="bi bi-share"></i> 
+
+  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase4">
+    <i class="bi bi-share"></i>
     <span>4. Preserve & Share</span>
   </button>
-</div>
-
-</div>
-
 </div>
 
 <div style="text-align: center; margin-top: 4rem;">
