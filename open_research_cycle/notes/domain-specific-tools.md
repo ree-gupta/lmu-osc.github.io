@@ -40,6 +40,59 @@ When adding domain-specific tools, consider organizing by:
 - May want a filter/search feature if list becomes long
 - Cross-reference with discipline-specific guidance in RDMkit: https://rdmkit.elixir-europe.org/
 
+## Analyze & Collaborate Phase (03_analyze_and_collaborate.qmd)
+
+### Psychology/Behavioral Science Resources
+
+These resources are primarily relevant to psychology and behavioral sciences:
+
+| Resource | Description | Domain | URL |
+|----------|-------------|--------|-----|
+| **p-Hacking Demo** | Interactive Shiny app demonstrating p-hacking | Psychology, Statistics Education | http://shinyapps.org/apps/p-hacker/ |
+| **Big Little Lies App** | Simulation of p-hacking strategies by Stefan & Schönbrodt | Psychology, Statistics Education | https://shiny.psy.lmu.de/felix/ShinyPHack/ |
+| **Do's and Don'ts of Data Analysis** | Guide by Felix Schönbrodt | Psychology | (find URL) |
+| **DRESS Protocol** | Project TIER documentation standards for empirical social sciences | Social Sciences | (find URL) |
+
+### Metadata & Codebook Tools
+
+| Tool | Description | Domain | URL |
+|------|-------------|--------|-----|
+| **Codebook Cookbook** | R package for creating codebooks by Ruben Arslan | Psychology, Social Sciences | (CRAN or GitHub) |
+| **SPSS Codebooks** | Creating codebooks within SPSS | Social Sciences | https://libguides.library.kent.edu/SPSS/Codebooks |
+
+### Additional References
+
+- Stodden, V., Seiler, J., & Ma, Z. (2018). An empirical analysis of journal policy effectiveness for computational reproducibility. PNAS.
+- Eubank, N. (2016). Lessons from a Decade of Replications at the QJPS. PS: Political Science & Politics.
+
+## Preserve & Share Phase (04_preserve_and_share.qmd)
+
+### Domain-Specific Preprint Servers
+
+General preprints (arXiv, bioRxiv, medRxiv, OSF Preprints) are already in the main page. These are more specialized:
+
+| Preprint Server | Description | Domain | URL |
+|-----------------|-------------|--------|-----|
+| **PsyArXiv** | Preprints for psychological sciences | Psychology | https://psyarxiv.com/ |
+| **SocArXiv** | Social sciences preprints | Social Sciences | https://osf.io/preprints/socarxiv |
+| **engrXiv** | Engineering preprints | Engineering | https://osf.io/preprints/engrxiv |
+| **AgriXiv** | Agriculture and allied sciences | Agriculture | https://osf.io/preprints/agrixiv |
+| **EarthArXiv** | Earth sciences preprints | Earth Sciences | https://eartharxiv.org/ |
+| **EcoEvoRxiv** | Ecology and evolutionary biology | Ecology, Evolution | https://ecoevorxiv.org/ |
+| **MetaArXiv** | Meta-research and open science | Meta-science | https://osf.io/preprints/metaarxiv |
+
+### Domain-Specific Data Repositories
+
+These are examples beyond the general repositories already listed:
+
+| Repository | Description | Domain | URL |
+|------------|-------------|--------|-----|
+| **GenBank** | Genetic sequence database | Life Sciences | https://www.ncbi.nlm.nih.gov/genbank/ |
+| **ICPSR** | Social science data archive | Social Sciences | https://www.icpsr.umich.edu/ |
+| **UK Data Service** | Social science and humanities data | Social Sciences | https://ukdataservice.ac.uk/ |
+| **Protein Data Bank** | 3D structural data of biological macromolecules | Structural Biology | https://www.rcsb.org/ |
+| **OpenNeuro** | Neuroimaging datasets | Neuroscience | https://openneuro.org/ |
+
 ## References for Born Open Data
 
 Include these references when adding the Born Open Data concept:

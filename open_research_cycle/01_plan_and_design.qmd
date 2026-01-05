@@ -556,6 +556,7 @@ Repositories for discovering existing datasets and code to build upon:
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
 <h4>[GitHub](https://github.com/) / [GitLab](https://gitlab.com/)</h4>
 <p>Version control platforms</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
 <details class="orc-card-details">
 <summary>Read more</summary>
 <p>Public platforms for code collaboration with issue tracking and documentation.</p>
@@ -640,37 +641,59 @@ No single tool fits every workflow. Consider: your discipline's norms, instituti
 
 ---
 
-## <i class="bi bi-clipboard2-check"></i> Consideration: Sharing Your Plan
-
-Some research teams find it helpful to present their study plans to colleagues before beginning data collection.
+## <i class="bi bi-clipboard-check"></i> Planning Checklist
 
 ::: {.orc-gradient-box}
 
-### Why some teams share their plans:
-
-- **Feedback opportunity**: Colleagues may identify potential issues or suggest improvements
-- **Methodological review**: Domain experts can validate design choices
-- **Resource awareness**: Others may know of relevant tools or data
-- **Collaborative refinement**: Discussion often strengthens the research approach
-
-### Elements researchers typically include when presenting:
+**Research Design:**
 
 <div class="orc-grid-2col">
 
 <div>
-- Research questions/hypotheses
-- Study design overview
-- Sample size justification
-- Measurement approach
+
+- [ ] Research questions clearly defined
+- [ ] Hypotheses specified (if applicable)
+- [ ] Study design chosen and justified
+- [ ] Variables and measures identified
 </div>
 
 <div>
-- Analysis strategy
-- Data management approach
-- Timeline and milestones
-- Potential limitations
+
+- [ ] Sample size determined with power analysis
+- [ ] Inclusion/exclusion criteria defined
+- [ ] Potential confounds considered
+- [ ] Ethical approval obtained (if required)
 </div>
 
 </div>
+
+**Documentation & Planning:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Data Management Plan drafted
+- [ ] Preregistration prepared (if applicable)
+- [ ] Analysis plan documented
+- [ ] File naming conventions established
+</div>
+
+<div>
+
+- [ ] Repository/storage solution selected
+- [ ] Collaboration tools set up
+- [ ] Timeline and milestones defined
+- [ ] Budget includes open science costs
+</div>
+
+</div>
+
+**Before Data Collection:**
+
+- [ ] All study materials finalized and documented
+- [ ] Preregistration submitted (if applicable)
+- [ ] Data collection protocols tested
+- [ ] Team roles and responsibilities clear
 
 :::

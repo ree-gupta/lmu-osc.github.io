@@ -256,7 +256,7 @@ Version control systems track changes to files over time, enabling collaboration
 ::: {.callout-note appearance="simple" icon="mortarboard"}
 ## Learn More: Version Control with Git
 
-[Introduction to Git and GitHub](https://lmu-osc.github.io/introduction-to-git/) (3h) - Learn version control fundamentals for research projects.
+[Introduction to Git and GitHub](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) (3h) - Learn version control fundamentals for research projects.
 :::
 
 <details class="orc-details-panel">
@@ -377,20 +377,30 @@ Test anonymization on sample data first. Have a colleague review for remaining i
 
 ## <i class="bi bi-tools"></i> Tools & Resources
 
-### <i class="bi bi-journal-code"></i> Literate Programming & Lab Notebooks
+### <i class="bi bi-journal-code"></i> Documentation & Lab Notebooks
 
-Tools for combining code, documentation, and results in reproducible documents:
+Tools for documenting research processes and maintaining lab records:
 
 ::: {.orc-grid-tools}
 
 <div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-folder2"></i></div>
+<h4>[eLabFTW](https://www.elabftw.net/)</h4>
+<p>Open-source electronic lab notebook</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free, self-hosted ELN with timestamping, templates, and database features. Ideal for documenting experiments and protocols.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/quarto" alt="Quarto"></div>
 <h4>[Quarto](https://quarto.org/)</h4>
-<p>Next-generation scientific publishing</p>
+<p>Reproducible documents combining code and narrative</p>
 <a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="orc-card-tool-badge recommended">Tutorial available</a>
 <details class="orc-card-details">
 <summary>Read more</summary>
-<p>Create reproducible documents, presentations, websites, and books. Supports R, Python, Julia, and Observable. Successor to RMarkdown.</p>
+<p>Create data collection protocols, README files, and documentation. Supports R, Python, Julia. Renders to multiple formats including HTML, PDF, and Word.</p>
 </details>
 </div>
 
@@ -400,17 +410,7 @@ Tools for combining code, documentation, and results in reproducible documents:
 <p>Interactive computational notebooks</p>
 <details class="orc-card-details">
 <summary>Read more</summary>
-<p>Combine code, output, and narrative text. Supports Python, R, Julia. Share via JupyterHub or export to HTML/PDF.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-folder2"></i></div>
-<h4>[eLabFTW](https://www.elabftw.net/)</h4>
-<p>Open-source electronic lab notebook</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Free, self-hosted ELN with timestamping, templates, and database features.</p>
+<p>Combine code, output, and narrative text. Supports Python, R, Julia. Useful for documenting data processing workflows.</p>
 </details>
 </div>
 
@@ -437,6 +437,7 @@ Platforms for tracking changes and collaborating on code and documents:
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
 <h4>[GitHub](https://github.com/)</h4>
 <p>Popular Git hosting with collaboration features</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
 <details class="orc-card-details">
 <summary>Read more</summary>
 <p>Free public repositories, GitHub Actions for automation, extensive integrations.</p>
@@ -536,45 +537,6 @@ Tools to help protect participant privacy while enabling data sharing:
 ::: {.callout-note appearance="simple" icon="mortarboard"}
 ## Learn More: Data Anonymization
 [Maintaining Privacy with Open Data](https://www.youtube.com/watch?v=F9FfU104j2Q) - Workshop by Ruben Arslan on anonymization strategies for behavioral research data.
-:::
-
-### <i class="bi bi-people"></i> Collaboration Tools
-
-Platforms for collaborative research workflows:
-
-::: {.orc-grid-tools}
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/overleaf" alt="Overleaf"></div>
-<h4>[Overleaf](https://www.overleaf.com/)</h4>
-<p>Collaborative LaTeX editor in the browser</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Real-time collaboration, track changes, comments, and version history. Free tier available. Many journal templates included.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-chat-square-text"></i></div>
-<h4>[PaperHive](https://paperhive.org/)</h4>
-<p>Collaborative annotation and discussion</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Annotate and discuss research papers collaboratively. Works with PDFs and supports public or private discussions.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/matrix" alt="Matrix"></div>
-<h4>[LMU Chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/)</h4>
-<p>Decentralized, secure team messaging</p>
-<a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/" class="orc-card-tool-badge recommended">Supported at LMU</a>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Open-source, federated messaging protocol. LMU provides Matrix hosting for secure, GDPR-compliant team communication with channels, direct messages, and file sharing.</p>
-</details>
-</div>
-
 :::
 
 ---
