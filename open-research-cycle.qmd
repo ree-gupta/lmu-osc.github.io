@@ -82,7 +82,14 @@ cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Explore existing resources, write data management plans, design studies, and prepare preregistrations.</p>
+        <ul>
+          <li>Explore / reuse research outputs</li>
+          <li>Write / consult grant proposal, ethics proposal, and RDM plan</li>
+          <li>Simulate data and run power analysis</li>
+          <li>Use preregistration template</li>
+        </ul>
+        <hr>
+        <p><strong>Checkpoint:</strong> Study plan presentation</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -103,7 +110,14 @@ cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Implement FAIR data management, use standard protocols, ensure storage & backup, and perform quality control.</p>
+        <ul>
+          <li>Request consent forms</li>
+          <li>Collect data following standard protocols</li>
+          <li>Manage data FAIR-ly</li>
+          <li>Anonymise data</li>
+        </ul>
+        <hr>
+        <p><strong>Checkpoint:</strong> Data quality validation meeting</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -124,7 +138,14 @@ cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Create reproducible analyses, use version control, document code, and establish collaboration workflows.</p>
+        <ul>
+          <li>Analyse data reproducibly (R readable code, Git repo template, GitLab, Renv)</li>
+          <li>Write a README file</li>
+          <li>Create a data dictionary</li>
+          <li>Write a reproducible manuscript / presentation (Quarto)</li>
+        </ul>
+        <hr>
+        <p><strong>Checkpoint:</strong> Repo & code peer-review, Result presentation</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -145,7 +166,16 @@ cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Publish data, archive code, ensure open access articles, and obtain DOIs for citations.</p>
+        <p><strong>Prepare / publish:</strong></p>
+        <ul>
+          <li>Code repository</li>
+          <li>Data (real / synthetic), with metadata and Data Usage Agreement</li>
+          <li>Preregistration (lift embargo)</li>
+          <li>Preprint with CRediT</li>
+        </ul>
+        <p>with ORCID, DOI, License</p>
+        <hr>
+        <p><strong>Checkpoint:</strong> Manuscript submission with DOIs for preregistration, data, code, and material</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
