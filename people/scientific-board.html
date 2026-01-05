@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-21b561450a3923644e662d3661c5541f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b2b68806483cdea23478439fbd4ed8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -133,7 +134,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -308,7 +309,7 @@ window.Quarto = {
 <section id="current-scientific-board" class="level2">
 <h2 class="anchored" data-anchor-id="current-scientific-board">Current Scientific Board</h2>
 <div id="listing-current-scientific-board" class="quarto-listing quarto-listing-container-custom">
-<div class="card mb-3" data-index="0" data-listing-file-modified-sort="1767470804189" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="card mb-3" data-index="0" data-listing-file-modified-sort="1767623560264" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <h4 class="card-header anchored">
 Head of statistical consulting laboratory StaBLab, Institute of Statistics
 </h4>
@@ -342,7 +343,7 @@ As a trained statistician, psychologist and epidemiologist, I believe that multi
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1767470804189" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1767623560264" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <h4 class="card-header anchored">
 Chair
 </h4>
@@ -376,7 +377,7 @@ As a Professor of Communication, I bring a strong commitment to advancing Open S
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="2" data-listing-file-modified-sort="1767470804190" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="card mb-3" data-index="2" data-listing-file-modified-sort="1767623560265" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <h4 class="card-header anchored">
 Chair
 </h4>
@@ -410,7 +411,7 @@ Reproducible studies are the basis of science, but reproducibility rates are sti
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="3" data-listing-file-modified-sort="1767470804191" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="card mb-3" data-index="3" data-listing-file-modified-sort="1767623560266" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <h4 class="card-header anchored">
 Researcher
 </h4>
@@ -444,7 +445,7 @@ As a data analyst working with a wide range of biomedical research groups at the
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="4" data-listing-file-modified-sort="1767470804192" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
+<div class="card mb-3" data-index="4" data-listing-file-modified-sort="1767623560266" data-listing-reading-time-sort="1" data-listing-word-count-sort="124">
 <h4 class="card-header anchored">
 Chair
 </h4>
@@ -594,13 +595,14 @@ I am an Assistant Professor in Digitalization and Political Behavior at the Gesc
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -615,7 +617,7 @@ I am an Assistant Professor in Digitalization and Political Behavior at the Gesc
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ree-gupta\.github\.io\/lmu-osc\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.29">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,14 +36,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-31cbfed28c33b3c01ed69ad445604aa8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-684896a913d6eb157f12cd18f2074edd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -130,7 +131,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -319,7 +320,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMGRhdGE=" data-listing-file-modified-sort="1767470804306" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMGRhdGE=" data-listing-file-modified-sort="1767623560368" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../training/data_management/open_data.html" class="no-external">
 
 <img loading="lazy" src="../training/images/open data.svg" class="thumbnail-image">
@@ -338,7 +339,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwbWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=" data-listing-file-modified-sort="1767470804306" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwbWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=" data-listing-file-modified-sort="1767623560368" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="thumbnail"><a href="../training/data_management/fair_data_management.html" class="no-external">
 
 <img loading="lazy" src="../training/images/fair data management.svg" class="thumbnail-image">
@@ -357,7 +358,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1767470804306" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1767623560368" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <div class="thumbnail"><a href="../training/data_management/data_dictionary.html" class="no-external">
 
 <img loading="lazy" src="../training/images/data dictionary.svg" class="thumbnail-image">
@@ -376,7 +377,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMGRhdGElMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1767470804306" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMGRhdGElMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1767623560368" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../training/data_management/maintaining_privacy_with_open_data.html" class="no-external">
 
 <img loading="lazy" src="../training/images/data privacy.svg" class="thumbnail-image">
@@ -395,7 +396,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMGFub255bWl0eQ==" data-listing-file-modified-sort="1767470804306" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMGFub255bWl0eQ==" data-listing-file-modified-sort="1767623560368" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <div class="thumbnail"><a href="../training/data_management/data_anonymity.html" class="no-external">
 
 <img loading="lazy" src="../training/images/data anonymity.svg" class="thumbnail-image">
@@ -414,7 +415,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMHNpbXVsYXRpb24lMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1767470804306" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMHNpbXVsYXRpb24lMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1767623560368" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
 <div class="thumbnail"><a href="../training/data_management/synthetic_data.html" class="no-external">
 
 <img loading="lazy" src="../training/images/synthetic data.svg" class="thumbnail-image">
@@ -487,13 +488,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -508,7 +510,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/ree-gupta\.github\.io\/lmu-osc\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
