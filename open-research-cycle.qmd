@@ -13,7 +13,14 @@ include-in-header:
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 ---
 
-The Open Research Cycle is based on the Open Research Cycle by Ihle (2025), which in turn is based on the research data lifecycle model by Michener (2015). The checklist has been adapted and extended by the LMU Open Science Center to include additional open research practices beyond data management. In addition to the four main phases, we have added checkpoints for group discussions and reflections after each phase to ensure team alignment and address any challenges in adopting open practices.
+The Open Research Cycle is based on the [Open Research Cycle by Ihle (2025)](https://doi.org/10.5281/zenodo.15630230), which in turn is based on the [research data lifecycle model by Michener (2015)](https://doi.org/10.1371/journal.pcbi.1004525). The checklist has been adapted and extended by the LMU Open Science Center to include additional open research practices beyond data management. In addition to the four main phases, we have added checkpoints for group discussions and reflections after each phase to ensure team alignment and address any challenges in adopting open practices.
+
+**What you'll find in each phase:**
+
+- **Curated tools and resources**: A selection of platforms and software to support open research practices, building on the [Open Science Toolbox](open-science-toolbox.pdf) by Lutz Heil
+- **Self-paced learning materials**: Tutorials, lectures, and guides to deepen your understanding
+- **LMU support services**: Local expertise and infrastructure available to researchers at LMU
+- **Practical recommendations**: Actionable guidance for implementing open practices in your workflow
 
 <div class="grid align-items-center gap-4">
 
