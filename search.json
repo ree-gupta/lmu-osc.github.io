@@ -1271,6 +1271,78 @@
     ]
   },
   {
+    "objectID": "open_research_cycle/04_preserve_and_share.html",
+    "href": "open_research_cycle/04_preserve_and_share.html",
+    "title": "Preserve & Share",
+    "section": "",
+    "text": "The final phase of the research cycle focuses on preserving and sharing your outputs—making data, code, and publications openly available, citable, and preserved for the long term.\nWhat you’ll find here: Strategies for archiving research materials, guidance on open access publishing, tools for obtaining persistent identifiers, and approaches to maximizing research impact.\n\n Download Sharing Checklist  View Publishing Guide",
+    "crumbs": [
+      "Home",
+      "Phases",
+      "Preserve & Share"
+    ]
+  },
+  {
+    "objectID": "open_research_cycle/04_preserve_and_share.html#make-your-research-accessible",
+    "href": "open_research_cycle/04_preserve_and_share.html#make-your-research-accessible",
+    "title": "Preserve & Share",
+    "section": "",
+    "text": "The final phase of the research cycle focuses on preserving and sharing your outputs—making data, code, and publications openly available, citable, and preserved for the long term.\nWhat you’ll find here: Strategies for archiving research materials, guidance on open access publishing, tools for obtaining persistent identifiers, and approaches to maximizing research impact.\n\n Download Sharing Checklist  View Publishing Guide",
+    "crumbs": [
+      "Home",
+      "Phases",
+      "Preserve & Share"
+    ]
+  },
+  {
+    "objectID": "open_research_cycle/04_preserve_and_share.html#core-sharing-activities",
+    "href": "open_research_cycle/04_preserve_and_share.html#core-sharing-activities",
+    "title": "Preserve & Share",
+    "section": " Core Sharing Activities",
+    "text": "Core Sharing Activities\nMaking research outputs accessible involves multiple interconnected practices.\n\n\n Data Archiving\nCommon practices:\n\nDepositing in appropriate repositories\nComprehensive metadata documentation\nAppropriate licensing (CC0, CC BY)\nLong-term preservation planning\n\n\n\n Code Publishing\nResearchers typically:\n\nPublish to GitHub with documentation\nArchive releases on Zenodo\nAssign DOIs for citation\nAdd open source licenses\n\n\n\n Open Access\nPaths to openness:\n\nPreprints and postprints\nGold open access journals\nInstitutional repositories\nGreen self-archiving\n\n\n\n Persistent Identifiers\nEnsuring findability through:\n\nDOIs for data and code\nORCID for researchers\nROR IDs for institutions\nFunder identifiers",
+    "crumbs": [
+      "Home",
+      "Phases",
+      "Preserve & Share"
+    ]
+  },
+  {
+    "objectID": "open_research_cycle/04_preserve_and_share.html#preservation-sharing-strategies",
+    "href": "open_research_cycle/04_preserve_and_share.html#preservation-sharing-strategies",
+    "title": "Preserve & Share",
+    "section": " Preservation & Sharing Strategies",
+    "text": "Preservation & Sharing Strategies\nDifferent research outputs require different sharing approaches and platforms.\n\nData SharingCode PublishingOpen AccessIdentifiers & Licensing\n\n\nUnderstanding when, where, and how to share research data.\n\n\n FAIR Data\nMaking data findable, accessible, interoperable, and reusable:\n\nRich metadata with keywords\nPersistent identifiers (DOIs)\nStandard file formats\nClear usage licenses\n\n\n\n Open Sharing\nWhen data can be publicly shared:\n\nDiscipline-specific repositories preferred\nGeneral repositories (Zenodo, OSF)\nComplete anonymization required\nComprehensive documentation\n\n\n\n Restricted Access\nFor sensitive data:\n\nMetadata-only publication\nData Access Agreements\nControlled access repositories\nInstitutional secure storage\n\n\n\n Repository Selection\nFinding the right repository:\n\nSearch re3data.org for domain repositories\nCheck journal requirements\nConsider long-term preservation\nVerify DOI assignment\n\n\n\n\n\n Before Depositing Data\n\nEssential steps:\n\nComplete anonymization of personal information\nREADME file with study description and methods\nData dictionary with variable descriptions\nAppropriate license (CC0 or CC BY recommended)\nEthics committee approval if required\n\n\n\n\n\n\n\nWarning\n\n\n\nConsult your institution’s data protection office before sharing human participant data.\n\n\n\n\n\nMaking research code citable and reusable.\n\n\n GitHub to Zenodo Workflow\n\nStandard workflow for citable code:\n\nPrepare Repository: Add README, license, example data\nLink to Zenodo: Enable integration via GitHub\nCreate Release: Tag version (e.g., v1.0.0)\nObtain DOI: Zenodo automatically archives and assigns DOI\nCite: Include DOI in manuscript\n\n\n\n\n\n\n\nNoteLearn More: Code Publishing\n\n\n\nCode Publishing Tutorial (2.5h) - Complete guide to publishing research code\n\n\n\n\n\n Security Checklist\n\nBefore publishing code:\n\nRemove API keys, passwords, credentials\nRemove personal or participant data\nReview entire git history\nAdd simulated data if needed\nDocument dependencies clearly\n\n\n\n\nMaximizing accessibility of publications.\n\n\n Green Open Access\nFree self-archiving:\n\nPreprints before peer review\nPostprints after acceptance\nInstitutional repositories\nNo publication fees\n\n\n\n Gold Open Access\nPublisher open access:\n\nImmediate open license publication\nUsually requires APC payment\nCheck institutional agreements\nRequest CC BY license\n\n\n\n\n\n Understanding Versions\n\nPreprint: Manuscript before peer review\n\nUpload at submission for early feedback\nPlatforms: bioRxiv, medRxiv, arXiv, OSF Preprints\n\nPostprint: Accepted manuscript (author’s version)\n\nUpload after acceptance\nCheck journal policy via SHERPA/RoMEO\n\nPublished Version: Final formatted article\n\nUsually requires payment or agreements\n\n\n\n\n Managing Costs\n\nFree Options:\n\nSubmit preprints to discipline servers\nUpload postprints to institutional repository\n\nFunded Options:\n\nCheck institutional agreements\nContact LMU Open Access: open-access@ub.uni-muenchen.de\nRequest CC BY for maximum reusability\n\n\n\n\nEnsuring findability and reuse.\n\n\n ORCID\nYour unique researcher identifier:\n\nLinks all publications and datasets\nPersists across institutions\nCreate free at orcid.org\n\n\n\n DOI\nDigital Object Identifiers:\n\nAssigned by repositories\nRequired for citation\nEnables impact tracking\n\n\n\n Data Licenses\nRecommended:\n\nCC0: Maximum reusability\nCC BY 4.0: Attribution required\nAvoid CC BY-NC (limits reuse)\n\n\n\n Code Licenses\nCommon choices:\n\nMIT: Permissive, widely adopted\nApache 2.0: Patent protection\nGPL-3.0: Derivatives must be open\n\n\n\n\n\n Author Contributions\n\nUse CRediT taxonomy to specify contributions:\n\nConceptualization, Data curation, Formal analysis\nMethodology, Software, Visualization\nWriting (original draft, review & editing)\n\nBenefits: transparent contribution tracking, proper attribution, career development.\n\n\n\n Understanding Licensing\n\n“When thinking about what one can, must, or should do with Open Material and Open Data, one has to differentiate on the one hand legally-enforceable rules (which are handled with legal licenses) and, on the other hand, rules and standards of the scientific community. If a piece of work is in the public domain (e.g., a CC0 license) there is no legal requirement to give attribution, but as a scientist one still has the ethical obligation to give a proper citation.”\n— PRO Initiative on Licensing\nResources:\n\nOpen Definition - Comprehensive list of conformant licenses for content and data\nChoose a License - Simple tool for selecting code licenses\nCreative Commons License Chooser - Select appropriate CC license for your needs",
+    "crumbs": [
+      "Home",
+      "Phases",
+      "Preserve & Share"
+    ]
+  },
+  {
+    "objectID": "open_research_cycle/04_preserve_and_share.html#tools-platforms",
+    "href": "open_research_cycle/04_preserve_and_share.html#tools-platforms",
+    "title": "Preserve & Share",
+    "section": " Tools & Platforms",
+    "text": "Tools & Platforms\n\n Data Repositories\nPlatforms for archiving research data with persistent identifiers and long-term preservation.\n\n\n\n\n\n\nFinding the right repository: Use re3data.org to search 3,000+ research data repositories by discipline, data type, and certification standards.\n\n\n\n\n\n\n\n\n\nZenodo\n\n\nGeneral repository, free unlimited storage, DOI assignment\n\n\n\nRead more\n\n\nAccepts all research outputs. GitHub integration, version control, communities support. Ideal for code + data packages.\n\n\n\n\n\n\n\n\nOSF\n\n\nProject management with integrated storage and preprints\n\n\n\nRead more\n\n\nComplete research projects, preregistrations, file versioning, collaboration tools, DOI assignment.\n\n\n\n\n\n\n\n\nDryad\n\n\nCurated repository for research data\n\n\n\nRead more\n\n\nNonprofit, open data repository. Human curation, CC0 license for maximum reuse. Integrates with many journals.\n\n\n\n\n\n\n\n\nFigshare\n\n\nAll research outputs with visualization\n\n\n\nRead more\n\n\nFree unlimited public storage. Figures, datasets, videos, code. DOI assignment, embeddable visualizations.\n\n\n\n\n\n\n\n\nHarvard Dataverse\n\n\nOpen source research data repository\n\n\n\nRead more\n\n\nFree data sharing. Create your own dataverse (collection). Structured metadata, DOI assignment, versioning.\n\n\n\n\n\n\n\n\nOpen Data LMU\n\n\nLMU research data repository\n\nSupported at LMU\n\n\nRead more\n\n\nDedicated repository for LMU research data. DOI assignment, long-term preservation, FAIR-compliant metadata.\n\n\n\n\n\n\n Code Archives\nPlatforms for publishing and archiving research code with version control and DOI assignment:\n\n\n\n\n\n\nLRZ GitLab\n\n\nSecure institutional Git hosting for active research\n\nSupported at LMU\n\n\nRead more\n\n\nPrivate repositories during research. Enhanced security, CI/CD pipelines. Transfer to GitHub when ready to publish.\n\n\n\n\n\n\n\n\nGitHub\n\n\nVersion control and collaboration platform\n\nTutorial available\n\n\nRead more\n\n\nIndustry-standard Git hosting. Integrates with Zenodo for DOI assignment. Issue tracking, Actions CI/CD.\n\n\n\n\n\n\n\n\nZenodo + GitHub\n\n\nAutomated archiving with DOI assignment\n\n\n\nRead more\n\n\nLink repository to Zenodo, create release, DOI automatically assigned. Long-term preservation guaranteed.\n\n\n\n\n\n\n Preprint Servers\nShare manuscripts before peer review to get early feedback and establish priority:\n\n\n\n\n\n\nOSF Preprints\n\n\nMultidisciplinary preprint service\n\n\n\nRead more\n\n\nAll disciplines welcome. Integration with OSF projects, flexible requirements.\n\n\n\n\n\n\n\n\nbioRxiv\n\n\nBiological sciences preprints\n\n\n\nRead more\n\n\nFree hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.\n\n\n\n\n\n\n\n\nmedRxiv\n\n\nMedical and health sciences preprints\n\n\n\nRead more\n\n\nMedical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.\n\n\n\n\n\n\n\n\narXiv\n\n\nPhysics, mathematics, computer science\n\n\n\nRead more\n\n\nEstablished 1991. Moderation system, LaTeX support. Standard in quantitative fields.\n\n\n\n\n\n\n Publishing Support\nTools to find open access journals, check publisher policies, and manage researcher identity:\n\n\n\n\n\n\nLMU Open Access\n\n\nOpen access consultation and APC support\n\nSupported at LMU\n\n\nRead more\n\n\nContact: open-access@ub.uni-muenchen.de. APC funding, publication agreements, rights management.\n\n\n\n\n\n\n\n\nDOAJ\n\n\nDirectory of Open Access Journals\n\n\n\nRead more\n\n\nQuality-controlled directory of peer-reviewed OA journals. Publication charges, licensing, and editorial information for 20,000+ journals.\n\n\n\n\n\n\n\n\nSHERPA/RoMEO\n\n\nJournal self-archiving policies\n\n\n\nRead more\n\n\nDatabase of publisher policies. Check what versions you can archive and under what conditions.\n\n\n\n\n\n\n\n\nOpen Policy Finder\n\n\nCheck journal OA policies\n\n\n\nRead more\n\n\nSearch tool for journal policies on open access, self-archiving, and funder compliance. Check rights retention options.\n\n\n\n\n\n\n\n\nORCID\n\n\nUnique researcher identifier\n\n\n\nRead more\n\n\nFree account, publication tracking, portable across institutions, integrates with repositories and publishers.\n\n\n\n\n\n\n\n\n\n\n\nTip LMU Support Services\n\n\n\nOpen Access Publishing: open-access@ub.uni-muenchen.de for consultation on open access options, funding, and agreements.\nResearch Data Management: rdm@ub.uni-muenchen.de for repository selection, metadata standards, and preservation planning.\nResources:\n\nLMU Open Access Information\nLMU Guidelines for Good Scientific Practice\nFAIR Principles",
+    "crumbs": [
+      "Home",
+      "Phases",
+      "Preserve & Share"
+    ]
+  },
+  {
+    "objectID": "open_research_cycle/04_preserve_and_share.html#preservation-checklist",
+    "href": "open_research_cycle/04_preserve_and_share.html#preservation-checklist",
+    "title": "Preserve & Share",
+    "section": " Preservation Checklist",
+    "text": "Preservation Checklist\n\nBefore Publication:\n\n\n\nData deposited in appropriate repository\nMetadata complete and discoverable\nCode published with documentation\nDOIs obtained for data and code\n\n\n\n\nAll authors have ORCIDs linked\nLicenses applied (CC0/CC BY, MIT/Apache)\nSensitive data removed and verified\nEthics approval for sharing (if required)\n\n\n\nAt Submission:\n\n\n\nData Availability Statement with DOIs\nCode availability materials linked\nOpen access option selected\n\n\n\n\nORCID, ROR, funder IDs included\nAuthor contributions (CRediT) specified\nPreprint posted (if applicable)\n\n\n\nAfter Acceptance:\n\nPostprint uploaded to institutional repository\nPreprint updated with link to published version\nRepository READMEs updated with citation\nCo-authors receive final citation and PDF\n\nLong-term:\n\nVerify DOIs resolve correctly\nRespond to data/code access requests\nMonitor citations and usage metrics",
+    "crumbs": [
+      "Home",
+      "Phases",
+      "Preserve & Share"
+    ]
+  },
+  {
     "objectID": "open_research_cycle/01_plan_and_design.html",
     "href": "open_research_cycle/01_plan_and_design.html",
     "title": "Plan & Design",
@@ -1415,76 +1487,32 @@
     ]
   },
   {
-    "objectID": "open_research_cycle/04_preserve_and_share.html",
-    "href": "open_research_cycle/04_preserve_and_share.html",
+    "objectID": "open_research_cycle/02_test.html",
+    "href": "open_research_cycle/02_test.html",
+    "title": "Collect & Manage",
+    "section": "",
+    "text": "image quadrant 2 with checklist box\n\n\n  FAIR Resear Data Management\n\nsomething about FAIR data principles storage back up organisation and file naming documentation meadatastandards -&gt; link to discipline specific section tutorial card\n\n\n\n Reproducible data acquisition\n\n\nreproducible protocolsStandard data acquisition\n\n\nsomething about reproducible protocols (wet lab) - link to protocol.io, video reproducible protocol writing\n\n\nsomething about SOP for data acquisition e.g. using machines and automatising with programing any preprocessing step if possible - R, Python cards\n\n\n\n\n\n\n  Anonymisation\n\n\ndata anonymisationsynthetic datasets\n\n\nmodifying real data, removing identifiers, aggregation, ect\n\n\ngenerating simulated data based on the properties of the real dataset\n\n\n\n\nChecklist"
+  },
+  {
+    "objectID": "open_research_cycle/01_test.html",
+    "href": "open_research_cycle/01_test.html",
+    "title": "Plan & Design",
+    "section": "",
+    "text": "image quadrant 1 with checklist box\n\n\n  Explore and Reuse\n\n\nArticlesPreregistrationsdatacode\n\n\n3 lines of text\n\n\n\n\n\n\nNoteLearn More: Reference Management\n\n\n\nIntroduction to Zotero (1h) - Learn to organize literature with a free, open-source reference manager that integrates with Word, RStudio, and Google Docs.\n\n\n\n\n3 lines of text\n\n\n\n\n\n\nOSF\n\n\nFlexible templates, embargoes, file storage\n\n\n\nRead more\n\n\nWidely used across fields. Supports version control and integrates with file storage.\n\n\n\n\n\n\n3 lines of text\n\n\n\n\n\n\nre3data\n\n\nRegistry of data repositories\n\n\n\nRead more\n\n\nSearch across disciplines to find appropriate domain-specific repositories.\n\n\n\n\n\n\n3 lines of text\n\n\n\n\n\n\nGitHub / GitLab\n\n\nVersion control platforms\n\nTutorial available\n\n\nRead more\n\n\nPublic platforms for code collaboration with issue tracking and documentation.\n\n\n\n\n\n\n\n\n\n\n  Legal Requirements\n\n\nLMU guidelinesFundersEthics\n\n\n3 lines of text\n\n\n3 lines of text\n\n\n3 lines of text\n\n\n\n\n\n\n  Research Data Management Plans\n\nDMPs may include:\n\n\n Data Description\n\n\nTypes and formats\n\n\nExpected volume\n\n\nNaming conventions\n\n\n\n\n Storage & Security\n\n\nStorage locations\n\n\nBackup strategies\n\n\nAccess controls\n\n\n\n\n Sharing & Preservation\n\n\nRepository selection\n\n\nLicense choices\n\n\nEmbargo periods\n\n\n\n\n Ethics & Privacy\n\n\nConsent procedures\n\n\nAnonymization methods\n\n\nCompliance requirements\n\n\n\n\n\n\n\n\n\n\nNoteLearn More: FAIR Data Management\n\n\n\nFAIR Data Management Tutorial (2h) - Comprehensive guide to managing data following FAIR principles, including a detailed section on creating Data Management Plans (~1h).\n\n\n\n\n\n\n\n\nRDMO\n\n\nResearch Data Management Organiser\n\nSupported at LMU\n\n\nRead more\n\n\nAvailable via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.\n\n\n\n\n\n\n\n  Study (statistical) Planning\n\n\nPre-analsis planningSimulation of DataPower analyses\n\n\n3 lines of text\nsomething about stat consultation and ref to simulation\n\n\n\n\n\n\nOSF\n\n\nFlexible templates, embargoes, file storage\n\n\n\nRead more\n\n\nWidely used across fields. Supports version control and integrates with file storage.\n\n\n\n\n\n\n3 lines of text\n\n\n3 lines of text\n\n\n\n\nchecklist"
+  },
+  {
+    "objectID": "open_research_cycle/04_test.html",
+    "href": "open_research_cycle/04_test.html",
     "title": "Preserve & Share",
     "section": "",
-    "text": "The final phase of the research cycle focuses on preserving and sharing your outputs—making data, code, and publications openly available, citable, and preserved for the long term.\nWhat you’ll find here: Strategies for archiving research materials, guidance on open access publishing, tools for obtaining persistent identifiers, and approaches to maximizing research impact.\n\n Download Sharing Checklist  View Publishing Guide",
-    "crumbs": [
-      "Home",
-      "Phases",
-      "Preserve & Share"
-    ]
+    "text": "image quadrant 4 with checklist box\n\n\n FAIR data sharing\n\ncards (I think?) or possibly tabs about\ndocumentation\nmetadatastandards\nreal or synthetic data / anonimised data\npublish on repo with DOI, credit, licence\n\n\n\n Code sharing\n\ncards (I think?) or possibly tabs about\ndocumentation - readme\nlicence\ndata to run real/sim/synth\ncode publishing tutorial card\nzenodo card\n\n\n\n Preprint, postprint & open access publishing\n\ncards (I think?) or possibly tabs about\nwhat publishers allow you: openpolicyfinders\nlogic figure about this\ncredit, contributorship\nlicence\n\nchecklist"
   },
   {
-    "objectID": "open_research_cycle/04_preserve_and_share.html#make-your-research-accessible",
-    "href": "open_research_cycle/04_preserve_and_share.html#make-your-research-accessible",
-    "title": "Preserve & Share",
+    "objectID": "open_research_cycle/03_test.html",
+    "href": "open_research_cycle/03_test.html",
+    "title": "Analyze & Collaborate",
     "section": "",
-    "text": "The final phase of the research cycle focuses on preserving and sharing your outputs—making data, code, and publications openly available, citable, and preserved for the long term.\nWhat you’ll find here: Strategies for archiving research materials, guidance on open access publishing, tools for obtaining persistent identifiers, and approaches to maximizing research impact.\n\n Download Sharing Checklist  View Publishing Guide",
-    "crumbs": [
-      "Home",
-      "Phases",
-      "Preserve & Share"
-    ]
-  },
-  {
-    "objectID": "open_research_cycle/04_preserve_and_share.html#core-sharing-activities",
-    "href": "open_research_cycle/04_preserve_and_share.html#core-sharing-activities",
-    "title": "Preserve & Share",
-    "section": " Core Sharing Activities",
-    "text": "Core Sharing Activities\nMaking research outputs accessible involves multiple interconnected practices.\n\n\n Data Archiving\nCommon practices:\n\nDepositing in appropriate repositories\nComprehensive metadata documentation\nAppropriate licensing (CC0, CC BY)\nLong-term preservation planning\n\n\n\n Code Publishing\nResearchers typically:\n\nPublish to GitHub with documentation\nArchive releases on Zenodo\nAssign DOIs for citation\nAdd open source licenses\n\n\n\n Open Access\nPaths to openness:\n\nPreprints and postprints\nGold open access journals\nInstitutional repositories\nGreen self-archiving\n\n\n\n Persistent Identifiers\nEnsuring findability through:\n\nDOIs for data and code\nORCID for researchers\nROR IDs for institutions\nFunder identifiers",
-    "crumbs": [
-      "Home",
-      "Phases",
-      "Preserve & Share"
-    ]
-  },
-  {
-    "objectID": "open_research_cycle/04_preserve_and_share.html#preservation-sharing-strategies",
-    "href": "open_research_cycle/04_preserve_and_share.html#preservation-sharing-strategies",
-    "title": "Preserve & Share",
-    "section": " Preservation & Sharing Strategies",
-    "text": "Preservation & Sharing Strategies\nDifferent research outputs require different sharing approaches and platforms.\n\nData SharingCode PublishingOpen AccessIdentifiers & Licensing\n\n\nUnderstanding when, where, and how to share research data.\n\n\n FAIR Data\nMaking data findable, accessible, interoperable, and reusable:\n\nRich metadata with keywords\nPersistent identifiers (DOIs)\nStandard file formats\nClear usage licenses\n\n\n\n Open Sharing\nWhen data can be publicly shared:\n\nDiscipline-specific repositories preferred\nGeneral repositories (Zenodo, OSF)\nComplete anonymization required\nComprehensive documentation\n\n\n\n Restricted Access\nFor sensitive data:\n\nMetadata-only publication\nData Access Agreements\nControlled access repositories\nInstitutional secure storage\n\n\n\n Repository Selection\nFinding the right repository:\n\nSearch re3data.org for domain repositories\nCheck journal requirements\nConsider long-term preservation\nVerify DOI assignment\n\n\n\n\n\n Before Depositing Data\n\nEssential steps:\n\nComplete anonymization of personal information\nREADME file with study description and methods\nData dictionary with variable descriptions\nAppropriate license (CC0 or CC BY recommended)\nEthics committee approval if required\n\n\n\n\n\n\n\nWarning\n\n\n\nConsult your institution’s data protection office before sharing human participant data.\n\n\n\n\n\nMaking research code citable and reusable.\n\n\n GitHub to Zenodo Workflow\n\nStandard workflow for citable code:\n\nPrepare Repository: Add README, license, example data\nLink to Zenodo: Enable integration via GitHub\nCreate Release: Tag version (e.g., v1.0.0)\nObtain DOI: Zenodo automatically archives and assigns DOI\nCite: Include DOI in manuscript\n\n\n\n\n\n\n\nNoteLearn More: Code Publishing\n\n\n\nCode Publishing Tutorial (2.5h) - Complete guide to publishing research code\n\n\n\n\n\n Security Checklist\n\nBefore publishing code:\n\nRemove API keys, passwords, credentials\nRemove personal or participant data\nReview entire git history\nAdd simulated data if needed\nDocument dependencies clearly\n\n\n\n\nMaximizing accessibility of publications.\n\n\n Green Open Access\nFree self-archiving:\n\nPreprints before peer review\nPostprints after acceptance\nInstitutional repositories\nNo publication fees\n\n\n\n Gold Open Access\nPublisher open access:\n\nImmediate open license publication\nUsually requires APC payment\nCheck institutional agreements\nRequest CC BY license\n\n\n\n\n\n Understanding Versions\n\nPreprint: Manuscript before peer review\n\nUpload at submission for early feedback\nPlatforms: bioRxiv, medRxiv, arXiv, OSF Preprints\n\nPostprint: Accepted manuscript (author’s version)\n\nUpload after acceptance\nCheck journal policy via SHERPA/RoMEO\n\nPublished Version: Final formatted article\n\nUsually requires payment or agreements\n\n\n\n\n Managing Costs\n\nFree Options:\n\nSubmit preprints to discipline servers\nUpload postprints to institutional repository\n\nFunded Options:\n\nCheck institutional agreements\nContact LMU Open Access: open-access@ub.uni-muenchen.de\nRequest CC BY for maximum reusability\n\n\n\n\nEnsuring findability and reuse.\n\n\n ORCID\nYour unique researcher identifier:\n\nLinks all publications and datasets\nPersists across institutions\nCreate free at orcid.org\n\n\n\n DOI\nDigital Object Identifiers:\n\nAssigned by repositories\nRequired for citation\nEnables impact tracking\n\n\n\n Data Licenses\nRecommended:\n\nCC0: Maximum reusability\nCC BY 4.0: Attribution required\nAvoid CC BY-NC (limits reuse)\n\n\n\n Code Licenses\nCommon choices:\n\nMIT: Permissive, widely adopted\nApache 2.0: Patent protection\nGPL-3.0: Derivatives must be open\n\n\n\n\n\n Author Contributions\n\nUse CRediT taxonomy to specify contributions:\n\nConceptualization, Data curation, Formal analysis\nMethodology, Software, Visualization\nWriting (original draft, review & editing)\n\nBenefits: transparent contribution tracking, proper attribution, career development.\n\n\n\n Understanding Licensing\n\n“When thinking about what one can, must, or should do with Open Material and Open Data, one has to differentiate on the one hand legally-enforceable rules (which are handled with legal licenses) and, on the other hand, rules and standards of the scientific community. If a piece of work is in the public domain (e.g., a CC0 license) there is no legal requirement to give attribution, but as a scientist one still has the ethical obligation to give a proper citation.”\n— PRO Initiative on Licensing\nResources:\n\nOpen Definition - Comprehensive list of conformant licenses for content and data\nChoose a License - Simple tool for selecting code licenses\nCreative Commons License Chooser - Select appropriate CC license for your needs",
-    "crumbs": [
-      "Home",
-      "Phases",
-      "Preserve & Share"
-    ]
-  },
-  {
-    "objectID": "open_research_cycle/04_preserve_and_share.html#tools-platforms",
-    "href": "open_research_cycle/04_preserve_and_share.html#tools-platforms",
-    "title": "Preserve & Share",
-    "section": " Tools & Platforms",
-    "text": "Tools & Platforms\n\n Data Repositories\nPlatforms for archiving research data with persistent identifiers and long-term preservation.\n\n\n\n\n\n\nFinding the right repository: Use re3data.org to search 3,000+ research data repositories by discipline, data type, and certification standards.\n\n\n\n\n\n\n\n\n\nZenodo\n\n\nGeneral repository, free unlimited storage, DOI assignment\n\n\n\nRead more\n\n\nAccepts all research outputs. GitHub integration, version control, communities support. Ideal for code + data packages.\n\n\n\n\n\n\n\n\nOSF\n\n\nProject management with integrated storage and preprints\n\n\n\nRead more\n\n\nComplete research projects, preregistrations, file versioning, collaboration tools, DOI assignment.\n\n\n\n\n\n\n\n\nDryad\n\n\nCurated repository for research data\n\n\n\nRead more\n\n\nNonprofit, open data repository. Human curation, CC0 license for maximum reuse. Integrates with many journals.\n\n\n\n\n\n\n\n\nFigshare\n\n\nAll research outputs with visualization\n\n\n\nRead more\n\n\nFree unlimited public storage. Figures, datasets, videos, code. DOI assignment, embeddable visualizations.\n\n\n\n\n\n\n\n\nHarvard Dataverse\n\n\nOpen source research data repository\n\n\n\nRead more\n\n\nFree data sharing. Create your own dataverse (collection). Structured metadata, DOI assignment, versioning.\n\n\n\n\n\n\n\n\nOpen Data LMU\n\n\nLMU research data repository\n\nSupported at LMU\n\n\nRead more\n\n\nDedicated repository for LMU research data. DOI assignment, long-term preservation, FAIR-compliant metadata.\n\n\n\n\n\n\n Code Archives\nPlatforms for publishing and archiving research code with version control and DOI assignment:\n\n\n\n\n\n\nLRZ GitLab\n\n\nSecure institutional Git hosting for active research\n\nSupported at LMU\n\n\nRead more\n\n\nPrivate repositories during research. Enhanced security, CI/CD pipelines. Transfer to GitHub when ready to publish.\n\n\n\n\n\n\n\n\nGitHub\n\n\nVersion control and collaboration platform\n\nTutorial available\n\n\nRead more\n\n\nIndustry-standard Git hosting. Integrates with Zenodo for DOI assignment. Issue tracking, Actions CI/CD.\n\n\n\n\n\n\n\n\nZenodo + GitHub\n\n\nAutomated archiving with DOI assignment\n\n\n\nRead more\n\n\nLink repository to Zenodo, create release, DOI automatically assigned. Long-term preservation guaranteed.\n\n\n\n\n\n\n Preprint Servers\nShare manuscripts before peer review to get early feedback and establish priority:\n\n\n\n\n\n\nOSF Preprints\n\n\nMultidisciplinary preprint service\n\n\n\nRead more\n\n\nAll disciplines welcome. Integration with OSF projects, flexible requirements.\n\n\n\n\n\n\n\n\nbioRxiv\n\n\nBiological sciences preprints\n\n\n\nRead more\n\n\nFree hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.\n\n\n\n\n\n\n\n\nmedRxiv\n\n\nMedical and health sciences preprints\n\n\n\nRead more\n\n\nMedical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.\n\n\n\n\n\n\n\n\narXiv\n\n\nPhysics, mathematics, computer science\n\n\n\nRead more\n\n\nEstablished 1991. Moderation system, LaTeX support. Standard in quantitative fields.\n\n\n\n\n\n\n Publishing Support\nTools to find open access journals, check publisher policies, and manage researcher identity:\n\n\n\n\n\n\nLMU Open Access\n\n\nOpen access consultation and APC support\n\nSupported at LMU\n\n\nRead more\n\n\nContact: open-access@ub.uni-muenchen.de. APC funding, publication agreements, rights management.\n\n\n\n\n\n\n\n\nDOAJ\n\n\nDirectory of Open Access Journals\n\n\n\nRead more\n\n\nQuality-controlled directory of peer-reviewed OA journals. Publication charges, licensing, and editorial information for 20,000+ journals.\n\n\n\n\n\n\n\n\nSHERPA/RoMEO\n\n\nJournal self-archiving policies\n\n\n\nRead more\n\n\nDatabase of publisher policies. Check what versions you can archive and under what conditions.\n\n\n\n\n\n\n\n\nOpen Policy Finder\n\n\nCheck journal OA policies\n\n\n\nRead more\n\n\nSearch tool for journal policies on open access, self-archiving, and funder compliance. Check rights retention options.\n\n\n\n\n\n\n\n\nORCID\n\n\nUnique researcher identifier\n\n\n\nRead more\n\n\nFree account, publication tracking, portable across institutions, integrates with repositories and publishers.\n\n\n\n\n\n\n\n\n\n\n\nTip LMU Support Services\n\n\n\nOpen Access Publishing: open-access@ub.uni-muenchen.de for consultation on open access options, funding, and agreements.\nResearch Data Management: rdm@ub.uni-muenchen.de for repository selection, metadata standards, and preservation planning.\nResources:\n\nLMU Open Access Information\nLMU Guidelines for Good Scientific Practice\nFAIR Principles",
-    "crumbs": [
-      "Home",
-      "Phases",
-      "Preserve & Share"
-    ]
-  },
-  {
-    "objectID": "open_research_cycle/04_preserve_and_share.html#preservation-checklist",
-    "href": "open_research_cycle/04_preserve_and_share.html#preservation-checklist",
-    "title": "Preserve & Share",
-    "section": " Preservation Checklist",
-    "text": "Preservation Checklist\n\nBefore Publication:\n\n\n\nData deposited in appropriate repository\nMetadata complete and discoverable\nCode published with documentation\nDOIs obtained for data and code\n\n\n\n\nAll authors have ORCIDs linked\nLicenses applied (CC0/CC BY, MIT/Apache)\nSensitive data removed and verified\nEthics approval for sharing (if required)\n\n\n\nAt Submission:\n\n\n\nData Availability Statement with DOIs\nCode availability materials linked\nOpen access option selected\n\n\n\n\nORCID, ROR, funder IDs included\nAuthor contributions (CRediT) specified\nPreprint posted (if applicable)\n\n\n\nAfter Acceptance:\n\nPostprint uploaded to institutional repository\nPreprint updated with link to published version\nRepository READMEs updated with citation\nCo-authors receive final citation and PDF\n\nLong-term:\n\nVerify DOIs resolve correctly\nRespond to data/code access requests\nMonitor citations and usage metrics",
-    "crumbs": [
-      "Home",
-      "Phases",
-      "Preserve & Share"
-    ]
+    "text": "image quadrant 3 with checklist box\n\n\n  Reproducible data processing and analysis\n\n\nprogrammingversion controlcomputational environement managementDocumentation\n\n\n3 lines of text\nR tuto card\nreadable code lecture card\n\n\n3 lines of text\nGit tuto card\ngithub tuto card\ngitlab lrz LMU supported tool\n\n\ntext\nrenv tuto card\ndocker tool card and/or some others or none but mention?\n\n\nredable lecture card again data dictionary card readme from code publishing? a bit too intense for this stage tho but something about internal, work in progress read me\n\n\n\n\n\n\n Reproducible Reporting\n\ncards or tabs about\nreproducible analyses report with quarto\nreproducible manuscripts with quarto, zotero\nreproducible presentation with quarto\nreproducible websites with quarto\n\nchecklist"
   },
   {
     "objectID": "open_research_cycle/notes/domain-specific-tools.html",
