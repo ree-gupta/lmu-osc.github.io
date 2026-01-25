@@ -4,7 +4,7 @@ description: "Explore existing resources, write data management plans, design st
 phase_order: 1
 sidebar: open-research-cycle
 page-layout: full
-css: styles.css
+css: orc-styles.css
 title-block-style: none
 ---
 
@@ -13,7 +13,8 @@ title-block-style: none
 {{< include ../images/os-cycle.svg >}}
 </div>
 <div class="orc-hero-body">
-<h2>Plan & Design</h2>
+<!-- TODO: update tagline -->
+<div class="orc-hero-tagline">Set the foundation for open, reproducible research</div>
 <div class="orc-hero-pills">
 <span><i class="bi bi-check2-circle"></i> Explore & reuse</span>
 <span><i class="bi bi-check2-circle"></i> Write plans</span>
@@ -181,15 +182,23 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 
 </div>
 
-::: {.callout-note appearance="simple" icon="mortarboard"}
-## Learn More: FAIR Data Management
-[FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/) (2h) - Comprehensive guide to managing data following FAIR principles, including a detailed section on creating Data Management Plans (~1h).
-:::
+<div class="orc-two-column">
 
-::: {.orc-grid-tools}
-
+<div class="orc-column">
+<h4><i class="bi bi-mortarboard"></i> Learn More</h4>
 <div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-folder-check"></i></div>
+<h4>[FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/)</h4>
+<p>Comprehensive FAIR principles guide (2h)</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Includes a detailed section on creating Data Management Plans (~1h).</p>
+</details>
+</div>
+</div>
+
+<div class="orc-column">
+<h4><i class="bi bi-tools"></i> Tools</h4>
+<div class="orc-card-tool">
 <h4>[RDMO](https://rdmo.ub.lmu.de/)</h4>
 <p>Research Data Management Organiser</p>
 <a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
@@ -198,8 +207,9 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 <p>Create funder-compliant DMPs with templates for DFG, ERC, and more. Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.</p>
 </details>
 </div>
+</div>
 
-:::
+</div>
 
 </details>
 
