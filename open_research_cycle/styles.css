@@ -10,16 +10,16 @@
   1. CSS Variables
   2. Base Typography
   3. Layout Grids
-  4. Hero Section
-  5. Cards (Base, Tool, Feature)
-  6. Interactive Details Panels
-  7. Callouts (Quarto overrides)
-  7b. Panel Tabsets (Quarto overrides)
+  4. Cards
+  5. Interactive Details Panels
+  6. Callouts (Quarto overrides)
+  7. Panel Tabsets (Quarto overrides)
   8. Phase Menu & Buttons
   9. SVG Diagram Interactivity
   10. Bootstrap Modal Overrides
-  11. Utility Classes
-  12. Responsive Breakpoints
+  11. Phase Hero (Compact Layout)
+  12. Phase Checklist
+  13. Responsive Breakpoints
 */
 
 /* ========================================
@@ -44,19 +44,6 @@
   --orc-gray-600: #4a5568;
   --orc-gray-700: #2d3748;
   --orc-gray-800: #555555;
-
-  /* Accent Colors */
-  --orc-purple: #667eea;
-
-  /* Phase Colors */
-  --orc-phase-1: #0066ff;
-  --orc-phase-1-dark: #0044cc;
-  --orc-phase-2: #cc0066;
-  --orc-phase-2-dark: #990044;
-  --orc-phase-3: #e6ac00;
-  --orc-phase-3-dark: #cc9900;
-  --orc-phase-4: #00883A;
-  --orc-phase-4-dark: #006426;
 
   /* Shadows */
   --orc-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -91,12 +78,6 @@ h3 i {
   margin-right: 0.5rem;
 }
 
-/* Exception: Hero section inherits white */
-.orc-hero h2 i,
-.orc-hero h3 i {
-  color: inherit;
-}
-
 /* ========================================
    3. LAYOUT GRIDS
    ======================================== */
@@ -107,31 +88,6 @@ h3 i {
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 0.75rem;
   margin: 1rem 0;
-}
-
-/* Feature cards grid - larger minimum */
-.orc-grid-feature {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2.5rem 0;
-}
-
-/* Two-column layout */
-.orc-grid-2col {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-/* Gradient highlight box */
-.orc-gradient-box {
-  background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
-  padding: 2rem;
-  border-radius: var(--orc-radius-md);
-  border-left: 5px solid var(--orc-green);
-  margin: 2rem 0;
 }
 
 /* ========================================
@@ -145,7 +101,7 @@ h3 i {
   padding: 1.25rem;
   background: white;
   box-shadow: var(--orc-shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: var(--orc-transition-fast);
 }
 
 .orc-card:hover {
@@ -153,36 +109,8 @@ h3 i {
   box-shadow: var(--orc-shadow-md);
 }
 
-/* LMU-highlighted card variant */
-.orc-card-lmu {
-  border: 1px solid var(--orc-green);
-  border-radius: var(--orc-radius-lg);
-  padding: 1.25rem;
-  background: linear-gradient(135deg, var(--orc-green-light) 0%, white 100%);
-  box-shadow: var(--orc-shadow-sm);
-}
-
-/* Card accessories */
-.orc-card-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.orc-card-star {
-  color: var(--orc-green);
-  font-size: 0.9rem;
-  float: right;
-}
-
-.orc-card-label {
-  font-size: 0.9rem;
-  color: var(--orc-gray-500);
-  margin-top: 0.3rem;
-}
-
-/* Card expandable details */
+/* Card expandable details - margin-top:auto pushes to bottom in flex parent */
 .orc-card-details {
-  display: inline;
   margin-top: auto;
 }
 
@@ -244,7 +172,7 @@ h3 i {
   align-items: center;
   justify-content: center;
   border-radius: var(--orc-radius-md);
-  transition: transform 0.2s ease;
+  transition: var(--orc-transition-fast);
   flex-shrink: 0;
 }
 
@@ -274,31 +202,6 @@ h3 i {
   line-height: 1.5;
 }
 
-/* Tool card link */
-.orc-card-tool-link {
-  text-decoration: none;
-  color: var(--orc-green);
-  font-weight: 600;
-  font-size: 0.95rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 0;
-}
-
-.orc-card-tool-link:hover {
-  text-decoration: none;
-  color: var(--orc-green-dark);
-}
-
-.orc-card-tool-link i {
-  margin-left: 0.4rem;
-  transition: transform 0.2s ease;
-}
-
-.orc-card-tool-link:hover i {
-  transform: translateX(4px);
-}
-
 /* Tool card badge */
 .orc-card-tool-badge {
   position: absolute;
@@ -324,29 +227,8 @@ h3 i {
   color: var(--orc-green);
 }
 
-/* --- Feature Card --- */
-.orc-card-feature {
-  border: 1px solid var(--orc-gray-300);
-  border-radius: var(--orc-radius-lg);
-  padding: 2rem;
-  background: white;
-  transition: var(--orc-transition-smooth);
-  box-shadow: var(--orc-shadow-sm);
-}
-
-.orc-card-feature:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--orc-shadow-lg);
-  border-color: var(--orc-green);
-}
-
-.orc-card-feature h3 i {
-  color: var(--orc-green);
-  margin-right: 0.5rem;
-}
-
 /* ========================================
-   6. INTERACTIVE DETAILS PANELS
+   5. INTERACTIVE DETAILS PANELS
    ======================================== */
 
 .orc-details-panel {
@@ -356,12 +238,11 @@ h3 i {
   border-left: 4px solid var(--orc-green);
   border-radius: var(--orc-radius-md);
   padding: 0;
-  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: var(--orc-transition-fast);
 }
 
 .orc-details-panel:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  border-color: var(--orc-gray-300);
 }
 
 .orc-details-panel[open] {
@@ -378,7 +259,7 @@ h3 i {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 1.25rem;
-  transition: background-color 0.15s ease;
+  transition: var(--orc-transition-fast);
 }
 
 .orc-details-panel summary:hover {
@@ -414,7 +295,7 @@ h3 i {
   font-family: 'bootstrap-icons';
   font-size: 1rem;
   color: var(--orc-gray-500);
-  transition: transform 0.2s ease, color 0.2s ease;
+  transition: var(--orc-transition-fast);
   flex-shrink: 0;
   margin-left: auto;
 }
@@ -447,39 +328,17 @@ h3 i {
 }
 
 /* ========================================
-   7. CALLOUTS (Quarto Overrides)
+   6. CALLOUTS (Quarto Overrides)
    ======================================== */
 
 /* Universal callout typography */
-div.callout .callout-title,
-div.callout-note .callout-title,
-div.callout-tip .callout-title,
-div.callout-warning .callout-title,
-div.callout-important .callout-title,
-div.callout-caution .callout-title {
+div.callout .callout-title {
   font-size: 1.1rem !important;
   font-weight: 700 !important;
 }
 
 div.callout .callout-body,
-div.callout-note .callout-body,
-div.callout-tip .callout-body,
-div.callout-warning .callout-body,
-div.callout-important .callout-body,
-div.callout-caution .callout-body {
-  font-size: 1rem !important;
-  line-height: 1.6 !important;
-}
-
-div.callout .callout-body p,
-div.callout .callout-body ul,
-div.callout .callout-body li,
-div.callout-note .callout-body p,
-div.callout-note .callout-body ul,
-div.callout-note .callout-body li,
-div.callout-tip .callout-body p,
-div.callout-tip .callout-body ul,
-div.callout-tip .callout-body li {
+div.callout .callout-body :is(p, ul, li) {
   font-size: 1rem !important;
   line-height: 1.6 !important;
 }
@@ -526,7 +385,7 @@ details .callout {
 }
 
 /* ========================================
-   7b. PANEL TABSETS (Quarto Overrides)
+   7. PANEL TABSETS (Quarto Overrides)
    ======================================== */
 
 /* Tab navigation styling */
@@ -605,7 +464,7 @@ details .callout {
   align-items: center;
   justify-content: center;
   padding: 1.25rem 0.75rem;
-  background-color: white;
+  background: white;
   border: 2px solid var(--orc-gray-200);
   border-radius: var(--orc-radius-lg);
   color: var(--orc-gray-700);
@@ -614,11 +473,8 @@ details .callout {
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  flex: 1 1 180px;
+  box-shadow: var(--orc-shadow-sm);
   width: 180px;
-  min-width: 180px;
-  max-width: 180px;
   height: 110px;
   text-align: center;
 }
@@ -648,63 +504,6 @@ details .callout {
 
 .phase-btn-h span {
   line-height: 1.3;
-}
-
-/* Legacy vertical phase menu (backwards compatibility) */
-.phase-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  justify-content: center;
-  align-items: stretch;
-  height: 100%;
-  min-height: 400px;
-}
-
-/* Vertical phase button */
-.phase-btn {
-  display: flex;
-  align-items: center;
-  padding: 1.5rem;
-  background-color: white;
-  border: 1px solid var(--orc-gray-200);
-  border-left: 5px solid var(--orc-green);
-  border-radius: var(--orc-radius-sm);
-  color: var(--orc-gray-700);
-  text-decoration: none;
-  transition: var(--orc-transition-smooth);
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1.15rem;
-  box-shadow: var(--orc-shadow-md);
-  width: 100%;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-}
-
-.phase-btn:hover {
-  transform: translateX(-5px);
-  box-shadow: var(--orc-shadow-lg);
-  background-color: var(--orc-gray-50);
-  border-left-width: 8px;
-  color: var(--orc-green-dark);
-}
-
-.phase-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 153, 51, 0.3);
-}
-
-.phase-btn i {
-  font-size: 1.75rem;
-  margin-right: 1.2rem;
-  color: var(--orc-green);
-  transition: transform 0.3s ease;
-}
-
-.phase-btn:hover i {
-  transform: scale(1.1);
 }
 
 /* ========================================
@@ -806,514 +605,10 @@ svg tspan {
 }
 
 /* ========================================
-   11. UTILITY CLASSES
+   11. PHASE HERO (Compact Layout)
    ======================================== */
 
-.orc-text-lmu-green {
-  color: var(--orc-green);
-}
-
-.orc-icon-lmu-badge {
-  color: var(--orc-green);
-  font-size: 0.85rem;
-}
-
-/* ========================================
-   12. PHASE LAYOUTS
-   ======================================== */
-
-/* Shared: phase hero content (used by Layout A) */
-.orc-phase-hero-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-/* LAYOUT A: Hero-style phase header */
-.orc-phase-split {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-bottom: 3rem;
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--orc-gray-200);
-}
-
-.orc-phase-split.phase-1 .orc-phase-info h2 { color: #0066ff; }
-.orc-phase-split.phase-2 .orc-phase-info h2 { color: #cc0066; }
-.orc-phase-split.phase-3 .orc-phase-info h2 { color: #b38600; }
-.orc-phase-split.phase-4 .orc-phase-info h2 { color: #00883A; }
-
-.orc-phase-visual {
-  width: 140px;
-  height: 140px;
-  flex-shrink: 0;
-}
-
-.orc-phase-visual svg { width: 100%; height: 100%; }
-
-/* Show only single quadrant using clip-path */
-.orc-phase-visual.single-quadrant {
-  overflow: hidden;
-  position: relative;
-}
-
-.orc-phase-visual.single-quadrant svg {
-  position: absolute;
-}
-
-/* Phase 1: top-right quadrant */
-.orc-phase-split.phase-1 .orc-phase-visual.single-quadrant svg {
-  width: 200%;
-  height: 200%;
-  top: 0;
-  right: 0;
-  left: auto;
-}
-
-/* Phase 2: bottom-right quadrant */
-.orc-phase-split.phase-2 .orc-phase-visual.single-quadrant svg {
-  width: 200%;
-  height: 200%;
-  bottom: 0;
-  right: 0;
-  left: auto;
-  top: auto;
-}
-
-/* Phase 3: bottom-left quadrant */
-.orc-phase-split.phase-3 .orc-phase-visual.single-quadrant svg {
-  width: 200%;
-  height: 200%;
-  bottom: 0;
-  left: 0;
-  top: auto;
-}
-
-/* Phase 4: top-left quadrant */
-.orc-phase-split.phase-4 .orc-phase-visual.single-quadrant svg {
-  width: 200%;
-  height: 200%;
-  top: 0;
-  left: 0;
-}
-
-/* Hide other phases when showing single quadrant */
-.orc-phase-visual.single-quadrant #phase-1,
-.orc-phase-visual.single-quadrant #phase-2,
-.orc-phase-visual.single-quadrant #phase-3,
-.orc-phase-visual.single-quadrant #phase-4 { opacity: 0; }
-
-.orc-phase-split.phase-1 .orc-phase-visual.single-quadrant #phase-1 { opacity: 1; }
-.orc-phase-split.phase-2 .orc-phase-visual.single-quadrant #phase-2 { opacity: 1; }
-.orc-phase-split.phase-3 .orc-phase-visual.single-quadrant #phase-3 { opacity: 1; }
-.orc-phase-split.phase-4 .orc-phase-visual.single-quadrant #phase-4 { opacity: 1; }
-
-/* Dim other phases (for full cycle view) */
-.orc-phase-split.phase-1 .orc-phase-visual:not(.single-quadrant) #phase-2,
-.orc-phase-split.phase-1 .orc-phase-visual:not(.single-quadrant) #phase-3,
-.orc-phase-split.phase-1 .orc-phase-visual:not(.single-quadrant) #phase-4 { opacity: 0.15; }
-
-.orc-phase-info h2 {
-  margin: 0 0 1.25rem 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  border-bottom: none;
-}
-
-.orc-phase-tasks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5rem 0;
-}
-
-.orc-phase-tasks li {
-  padding: 0.25rem 0;
-  padding-left: 1.75rem;
-  position: relative;
-  font-size: 1.05rem;
-  color: var(--orc-gray-600);
-  line-height: 1.5;
-}
-
-.orc-phase-tasks li::before {
-  content: "○";
-  position: absolute;
-  left: 0;
-  color: var(--orc-gray-300);
-  font-size: 0.9rem;
-  top: 0.35rem;
-}
-
-.orc-phase-checkpoint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.1rem;
-  background: var(--orc-green-light);
-  border-radius: var(--orc-radius-full);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--orc-green);
-}
-
-/* LAYOUT B: Horizontal band */
-.orc-phase-band {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: var(--orc-radius-lg);
-  background: white;
-  box-shadow: var(--orc-shadow-md);
-}
-
-.orc-phase-band.phase-1 { border-bottom: 3px solid #0066ff; }
-.orc-phase-band.phase-2 { border-bottom: 3px solid #cc0066; }
-.orc-phase-band.phase-3 { border-bottom: 3px solid #ffc000; }
-.orc-phase-band.phase-4 { border-bottom: 3px solid #00c057; }
-
-.orc-phase-band-icon {
-  width: 60px;
-  height: 60px;
-  flex-shrink: 0;
-}
-
-.orc-phase-band-icon svg { width: 100%; height: 100%; }
-
-.orc-phase-band.phase-1 .orc-phase-band-icon #phase-2,
-.orc-phase-band.phase-1 .orc-phase-band-icon #phase-3,
-.orc-phase-band.phase-1 .orc-phase-band-icon #phase-4 { opacity: 0.15; }
-
-.orc-phase-band-title h2 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: var(--orc-gray-700);
-  border-bottom: none;
-  white-space: nowrap;
-}
-
-.orc-phase-band-tasks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  flex: 1;
-}
-
-.orc-phase-band-tasks span {
-  padding: 0.3rem 0.6rem;
-  background: var(--orc-gray-100);
-  border-radius: var(--orc-radius-sm);
-  font-size: 0.8rem;
-  color: var(--orc-gray-600);
-}
-
-.orc-phase-band-checkpoint {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.4rem 0.75rem;
-  background: var(--orc-green-light);
-  border-radius: var(--orc-radius-sm);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--orc-green);
-  white-space: nowrap;
-}
-
-/* LAYOUT C: Card style */
-.orc-phase-card {
-  margin-bottom: 2rem;
-  border-radius: var(--orc-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--orc-shadow-md);
-}
-
-.orc-phase-card-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 1.25rem;
-}
-
-.orc-phase-card.phase-1 .orc-phase-card-header { background: #0066ff; }
-.orc-phase-card.phase-2 .orc-phase-card-header { background: #cc0066; }
-.orc-phase-card.phase-3 .orc-phase-card-header { background: #ffc000; }
-.orc-phase-card.phase-4 .orc-phase-card-header { background: #00c057; }
-
-.orc-phase-card-icon {
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  opacity: 0.8;
-}
-
-.orc-phase-card-icon svg { width: 100%; height: 100%; }
-
-.orc-phase-card-header h2 {
-  margin: 0;
-  color: white;
-  font-size: 1.35rem;
-  border-bottom: none;
-}
-
-.orc-phase-card.phase-3 .orc-phase-card-header h2 { color: #333; }
-
-.orc-phase-card-body {
-  padding: 1rem 1.25rem;
-  background: white;
-}
-
-.orc-phase-card-task {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0;
-  font-size: 0.9rem;
-  color: var(--orc-gray-600);
-}
-
-.orc-phase-card-task i {
-  color: var(--orc-gray-300);
-}
-
-.orc-phase-card-footer {
-  padding: 0.75rem 1.25rem;
-  background: var(--orc-green-light);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--orc-green);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* LAYOUT D: Clean rows */
-.orc-phase-rows {
-  margin-bottom: 2rem;
-}
-
-.orc-phase-rows-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.75rem;
-}
-
-.orc-phase-rows-icon {
-  width: 70px;
-  height: 70px;
-  flex-shrink: 0;
-}
-
-.orc-phase-rows-icon svg { width: 100%; height: 100%; }
-
-.orc-phase-rows.phase-1 .orc-phase-rows-icon #phase-2,
-.orc-phase-rows.phase-1 .orc-phase-rows-icon #phase-3,
-.orc-phase-rows.phase-1 .orc-phase-rows-icon #phase-4 { opacity: 0.15; }
-
-.orc-phase-rows-header h2 {
-  margin: 0;
-  font-size: 1.75rem;
-  color: var(--orc-gray-700);
-  border-bottom: none;
-}
-
-.orc-phase-rows-tasks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0.75rem 0;
-  border-top: 1px solid var(--orc-gray-200);
-  border-bottom: 1px solid var(--orc-gray-200);
-}
-
-.orc-phase-rows-tasks span {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  padding: 0.35rem 0.7rem;
-  font-size: 0.85rem;
-  color: var(--orc-gray-500);
-}
-
-.orc-phase-rows-tasks span i {
-  color: var(--orc-gray-300);
-}
-
-.orc-phase-rows-tasks .checkpoint {
-  background: var(--orc-green-light);
-  border-radius: var(--orc-radius-sm);
-  color: var(--orc-green);
-  font-weight: 600;
-}
-
-.orc-phase-rows-tasks .checkpoint i {
-  color: var(--orc-green);
-}
-
-/* LAYOUT A (NEW): Green hero split with cycle on right */
-.orc-phase-hero-split {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 4rem;
-  padding: 2.5rem 3.5rem;
-  margin-bottom: 2.5rem;
-  background-color: var(--orc-green);
-  border-radius: var(--orc-radius-xl);
-  color: white;
-  box-shadow: 0 4px 20px rgba(0, 100, 38, 0.25);
-  position: relative;
-  overflow: hidden;
-}
-
-.orc-phase-hero-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
-}
-
-.orc-phase-hero-split h2 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: white !important;
-  border-bottom: none;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.orc-phase-hero-tasks {
-  display: grid !important;
-  grid-template-columns: auto auto !important;
-  grid-template-rows: auto auto !important;
-  gap: 0.6rem 3rem;
-}
-
-.orc-phase-hero-tasks > span {
-  display: flex !important;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.05rem;
-  line-height: 1.3;
-  color: rgba(255, 255, 255, 0.95);
-  white-space: nowrap;
-}
-
-.orc-phase-hero-tasks span i {
-  color: #7ddf7d;
-  font-size: 1.15rem;
-  flex-shrink: 0;
-  margin-top: 0.1rem;
-}
-
-.orc-phase-hero-checkpoint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.6rem 1.25rem;
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: var(--orc-radius-full);
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: white;
-  margin-top: 0.5rem;
-}
-
-.orc-phase-hero-checkpoint i {
-  font-size: 1rem;
-}
-
-.orc-phase-hero-diagram {
-  width: 200px;
-  height: 200px;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 2;
-}
-
-.orc-phase-hero-diagram svg {
-  width: 100%;
-  height: 100%;
-}
-
-/* Single quadrant clipping for hero diagram */
-.orc-phase-hero-diagram.single-quadrant {
-  overflow: hidden;
-  border-radius: 0;
-}
-
-.orc-phase-hero-diagram.single-quadrant svg {
-  position: relative;
-  width: 200%;
-  height: 200%;
-}
-
-/* Position SVG to show only the relevant quadrant */
-.orc-phase-hero-diagram.single-quadrant.phase-1 svg {
-  top: 0;
-  left: -100%;
-}
-
-.orc-phase-hero-diagram.single-quadrant.phase-2 svg {
-  top: -100%;
-  left: -100%;
-}
-
-.orc-phase-hero-diagram.single-quadrant.phase-3 svg {
-  top: -100%;
-  left: 0;
-}
-
-.orc-phase-hero-diagram.single-quadrant.phase-4 svg {
-  top: 0;
-  left: 0;
-}
-
-/* Hide all phases, show only the active one */
-.orc-phase-hero-diagram.single-quadrant #phase-1,
-.orc-phase-hero-diagram.single-quadrant #phase-2,
-.orc-phase-hero-diagram.single-quadrant #phase-3,
-.orc-phase-hero-diagram.single-quadrant #phase-4 {
-  opacity: 0;
-}
-
-.orc-phase-hero-diagram.single-quadrant.phase-1 #phase-1,
-.orc-phase-hero-diagram.single-quadrant.phase-2 #phase-2,
-.orc-phase-hero-diagram.single-quadrant.phase-3 #phase-3,
-.orc-phase-hero-diagram.single-quadrant.phase-4 #phase-4 {
-  opacity: 1;
-}
-
-/* Dim non-active phases in hero diagram (full cycle view) */
-.orc-phase-hero-diagram.phase-1 #phase-2,
-.orc-phase-hero-diagram.phase-1 #phase-3,
-.orc-phase-hero-diagram.phase-1 #phase-4 { opacity: 0.25; }
-
-.orc-phase-hero-diagram.phase-2 #phase-1,
-.orc-phase-hero-diagram.phase-2 #phase-3,
-.orc-phase-hero-diagram.phase-2 #phase-4 { opacity: 0.25; }
-
-.orc-phase-hero-diagram.phase-3 #phase-1,
-.orc-phase-hero-diagram.phase-3 #phase-2,
-.orc-phase-hero-diagram.phase-3 #phase-4 { opacity: 0.25; }
-
-.orc-phase-hero-diagram.phase-4 #phase-1,
-.orc-phase-hero-diagram.phase-4 #phase-2,
-.orc-phase-hero-diagram.phase-4 #phase-3 { opacity: 0.25; }
-
-/* Dim non-active phases in orc-hero-cycle (for layouts B, C, D) */
+/* Dim non-active phases in cycle diagram */
 .orc-hero-cycle.phase-1 #phase-2,
 .orc-hero-cycle.phase-1 #phase-3,
 .orc-hero-cycle.phase-1 #phase-4 { opacity: 0.25; }
@@ -1330,33 +625,7 @@ svg tspan {
 .orc-hero-cycle.phase-4 #phase-2,
 .orc-hero-cycle.phase-4 #phase-3 { opacity: 0.25; }
 
-/* Responsive for hero split */
-@media (max-width: 768px) {
-  .orc-phase-hero-split {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    text-align: center;
-  }
-
-  .orc-phase-hero-split h2 {
-    font-size: 2rem;
-  }
-
-  .orc-phase-hero-tasks {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  .orc-phase-hero-diagram {
-    width: 160px;
-    height: 160px;
-    order: -1;
-  }
-}
-
-/* ========================================
-   LAYOUT B: Compact with cycle on LEFT, tasks as pills
-   ======================================== */
+/* Phase hero compact layout */
 .orc-phase-hero-compact {
   display: flex;
   align-items: center;
@@ -1438,205 +707,7 @@ svg tspan {
 }
 
 /* ========================================
-   LAYOUT C: Centered stacked - cycle top, content below
-   ======================================== */
-.orc-phase-hero-centered {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2.5rem 2rem;
-  margin-bottom: 2.5rem;
-  background-color: var(--orc-green);
-  border-radius: var(--orc-radius-xl);
-  color: white;
-  box-shadow: 0 4px 20px rgba(0, 100, 38, 0.25);
-}
-
-.orc-phase-hero-centered .orc-hero-cycle {
-  width: 140px;
-  height: 140px;
-  margin-bottom: 1.25rem;
-}
-
-.orc-phase-hero-centered .orc-hero-cycle svg {
-  width: 100%;
-  height: 100%;
-}
-
-.orc-phase-hero-centered h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: white !important;
-  border-bottom: none;
-  line-height: 1.1;
-}
-
-.orc-phase-hero-centered .orc-hero-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-bottom: 1.25rem;
-}
-
-.orc-phase-hero-centered .orc-hero-cards .task-card {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1rem;
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: var(--orc-radius-md);
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-.orc-phase-hero-centered .orc-hero-cards .task-card i {
-  color: #7ddf7d;
-  font-size: 1.1rem;
-}
-
-.orc-phase-hero-centered .orc-hero-checkpoint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: var(--orc-radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: white;
-}
-
-.orc-phase-hero-centered .orc-hero-checkpoint i {
-  font-size: 0.95rem;
-}
-
-/* ========================================
-   LAYOUT D: Sidebar style - green accent bar with cycle
-   ======================================== */
-.orc-phase-hero-sidebar {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin-bottom: 2.5rem;
-  border-radius: var(--orc-radius-xl);
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 100, 38, 0.15);
-}
-
-.orc-phase-hero-sidebar .orc-hero-accent {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1.5rem;
-  background-color: var(--orc-green);
-  gap: 1rem;
-}
-
-.orc-phase-hero-sidebar .orc-hero-accent .orc-hero-cycle {
-  width: 100px;
-  height: 100px;
-}
-
-.orc-phase-hero-sidebar .orc-hero-accent .orc-hero-cycle svg {
-  width: 100%;
-  height: 100%;
-}
-
-.orc-phase-hero-sidebar .orc-hero-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 2.5rem;
-  background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 136, 58, 0.02) 100%);
-  border: 1px solid rgba(0, 136, 58, 0.15);
-  border-left: none;
-}
-
-.orc-phase-hero-sidebar h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--orc-green) !important;
-  border-bottom: none;
-  line-height: 1.1;
-}
-
-.orc-phase-hero-sidebar .orc-hero-tasks {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.orc-phase-hero-sidebar .orc-hero-tasks span {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  color: var(--orc-text);
-}
-
-.orc-phase-hero-sidebar .orc-hero-tasks span i {
-  color: var(--orc-green);
-  font-size: 1.1rem;
-}
-
-.orc-phase-hero-sidebar .orc-hero-checkpoint {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  background: var(--orc-green);
-  border-radius: var(--orc-radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: white;
-  width: fit-content;
-}
-
-.orc-phase-hero-sidebar .orc-hero-checkpoint i {
-  font-size: 0.9rem;
-}
-
-/* Responsive for Layout B */
-@media (max-width: 768px) {
-  .orc-phase-hero-compact {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .orc-phase-hero-compact .orc-hero-pills {
-    justify-content: center;
-  }
-
-  .orc-phase-hero-compact .orc-hero-checkpoint {
-    margin: 0.5rem auto 0;
-  }
-}
-
-/* Responsive for Layout D */
-@media (max-width: 768px) {
-  .orc-phase-hero-sidebar {
-    grid-template-columns: 1fr;
-  }
-
-  .orc-phase-hero-sidebar .orc-hero-accent {
-    flex-direction: row;
-    padding: 1.5rem;
-  }
-
-  .orc-phase-hero-sidebar .orc-hero-main {
-    border-left: 1px solid rgba(0, 136, 58, 0.15);
-    border-top: none;
-  }
-}
-
-/* ========================================
-   PHASE CHECKLIST
+   12. PHASE CHECKLIST
    ======================================== */
 .orc-phase-checklist {
   margin: 2rem 0;
@@ -1710,65 +781,20 @@ svg tspan {
   }
 }
 
-/* Tablet and below */
+/* Tablet - phase hero stacks vertically */
 @media (max-width: 768px) {
-  .orc-grid-2col {
-    grid-template-columns: 1fr;
-  }
-
-  .orc-hero {
-    padding: 1.5rem;
-  }
-
-  .orc-gradient-box {
-    padding: 1.5rem;
-  }
-
-  .phase-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .phase-btn {
-    flex: 1 1 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border-left-width: 4px;
-  }
-
-  .phase-btn:hover {
-    transform: translateY(-2px);
-  }
-}
-
-/* Hero responsive */
-@media (max-width: 768px) {
-  .orc-hero {
-    padding: 3rem 1.5rem;
-  }
-
-  .orc-hero h2 {
-    font-size: 2.5rem;
-  }
-
-  .orc-hero-bg-icon {
-    font-size: 15rem;
-    right: -10%;
-    bottom: -10%;
-  }
-
-  .orc-button-group {
-    display: flex;
+  .orc-phase-hero-compact {
     flex-direction: column;
-    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
   }
 
-  .orc-button-group .btn {
-    width: 100%;
-    margin-right: 0 !important;
-    margin-bottom: 1rem;
-    text-align: center;
+  .orc-phase-hero-compact .orc-hero-pills {
+    justify-content: center;
+  }
+
+  .orc-phase-hero-compact .orc-hero-checkpoint {
+    margin: 0.5rem auto 0;
   }
 }
 
@@ -1794,46 +820,4 @@ svg tspan {
     margin-right: 1rem;
     font-size: 1.5rem;
   }
-}
-
-/* Phase header responsive */
-@media (max-width: 768px) {
-  .orc-phase-header {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
-    gap: 1.5rem;
-  }
-
-  .orc-phase-header-diagram {
-    width: 140px;
-    height: 140px;
-  }
-
-  .orc-phase-header-content h2 {
-    font-size: 1.75rem;
-  }
-
-  .orc-phase-header-content p {
-    font-size: 1rem;
-  }
-}
-
-/* Grid column alignment helpers */
-.grid.align-items-center > div {
-  display: flex;
-  flex-direction: column;
-}
-
-.g-col-12.g-col-md-7 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.g-col-12.g-col-md-5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
 }
