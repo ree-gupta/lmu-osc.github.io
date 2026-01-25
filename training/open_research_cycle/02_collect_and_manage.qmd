@@ -29,13 +29,137 @@ title-block-style: none
 <details class="orc-details-panel">
 <summary><i class="bi bi-clipboard-data"></i> FAIR Research Data Management</summary>
 
-something about 
-FAIR data principles
-storage back up
-organisation and file naming
-documentation
-meadatastandards -> link to discipline specific section
-tutorial card
+FAIR data management ensures your research outputs are **F**indable, **A**ccessible, **I**nteroperable, and **R**eusable — by you, your collaborators, and the wider research community. Apply these principles from the start to save time, enable collaboration, and maximize the impact of your work.
+
+::: {.panel-tabset}
+
+### FAIR Principles
+
+<div class="orc-grid-tools">
+
+<div class="orc-card">
+<strong><i class="bi bi-search"></i> Findable</strong>
+<ul>
+<li>Deposit in searchable repositories</li>
+<li>Use persistent identifiers (DOIs)</li>
+<li>Add rich metadata and keywords</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-door-open"></i> Accessible</strong>
+<ul>
+<li>Open data, or clear request process</li>
+<li>Metadata always openly available</li>
+<li>Standard protocols for access</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-diagram-3"></i> Interoperable</strong>
+<ul>
+<li>Use standard terminology</li>
+<li>Stable file formats (CSV, JSON)</li>
+<li>Avoid proprietary formats</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-arrow-repeat"></i> Reusable</strong>
+<ul>
+<li>Rich documentation</li>
+<li>Clear data provenance</li>
+<li>Explicit licenses (e.g., CC-BY)</li>
+</ul>
+</div>
+
+</div>
+
+### Organization & Naming
+
+**File naming conventions:**
+
+- Use descriptive names: `project_instrument_date_version.ext`
+- Avoid spaces and special characters (use `_` or `-`)
+- Include dates as `YYYY-MM-DD` for chronological sorting
+- Add version numbers: `v01`, `v02` or use version control (Git)
+
+**Folder structure:**
+
+- Separate raw data (never modify!), processed data, code, and documentation
+- Use a consistent hierarchy across all projects
+- Include a README file in each major folder
+
+### Documentation
+
+**README files:** Provide project overview, how to run code, data sources, and contact information.
+
+**Data dictionary (codebook):**
+
+- Variable names and descriptions
+- Units of measurement
+- Allowed values and missing data codes
+- How each variable was collected or derived
+
+**Metadata standards:**
+
+- Find discipline-specific standards on [re3data](https://www.re3data.org/) or [FAIRsharing](https://fairsharing.org/)
+- Examples: Dublin Core (general), DDI (social science), BIDS (neuroimaging)
+
+### Storage & Backup
+
+**The 3-2-1 backup rule:**
+
+- **3** copies of your data
+- **2** different storage media (e.g., local drive + cloud)
+- **1** copy off-site or in a separate location
+
+**Best practices:**
+
+- Use institutional storage (backed up, secure, compliant)
+- Never store sensitive data on personal devices
+- Transfer data to secure storage regularly
+- Document your backup schedule and verify backups work
+
+:::
+
+::: {.orc-two-column}
+
+::: {.orc-column}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/)
+
+Comprehensive guide to FAIR principles (2h)
+
+<details>
+<summary>Read more</summary>
+Covers data organization, documentation, storage, and sharing. Essential foundation for all researchers working with data.
+</details>
+:::
+:::
+
+::: {.orc-column}
+#### <i class="bi bi-tools"></i> TOOLS
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-database"></i></div>
+
+#### [re3data](https://www.re3data.org/)
+
+Registry of research data repositories
+
+<details>
+<summary>Read more</summary>
+Search across disciplines to find appropriate domain-specific repositories and discover metadata standards for your field.
+</details>
+:::
+:::
+
+:::
 
 </details>
 
