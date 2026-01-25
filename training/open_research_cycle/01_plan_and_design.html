@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../custom-navbar.css">
 <link rel="stylesheet" href="../../custom-navbar.css">
 <link rel="stylesheet" href="../training.css">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="orc-styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light">
@@ -494,9 +494,10 @@ ul.task-list li input[type="checkbox"] {
 </svg>
 </div>
 <div class="orc-hero-body">
-<h2 class="anchored">
-Plan &amp; Design
-</h2>
+<!-- TODO: update tagline -->
+<div class="orc-hero-tagline">
+Set the foundation for open, reproducible research
+</div>
 <div class="orc-hero-pills">
 <p><span><i class="bi bi-check2-circle"></i> Explore &amp; reuse</span> <span><i class="bi bi-check2-circle"></i> Write plans</span> <span><i class="bi bi-check2-circle"></i> Simulate data</span> <span><i class="bi bi-check2-circle"></i> Preregister</span></p>
 </div>
@@ -701,24 +702,33 @@ Data use agreements
 </ul>
 </div>
 </div>
-<div class="callout callout-style-simple callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Learn More: FAIR Data Management
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="https://lmu-osc.github.io/FAIR-Data-Management/">FAIR Data Management Tutorial</a> (2h) - Comprehensive guide to managing data following FAIR principles, including a detailed section on creating Data Management Plans (~1h).</p>
-</div>
-</div>
-<div class="orc-grid-tools">
+<div class="orc-two-column">
+<div class="orc-column">
+<h4 class="anchored">
+<i class="bi bi-mortarboard"></i> Learn More
+</h4>
 <div class="orc-card-tool">
-<div class="orc-card-tool-icon">
-<i class="bi bi-folder-check"></i>
+<h4 class="anchored">
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/">FAIR Data Management Tutorial</a>
+</h4>
+<p>
+Comprehensive FAIR principles guide (2h)
+</p>
+<details class="orc-card-details">
+<summary>
+Read more
+</summary>
+<p>
+Includes a detailed section on creating Data Management Plans (~1h).
+</p>
+</details>
 </div>
+</div>
+<div class="orc-column">
+<h4 class="anchored">
+<i class="bi bi-tools"></i> Tools
+</h4>
+<div class="orc-card-tool">
 <h4 class="anchored">
 <a href="https://rdmo.ub.lmu.de/">RDMO</a>
 </h4>
@@ -734,6 +744,7 @@ Read more
 Create funder-compliant DMPs with templates for DFG, ERC, and more. Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.
 </p>
 </details>
+</div>
 </div>
 </div>
 </details>
