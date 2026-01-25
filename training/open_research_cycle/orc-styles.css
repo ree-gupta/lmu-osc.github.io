@@ -85,6 +85,42 @@ h3 i {
   margin: 1rem 0;
 }
 
+/* Two-column layout for Learn More / Tools */
+.orc-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.orc-two-column .orc-column > h4:first-child {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--orc-gray-500);
+}
+
+.orc-two-column .orc-column > h4:first-child i {
+  color: var(--orc-green);
+}
+
+/* Card titles inside two-column layout */
+.orc-two-column .orc-card-tool h4 {
+  font-size: 1.05rem;
+}
+
+.orc-two-column .orc-card-tool p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .orc-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ========================================
    4. CARDS
    ======================================== */
@@ -104,34 +140,22 @@ h3 i {
   box-shadow: var(--orc-shadow-md);
 }
 
-/* Card expandable details - margin-top:auto pushes to bottom in flex parent */
+/* Card expandable details */
 .orc-card-details {
   margin-top: auto;
+  padding-top: 0.25rem;
 }
 
 .orc-card-details summary {
-  display: inline;
   cursor: pointer;
   color: var(--orc-green);
-  font-size: 0.95rem;
-  font-weight: 500;
-  list-style: none;
-}
-
-.orc-card-details summary:hover {
-  text-decoration: underline;
-}
-
-.orc-card-details summary::-webkit-details-marker,
-.orc-card-details summary::marker {
-  display: none;
+  font-size: 0.8rem;
 }
 
 .orc-card-details p {
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
-  color: var(--orc-gray-800);
-  line-height: 1.5;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  color: var(--orc-gray-600);
 }
 
 /* --- Tool Card --- */
@@ -284,27 +308,7 @@ h3 i {
   display: none;
 }
 
-/* Chevron indicator on right */
-.orc-details-panel summary::after {
-  content: '\F282';
-  font-family: 'bootstrap-icons';
-  font-size: 1rem;
-  color: var(--orc-gray-500);
-  transition: var(--orc-transition-fast);
-  flex-shrink: 0;
-  margin-left: auto;
-}
-
-.orc-details-panel summary:hover::after,
-.orc-details-panel[open] summary::after {
-  color: var(--orc-green);
-}
-
-.orc-details-panel[open] summary::after {
-  transform: rotate(180deg);
-}
-
-.orc-details-panel[open] summary {
+.orc-details-panel[open] > summary {
   border-bottom: 1px solid var(--orc-gray-200);
 }
 
