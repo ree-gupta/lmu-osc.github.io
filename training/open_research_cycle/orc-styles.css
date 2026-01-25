@@ -66,6 +66,23 @@
    2. BASE TYPOGRAPHY
    ======================================== */
 
+/* Body text - align with training pages */
+.orc-details-panel,
+.orc-phase-checklist {
+  font-size: 1.1rem;
+  color: var(--orc-gray-600);
+  line-height: 1.85;
+}
+
+/* List markers - green squares like training pages */
+.orc-details-panel ul {
+  list-style-type: square;
+}
+
+.orc-details-panel ul li::marker {
+  color: var(--orc-green);
+}
+
 /* Heading icons - consistent green color */
 h2 i,
 h3 i {
