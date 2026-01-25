@@ -130,7 +130,7 @@ title-block-style: none
 <details class="orc-details-panel">
 <summary><i class="bi bi-folder2-open"></i> Research Data Management Plans</summary>
 
-A Research Data Management (RDM) plan documents how you will acquire, store, use, and share your research data. Draft it early - much of the content will be needed for ethics approval. Your DMP is a living document that evolves with your project.
+A Research Data Management (RDM) plan documents how you will acquire, store, use, and share your research data. Draft it early - much of the content will be needed for ethics approval. Your DMP is a living document that evolves with your project. Funders may require a DMP at proposal stage or project completion.
 
 **Collecting new data?** Write your RDM plan before submitting your ethics proposal. The plan helps structure your consent forms and data handling procedures.
 
