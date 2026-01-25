@@ -29,7 +29,7 @@ The Open Research Cycle is based on the [Open Research Cycle by Ihle (2025)](htt
 #| echo: false
 #| results: "asis"
 #| warning: false
-cat(readLines("open_research_cycle/images/os-cycle.svg", warn = FALSE), sep = "\n")
+cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 ```
 
 *Figure: Open Research Cycle. Based on Ihle, M. (2025). Open research cycle. LMU Open Science Center. [https://doi.org/10.5281/zenodo.15630230](https://doi.org/10.5281/zenodo.15630230)*
