@@ -238,7 +238,8 @@ details .callout { margin-top: 1rem; }
 
 .panel-tabset .nav-tabs .nav-link:hover { color: var(--orc-green); border-bottom-color: var(--orc-green-light); background: transparent; }
 .panel-tabset .nav-tabs .nav-link.active { color: var(--orc-green); border-bottom-color: var(--orc-green); background: transparent; font-weight: 600; }
-.panel-tabset .tab-content { padding: 1.25rem 0; margin-top: .5rem; }
+.panel-tabset .tab-content { padding: 1.25rem 0; margin-top: .5rem; border: none; }
+.panel-tabset .tab-pane { border: none; }
 
 /* ========================================
    7. PHASE MENU & BUTTONS
