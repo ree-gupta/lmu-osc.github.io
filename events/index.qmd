@@ -1,44 +1,50 @@
 ---
 title: "LMU OSC Events"
+pagetitle: "Events"
 css: 
   - past-events-styles.css
   - upcoming-events-styles.css 
 listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
-    contents: events
+    contents: events/
     sort-ui: [title, date]
     sort: "date desc"
     filter-ui: true
-    page-size: 5
+    page-size: 999
     categories: unnumbered
   - id: year_2025
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2025
   - id: year_2024
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2024
   - id: year_2023
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2023
   - id: year_2022
-    contents: events/ 
+    contents: events/
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2022
   - id: year_2021
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2021
@@ -50,18 +56,14 @@ page-layout: full #right
 repo-actions: false
 include-in-header:
   - text: |
-      <script src="../assets/javascript/clear_filter_button.js" defer></script>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="/assets/javascript/clear_filter_button.js" defer></script>
 ---
 <style>
 :root{
-  --theme-main: #2b864b;
+  --theme-main: #00883A;
   --theme-main-dark: #246f3f;
 }
-  .quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+  
 .listing-actions-group{
   gap:3rem;
 }

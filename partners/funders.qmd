@@ -1,14 +1,9 @@
 ---
-title: "Funders"
+pagetitle: "Funders"
 format: 
   html:
     page-layout: full
     toc: false
-    include-in-header: 
-      - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 ---
 
 <style>
@@ -21,7 +16,6 @@ format:
 }
 
 body {
-  background: var(--theme-bg);
   margin: 0;
   min-height: 100vh;
 }
@@ -31,10 +25,7 @@ body {
   margin: 2rem auto;
   padding: 0 1.5rem;
 }
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+
 
 .header-section {
   font-size: 2.6rem;
@@ -321,7 +312,7 @@ hr {
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://lmu-osc.github.io/partners/funding_members.html"  target="_blank">
+                      <a href="/partners/funding_institutional_members.qmd">
                       <img src="images/lmu_logo.jpg" alt="VW-logo">
                       </a>
                   </div>  
@@ -344,7 +335,7 @@ hr {
                     </span>
                   </div>
               </div>
-              <a href="https://lmu-osc.github.io/partners/funding_institutional_members.html" target="_blank" class="social-link">View Funding Institutional Members <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="/partners/funding_institutional_members.html" target="_blank" class="social-link">View Funding Institutional Members <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr> 
           <div class="profile-link">

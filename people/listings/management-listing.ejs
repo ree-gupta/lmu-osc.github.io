@@ -58,7 +58,7 @@
 <h4 class="card-title"><%= item.name %></h4>
 <div class="d-flex align-items-center">
 <span class="card-subtitle mb-0 fs-5 fw-bold text-secondary">
-  <%= item.academic_title %>  |  <%= item.faculty %>
+  <%= item.academic_title %><%= (item.faculty && item.faculty !== 'NA') ? '  |  ' + item.faculty : '' %>
 </span>
 </div>
 <p class="personal-statement card-text text-justify"><%= item.personal %></p>
@@ -71,7 +71,7 @@
 
 <style>
 :root {
-  --theme-main: #2b864b;
+  --theme-main: #00883A;
   --theme-main-dark: #246f3f;
   --theme-bg: #f5f6fa;
   --theme-card-bg: #fff;
@@ -93,11 +93,11 @@
 .card-text {
   display: -webkit-box;
   line-clamp: 5;
-  -webkit-line-clamp: 5; /* number of lines to show */
+  -webkit-line-clamp: 5; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-}
+} 
 .text-justify {
   text-align: justify;
 }
