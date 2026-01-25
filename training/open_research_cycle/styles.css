@@ -27,23 +27,23 @@
    ======================================== */
 
 :root {
-  /* Brand Colors */
-  --orc-green: #00883A;
+  /* Brand Colors - inherit primary from central CSS */
+  --orc-green: var(--osc-accent);
   --orc-green-dark: #006426;
   --orc-green-darker: #004d1d;
   --orc-green-light: #f0f9f6;
   --orc-green-hover: #f8fdf9;
 
-  /* Neutral Colors */
+  /* Neutral Colors - reuse central where close enough */
   --orc-gray-50: #f8fafc;
   --orc-gray-100: #f1f5f9;
   --orc-gray-200: #e2e8f0;
-  --orc-gray-300: #e0e0e0;
+  --orc-gray-300: var(--osc-divider);    /* #d6d6d5 - borders */
   --orc-gray-400: #718096;
-  --orc-gray-500: #666666;
+  --orc-gray-500: var(--osc-muted);      /* #646463 - muted text */
   --orc-gray-600: #4a5568;
-  --orc-gray-700: #2d3748;
-  --orc-gray-800: #555555;
+  --orc-gray-700: var(--osc-text);       /* #222 - dark text */
+  --orc-gray-800: var(--osc-muted);      /* #646463 - secondary text */
 
   /* Shadows */
   --orc-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -99,7 +99,7 @@ h3 i {
   border: 1px solid var(--orc-gray-300);
   border-radius: var(--orc-radius-lg);
   padding: 1.25rem;
-  background: white;
+  background: var(--osc-bg);
   box-shadow: var(--orc-shadow-sm);
   transition: var(--orc-transition-fast);
 }
@@ -141,7 +141,7 @@ h3 i {
 
 /* --- Tool Card --- */
 .orc-card-tool {
-  background: white;
+  background: var(--osc-bg);
   border: 1px solid var(--orc-gray-200);
   border-radius: var(--orc-radius-lg);
   padding: 1rem;
@@ -162,16 +162,16 @@ h3 i {
 
 /* Tool card icon container */
 .orc-card-tool-icon {
-  font-size: 1.5rem;
-  color: var(--orc-green);
-  margin-bottom: 0.75rem;
-  background: var(--orc-green-light);
-  width: 44px;
-  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  color: var(--orc-green);
+  background: var(--orc-green-light);
   border-radius: var(--orc-radius-md);
+  margin-bottom: 0.75rem;
   transition: var(--orc-transition-fast);
   flex-shrink: 0;
 }
@@ -233,7 +233,7 @@ h3 i {
 
 .orc-details-panel {
   margin: 1.25rem 0;
-  background: white;
+  background: var(--osc-bg);
   border: 1px solid var(--orc-gray-200);
   border-left: 4px solid var(--orc-green);
   border-radius: var(--orc-radius-md);
@@ -300,13 +300,13 @@ h3 i {
   margin-left: auto;
 }
 
-.orc-details-panel summary:hover::after {
+.orc-details-panel summary:hover::after,
+.orc-details-panel[open] summary::after {
   color: var(--orc-green);
 }
 
 .orc-details-panel[open] summary::after {
   transform: rotate(180deg);
-  color: var(--orc-green);
 }
 
 .orc-details-panel[open] summary {
@@ -464,7 +464,7 @@ details .callout {
   align-items: center;
   justify-content: center;
   padding: 1.25rem 0.75rem;
-  background: white;
+  background: var(--osc-bg);
   border: 2px solid var(--orc-gray-200);
   border-radius: var(--orc-radius-lg);
   color: var(--orc-gray-700);
@@ -548,8 +548,7 @@ svg:has(.phase-group:hover) .phase-group:not(:hover) {
   filter: drop-shadow(0 0 8px rgba(0, 153, 51, 0.6));
 }
 
-svg text,
-svg tspan {
+svg :is(text, tspan) {
   font-family: inherit !important;
   font-weight: bold;
   pointer-events: none;
@@ -609,21 +608,11 @@ svg tspan {
    ======================================== */
 
 /* Dim non-active phases in cycle diagram */
-.orc-hero-cycle.phase-1 #phase-2,
-.orc-hero-cycle.phase-1 #phase-3,
-.orc-hero-cycle.phase-1 #phase-4 { opacity: 0.25; }
-
-.orc-hero-cycle.phase-2 #phase-1,
-.orc-hero-cycle.phase-2 #phase-3,
-.orc-hero-cycle.phase-2 #phase-4 { opacity: 0.25; }
-
-.orc-hero-cycle.phase-3 #phase-1,
-.orc-hero-cycle.phase-3 #phase-2,
-.orc-hero-cycle.phase-3 #phase-4 { opacity: 0.25; }
-
-.orc-hero-cycle.phase-4 #phase-1,
-.orc-hero-cycle.phase-4 #phase-2,
-.orc-hero-cycle.phase-4 #phase-3 { opacity: 0.25; }
+.orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: 0.25; }
+.orc-hero-cycle.phase-1 #phase-1,
+.orc-hero-cycle.phase-2 #phase-2,
+.orc-hero-cycle.phase-3 #phase-3,
+.orc-hero-cycle.phase-4 #phase-4 { opacity: 1; }
 
 /* Phase hero compact layout */
 .orc-phase-hero-compact {
@@ -743,7 +732,7 @@ svg tspan {
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem 0.75rem;
-  background: white;
+  background: var(--osc-bg);
   border: 1px solid var(--orc-gray-200);
   border-radius: var(--orc-radius-sm);
   cursor: pointer;

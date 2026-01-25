@@ -10,7 +10,7 @@ title-block-style: none
 
 <div class="orc-phase-hero-compact">
 <div class="orc-hero-cycle phase-1">
-{{< include images/os-cycle.svg >}}
+{{< include ../images/os-cycle.svg >}}
 </div>
 <div class="orc-hero-body">
 <h2>Plan & Design</h2>
