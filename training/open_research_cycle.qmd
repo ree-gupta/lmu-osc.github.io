@@ -2,7 +2,7 @@
 title: "Open Research Cycle"
 page-navigation: false
 toc: false
-css: open_research_cycle/styles.css
+css: open_research_cycle/orc-styles.css
 format:
   html:
     page-layout: article
