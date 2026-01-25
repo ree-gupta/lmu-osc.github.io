@@ -4,13 +4,30 @@ description: "Implement FAIR data management, organize research outputs, maintai
 phase_order: 2
 sidebar: open-research-cycle
 page-layout: full
-css: styles.css
+css: orc-styles.css
+title-block-style: none
 ---
 
-image quadrant 2 with checklist box
+<div class="orc-phase-hero-compact">
+<div class="orc-hero-cycle phase-2">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- TODO: Update tag lines and pills -->
+<div class="orc-hero-body">
+<div class="orc-hero-tagline">Build quality into your data from the start</div>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> FAIR Data</span>
+<span><i class="bi bi-check2-circle"></i> Standard Protocols</span>
+<span><i class="bi bi-check2-circle"></i>Informed Consent</span>
+<span><i class="bi bi-check2-circle"></i> Anonymisation</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Data quality validation meeting</div>
+</div>
+</div>
+
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> FAIR Resear Data Management</summary>
+<summary><i class="bi bi-clipboard-data"></i> FAIR Research Data Management</summary>
 
 something about 
 FAIR data principles
@@ -24,7 +41,7 @@ tutorial card
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i>Reproducible data acquisition</summary>
+<summary><i class="bi bi-journal-code"></i> Reproducible Data Acquisition</summary>
 
 ::: {.panel-tabset}
 
@@ -43,7 +60,7 @@ something about SOP for data acquisition e.g. using machines and automatising wi
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Anonymisation</summary>
+<summary><i class="bi bi-shield-lock"></i> Anonymisation</summary>
 
 ::: {.panel-tabset}
 

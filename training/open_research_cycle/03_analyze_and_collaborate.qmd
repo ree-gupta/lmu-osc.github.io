@@ -4,13 +4,29 @@ description: "Create reproducible analyses, document workflows, collaborate effe
 phase_order: 3
 sidebar: open-research-cycle
 page-layout: full
-css: styles.css
+css: orc-styles.css
+title-block-style: none
 ---
 
-image quadrant 3 with checklist box
+<div class="orc-phase-hero-compact">
+<div class="orc-hero-cycle phase-3">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- TODO: Update tagline and pills -->
+<div class="orc-hero-body">
+<div class="orc-hero-tagline">Make your analysis reproducible and transparent</div>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> Reproducible Manuscript</span>
+<span><i class="bi bi-check2-circle"></i> Readable code</span>
+<span><i class="bi bi-check2-circle"></i> Documentation</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Repo & code peer-review</div>
+</div>
+</div>
+
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Reproducible data processing and analysis</summary>
+<summary><i class="bi bi-gear-wide-connected"></i> Reproducible Data Processing & Analysis</summary>
 
 ::: {.panel-tabset}
 
@@ -54,7 +70,7 @@ readme from code publishing? a bit too intense for this stage tho but something 
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i>Reproducible Reporting</summary>
+<summary><i class="bi bi-file-earmark-richtext"></i> Reproducible Reporting</summary>
 
 cards or tabs about 
 

@@ -50,7 +50,7 @@ title-block-style: none
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
 <h4>[OSF](https://osf.io/)</h4>
 <p>Flexible templates, embargoes, file storage</p>
-<details class="orc-card-details">
+<details>
 <summary>Read more</summary>
 <p>Widely used across fields. Supports version control and integrates with file storage.</p>
 </details>
@@ -68,7 +68,7 @@ title-block-style: none
 <div class="orc-card-tool-icon"><i class="bi bi-database"></i></div>
 <h4>[re3data](https://www.re3data.org/)</h4>
 <p>Registry of data repositories</p>
-<details class="orc-card-details">
+<details>
 <summary>Read more</summary>
 <p>Search across disciplines to find appropriate domain-specific repositories.</p>
 </details>
@@ -87,7 +87,7 @@ title-block-style: none
 <h4>[GitHub](https://github.com/) / [GitLab](https://gitlab.com/)</h4>
 <p>Version control platforms</p>
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
-<details class="orc-card-details">
+<details>
 <summary>Read more</summary>
 <p>Public platforms for code collaboration with issue tracking and documentation.</p>
 </details>
@@ -182,34 +182,44 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 
 </div>
 
-<div class="orc-two-column">
+::: {.orc-two-column}
 
-<div class="orc-column">
-<h4><i class="bi bi-mortarboard"></i> Learn More</h4>
-<div class="orc-card-tool">
-<h4>[FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/)</h4>
-<p>Comprehensive FAIR principles guide (2h)</p>
-<details class="orc-card-details">
+::: {.orc-column}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/)
+
+Comprehensive FAIR principles guide (2h)
+
+<details>
 <summary>Read more</summary>
-<p>Includes a detailed section on creating Data Management Plans (~1h).</p>
+Includes a detailed section on creating Data Management Plans (~1h).
 </details>
-</div>
-</div>
+:::
+:::
 
-<div class="orc-column">
-<h4><i class="bi bi-tools"></i> Tools</h4>
-<div class="orc-card-tool">
-<h4>[RDMO](https://rdmo.ub.lmu.de/)</h4>
-<p>Research Data Management Organiser</p>
+::: {.orc-column}
+#### <i class="bi bi-tools"></i> TOOLS
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="https://avatars.githubusercontent.com/u/11614915?s=200&v=4" alt="RDMO"></div>
+
+#### [RDMO](https://rdmo.ub.lmu.de/)
+
+Research Data Management Organiser
+
 <a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
-<details class="orc-card-details">
+<details>
 <summary>Read more</summary>
-<p>Create funder-compliant DMPs with templates for DFG, ERC, and more. Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.</p>
+Create funder-compliant DMPs with templates for DFG, ERC, and more. Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.
 </details>
-</div>
-</div>
+:::
+:::
 
-</div>
+:::
 
 </details>
 
@@ -230,7 +240,7 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
 <h4>[OSF](https://osf.io/)</h4>
 <p>Flexible templates, embargoes, file storage</p>
-<details class="orc-card-details">
+<details>
 <summary>Read more</summary>
 <p>Widely used across fields. Supports version control and integrates with file storage.</p>
 </details>
@@ -253,21 +263,4 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 
 </details>
 
-
-<div class="orc-phase-checklist">
-<h3><i class="bi bi-clipboard-check"></i> Phase Checklist</h3>
-<div class="orc-checklist-items">
-<label class="orc-checklist-item">
-<input type="checkbox"> Literature review completed
-</label>
-<label class="orc-checklist-item">
-<input type="checkbox"> Data Management Plan drafted
-</label>
-<label class="orc-checklist-item">
-<input type="checkbox"> Study preregistered
-</label>
-<label class="orc-checklist-item">
-<input type="checkbox"> Power analysis performed
-</label>
-</div>
-</div>
+Checklist
