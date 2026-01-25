@@ -66,11 +66,6 @@
    2. BASE TYPOGRAPHY
    ======================================== */
 
-/* Hide Quarto default title block on phase pages */
-#title-block-header {
-  display: none;
-}
-
 /* Heading icons - consistent green color */
 h2 i,
 h3 i {
