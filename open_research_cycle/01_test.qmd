@@ -5,12 +5,28 @@ phase_order: 1
 sidebar: open-research-cycle
 page-layout: full
 css: styles.css
+title-block-style: none
 ---
 
-image quadrant 1 with checklist box
+<div class="orc-phase-hero-compact">
+<div class="orc-hero-cycle phase-1">
+{{< include images/os-cycle.svg >}}
+</div>
+<div class="orc-hero-body">
+<h2>Plan & Design</h2>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> Explore & reuse</span>
+<span><i class="bi bi-check2-circle"></i> Write plans</span>
+<span><i class="bi bi-check2-circle"></i> Simulate data</span>
+<span><i class="bi bi-check2-circle"></i> Preregister</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Study plan presentation</div>
+</div>
+</div>
+
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Explore and Reuse</summary>
+<summary><i class="bi bi-search"></i> Explore and Reuse</summary>
 
 ::: {.panel-tabset}
 
@@ -40,7 +56,7 @@ image quadrant 1 with checklist box
 </div>
 :::
 
-### data
+### Data
 
 3 lines of text
 
@@ -60,7 +76,7 @@ image quadrant 1 with checklist box
 :::
 
 
-### code
+### Code
 
 3 lines of text
 
@@ -83,7 +99,7 @@ image quadrant 1 with checklist box
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Legal Requirements</summary>
+<summary><i class="bi bi-shield-check"></i> Legal Requirements</summary>
 
 ::: {.panel-tabset}
 
@@ -111,7 +127,7 @@ image quadrant 1 with checklist box
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Research Data Management Plans</summary>
+<summary><i class="bi bi-folder2-open"></i> Research Data Management Plans</summary>
 
 **DMPs may include:**
 
@@ -183,15 +199,13 @@ image quadrant 1 with checklist box
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Study (statistical) Planning</summary>
+<summary><i class="bi bi-graph-up"></i> Study Design & Power Analysis</summary>
 
 ::: {.panel-tabset}
 
-### Pre-analsis planning
+### Pre-analysis planning
 
 3 lines of text
-
-something about stat consultation and ref to simulation
 
 ::: {.orc-grid-tools}
 
@@ -223,4 +237,20 @@ something about stat consultation and ref to simulation
 </details>
 
 
-checklist
+<div class="orc-phase-checklist">
+<h3><i class="bi bi-clipboard-check"></i> Phase Checklist</h3>
+<div class="orc-checklist-items">
+<label class="orc-checklist-item">
+<input type="checkbox"> Literature review completed
+</label>
+<label class="orc-checklist-item">
+<input type="checkbox"> Data Management Plan drafted
+</label>
+<label class="orc-checklist-item">
+<input type="checkbox"> Study preregistered
+</label>
+<label class="orc-checklist-item">
+<input type="checkbox"> Power analysis performed
+</label>
+</div>
+</div>
