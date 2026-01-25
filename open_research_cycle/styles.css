@@ -10,16 +10,16 @@
   1. CSS Variables
   2. Base Typography
   3. Layout Grids
-  4. Hero Section
-  5. Cards (Base, Tool, Feature)
-  6. Interactive Details Panels
-  7. Callouts (Quarto overrides)
-  7b. Panel Tabsets (Quarto overrides)
+  4. Cards
+  5. Interactive Details Panels
+  6. Callouts (Quarto overrides)
+  7. Panel Tabsets (Quarto overrides)
   8. Phase Menu & Buttons
   9. SVG Diagram Interactivity
   10. Bootstrap Modal Overrides
-  11. Utility Classes
-  12. Responsive Breakpoints
+  11. Phase Hero (Compact Layout)
+  12. Phase Checklist
+  13. Responsive Breakpoints
 */
 
 /* ========================================
@@ -45,9 +45,6 @@
   --orc-gray-700: #2d3748;
   --orc-gray-800: #555555;
 
-  /* Accent Colors */
-  --orc-purple: #667eea;
-
   /* Shadows */
   --orc-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --orc-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -69,17 +66,16 @@
    2. BASE TYPOGRAPHY
    ======================================== */
 
+/* Hide Quarto default title block on phase pages */
+#title-block-header {
+  display: none;
+}
+
 /* Heading icons - consistent green color */
 h2 i,
 h3 i {
   color: var(--orc-green);
   margin-right: 0.5rem;
-}
-
-/* Exception: Hero section inherits white */
-.orc-hero h2 i,
-.orc-hero h3 i {
-  color: inherit;
 }
 
 /* ========================================
@@ -94,168 +90,8 @@ h3 i {
   margin: 1rem 0;
 }
 
-/* Feature cards grid - larger minimum */
-.orc-grid-feature {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 2.5rem 0;
-}
-
-/* Two-column layout */
-.orc-grid-2col {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-/* Gradient highlight box */
-.orc-gradient-box {
-  background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
-  padding: 2rem;
-  border-radius: var(--orc-radius-md);
-  border-left: 5px solid var(--orc-green);
-  margin: 2rem 0;
-}
-
 /* ========================================
-   4. HERO SECTION
-   ======================================== */
-
-.orc-hero {
-  background: linear-gradient(135deg, var(--orc-green) 0%, var(--orc-green-dark) 100%);
-  padding: 3.5rem 3rem;
-  border-radius: var(--orc-radius-xl);
-  color: white;
-  margin-bottom: 3rem;
-  box-shadow: var(--orc-shadow-md);
-  position: relative;
-  overflow: hidden;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-/* Decorative overlay gradient */
-.orc-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Background watermark icon */
-.orc-hero-bg-icon {
-  position: absolute;
-  right: -2%;
-  bottom: -25%;
-  font-size: 22rem;
-  color: rgba(255, 255, 255, 0.08);
-  transform: rotate(-15deg);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Hero typography */
-.orc-hero h2 {
-  font-size: 2.75rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-  color: white !important;
-  border-bottom: none;
-  padding-bottom: 0;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
-}
-
-.orc-hero p {
-  font-size: 1.15rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  opacity: 0.95;
-  max-width: 700px;
-  position: relative;
-  z-index: 2;
-}
-
-/* Phase badge pill */
-.orc-phase-badge {
-  display: inline-flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.95);
-  color: var(--orc-green);
-  padding: 0.4rem 1rem;
-  border-radius: var(--orc-radius-full);
-  font-size: 0.9rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  position: relative;
-  z-index: 2;
-}
-
-.orc-phase-badge i {
-  font-size: 0.7rem;
-  margin-right: 0.5rem;
-  color: var(--orc-green);
-}
-
-/* Hero button group */
-.orc-button-group {
-  position: relative;
-  z-index: 2;
-  margin-top: 1.5rem;
-}
-
-.orc-button-group .btn:not(:last-child) {
-  margin-right: 1rem;
-}
-
-/* Hero buttons */
-.orc-hero .btn {
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  border-radius: var(--orc-radius-sm);
-  transition: var(--orc-transition-fast);
-  border-width: 2px;
-  font-size: 1.1rem;
-}
-
-.orc-hero .btn-light {
-  background: white;
-  color: var(--orc-green);
-  border-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.orc-hero .btn-light:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  background: var(--orc-gray-50);
-}
-
-.orc-hero .btn-outline-light {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-
-.orc-hero .btn-outline-light:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: white;
-  transform: translateY(-2px);
-}
-
-/* ========================================
-   5. CARDS
+   4. CARDS
    ======================================== */
 
 /* --- Base Card --- */
@@ -265,7 +101,7 @@ h3 i {
   padding: 1.25rem;
   background: white;
   box-shadow: var(--orc-shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: var(--orc-transition-fast);
 }
 
 .orc-card:hover {
@@ -273,36 +109,8 @@ h3 i {
   box-shadow: var(--orc-shadow-md);
 }
 
-/* LMU-highlighted card variant */
-.orc-card-lmu {
-  border: 1px solid var(--orc-green);
-  border-radius: var(--orc-radius-lg);
-  padding: 1.25rem;
-  background: linear-gradient(135deg, var(--orc-green-light) 0%, white 100%);
-  box-shadow: var(--orc-shadow-sm);
-}
-
-/* Card accessories */
-.orc-card-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.orc-card-star {
-  color: var(--orc-green);
-  font-size: 0.9rem;
-  float: right;
-}
-
-.orc-card-label {
-  font-size: 0.9rem;
-  color: var(--orc-gray-500);
-  margin-top: 0.3rem;
-}
-
-/* Card expandable details */
+/* Card expandable details - margin-top:auto pushes to bottom in flex parent */
 .orc-card-details {
-  display: inline;
   margin-top: auto;
 }
 
@@ -364,7 +172,7 @@ h3 i {
   align-items: center;
   justify-content: center;
   border-radius: var(--orc-radius-md);
-  transition: transform 0.2s ease;
+  transition: var(--orc-transition-fast);
   flex-shrink: 0;
 }
 
@@ -394,31 +202,6 @@ h3 i {
   line-height: 1.5;
 }
 
-/* Tool card link */
-.orc-card-tool-link {
-  text-decoration: none;
-  color: var(--orc-green);
-  font-weight: 600;
-  font-size: 0.95rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0.5rem 0;
-}
-
-.orc-card-tool-link:hover {
-  text-decoration: none;
-  color: var(--orc-green-dark);
-}
-
-.orc-card-tool-link i {
-  margin-left: 0.4rem;
-  transition: transform 0.2s ease;
-}
-
-.orc-card-tool-link:hover i {
-  transform: translateX(4px);
-}
-
 /* Tool card badge */
 .orc-card-tool-badge {
   position: absolute;
@@ -444,100 +227,118 @@ h3 i {
   color: var(--orc-green);
 }
 
-/* --- Feature Card --- */
-.orc-card-feature {
-  border: 1px solid var(--orc-gray-300);
-  border-radius: var(--orc-radius-lg);
-  padding: 2rem;
-  background: white;
-  transition: var(--orc-transition-smooth);
-  box-shadow: var(--orc-shadow-sm);
-}
-
-.orc-card-feature:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--orc-shadow-lg);
-  border-color: var(--orc-green);
-}
-
-.orc-card-feature h3 i {
-  color: var(--orc-green);
-  margin-right: 0.5rem;
-}
-
 /* ========================================
-   6. INTERACTIVE DETAILS PANELS
+   5. INTERACTIVE DETAILS PANELS
    ======================================== */
 
 .orc-details-panel {
+  margin: 1.25rem 0;
+  background: white;
+  border: 1px solid var(--orc-gray-200);
   border-left: 4px solid var(--orc-green);
-  margin: 1.5rem 0;
-  background: linear-gradient(to right, rgba(0, 136, 58, 0.05), transparent);
-  border-radius: 0 var(--orc-radius-sm) var(--orc-radius-sm) 0;
-  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: var(--orc-radius-md);
+  padding: 0;
+  transition: var(--orc-transition-fast);
+}
+
+.orc-details-panel:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.orc-details-panel[open] {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .orc-details-panel summary {
   cursor: pointer;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
   font-size: 1.1rem;
   color: var(--orc-gray-700);
   list-style: none;
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  transition: var(--orc-transition-fast);
+}
+
+.orc-details-panel summary:hover {
+  background-color: rgba(0, 136, 58, 0.03);
 }
 
 .orc-details-panel summary::-webkit-details-marker {
   display: none;
 }
 
+/* Icon container with background */
 .orc-details-panel summary i {
-  margin-right: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--orc-green-light);
   color: var(--orc-green);
-  font-size: 1.25rem;
+  font-size: 1rem;
+  border-radius: var(--orc-radius-sm);
+  flex-shrink: 0;
+}
+
+/* Hide second icon if present */
+.orc-details-panel summary i + i {
+  display: none;
+}
+
+/* Chevron indicator on right */
+.orc-details-panel summary::after {
+  content: '\F282';
+  font-family: 'bootstrap-icons';
+  font-size: 1rem;
+  color: var(--orc-gray-500);
+  transition: var(--orc-transition-fast);
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.orc-details-panel summary:hover::after {
+  color: var(--orc-green);
+}
+
+.orc-details-panel[open] summary::after {
+  transform: rotate(180deg);
+  color: var(--orc-green);
 }
 
 .orc-details-panel[open] summary {
-  margin-bottom: 1rem;
   border-bottom: 1px solid var(--orc-gray-200);
-  padding-bottom: 0.5rem;
+}
+
+/* Content area padding */
+.orc-details-panel > :not(summary) {
+  padding: 0 1.25rem 1rem 1.25rem;
+}
+
+.orc-details-panel > .panel-tabset {
+  padding-top: 1rem;
+}
+
+/* First paragraph after summary gets top margin */
+.orc-details-panel > p:first-of-type {
+  margin-top: 1rem;
 }
 
 /* ========================================
-   7. CALLOUTS (Quarto Overrides)
+   6. CALLOUTS (Quarto Overrides)
    ======================================== */
 
 /* Universal callout typography */
-div.callout .callout-title,
-div.callout-note .callout-title,
-div.callout-tip .callout-title,
-div.callout-warning .callout-title,
-div.callout-important .callout-title,
-div.callout-caution .callout-title {
+div.callout .callout-title {
   font-size: 1.1rem !important;
   font-weight: 700 !important;
 }
 
 div.callout .callout-body,
-div.callout-note .callout-body,
-div.callout-tip .callout-body,
-div.callout-warning .callout-body,
-div.callout-important .callout-body,
-div.callout-caution .callout-body {
-  font-size: 1rem !important;
-  line-height: 1.6 !important;
-}
-
-div.callout .callout-body p,
-div.callout .callout-body ul,
-div.callout .callout-body li,
-div.callout-note .callout-body p,
-div.callout-note .callout-body ul,
-div.callout-note .callout-body li,
-div.callout-tip .callout-body p,
-div.callout-tip .callout-body ul,
-div.callout-tip .callout-body li {
+div.callout .callout-body :is(p, ul, li) {
   font-size: 1rem !important;
   line-height: 1.6 !important;
 }
@@ -584,7 +385,7 @@ details .callout {
 }
 
 /* ========================================
-   7b. PANEL TABSETS (Quarto Overrides)
+   7. PANEL TABSETS (Quarto Overrides)
    ======================================== */
 
 /* Tab navigation styling */
@@ -617,9 +418,8 @@ details .callout {
 
 /* Tab content panel styling */
 .panel-tabset .tab-content {
-  padding: 1.5rem 0;
-  border-left: 3px solid var(--orc-green-light);
-  padding-left: 1.5rem;
+  padding: 1.25rem 0;
+  border-left: none;
   margin-top: 0.5rem;
 }
 
@@ -664,7 +464,7 @@ details .callout {
   align-items: center;
   justify-content: center;
   padding: 1.25rem 0.75rem;
-  background-color: white;
+  background: white;
   border: 2px solid var(--orc-gray-200);
   border-radius: var(--orc-radius-lg);
   color: var(--orc-gray-700);
@@ -673,11 +473,8 @@ details .callout {
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  flex: 1 1 180px;
+  box-shadow: var(--orc-shadow-sm);
   width: 180px;
-  min-width: 180px;
-  max-width: 180px;
   height: 110px;
   text-align: center;
 }
@@ -707,63 +504,6 @@ details .callout {
 
 .phase-btn-h span {
   line-height: 1.3;
-}
-
-/* Legacy vertical phase menu (backwards compatibility) */
-.phase-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  justify-content: center;
-  align-items: stretch;
-  height: 100%;
-  min-height: 400px;
-}
-
-/* Vertical phase button */
-.phase-btn {
-  display: flex;
-  align-items: center;
-  padding: 1.5rem;
-  background-color: white;
-  border: 1px solid var(--orc-gray-200);
-  border-left: 5px solid var(--orc-green);
-  border-radius: var(--orc-radius-sm);
-  color: var(--orc-gray-700);
-  text-decoration: none;
-  transition: var(--orc-transition-smooth);
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1.15rem;
-  box-shadow: var(--orc-shadow-md);
-  width: 100%;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-}
-
-.phase-btn:hover {
-  transform: translateX(-5px);
-  box-shadow: var(--orc-shadow-lg);
-  background-color: var(--orc-gray-50);
-  border-left-width: 8px;
-  color: var(--orc-green-dark);
-}
-
-.phase-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 153, 51, 0.3);
-}
-
-.phase-btn i {
-  font-size: 1.75rem;
-  margin-right: 1.2rem;
-  color: var(--orc-green);
-  transition: transform 0.3s ease;
-}
-
-.phase-btn:hover i {
-  transform: scale(1.1);
 }
 
 /* ========================================
@@ -865,20 +605,173 @@ svg tspan {
 }
 
 /* ========================================
-   11. UTILITY CLASSES
+   11. PHASE HERO (Compact Layout)
    ======================================== */
 
-.orc-text-lmu-green {
-  color: var(--orc-green);
+/* Dim non-active phases in cycle diagram */
+.orc-hero-cycle.phase-1 #phase-2,
+.orc-hero-cycle.phase-1 #phase-3,
+.orc-hero-cycle.phase-1 #phase-4 { opacity: 0.25; }
+
+.orc-hero-cycle.phase-2 #phase-1,
+.orc-hero-cycle.phase-2 #phase-3,
+.orc-hero-cycle.phase-2 #phase-4 { opacity: 0.25; }
+
+.orc-hero-cycle.phase-3 #phase-1,
+.orc-hero-cycle.phase-3 #phase-2,
+.orc-hero-cycle.phase-3 #phase-4 { opacity: 0.25; }
+
+.orc-hero-cycle.phase-4 #phase-1,
+.orc-hero-cycle.phase-4 #phase-2,
+.orc-hero-cycle.phase-4 #phase-3 { opacity: 0.25; }
+
+/* Phase hero compact layout */
+.orc-phase-hero-compact {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem 2.5rem;
+  margin-bottom: 3rem;
+  background-color: var(--orc-green);
+  border-radius: var(--orc-radius-xl);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 100, 38, 0.25);
 }
 
-.orc-icon-lmu-badge {
-  color: var(--orc-green);
-  font-size: 0.85rem;
+.orc-phase-hero-compact .orc-hero-cycle {
+  width: 210px;
+  height: 210px;
+  flex-shrink: 0;
+}
+
+.orc-phase-hero-compact .orc-hero-cycle svg {
+  width: 100%;
+  height: 100%;
+}
+
+.orc-phase-hero-compact .orc-hero-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.orc-phase-hero-compact h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white !important;
+  border-bottom: none;
+  line-height: 1.2;
+}
+
+.orc-phase-hero-compact .orc-hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+}
+
+.orc-phase-hero-compact .orc-hero-pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--orc-radius-full);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.orc-phase-hero-compact .orc-hero-pills span i {
+  color: #7ddf7d;
+  font-size: 1.2rem;
+}
+
+.orc-phase-hero-compact .orc-hero-checkpoint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: var(--orc-radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 0.25rem;
+  width: fit-content;
+}
+
+.orc-phase-hero-compact .orc-hero-checkpoint i {
+  font-size: 0.8rem;
 }
 
 /* ========================================
-   12. RESPONSIVE BREAKPOINTS
+   12. PHASE CHECKLIST
+   ======================================== */
+.orc-phase-checklist {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--orc-gray-50);
+  border: 1px solid var(--orc-gray-200);
+  border-radius: var(--orc-radius-lg);
+}
+
+.orc-phase-checklist h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--orc-gray-700);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.orc-phase-checklist h3 i {
+  color: var(--orc-green);
+  font-size: 1.25rem;
+}
+
+.orc-checklist-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.orc-checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid var(--orc-gray-200);
+  border-radius: var(--orc-radius-sm);
+  cursor: pointer;
+  transition: var(--orc-transition-fast);
+  font-size: 0.95rem;
+  color: var(--orc-gray-600);
+}
+
+.orc-checklist-item:hover {
+  border-color: var(--orc-green);
+  background: var(--orc-green-hover);
+}
+
+.orc-checklist-item input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--orc-green);
+  cursor: pointer;
+}
+
+.orc-checklist-item:has(input:checked) {
+  background: var(--orc-green-light);
+  border-color: var(--orc-green);
+  color: var(--orc-green);
+}
+
+/* ========================================
+   13. RESPONSIVE BREAKPOINTS
    ======================================== */
 
 /* Large screens - wider tool grid */
@@ -888,65 +781,20 @@ svg tspan {
   }
 }
 
-/* Tablet and below */
+/* Tablet - phase hero stacks vertically */
 @media (max-width: 768px) {
-  .orc-grid-2col {
-    grid-template-columns: 1fr;
-  }
-
-  .orc-hero {
-    padding: 1.5rem;
-  }
-
-  .orc-gradient-box {
-    padding: 1.5rem;
-  }
-
-  .phase-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-
-  .phase-btn {
-    flex: 1 1 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border-left-width: 4px;
-  }
-
-  .phase-btn:hover {
-    transform: translateY(-2px);
-  }
-}
-
-/* Hero responsive */
-@media (max-width: 768px) {
-  .orc-hero {
-    padding: 3rem 1.5rem;
-  }
-
-  .orc-hero h2 {
-    font-size: 2.5rem;
-  }
-
-  .orc-hero-bg-icon {
-    font-size: 15rem;
-    right: -10%;
-    bottom: -10%;
-  }
-
-  .orc-button-group {
-    display: flex;
+  .orc-phase-hero-compact {
     flex-direction: column;
-    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
   }
 
-  .orc-button-group .btn {
-    width: 100%;
-    margin-right: 0 !important;
-    margin-bottom: 1rem;
-    text-align: center;
+  .orc-phase-hero-compact .orc-hero-pills {
+    justify-content: center;
+  }
+
+  .orc-phase-hero-compact .orc-hero-checkpoint {
+    margin: 0.5rem auto 0;
   }
 }
 
@@ -972,23 +820,4 @@ svg tspan {
     margin-right: 1rem;
     font-size: 1.5rem;
   }
-}
-
-/* Grid column alignment helpers */
-.grid.align-items-center > div {
-  display: flex;
-  flex-direction: column;
-}
-
-.g-col-12.g-col-md-7 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.g-col-12.g-col-md-5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
 }
