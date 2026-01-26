@@ -348,43 +348,37 @@ Track large datasets alongside code. Built on git-annex, integrates with Git wor
 <details class="orc-details-panel">
 <summary><i class="bi bi-shield-lock"></i> Ethics & Privacy</summary>
 
-Research involving human participants requires ethics approval and careful attention to data protection. Address these requirements before collecting any data.
+Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.
+
+At LMU, submit ethics applications to the [Ethics Committee](https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/) and allow 4-8 weeks for review. For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or [RDM Support](mailto:rdm@ub.uni-muenchen.de).
 
 ::: {.panel-tabset}
 
 ### Informed Consent
 
-Participants have the right to understand what they are agreeing to. Your consent form is both a legal requirement and an ethical obligation to the people contributing to your research.
+Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.
 
-A consent form should explain the purpose of the research in plain language, describe exactly what data you will collect and how you will protect it, specify who will have access and for how long, explain any plans for sharing the data, and make clear that participation is voluntary and can be withdrawn at any time.
+**Use tiered consent when you plan to share data.** Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.
 
-Consider tiered consent when you plan to share data. Some participants may consent to their data being used for your specific study but not shared publicly. Others may be comfortable with broader sharing. Giving participants options respects their autonomy while maximizing the data you can eventually share.
-
-Store signed consent forms securely and separately from the data they authorize. The consent form links a name to participation; keeping it with the data undermines any pseudonymization you apply.
-
-At LMU, submit your ethics application to the [Ethics Committee](https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/) and allow 4-8 weeks for review.
+**Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
 
 ### Anonymization
 
-Anonymization protects participant privacy and determines what you can share.
+Anonymization protects privacy and determines what you can share. The distinction between pseudonymization and anonymization matters for GDPR compliance.
 
-**Direct identifiers** are obvious: names, addresses, ID numbers, photographs, email addresses. Remove or replace these with codes during data collection.
+**Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
 
-**Indirect identifiers** are less obvious but equally important. A combination of age, location, profession, and a rare medical condition might identify someone even without their name. Timestamps can reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Assess your data for these risks.
+**Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share.
 
-**Pseudonymization** replaces identifiers with codes while retaining a key that links codes back to individuals. Use this during collection and analysis when you need to link records or contact participants. Critically, pseudonymized data is still personal data under GDPR because re-identification is possible.
+**Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.
 
-**Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope and can be shared without restriction. Achieving true anonymization is harder than it appears, especially with rich datasets. When individual-level data is too sensitive even for anonymization, consider releasing only aggregate statistics.
+**Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.
 
 ### GDPR Compliance
 
-Research at LMU must comply with EU data protection regulations. The GDPR is not optional.
+Research at LMU must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
 
-The core principles are straightforward: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for the purposes you stated, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
-
-In practice, this means documenting your lawful basis, including data protection language in your consent forms, using institutional storage rather than personal cloud services, restricting access to those who need it for the research, and planning when and how you will delete data.
-
-For guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or [RDM Support](mailto:rdm@ub.uni-muenchen.de).
+**In practice:** document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.
 
 :::
 
@@ -394,37 +388,39 @@ For guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/ab
 <details class="orc-details-panel">
 <summary><i class="bi bi-check2-square"></i> Quality Control</summary>
 
-Quality control catches problems before they propagate into your analysis. Define your criteria before looking at the data to avoid unconscious bias in what you keep and exclude.
+Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
+
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient.
 
 ::: {.panel-tabset}
 
-### Data Validation
+### Validation
 
-Validation checks whether your data meets specifications. Run these checks during collection to catch problems immediately, after collection for a systematic review, and after any processing to verify transformations worked correctly.
+Validation checks whether your data meets specifications. Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
 
-Automate what you can. Check that data types are correct (numbers are numbers, dates parse as dates), values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.
+**Automate what you can.** Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.
 
-Manual review catches what automation misses. Sample your data and verify it against the source. Inspect outliers to understand whether they are errors or genuine extreme values. Look for suspicious patterns, like survey responses that alternate predictably or reaction times that are impossibly fast.
+**Manual review catches what automation misses.** Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.
 
 ### Cleaning
 
-Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies, and every step is documented or scripted.
+Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
 
-For unambiguous errors (clear typos, obvious data entry mistakes), correct them. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.
+**Correct unambiguous errors.** Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.
 
-Handle missing data consistently. Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information; it may matter for your analysis.
+**Handle missing data consistently.** Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.
 
-Outliers require investigation before action. An extreme value might be an error, or it might be a genuine observation that tells you something important. Understand the cause before deciding whether to remove, transform, or retain it.
+**Investigate outliers before acting.** An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.
 
-Write your cleaning as a script whenever possible. A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
+**Write cleaning as a script.** A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
 
-### Exclusion Criteria
+### Exclusions
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results. This prevents cherry-picking and demonstrates that your exclusions are principled rather than convenient.
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results.
 
-Common exclusion criteria include technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply with instructions), quality thresholds (too much missing data, failed attention checks, movement artifacts), and participant criteria (did not meet stated inclusion criteria).
+**Common exclusion criteria:** technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
 
-Document the criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses that compare results with and without exclusions to show your findings are robust.
+**Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
 
 :::
 
