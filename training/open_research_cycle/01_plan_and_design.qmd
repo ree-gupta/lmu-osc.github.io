@@ -116,7 +116,7 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-folder2-open"></i> Research Data Management Plans</summary>
+<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Research Data Management Plans</summary>
 
 A Data Management Plan (DMP) documents how you will handle research data throughout your project. Write it before your ethics submission, since the content overlaps significantly and most funders require one. Writing a DMP prompts you to think through decisions you might otherwise leave implicit, and documents them using standard terminology.
 
