@@ -128,25 +128,18 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-folder2-open"></i> Research Data Management Plans</summary>
+<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Research Data Management Plans</summary>
 
-A Research Data Management (RDM) plan documents how you will acquire, store, use, and share your research data. Draft it early - much of the content will be needed for ethics approval. Your DMP is a living document that evolves with your project.
-
-**Collecting new data?** Write your RDM plan before submitting your ethics proposal. The plan helps structure your consent forms and data handling procedures.
-
-**Using existing data?** Review the dataset's metadata and codebook first. Check any data use agreements and understand how the data was collected.
-
-**What to include in your DMP:**
+**DMPs may include:**
 
 <div class="orc-grid-tools">
 
 <div class="orc-card">
 <strong><i class="bi bi-file-earmark-text"></i> Data Description</strong>
 <ul>
-<li>Types and file formats</li>
-<li>Expected volume and growth</li>
+<li>Types and formats</li>
+<li>Expected volume</li>
 <li>Naming conventions</li>
-<li>Versioning approach</li>
 </ul>
 </div>
 
@@ -154,9 +147,8 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 <strong><i class="bi bi-shield-check"></i> Storage & Security</strong>
 <ul>
 <li>Storage locations</li>
-<li>3-2-1 backup rule</li>
+<li>Backup strategies</li>
 <li>Access controls</li>
-<li>Encryption requirements</li>
 </ul>
 </div>
 
@@ -166,7 +158,6 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 <li>Repository selection</li>
 <li>License choices</li>
 <li>Embargo periods</li>
-<li>10-year preservation (LMU)</li>
 </ul>
 </div>
 
@@ -175,49 +166,29 @@ A Research Data Management (RDM) plan documents how you will acquire, store, use
 <ul>
 <li>Consent procedures</li>
 <li>Anonymization methods</li>
-<li>GDPR compliance</li>
-<li>Data use agreements</li>
+<li>Compliance requirements</li>
 </ul>
 </div>
 
 </div>
 
-::: {.orc-two-column}
-
-::: {.orc-column}
-#### <i class="bi bi-mortarboard"></i> LEARN MORE
-
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
-
-#### [FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/)
-
-Comprehensive FAIR principles guide (2h)
-
-<details>
-<summary>Read more</summary>
-Includes a detailed section on creating Data Management Plans (~1h).
-</details>
-:::
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: FAIR Data Management
+[FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/) (2h) - Comprehensive guide to managing data following FAIR principles, including a detailed section on creating Data Management Plans (~1h).
 :::
 
-::: {.orc-column}
-#### <i class="bi bi-tools"></i> TOOLS
+::: {.orc-grid-tools}
 
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><img src="https://avatars.githubusercontent.com/u/11614915?s=200&v=4" alt="RDMO"></div>
-
-#### [RDMO](https://rdmo.ub.lmu.de/)
-
-Research Data Management Organiser
-
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-folder-check"></i></div>
+<h4>[RDMO](https://rdmo.ub.lmu.de/)</h4>
+<p>Research Data Management Organiser</p>
 <a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
-<details>
+<details class="orc-card-details">
 <summary>Read more</summary>
-Create funder-compliant DMPs with templates for DFG, ERC, and more. Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.
+<p>Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.</p>
 </details>
-:::
-:::
+</div>
 
 :::
 
