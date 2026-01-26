@@ -402,6 +402,21 @@ Validation checks whether your data meets specifications. Run checks during coll
 
 **Manual review catches what automation misses.** Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.
 
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/)
+
+Automated validation checks in R
+
+<details>
+<summary>Read more</summary>
+Learn to create validation rules and automated checks for your research data.
+</details>
+:::
+:::
+
 ### Cleaning
 
 Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
