@@ -1,0 +1,81 @@
+---
+title: "Collect & Manage"
+description: "Implement FAIR data management, organize research outputs, maintain version control, and ensure quality"
+phase_order: 2
+sidebar: open-research-cycle
+page-layout: full
+css: orc-styles.css
+title-block-style: none
+---
+
+<div class="orc-phase-hero-compact">
+<div class="orc-hero-cycle phase-2">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- TODO: Update tag lines and pills -->
+<div class="orc-hero-body">
+<div class="orc-hero-tagline">Build quality into your data from the start</div>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> FAIR Data</span>
+<span><i class="bi bi-check2-circle"></i> Standard Protocols</span>
+<span><i class="bi bi-check2-circle"></i>Informed Consent</span>
+<span><i class="bi bi-check2-circle"></i> Anonymisation</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Data quality validation meeting</div>
+</div>
+</div>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-clipboard-data"></i> FAIR Research Data Management</summary>
+
+something about 
+FAIR data principles
+storage back up
+organisation and file naming
+documentation
+meadatastandards -> link to discipline specific section
+tutorial card
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-code"></i> Reproducible Data Acquisition</summary>
+
+::: {.panel-tabset}
+
+### reproducible protocols
+
+something about reproducible protocols (wet lab) - link to protocol.io, video reproducible protocol writing
+
+### Standard data acquisition
+
+something about SOP for data acquisition e.g. using machines and automatising with programing any preprocessing step if possible - R, Python cards
+
+:::
+
+</details>
+
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-shield-lock"></i> Anonymisation</summary>
+
+::: {.panel-tabset}
+
+### data anonymisation
+
+modifying real data, removing identifiers, aggregation, ect
+
+### synthetic datasets
+
+generating simulated data based on the properties of the real dataset
+
+:::
+
+</details>
+
+
+
+Checklist

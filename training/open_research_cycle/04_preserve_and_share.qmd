@@ -1,0 +1,81 @@
+---
+title: "Preserve & Share"
+description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
+phase_order: 4
+sidebar: open-research-cycle
+page-layout: full
+css: orc-styles.css
+title-block-style: none
+---
+
+<div class="orc-phase-hero-compact">
+<div class="orc-hero-cycle phase-4">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- TODO: Update tagline and pills -->
+<div class="orc-hero-body">
+<div class="orc-hero-tagline">Share your work openly and maximize impact</div>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> Data repositories</span>
+<span><i class="bi bi-check2-circle"></i> Code archives</span>
+<span><i class="bi bi-check2-circle"></i> Open access</span>
+<span><i class="bi bi-check2-circle"></i> DOIs & licenses</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Manuscript submission with DOIs</div>
+</div>
+</div>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-database-check"></i> FAIR Data Sharing</summary>
+
+cards (I think?) or possibly tabs about 
+
+documentation
+
+metadatastandards
+
+real or synthetic data / anonimised data
+
+publish on repo with DOI, credit, licence
+
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-code-square"></i> Code Sharing</summary>
+
+cards (I think?) or possibly tabs about 
+
+documentation - readme
+
+licence
+
+data to run real/sim/synth
+
+code publishing tutorial card
+
+zenodo card
+
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-arrow-up"></i> Preprint, Postprint & Open Access</summary>
+
+cards (I think?) or possibly tabs about 
+
+what publishers allow you: openpolicyfinders
+
+logic figure about this
+
+credit, contributorship
+
+licence
+
+
+</details>
+
+checklist
