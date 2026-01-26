@@ -1,44 +1,66 @@
 on:
   workflow_dispatch:
-  push:
-    branches: [v1/add-research-cycle]
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 
-name: Research Cycle Preview Branch
+name: PR Preview
+
+concurrency: preview-${{ github.ref }}
 
 jobs:
-  build-deploy:
+  preview:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Install R
+        if: github.event.action != 'closed'
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: renv
 
       - name: Install R Dependencies
+        if: github.event.action != 'closed'
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
 
       - name: Set up Quarto
+        if: github.event.action != 'closed'
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Restore Quarto _freeze/ cache
+        if: github.event.action != 'closed'
         uses: actions/cache@v3
-        id: quarto-cache
         with:
           path: _freeze
           key: ${{ runner.os }}-quarto-freeze-${{ hashFiles('**/*.qmd') }}
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Add preview draft banner
+        if: github.event.action != 'closed'
+        run: |
+          sed -i 's/content: ".*"/content: "**⚠️ PREVIEW BUILD (PR #${{ github.event.pull_request.number }}) - This is a draft and may not reflect final content.**"/' _quarto.yml
+          sed -i 's/type: primary/type: warning/' _quarto.yml
+          sed -i 's/dismissable: true/dismissable: false/' _quarto.yml
+
+      - name: Render Quarto site
+        if: github.event.action != 'closed'
+        run: quarto render
+
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          source-dir: _site
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          action: auto
