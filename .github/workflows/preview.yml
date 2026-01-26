@@ -54,8 +54,13 @@ jobs:
 
       - name: Add preview draft banner
         if: github.event.action != 'closed'
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
         run: |
-          sed -i 's/content: ".*"/content: "**⚠️ PREVIEW BUILD (PR #${{ github.event.pull_request.number }}) - This is a draft and may not reflect final content.**"/' _quarto.yml
+          # Escape special characters in PR title for sed
+          ESCAPED_TITLE=$(printf '%s' "$PR_TITLE" | sed 's/[&/\]/\\&/g; s/"/\\"/g')
+          sed -i "s/content: \".*\"/content: \"**⚠️ PREVIEW: ${ESCAPED_TITLE} (PR #${PR_NUMBER})**\"/" _quarto.yml
           sed -i 's/type: primary/type: warning/' _quarto.yml
           sed -i 's/dismissable: true/dismissable: false/' _quarto.yml
 
