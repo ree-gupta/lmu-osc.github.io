@@ -12,16 +12,15 @@ title-block-style: none
 <div class="orc-hero-cycle phase-4">
 {{< include ../images/os-cycle.svg >}}
 </div>
-<!-- TODO: Update tagline and pills -->
 <div class="orc-hero-body">
-<div class="orc-hero-tagline">Share your work openly and maximize impact</div>
+<div class="orc-hero-tagline">Make your research outputs findable, accessible, and citable</div>
 <div class="orc-hero-pills">
-<span><i class="bi bi-check2-circle"></i> Data repositories</span>
-<span><i class="bi bi-check2-circle"></i> Code archives</span>
-<span><i class="bi bi-check2-circle"></i> Open access</span>
-<span><i class="bi bi-check2-circle"></i> DOIs & licenses</span>
+<span><i class="bi bi-check2-circle"></i> Data Sharing</span>
+<span><i class="bi bi-check2-circle"></i> Code Publishing</span>
+<span><i class="bi bi-check2-circle"></i> Open Access</span>
+<span><i class="bi bi-check2-circle"></i> Persistent Identifiers</span>
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Manuscript submission with DOIs</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Manuscript submission with DOIs for preregistration, data, and code</div>
 </div>
 </div>
 
