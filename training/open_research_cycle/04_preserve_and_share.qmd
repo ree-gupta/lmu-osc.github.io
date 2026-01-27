@@ -26,55 +26,111 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-database-check"></i> FAIR Data Sharing</summary>
+<summary><i class="bi bi-database-check"></i> Data Sharing</summary>
 
-cards (I think?) or possibly tabs about 
+<!-- intro text here -->
 
-documentation
+::: {.panel-tabset}
 
-metadatastandards
+### Open vs Restricted
 
-real or synthetic data / anonimised data
+<!-- real or synthetic or anonymised data - decision tree -->
 
-publish on repo with DOI, credit, licence
+### Preparing Your Data
 
+<!-- documentation for external users, metadata standards -->
 
-</details>
+### Where to Deposit
 
+<!-- publish on repo with DOI -->
 
-<details class="orc-details-panel">
-<summary><i class="bi bi-code-square"></i> Code Sharing</summary>
+### Data Licenses
 
-cards (I think?) or possibly tabs about 
+<!-- licence (link to code-publishing tutorial) -->
 
-documentation - readme
-
-licence
-
-data to run real/sim/synth
-
-code publishing tutorial card
-
-zenodo card
-
+:::
 
 </details>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-arrow-up"></i> Preprint, Postprint & Open Access</summary>
+<summary><i class="bi bi-code-square"></i> Code Publishing</summary>
 
-cards (I think?) or possibly tabs about 
+<!-- intro text here -->
 
-what publishers allow you: openpolicyfinders
+::: {.panel-tabset}
 
-logic figure about this
+### Preparing Your Repo
 
-credit, contributorship
+<!-- readme for external users, clean history, remove sensitive data -->
 
-licence
+### Simulated & Synthetic Data
 
+<!-- data to run: real/sim/synth -->
+
+### Code Licenses
+
+<!-- licence (link to code-publishing tutorial) -->
+
+### Archiving & DOIs
+
+<!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
+
+:::
 
 </details>
 
-checklist
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-arrow-up"></i> Open Access</summary>
+
+<!-- intro text here -->
+
+::: {.panel-tabset}
+
+### Your Rights
+
+<!-- what publishers allow: openpolicyfinder -->
+
+### Green OA
+
+<!-- preprint/postprint workflow figure, institutional repos, embargo periods -->
+
+### Gold OA
+
+<!-- APCs, LMU agreements -->
+
+:::
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-person-badge"></i> Identity & Credit</summary>
+
+<!-- intro text here -->
+
+::: {.panel-tabset}
+
+### ORCID
+
+<!-- ORCID, ROR IDs -->
+
+### CRediT
+
+<!-- CRediT taxonomy, contributorship -->
+
+### Connecting Your Work
+
+<!-- connect prereg → data → code → paper -->
+
+### Updating Preregistration
+
+<!-- lift embargo on preregistration -->
+
+:::
+
+</details>
+
+
+<!-- checklist at end -->
