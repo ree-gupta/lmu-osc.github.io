@@ -696,6 +696,8 @@ Registry of preregistrations. Widely used across fields.
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>To find <strong>existing datasets</strong>, search for discipline-specific repositories on <a href="https://www.re3data.org/">re3data</a> which is a central registry of all repositories, or explore subject agnostic repositories such as <a href="https://datacite.org/">DataCite</a> or <a href="https://zenodo.org/">Zenodo</a> (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data.</p>
+<p><br></p>
+<p>Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead familiarize yourself with the metadata to plan your analyses (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>). Specifically, there may be a data dictionary (also called “codebook”), or other extensive documentation on which variables and their description are included.</p>
 <!-- add zenodo card as tool-->
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
@@ -860,8 +862,28 @@ Funder-compliant templates (DFG, ERC, Horizon Europe)
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Power analyses</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p>3 lines of text</p>
+<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>, often unintentionally.</p>
+<p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration</strong>: specifying hypotheses, methods, and analysis plans before data collection or analysis. Preregistration constrains bias in confirmatory testing while still allowing exploratory analyses, clearly distinguishing robust hypothesis tests from hypothesis-generating work. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
+<p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard OSF preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g.&nbsp;systematic review, qualitative work, secondary data analysis).</p>
+<section id="your-preregistration-will-define" class="level4">
+<h4 class="anchored" data-anchor-id="your-preregistration-will-define"><i class="bi bi-list-check"></i> Your preregistration will define:</h4>
+<ul>
+<li><strong>Hypothesis and predictions</strong></li>
+<li><strong>Data collection procedures</strong></li>
+<li><strong>Sample size and stopping rule</strong></li>
+<li><strong>Variables</strong> (manipulated, measured, indices)</li>
+<li><strong>Statistical method</strong> (model, dependent and independent variables, covariables, trasnformations)</li>
+<li><strong>Data exclusion criteria</strong></li>
+<li><strong>How to deal with missing data</strong></li>
+</ul>
+<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from collaborators or statisticians on their design, is to simulate data and write the possible statistical test to analyze that data (see <a href="">Simulation of data and Power analyses tabs</a> <!-- internal link-->).</p>
+<p>Once completed, you can submit your preregistration on e.g.&nbsp;the <a href="https://osf.io/">Open Science Framework (OSF)</a> before collecting or analyzing existing data. The plan can be embargoed (i.e.&nbsp;kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable early feedback from collaborators. An even stronger approach is submitting preregistrations directly to journals (then called “Registered Reports”), enabling peer review at a stage where methodological adjustments are still possible.</p>
+<!-- in a call out info box -->
+<p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where studies are peer-reviewed before data collection. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
+<p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes. <!-- till here --></p>
 <div class="orc-grid-tools">
+<!-- learn more: cards for a TBA preregistration tutorial, card for OSF linking out to https://help.osf.io/article/330-welcome-to-registrations-->
+<!-- Toosl and resources: OSF card with real OSF icon used somewhere above + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="https://cdn.simpleicons.org/osf" alt="OSF">
@@ -874,6 +896,7 @@ Flexible templates, embargoes, file storage. Widely used across fields.
 </p>
 </div>
 </div>
+</section>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>3 lines of text</p>
