@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Explore existing resources, write data management plans, design studies, and prepare preregistrations">
+<meta name="description" content="Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations">
 
 <title>Plan &amp; Design – LMU Open Science Center</title>
 <style>
@@ -617,7 +617,7 @@ Set the foundation for open &amp; reliable research
 <p><span><i class="bi bi-check2-circle"></i> Explore &amp; Reuse</span> <!-- make the boxes around not so tall so they don't touch if two lines --> <span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span> <span><i class="bi bi-check2-circle"></i> Write Data Management Plan</span> <span><i class="bi bi-check2-circle"></i> Design Study</span></p>
 </div>
 <div class="orc-hero-checkpoint">
-<i class="bi bi-people-fill"></i> Team Checkpoint: Study Plan Presentation &amp; Preregistration
+<i class="bi bi-people-fill"></i> Team Checkpoint: Study Plan Presentation &amp; Preregistration Submission
 </div>
 </div>
 </div>
@@ -626,21 +626,19 @@ Set the foundation for open &amp; reliable research
 <i class="bi bi-search"></i> Explore and Reuse
 </summary>
 <p><!-- make this. and the other top titles, a sharable url --></p>
-<p>Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. A research output (e.g.&nbsp;data, code) without a license cannot be reused even if they appear publicly online.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Articles <!--make this, and other tabs title everywhere, a shareable url? --></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Preregistrations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Code</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. A research output (e.g.&nbsp;data, code) without a license cannot be reused even if they appear publicly online. <!-- this whit space seems kind of big? cut a third of it? apply everywhere--> ::: {.panel-tabset}</p>
+<section id="articles" class="level3">
+<h3 class="anchored" data-anchor-id="articles">Articles <!--make this, and other tabs title everywhere, a shareable url? --></h3>
 <ul>
 <li>To come up with a well-founded research question, <strong>review existing literature</strong> on open source registries like <a href="https://openalex.org/">OpenAlex</a>.</li>
-<li>Keep track of your bibliography with an open source <strong>reference manager</strong> like <a href="https://www.zotero.org/">Zotero</a>. It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see <a href="../../training/open_research_cycle/03_analyze_and_collaborate.html">3. Analyze &amp; Collaborate</a>). <!-- url of link will change when merging to main website -does this currently work?? --> <!-- could this be not looking like a hyperlink for an external page but maybe a small grey italic button looking text or something less popping out --></li>
+<li>Keep track of your bibliography with an open source <strong>reference manager</strong> like <a href="https://www.zotero.org/">Zotero</a>. It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see <a href="../../training/open_research_cycle/03_analyze_and_collaborate.html">3. Analyze &amp; Collaborate</a>). <!-- url of link will change when merging to main website -does this currently work?? --> <!-- could this be not looking like a hyperlink for an external page but maybe a small grey italic button looking text or something less popping out ?--></li>
 </ul>
 <div class="orc-two-column">
-<!-- I want these cards to be clickable anywhere to link to the tutorial/tool - not just the title, and be of the same size -->
+<!-- I want these cards to be clickable anywhere on the card to link to the tutorial/tool - not just the title, and I want the card to be of the same size -->
 <section id="learn-more" class="level4 orc-column">
-<h4 class="anchored" data-anchor-id="learn-more"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<h4 class="anchored" data-anchor-id="learn-more"><i class="bi bi-mortarboard"></i> LEARN MORE <!-- remove the sharable url link here and on the title intro to zotero--></h4>
 <div class="orc-card-tool">
-<!-- should the logo here be of zotero, and the OSC logo integrated in the corner tag? or two logos, the OSC logo and the tool logo on the left? -->
+<!-- should the logo here be of zotero, and the OSC logo integrated in the corner tag? or two logos, the OSC logo and the tool logo on the left? I think I like the two logos -->
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC logo">
 </div>
@@ -668,14 +666,15 @@ All the world’s research, connected and open
 </div>
 </section>
 </div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>A <strong>preregistration</strong> typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>) <!-- this cross ref is not working, it's not a md title FIXME --></p>
-<!-- I want a line break here for fuck sake -->
+</section>
+<section id="preregistrations" class="level3">
+<h3 class="anchored" data-anchor-id="preregistrations">Preregistrations</h3>
+<p>A <strong>preregistration</strong> typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see <a href="###study-design--analysis-plan">pre-analysis planning</a>) <!-- this cross ref is not working, it's not a md title FIXME either link to the study design ana analysis plan title or the tab pre analysis plan if possible. with an internal looking cross ref greyish thing--></p>
+<!-- I want a line break here for fuck sake - is only <br> working??-->
 <p><br></p>
 <p>To have some <strong>insight into projects that are not (yet) published</strong>, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic:</p>
 <div style="margin-top: 1em;">
-<p><!--or make them all clickable cards? --> * <a href="https://osf.io/registries" class="uri">https://osf.io/registries</a> <!-- this randomly appears as a list OR NOT - can't explain --> * <a href="https://aspredicted.org/" class="uri">https://aspredicted.org/</a> * <a href="https://preclinicaltrials.eu/" class="uri">https://preclinicaltrials.eu/</a> * <a href="https://www.animalstudyregistry.org/" class="uri">https://www.animalstudyregistry.org/</a> * <a href="https://clinicaltrials.gov/" class="uri">https://clinicaltrials.gov/</a></p>
+<p><!--make a nice list or make them all clickable cards? maybe just OSF as card as this is the one we teach with? the ;website version has many cards - I don't even know them all - should check if correct (given ChatGPT) and add to list--> * <a href="https://osf.io/registries" class="uri">https://osf.io/registries</a> <!-- this randomly appears as a list OR NOT - can't explain --> * <a href="https://aspredicted.org/" class="uri">https://aspredicted.org/</a> * <a href="https://preclinicaltrials.eu/" class="uri">https://preclinicaltrials.eu/</a> * <a href="https://www.animalstudyregistry.org/" class="uri">https://www.animalstudyregistry.org/</a> * <a href="https://clinicaltrials.gov/" class="uri">https://clinicaltrials.gov/</a></p>
 </div>
 <section id="tools-resources-1" class="level4">
 <h4 class="anchored" data-anchor-id="tools-resources-1"><i class="bi bi-tools"></i> TOOLS &amp; RESOURCES</h4>
@@ -693,14 +692,16 @@ Registry of preregistrations. Widely used across fields.
 </div>
 </div>
 </section>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>To find <strong>existing datasets</strong>, search for discipline-specific repositories on <a href="https://www.re3data.org/">re3data</a> which is a central registry of all repositories, or explore subject agnostic repositories such as <a href="https://datacite.org/">DataCite</a> or <a href="https://zenodo.org/">Zenodo</a> (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data.</p>
+</section>
+<section id="data" class="level3">
+<h3 class="anchored" data-anchor-id="data">Data</h3>
+<p>To find <strong>existing datasets</strong>, search for discipline-specific repositories on <a href="https://www.re3data.org/">re3data</a> which is a central registry of all repositories, or explore subject agnostic repositories such as <a href="https://datacite.org/">DataCite</a> or <a href="https://zenodo.org/">Zenodo</a> (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data. <strong>Metadata</strong> are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.</p>
 <p><br></p>
-<p>Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead familiarize yourself with the metadata to plan your analyses (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>). Specifically, there may be a data dictionary (also called “codebook”), or other extensive documentation on which variables and their description are included.</p>
-<!-- add zenodo card as tool-->
+<p>Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a><!-- or link tab directly + make this link an internal link looking thing-->). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead <strong>familiarize yourself with the metadata to plan your analyses</strong> (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a> <!-- same as above-->). Specifically, there may be a data dictionary (also called “codebook”), or other extensive documentation on which variables and their description are included.</p>
+<!-- add data cite and zenodo card as tool-->
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
+<!-- also in section tools & resources -->
 <div class="orc-card-tool-icon">
 <i class="bi bi-database"></i>
 </div>
@@ -712,12 +713,12 @@ Registry of data repositories. Search across disciplines to find domain-specific
 </p>
 </div>
 </div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>You may also find <strong>code available for reuse</strong> on <a href="https://zenodo.org/">Zenodo</a> (archived) or actively developed on <a href="https://github.com/">Github</a>. Learn how to work with GitHub in more details in <a href="../../training/open_research_cycle/03_analyze_and_collaborate.html">3. Analyze &amp; Collaborate</a> or start learning Git version control now!</p>
-<p><br></p>
-<p>Important: Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an <strong>open license</strong> to their repository to allow reuse (they must add a file called LICENSE.txt with e.g.&nbsp;the Apache 2.0 license text - see our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a> to learn more about licenses)</p>
-<!--  add github tutorials in learn more, add github as a tool - remove gitlab for now-->
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>You may find <strong>code available for reuse</strong> archived on <a href="https://zenodo.org/">Zenodo</a> or actively developed on <a href="https://github.com/">Github</a>. Learn how to work with GitHub in more details in <a href="../../training/open_research_cycle/03_analyze_and_collaborate.html">3. Analyze &amp; Collaborate</a><!--internal link format--> or start learning Git version control now!</p>
+<p><br> <!-- info box ?--> Important: Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an <strong>open license</strong> to their repository to allow reuse (they must add a file called LICENSE.txt with e.g.&nbsp;the Apache 2.0 license text - see our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a> to learn more about licenses).</p>
+<!--  add github tutorials in learn more, add github card as a tool - remove gitlab for now-->
 <!-- add zenodo card in tool-->
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
@@ -733,23 +734,21 @@ Version control platforms for code collaboration with issue tracking.
 <p><!-- change sentence--> <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial</a></p>
 </div>
 </div>
-</div>
-</div>
-</div>
-</details>
+<p>:::</p>
+</section></details>
 <details class="orc-details-panel">
 <summary>
 <i class="bi bi-shield-check"></i> Legal Requirements
 </summary>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">LMU guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Funders</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Ethics</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">LMU guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Funders</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Ethics</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>The LMU <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">Guidelines for Safeguarding Good Scientific Practice</a> (in german) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but here is an English summary of relevant aspects of this guide:</p>
-<em>
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>The <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a> (in german) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but here is an English summary of relevant aspects for this guide:</p>
 <h4 class="anchored">
 Appropriate level of documentation and standards to allow <strong>reproduction</strong>:
 </h4>
+<p><!-- should probably not be h4 level but do some kind of nice formatting --></p>
 <ul>
 <li>Reproducible methods must be used. (§11)</li>
 <li>When research software is developed, its source code must be documented. (§12)</li>
@@ -766,33 +765,33 @@ Appropriate level of documentation and standards to allow <strong>replication</s
 Public access to research results:
 </h4>
 <ul>
-<li>Apart from specific exceptions, all findings should be made public. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) according to the FAIR principles*. (§13)</li>
+<li>Apart from specific exceptions, <strong>all findings should be made public</strong>. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) <strong>according to the FAIR principles</strong>*. (§13)</li>
 <li>Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).</li>
 </ul>
-</em><p><em></em></p>
-<p>*Note: The FAIR principles are defined as: <!-- maintain the freaking list formatting... --> <!-- maybe in a info box --> - Findable: metadata should be deposited in a searchable repository and be assigned a permanent identifier - Accessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata. - Interoperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format - Reusable: the data is richly documented (e.g.&nbsp;with a data dictionary) and is accompanied by a data usage license See https://www.go-fair.org/fair-principles/ for more information and section <a href="../../training/open_research_cycle/02_collect_and_manage.html">2. Collect &amp; Manage</a> to learn how to implement the FAIR principles in your research.</p>
+<p>*Note: The FAIR principles are defined as: <!-- maintain the freaking list formatting... --> <!-- maybe in a info box - see whether we still need the star in the text above for "FAIR principles*" --> - Findable: metadata should be deposited in a searchable repository and be assigned a permanent identifier - Accessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata. - Interoperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format - Reusable: the data is richly documented (e.g.&nbsp;with a data dictionary) and is accompanied by a data usage license See https://www.go-fair.org/fair-principles/ for more information and section <a href="../../training/open_research_cycle/02_collect_and_manage.html">2. Collect &amp; Manage</a><!-- nice intra link--> to learn how to implement the FAIR principles in your research.</p>
 <!-- add a card with LMU logo and LMU Good Scientific Practices as title with link to pdf? in section Resources-->
-<!-- add FAIR data management tutorial in learn more section ?-->
+<!-- add FAIR data management tutorial in learn more section ? mmmh no-->
+<p>In later sections, you will acquire skills in FAIR data management and reproducible workflows that will enable you to comply with these guidelines.</p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>Funders may have additional open and reproducible science requirement on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. Check all requirements in the call information sheets.</p>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>Funders may have additional <strong>open and reproducible science requirements</strong> on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. Check all requirements in the call information sheets.</p>
 <p><br></p>
-<p>Contact the <a href="https://www.lmu.de/en/research/research-services/contact.html">LMU Research Funding Unit</a> to review your grant proposal and assess if you have met your funders’ open science requirements.</p>
+<p><strong>Contact the <a href="https://www.lmu.de/en/research/research-services/contact.html">LMU Research Funding Unit</a> to review your grant proposal</strong> and assess if your proposal is meeting your funders’ open science requirements.</p>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty’s ethics committee (see e.g.&nbsp;<a href="https://www.med.lmu.de/de/fakultaet/wer-wir-sind/gremien-kommissionen/ethikkommission/">instructions for the LMU Faculty of Medicine</a> and <a href="https://www.lmu.de/psyedu/en/research/ethics-committee/#:~:text=The%20Ethics%20Committee%20advises%20and,and%20in%20security%2Drelevant%20areas.">instructions for the LMU Department of Psychology</a>) to make sure the research will be conducted responsibly and participants’ data will be protected.</p>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty’s ethics committee (see e.g.&nbsp;<a href="https://www.med.lmu.de/de/fakultaet/wer-wir-sind/gremien-kommissionen/ethikkommission/">instructions for the LMU Faculty of Medicine</a> and <a href="https://www.lmu.de/psyedu/en/research/ethics-committee/#:~:text=The%20Ethics%20Committee%20advises%20and,and%20in%20security%2Drelevant%20areas.">instructions for the LMU Department of Psychology</a>) to make sure your research will be conducted responsibly and that participants’ data will be protected.</p>
 <p><br></p>
-<section id="your-ethics-proposal-will-typically-include" class="level4">
-<h4 class="anchored" data-anchor-id="your-ethics-proposal-will-typically-include"><i class="bi bi-list-check"></i> Your ethics proposal will typically include: <!-- remove ulr forming link --></h4>
+<section id="your-ethics-proposal-will-typically-include-information-on" class="level4">
+<h4 class="anchored" data-anchor-id="your-ethics-proposal-will-typically-include-information-on"><i class="bi bi-list-check"></i> Your ethics proposal will typically include information on: <!-- remove ulr forming link --></h4>
 <ul>
-<li><strong>Data storage and retention</strong> – outlining how data will be securely stored, backed up, and retained over time. This is usually part of a detailed Research Data Management plan (see next section for guidance<!--cross ref-->).</li>
+<li><strong>Data storage and retention</strong> – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see <a href="">RDM plans</a><!--cross ref next accordion-->).</li>
 <li><strong>Risks if the data were leaked</strong> – identifying potential consequences for participants or the research project if confidentiality is breached.</li>
-<li><strong>Data anonymisation</strong> – describing procedures to remove or obscure personally identifiable information to protect participant privacy.</li>
-<li><strong>Language of the informed consent forms</strong> – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Consent for sharing their data and under which conditions should be clearly explained here.</li>
-<li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study.</li>
+<li><strong>Data anonymization</strong> – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see <a href="">Data anonymization</a><!--internal link to section in next quadrant--> for options).</li>
+<li><strong>Language of the informed consent forms</strong> – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here.</li>
+<li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see <a href="">pre-analysis planning</a><!--cross ref next accordion first tab-->)</li>
 </ul>
-<!-- add cards for RDM plan chapter, data anonymisation tutorial, power analyses tutorial-->
-<!-- add example consent form text from Felix??-->
+<!-- learn more: add cards for RDM plan chapter in FAIR data management tutorial, data anonymization tutorial tba, power analyses tutorial-->
+<!-- resources: add example consent form text from Felix?? or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
 </section>
 </div>
 </div>
@@ -803,9 +802,9 @@ Public access to research results:
 <i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Research Data Management Plans
 </summary>
 <!--change logo - see folder with tick in the website version -->
-<p>A Data Management Plan (DMP) documents how you will handle research data throughout your project. Write it before your ethics submission, since the content overlaps significantly and most funders require one. Writing a DMP prompts you to think through decisions you might otherwise leave implicit, and documents them using standard terminology.</p>
-<section id="your-dmp-will-address" class="level4">
-<h4 class="anchored" data-anchor-id="your-dmp-will-address"><i class="bi bi-list-check"></i> Your DMP will address:</h4>
+<p>A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.</p>
+<section id="your-dmp-will-ask" class="level4">
+<h4 class="anchored" data-anchor-id="your-dmp-will-ask"><i class="bi bi-list-check"></i> Your DMP will ask:</h4>
 <ul>
 <li><strong>What data</strong> will you collect or generate (types, formats, volume, sources)?</li>
 <li><strong>How will you describe it</strong> (metadata standards, documentation practices)?</li>
@@ -815,12 +814,13 @@ Public access to research results:
 <li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)?</li>
 <li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)?</li>
 </ul>
-<p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like RDMO guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and the rest of the cycle will help you refine the details as your project develops.</p>
-<!-- cut this sentence but add RIO in section tools and resources for examples DMP to peruse by discipline-->
+<p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like <a href="https://rdmo.ub.lmu.de/">RDMO</a> guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops.</p>
+<!-- cut this sentence but add RIO in section tools and resources for 'examples DMP by discipline'-->
 <p><strong>See example DMPs:</strong> <a href="https://dmponline.dcc.ac.uk/public_plans">DMPonline public plans</a> | <a href="https://argos.openaire.eu/explore-plans">Argos published DMPs</a> | <a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&amp;selfurl=&amp;backurl=&amp;sortby=0&amp;journal_id=17&amp;search_hidden=&amp;search_in_=0&amp;search_in_hidden=&amp;alerts_subject_cats=&amp;alerts_sd498444d0a_publishing_status=&amp;section_type%5B%5D=231">RIOjournal DMPs</a></p>
-</section>
 <div class="orc-two-column">
-<section id="learn-more-1" class="level4 orc-column">
+<div class="orc-column">
+<!-- clean up and standardize cards for logo of official tools - best to use the link to wikidata wikimedia sources - more stable-->
+<section id="learn-more-1" class="level4">
 <h4 class="anchored" data-anchor-id="learn-more-1"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -832,9 +832,10 @@ Public access to research results:
 <p>
 Includes a chapter on writing DMPs (2h total)
 </p>
-<p><a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="orc-card-tool-badge recommended">DMP chapter</a></p>
+<p><a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="orc-card-tool-badge recommended">OSC tutorial</a></p>
 </div>
 </section>
+</div>
 <section id="tools" class="level4 orc-column">
 <h4 class="anchored" data-anchor-id="tools"><i class="bi bi-tools"></i> TOOLS</h4>
 <div class="orc-card-tool">
@@ -851,7 +852,7 @@ Funder-compliant templates (DFG, ERC, Horizon Europe)
 </div>
 </section>
 </div>
-</details>
+</section></details>
 <details class="orc-details-panel">
 <summary>
 <i class="bi bi-graph-up"></i> Study Design &amp; Analysis Plan
@@ -859,16 +860,20 @@ Funder-compliant templates (DFG, ERC, Horizon Europe)
 <!-- I want to cross ref this title - how? -->
 <!-- logo like https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/01_plan_and_design_website.html#planning-framework-options -->
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Power analyses</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Power analyses <!-- format this page nicely, I failed --></a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Why should you plan your statistical plan prior to collecting data?</p>
+<p><br></p>
 <p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>, often unintentionally.</p>
 <p><br></p>
 <p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration</strong>: specifying hypotheses, methods, and analysis plans before data collection or analysis. Preregistration constrains bias in confirmatory testing while still allowing exploratory analyses, clearly distinguishing robust hypothesis tests from hypothesis-generating work. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
 <p><br></p>
+<p>You will benefit from using a preregistration template for: <!-- list formatting --> - experimental studies (i.a. with a manipulated variable): it will define what will be your confirmatory analysis and strengthens your claim - observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum - qualitative studies: it will provide a way to document e.g.&nbsp;your positionality towards a subject in the course of a project.</p>
+<p><br></p>
 <p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard OSF preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g.&nbsp;systematic review, qualitative work, secondary data analysis).</p>
-<section id="your-preregistration-will-define" class="level4">
-<h4 class="anchored" data-anchor-id="your-preregistration-will-define"><i class="bi bi-list-check"></i> Your preregistration will define:</h4>
+<section id="your-preregistration-will-define-your-studys" class="level4">
+<h4 class="anchored" data-anchor-id="your-preregistration-will-define-your-studys"><i class="bi bi-list-check"></i> Your preregistration will define your study’s:</h4>
 <ul>
 <li><strong>Hypothesis and predictions</strong></li>
 <li><strong>Data collection procedures</strong></li>
@@ -878,17 +883,17 @@ Funder-compliant templates (DFG, ERC, Horizon Europe)
 <li><strong>Data exclusion criteria</strong></li>
 <li><strong>How to deal with missing data</strong></li>
 </ul>
-<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from collaborators or statisticians on their design, is to <strong>simulate data and write the possible statistical test to analyze that data</strong> (see <a href="">Simulation of data and Power analyses tabs</a> <!-- internal link-->).</p>
+<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data and write the possible statistical test to analyze that data</strong> (see <a href="">Simulation of data and Power analyses</a> <!-- internal link to tabs-->).</p>
 <p><br></p>
 <p>Once completed, you can submit your preregistration on e.g.&nbsp;the <a href="https://osf.io/">Open Science Framework (OSF)</a> before collecting or analyzing existing data. The plan can be <strong>embargoed</strong> (i.e.&nbsp;kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable <strong>early feedback from collaborators</strong>. An even stronger approach is <strong>submitting preregistrations directly to journals (then called “Registered Reports”)</strong>, enabling peer review at a stage where methodological adjustments are still possible.</p>
 <p><br></p>
-<!-- in a call out info box -->
+<!-- in a call out info box berpahs even mini-accordion??-->
 <p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where <strong>studies are peer-reviewed before data collection</strong>. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
 <p><br></p>
 <p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts <strong>incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes</strong>. <!-- till here --></p>
 <div class="orc-grid-tools">
-<!-- learn more: cards for a TBA preregistration tutorial, card for OSF linking out to https://help.osf.io/article/330-welcome-to-registrations-->
-<!-- Tools and resources: OSF card with real OSF icon used somewhere above + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
+<!-- learn more: cards for a TBA preregistration tutorial -->
+<!-- Tools and resources: OSF card with real OSF icon used somewhere above linking out to https://help.osf.io/article/330-welcome-to-registrations + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="https://cdn.simpleicons.org/osf" alt="OSF">
@@ -903,26 +908,52 @@ Flexible templates, embargoes, file storage. Widely used across fields.
 </div>
 </section>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to: <!-- need nice formatting --> - <strong>Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate</strong>. Example: Check whether there are more than 5% significant effects for a variable in a model when supposedly random data are generated.</p>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to: <!-- need nice formatting --></p>
+<p><br></p>
 <ul>
-<li><p><strong>Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.</strong> Example: See whether simulated data drawn from specific distributions is comparable to real data.</p></li>
-<li><p><strong>Perform power analyses.</strong> Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see <a href="">Power analyses</a><!-- intra link-->)</p></li>
-<li><p><strong>Prepare a pre-analysis plan.</strong> To be confident about the (confirmatory) statistical analyses you may wish to commit to before data collection (e.g.&nbsp;through a preregistration or registered report), practising the analyses on a simulated dataset is very helpful! If you are still unsure about the most appropriate statistical test to apply to your data, providing a simulated dataset to a statistician or mentor will allow them to provide concrete suggestions. The code containing the analyses of simulated data can be submitted along with your preregistration or registered report for reviewers to exactly understand what analyses you intend to perform. Once you get your real data, you may simply plug them into this code and get the results of your confirmatory analyses immediately. <br> Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a>) is much easier than researchers often believe and is helpful even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p></li>
+<li><p><strong>Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate</strong>.<br>
+<em>Example: Check whether there are more than 5% significant effects for a variable in a model when supposedly random data are generated.</em></p></li>
+<li><p><strong>Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.</strong><br>
+<em>Example: See whether simulated data drawn from specific distributions is comparable to real data.</em></p></li>
+<li><p><strong>Perform power analyses.</strong><br>
+<em>Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see <a href="">Power analyses</a><!-- intra link-->)</em></p></li>
+<li><p><strong>Prepare a pre-analysis plan.</strong> <em>Example: To be confident about the (confirmatory) statistical analyses you want to commit to before data collection (e.g.&nbsp;through a preregistration or registered report), providing a simulated dataset to a statistician or mentor will allow them to provide concrete suggestions on the most appropriate statistical test to apply to your data. The code containing the analyses of simulated data can be submitted along with your preregistration or registered report for reviewers to exactly understand what analyses you intend to perform. Once you get your real data, you may simply plug them into this code and get the results of your confirmatory analyses immediately.</em></p></li>
 </ul>
+<p><br></p>
+<p>Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a> <!-- intra link?-->) is much easier than researchers often believe it to be and is helpful even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p>
 <!-- card for simulation tutorial -->
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>Power analysis is relevant whether you are designing a project from scratch or just running an analysis on existing data. There are two main types:</p>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses:</p>
+<section id="a-priori-power-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="a-priori-power-analysis">A priori power analysis</h4>
+<p><br></p>
+<p>To calculate the smallest sample size required to detect the smallest effect of interest, simulate data following our <a href="">advanced tutorial</a><!-- link -->. For a very basic power calculation, you can use simple R function if you know 3 out of 4 of these parameters:</p>
 <ul>
-<li><p><strong>A priori power analysis</strong>: To calculate the smallest sample size required to detect the smallest effect of interest, simulate data following our <a href="">advanced tutorial</a><!-- link -->. For a very basic power calculation, you can also use R or <a href="">G*Power</a><!--link--> if you know 3 out of 4 of these parameters: required sample size n (usually the one missing), desired power (default 0.80), the alpha level (default 0.05), and the expected effect size (has to be estimated or extracted from the literature on the form of d, f, etc.). To get support with pre-analysis planning, you can book a consultation with the LMU statistical consulting unit <!---format nice --> kontakt@stablab.stat.uni-muenchen.de and visit the <a href="">StaBLab website</a><!--link--> for more information.</p></li>
-<li><p><strong>Post-hoc power analysis</strong>: Sometimes, you may not be able to control the sample size for your project (e.g., because data collection has ended and you only have a certain number of good quality samples). In this situation, you can compute a so-called “post-hoc power”. Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible. The legitimate post-hoc power is computed with your actual n, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect. The flawed version of post-hoc power is called “observed power”: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power &lt; 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!</p></li>
+<li>required sample size n (usually the one missing)</li>
+<li>desired power (default 0.80)</li>
+<li>the alpha level (default 0.05)</li>
+<li>the expected effect size (has to be estimated or extracted from the literature on the form of d, f, etc.)</li>
 </ul>
-<!-- card for simulation for power analsyes tutorial -->
+<p>To get support with pre-analysis planning, you can book a consultation with the LMU statistical consulting unit <!---format nice --> kontakt@stablab.stat.uni-muenchen.de and visit the <a href="">StaBLab website</a><!--link--> for more information.</p>
+<p><br></p>
+</section>
+<section id="post-hoc-power-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="post-hoc-power-analysis">Post-hoc power analysis</h4>
+<p><br></p>
+<p>Sometimes, you may not be able to control the sample size for your project (e.g., because data collection has ended and you only have a certain number of good quality samples). In this situation, you can compute a so-called “post-hoc power”. Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible.</p>
+<p>The <strong>legitimate post-hoc power</strong> is computed with your actual n, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.</p>
+<p><br></p>
+<p>The <strong>flawed version of post-hoc power</strong> is called <strong>“observed power”</strong>: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power &lt; 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!</p>
+<!-- card for simulation for power analyses tutorial -->
+</section>
 </div>
 </div>
 </div>
 </details>
+
+
 <section id="planning-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="planning-checklist"><i class="bi bi-clipboard-check"></i> Planning Checklist</h2>
 <!-- format like in 'website version' but with smaller title so it fits with the new 4 titles above -->
