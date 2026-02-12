@@ -1018,11 +1018,11 @@
     ]
   },
   {
-    "objectID": "training/open_research_cycle/01_plan_and_design.html#planning-checklist",
-    "href": "training/open_research_cycle/01_plan_and_design.html#planning-checklist",
+    "objectID": "training/open_research_cycle/01_plan_and_design.html#plan-design-checklist",
+    "href": "training/open_research_cycle/01_plan_and_design.html#plan-design-checklist",
     "title": "Plan & Design",
-    "section": " Planning Checklist",
-    "text": "Planning Checklist\n\n\nResearch Design:\n\n\n\nResearch questions clearly defined\nHypotheses specified (if applicable)\nStudy design chosen and justified\nVariables and measures identified\n\n\n\n\nSample size determined with power analysis\nInclusion/exclusion criteria defined\nPotential confounds considered\nEthical approval obtained (if required)\n\n\n\nDocumentation & Planning:\n\n\n\nData Management Plan drafted\nPreregistration prepared (if applicable)\nAnalysis plan documented\nFile naming conventions established\n\n\n\n\nRepository/storage solution selected\nCollaboration tools set up\nTimeline and milestones defined\nBudget includes open science costs\n\n\n\nBefore Data Collection:\n\nAll study materials finalized and documented\nPreregistration submitted (if applicable)\nData collection protocols tested\nTeam roles and responsibilities clear",
+    "section": " Plan & Design Checklist",
+    "text": "Plan & Design Checklist\n\nTo complete before presenting your complete study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study type.  \nBackground Information\n\nLiterature reviewed\nExisting research outputs searched\nFunder’s Open Science requirements identified\nEthics committee instructions consulted\n\nStudy Design\n\nResearch questions clearly defined\nHypotheses and predictions specified\nStudy design chosen and justified\nVariables and measures to collect identified\nAnalysis plan prepared (with simulated data)\nSample size determined (with power analysis)\nInclusion/exclusion criteria defined\nHandling of missing data defined\nPreregistration template filled out\n\nData Management Planning:\n\nData storage and backup solutions documented\nFile organization and naming conventions established\nAnonymization procedures defined\nRepository for data publishing selected\n\nProject Management\n\nTeam roles and responsibilities defined\nResources needed for the project identified\nTimeline estimated and milestones defined\n\nBefore Data Collection:\n\nData Management Plan completed\nConsent forms prepared\nData collection protocols tested\nPreregistration submitted\nEthical approval obtained\n\n:::",
     "crumbs": [
       "Training",
       "Training Tracks",
