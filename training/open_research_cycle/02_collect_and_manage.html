@@ -626,16 +626,16 @@ Build quality into your data from the start
 <i class="bi bi-journal-code"></i> Data Collection
 </summary>
 <p>Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see <a href="!--internal link--">LMU good practices guidelines</a>). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.</p>
-<p>State-of-the-art practices for reproducible data acquisition include: <!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) --></p>
+<p>State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->:</p>
 <ul>
-<li>creating standard operating procedures</li>
-<li>recording metadata as data collection is taking place</li>
-<li>build in automatization through programming</li>
+<li><strong>creating standard operating procedures</strong></li>
+<li><strong>recording metadata as data collection is taking place</strong></li>
+<li><strong>build in automatization through programming</strong></li>
 </ul>
 <!-- info box -->
 <p>Metadata are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Automated/Programmatic</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Software-based data acquisition</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as “materials” varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.</p>
@@ -669,6 +669,7 @@ Build quality into your data from the start
 <li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
 <li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="!--internal link--">Version Control tab in Data Management</a> for details.</p></li>
 </ul>
+<!-- 2 cards in learn more: R and Git tutorials  -->
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -688,19 +689,26 @@ Build quality into your data from the start
 <summary>
 <i class="bi bi-clipboard-data"></i> Data Management
 </summary>
-<p>In Phase 1 you planned how to manage your data. Now you put that plan into practice, refining it as you learn what actually works for your project.</p>
-<p>The most important thing you will produce is your raw data: the unmodified output of your instruments, surveys, or observations. Everything else, including processed datasets and analysis results, can be regenerated from raw data if your methods are documented. Protect raw data accordingly, and never modify it directly.</p>
-<p>Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.</p>
+<p>In <a href="!-- internal link--">Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
+<!--maybe the two bullet points here should be cut as they are repeated across the sections? -->
+<!-- again problem with display of list -->
+<ul>
+<li><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="!--internal link--">Reproducible Data Processing &amp; Analyses</a>).</li>
+<li><strong>Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.</strong> Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.</li>
+</ul>
 <p>What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> provides detailed guidance organized by research area.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">Version Control</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">Version Control</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in Phase 4.</p>
-<p><strong>Use institutional storage.</strong> Your institution provides storage with automated backups, access controls, and GDPR compliance. The specific options vary by department. Contact <a href="mailto:rdm@ub.uni-muenchen.de">LMU RDM support</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</p>
-<p><strong>Follow the 3-2-1 backup rule.</strong> Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple “equal” copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.</p>
-<p><strong>Control access from the start.</strong> Grant access only to those who need it. Use institutional sharing tools, not email attachments or personal cloud links. For collaborations, agree at the start who can read, who can edit, and who manages permissions. When team members leave, remove their access promptly.</p>
-<p><strong>Test your backups.</strong> A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.</p>
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="!-- internal link--">4. Preserve &amp; Share</a>].</p>
+<p><br></p>
+<ul>
+<li><strong>Use institutional storage.</strong> Your institution provides storage with automated backups, access controls, and GDPR compliance. The specific options vary by department. Contact the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</li>
+<li><strong>Follow the 3-2-1 backup rule.</strong> Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple “equal” copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.</li>
+<li><strong>Control access from the start.</strong> Grant access only to those who need it. Use institutional sharing tools, not email attachments or personal cloud links. For collaborations, agree at the start who can read, who can edit, and who manages permissions. When team members leave, remove their access promptly.</li>
+<li><strong>Test your backups.</strong> A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.</li>
+</ul>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -715,73 +723,65 @@ Build quality into your data from the start
 </div>
 </div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.</p>
-<p><strong>Separate raw from processed data.</strong> Raw data is untouchable: once collected, these files should never be modified. All cleaning, transformations, and analyses happen on copies in a separate folder. This preserves your ability to verify results or reprocess from the original source.</p>
-<p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Separate raw from processed data.</strong> Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.</p></li>
+<li><p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.</p></li>
+</ul>
+<!-- make a nested list -->
 <ul>
 <li>Use underscores or hyphens to separate elements, never spaces or special characters (<code>? ! &amp; * % # @</code>)</li>
 <li>Use ISO 8601 dates (<code>YYYYMMDD</code>) so files sort chronologically</li>
 <li>Include version numbers with leading zeros (<code>v01</code>, <code>v02</code>) so <code>v10</code> sorts after <code>v09</code></li>
 <li>Use meaningful abbreviations and document what they mean</li>
 </ul>
-<p>A pattern like <code>YYYYMMDD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>20240315_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in the README so collaborators can parse filenames without asking.</p>
+<p>A pattern like <code>YYYYMMDD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>20240315_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README.text file stored next to your data files so collaborators can parse filenames without asking.</p>
 <p><strong>Follow domain standards where they exist.</strong> Many fields have established organizational conventions that tools and collaborators expect. Using these means your data works immediately with existing analysis pipelines and reviewers recognize the structure. Search <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> for standards in your domain.</p>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="https://cdn.simpleicons.org/github" alt="GitHub">
 </div>
+<p><!-- use OSC logo and GitHub Logo, tag OSC Tool in Tools & resources section--></p>
 <section id="research-project-template" class="level4">
 <h4 class="anchored" data-anchor-id="research-project-template"><a href="https://github.com/lmu-osc/research-project-template">Research Project Template</a></h4>
-<p>Standardized folder structure for research projects</p>
-<details>
-<summary>
-Read more
-</summary>
-Fork this template to start projects with a consistent organization that separates raw data, processed data, code, and outputs.
-</details>
+<p>Use this template to start projects with a consistent organization that separates raw data, processed data, code, and outputs.</p>
 </section>
 </div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
 </div>
-<section id="data-organization-tutorial" class="level4">
-<h4 class="anchored" data-anchor-id="data-organization-tutorial"><a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html">Data Organization (Tutorial)</a></h4>
+<section id="data-organization" class="level4">
+<h4 class="anchored" data-anchor-id="data-organization"><a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html">Data Organization</a> <!-- tag OSC tutorial , in learn more section--></h4>
 <p>Folder structure and naming conventions</p>
-<details>
-<summary>
-Read more
-</summary>
-Part of the FAIR Data Management tutorial.
-</details>
 </section>
 </div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <i class="bi bi-book"></i>
 </div>
+<p><!-- in tools section --></p>
 <section id="rdmkit" class="level4">
 <h4 class="anchored" data-anchor-id="rdmkit"><a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a></h4>
-<p>Domain-specific data management guidance</p>
-<details>
-<summary>
-Read more
-</summary>
-Find organizational standards and conventions specific to your research field.
-</details>
+<p>Domain-specific data management standards</p>
 </section>
 </div>
 </div>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <p>File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.</p>
-<p><strong>Keep raw data in its original format.</strong> Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.</p>
-<p><strong>Work in open formats.</strong> For analysis, convert to open formats like CSV, JSON, or plain text. This makes your workflow reproducible, enables collaboration across different tools, and ensures your data can be shared. If conversion loses important information (metadata, precision, structure), document what is lost and keep both versions.</p>
-<p><strong>Be careful with spreadsheets.</strong> Excel is convenient for data entry but causes real problems. It silently converts data: gene names like MARCH1 become dates, leading zeros in IDs disappear, and long numbers lose precision. Formatting (colors, merged cells) breaks machine-readability since scripts cannot see it. If you use spreadsheets for entry, keep them simple (one header row, one observation per row, no merged cells) and export to CSV immediately. Save CSVs with UTF-8 encoding to avoid character corruption when sharing across systems. For more guidance on spreadsheet best practices, see <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets/">The Turing Way</a> and <a href="https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/#spreadsheet-best-practices">UC Davis DataLab</a>.</p>
-<p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation.</p>
-<p>Format issues often surface during quality control. The Quality Control panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Keep raw data in its original format.</strong> Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.</p></li>
+<li><p><strong>Work in open formats.</strong> For analysis, convert to open formats like CSV, JSON, or plain text. This makes your workflow reproducible, enables collaboration across different tools, and ensures your data can be shared. If conversion loses important information (metadata, precision, structure), document what is lost and keep both versions.</p></li>
+<li><p><strong>Be careful with spreadsheets.</strong> Excel is convenient for data entry but causes real problems. It silently converts data: gene names like MARCH1 become dates, leading zeros in IDs disappear, and long numbers lose precision. Formatting (colors, merged cells) breaks machine-readability since scripts cannot see it. If you use spreadsheets for entry, keep them simple (one header row, one observation per row, no merged cells) and export to CSV immediately. Save CSVs with UTF-8 encoding to avoid character corruption when sharing across systems. For more guidance on spreadsheet best practices, see <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets/">The Turing Way</a> and <a href="https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/#spreadsheet-best-practices">UC Davis DataLab</a>.</p></li>
+<li><p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the <a href="https://rdmkit.elixir-europe.org/your_domain">RDMKit</a> to find conventions for your field.</p></li>
+</ul>
+<p><br></p>
+<p>Format issues often surface during quality control. The <a href="!--internal link--">Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -789,74 +789,60 @@ Find organizational standards and conventions specific to your research field.
 </div>
 <section id="rdmkit-1" class="level4">
 <h4 class="anchored" data-anchor-id="rdmkit-1"><a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a></h4>
-<p>Domain-specific file format guidance</p>
-<details>
-<summary>
-Read more
-</summary>
-Find recommended file formats and conventions for your research field.
-</details>
+<p>Find recommended file formats and conventions for your research field.</p>
 </section>
 </div>
 </div>
 </div>
-<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
 <p>Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and anyone who might reuse it.</p>
-<p><strong>Create a README early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: <strong>who</strong> created the data, <strong>what</strong> it contains, <strong>when</strong> and <strong>where</strong> it was collected, <strong>why</strong> it was generated, <strong>how</strong> it was produced, and whether it <strong>can be reused</strong>. These answers let someone unfamiliar with your project understand and work with your data.</p>
-<p><strong>Create a codebook defining every variable.</strong> A codebook (or data dictionary) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.</p>
+<p><br></p>
+<ul>
+<li><strong>Create a README.txt file early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: <strong>who</strong> created the data, <strong>what</strong> it contains, <strong>when</strong> and <strong>where</strong> it was collected, <strong>why</strong> it was generated, <strong>how</strong> it was produced, and whether it <strong>can be reused</strong>. These answers let someone unfamiliar with your project understand and work with your data.</li>
+<li><strong>Create a data dictionary defining every variable.</strong> A data dictionary (or codebook) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.</li>
+</ul>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="https://cdn.simpleicons.org/github" alt="GitHub">
 </div>
+<p><!-- add OSC logo and OSC Tool tag --></p>
 <section id="research-project-template-1" class="level4">
 <h4 class="anchored" data-anchor-id="research-project-template-1"><a href="https://github.com/lmu-osc/research-project-template">Research Project Template</a></h4>
-<p>README and codebook templates included</p>
-<details>
-<summary>
-Read more
-</summary>
-Fork this template to start with pre-structured documentation files you can fill in as your project develops.
-</details>
-</section>
-</div>
+<p>Project template with README and data dictionaries included</p>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
 </div>
+<p><!-- add OSC Tutorial tag --></p>
 <section id="data-documentation-validation" class="level4">
 <h4 class="anchored" data-anchor-id="data-documentation-validation"><a href="https://lmu-osc.github.io/data-documentation-validation-R/">Data Documentation &amp; Validation</a></h4>
-<p>Comprehensive tutorial on documentation practices</p>
-<details>
-<summary>
-Read more
-</summary>
-Learn to create effective READMEs, codebooks, and validation checks for your research data.
-</details>
+<p>Create effective READMEs, data dictionaries, and validation checks for your research data.</p>
 </section>
 </div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
 </div>
-<section id="data-documentation-tutorial" class="level4">
-<h4 class="anchored" data-anchor-id="data-documentation-tutorial"><a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html">Data Documentation (Tutorial)</a></h4>
-<p>README files and data dictionaries</p>
-<details>
-<summary>
-Read more
-</summary>
-Part of the FAIR Data Management tutorial.
-</details>
+<p><!-- add OSC Tutorial tag --></p>
+<section id="data-documentation" class="level4">
+<h4 class="anchored" data-anchor-id="data-documentation"><a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html">Data Documentation</a></h4>
+<p>Principles of README files and data dictionaries.</p>
+</section>
+</div>
 </section>
 </div>
 </div>
 </div>
-<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
 <p>Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:</p>
-<p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README.</p>
-<p><strong>Reporting guidelines</strong> specify what methodological details to document for different study types. The <a href="https://www.equator-network.org/">EQUATOR Network</a> maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.</p>
-<p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in Phase 4. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README.</p></li>
+<li><p><strong>Reporting guidelines</strong> specify what methodological details to document for different study types. The <a href="https://www.equator-network.org/">EQUATOR Network</a> maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.</p></li>
+<li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="!-- internal link--">4. Preserve &amp; Sharing</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.</p></li>
+</ul>
+<p><br></p>
 <p><strong>Think of your data as a first-class research output.</strong> Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.</p>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
@@ -865,13 +851,7 @@ Part of the FAIR Data Management tutorial.
 </div>
 <section id="fairsharing" class="level4">
 <h4 class="anchored" data-anchor-id="fairsharing"><a href="https://fairsharing.org/">FAIRsharing</a></h4>
-<p>Registry of metadata standards by domain</p>
-<details>
-<summary>
-Read more
-</summary>
-Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.
-</details>
+<p>Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
 </section>
 </div>
 <div class="orc-card-tool">
@@ -880,37 +860,29 @@ Search by discipline to find metadata standards, reporting guidelines, and data 
 </div>
 <section id="rdmkit-2" class="level4">
 <h4 class="anchored" data-anchor-id="rdmkit-2"><a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a></h4>
-<p>Domain-specific metadata guidance</p>
-<details>
-<summary>
-Read more
-</summary>
-Find metadata standards and requirements specific to your research field.
-</details>
+<p>Find metadata standards and requirements specific to your research field.</p>
 </section>
 </div>
 </div>
 </div>
-<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<div id="tabset-4-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-6-tab">
 <p>Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
-<p><strong>Git usually suffices for data files.</strong> Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.</p>
-<p><strong>Use specialized tools for large or frequently changing binary files.</strong> Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. <a href="https://www.datalad.org/">DataLad</a> builds on git-annex and works with standard Git workflows.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Git usually suffices for data files.</strong> Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.</p></li>
+<li><p><strong>Use specialized tools for large or frequently changing binary files.</strong> Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. <a href="https://www.datalad.org/">DataLad</a> builds on git-annex and works with standard Git workflows.</p></li>
+</ul>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
 </div>
 <section id="introduction-to-git" class="level4">
-<h4 class="anchored" data-anchor-id="introduction-to-git"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to Git</a></h4>
-<p>Version control fundamentals (2h)</p>
-<details>
-<summary>
-Read more
-</summary>
-Learn Git basics integrated with RStudio and GitHub. No prior experience required.
-</details>
+<h4 class="anchored" data-anchor-id="introduction-to-git"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to Git</a> <!-- add OSC tutorial tag --></h4>
+<p>Learn Git basics integrated with RStudio (2h)</p>
 </section>
 </div>
+<!-- add github tutorial card -->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <i class="bi bi-hdd-stack"></i>
@@ -918,19 +890,10 @@ Learn Git basics integrated with RStudio and GitHub. No prior experience require
 <section id="datalad" class="level4">
 <h4 class="anchored" data-anchor-id="datalad"><a href="https://www.datalad.org/">DataLad</a></h4>
 <p>Version control for large datasets</p>
-<details>
-<summary>
-Read more
-</summary>
-Track large datasets alongside code. Built on git-annex, integrates with Git workflows.
-</details>
 </section>
 </div>
 </div>
-</div>
-</div>
-</div>
-</details>
+</div></div></div></details>
 <details class="orc-details-panel">
 <summary>
 <i class="bi bi-shield-lock"></i> Ethics &amp; Privacy
@@ -938,21 +901,21 @@ Track large datasets alongside code. Built on git-annex, integrates with Git wor
 <p>Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.</p>
 <p>At LMU, submit ethics applications to the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/">Ethics Committee</a> and allow 4-8 weeks for review. For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/">LMU Data Protection Officer</a> or <a href="mailto:rdm@ub.uni-muenchen.de">RDM Support</a>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">GDPR Compliance</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">GDPR Compliance</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.</p>
 <p><strong>Use tiered consent when you plan to share data.</strong> Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.</p>
 <p><strong>Store consent forms separately from data.</strong> The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.</p>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Anonymization protects privacy and determines what you can share. The distinction between pseudonymization and anonymization matters for GDPR compliance.</p>
 <p><strong>Remove direct identifiers during collection.</strong> Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.</p>
 <p><strong>Assess indirect identifiers carefully.</strong> A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share.</p>
 <p><strong>Pseudonymization</strong> replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.</p>
 <p><strong>Anonymization</strong> removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.</p>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Research at LMU must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.</p>
 <p><strong>In practice:</strong> document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.</p>
 </div>
@@ -966,9 +929,9 @@ Track large datasets alongside code. Built on git-annex, integrates with Git wor
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
 <p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Exclusions</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Exclusions</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Validation checks whether your data meets specifications. Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.</p>
 <p><strong>Automate what you can.</strong> Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.</p>
 <p><strong>Manual review catches what automation misses.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p>
@@ -990,14 +953,14 @@ Learn to create validation rules and automated checks for your research data.
 </div>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.</p>
 <p><strong>Correct unambiguous errors.</strong> Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.</p>
 <p><strong>Handle missing data consistently.</strong> Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.</p>
 <p><strong>Investigate outliers before acting.</strong> An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.</p>
 <p><strong>Write cleaning as a script.</strong> A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.</p>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results.</p>
 <p><strong>Common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p>
 <p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p>
@@ -1008,6 +971,9 @@ Learn to create validation rules and automated checks for your research data.
 
 
 </main></div>
+
+
+
 
 
  <!-- /main -->
