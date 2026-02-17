@@ -1336,8 +1336,8 @@
     "objectID": "training/open_research_cycle/02_collect_and_manage.html#data-management-checklist",
     "href": "training/open_research_cycle/02_collect_and_manage.html#data-management-checklist",
     "title": "Collect & Manage",
-    "section": " Data Management Checklist",
-    "text": "Data Management Checklist\n\nThroughout Data Collection:\n\n\n\nDocument data collection procedures\nMaintain organized directory structure\nFollow file naming conventions\nBack up data regularly (3-2-1 rule)\n\n\n\n\nUpdate data dictionary as needed\nVersion control data and scripts\nApply data (pseudo)anonymization procedures\nApply quality control procedures\n\n\n\nBefore Moving to Analysis:\n\nAll raw data backed up in multiple locations\nData (pseudo)anonymized\nREADME files document project organization\nData dictionary defines all variables\nVersion control repository up to date\nData quality control completed and documented",
+    "section": " Data Management Checklist ",
+    "text": "Data Management Checklist \n\nThroughout Data Collection:\n\n\n\nDocument data collection procedures\nMaintain organized directory structure\nFollow file naming conventions\nBack up data regularly (3-2-1 rule)\n\n\n\n\nUpdate data dictionary as needed\nVersion control data and scripts\nApply data (pseudo)anonymization procedures\nApply quality control procedures\n\n\n\nBefore Moving to Analysis:\n\nAll raw data backed up in multiple locations\nData (pseudo)anonymized\nREADME files document project organization\nData dictionary defines all variables\nVersion control repository up to date\nData quality control completed and documented",
     "crumbs": [
       "Training",
       "Training Tracks",
@@ -1361,11 +1361,11 @@
     ]
   },
   {
-    "objectID": "training/open_research_cycle/03_analyze_and_collaborate.html",
-    "href": "training/open_research_cycle/03_analyze_and_collaborate.html",
+    "objectID": "training/open_research_cycle/03_analyze_and_collaborate.html#analysis-collaboration-checklist",
+    "href": "training/open_research_cycle/03_analyze_and_collaborate.html#analysis-collaboration-checklist",
     "title": "Analyze & Collaborate",
-    "section": "",
-    "text": "4. Preserve & Share3. Analyse & Collaborate2. Collect & Manage1. Plan & Design\n\n\n\n\n\nMake your analysis reproducible and transparent\n\n\n Reproducible Manuscript  Readable code  Documentation\n\n\n Checkpoint: Repo & code peer-review\n\n\n\n\n\n Reproducible Data Processing & Analysis\n\n\nprogrammingversion controlcomputational environement managementDocumentation\n\n\n3 lines of text\nR tuto card\nreadable code lecture card\n\n\n3 lines of text\nGit tuto card\ngithub tuto card\ngitlab lrz LMU supported tool\n\n\ntext\nrenv tuto card\ndocker tool card and/or some others or none but mention?\n\n\nredable lecture card again data dictionary card readme from code publishing? a bit too intense for this stage tho but something about internal, work in progress read me\n\n\n\n\n\n\n Reproducible Reporting\n\ncards or tabs about\nreproducible analyses report with quarto\nreproducible manuscripts with quarto, zotero\nreproducible presentation with quarto\nreproducible websites with quarto\n\nchecklist",
+    "section": " Analysis & Collaboration Checklist",
+    "text": "Analysis & Collaboration Checklist\n\nBefore Starting Analysis:\n\n\n\nAnalysis plan documented\nProject uses version control (Git)\nDirectory structure organized\nDependencies managed\n\n\n\n\nREADME file initiated\nData dictionary available\nCode style guide chosen\nCollaboration workflow established\n\n\n\nDuring Analysis:\n\n\n\nScripts well-commented\nCommit changes regularly\nRandom seeds set\nIntermediate results saved\n\n\n\n\nAnalysis decisions documented\nCode reviewed by collaborators\nResults cross-checked\nFigures reproducible\n\n\n\nBefore Sharing:\n\nCode runs without errors on fresh environment\nREADME provides complete instructions\nAll functions documented\nSession info captured\nSensitive information removed\nCode peer-reviewed",
     "crumbs": [
       "Training",
       "Training Tracks",
