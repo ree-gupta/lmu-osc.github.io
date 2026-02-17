@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Implement FAIR data management, organize research outputs, maintain version control, and ensure quality">
+<meta name="description" content="Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality">
 
 <title>Collect &amp; Manage – LMU Open Science Center</title>
 <style>
@@ -645,7 +645,7 @@ Build quality into your data from the start
 <li><p><strong>Publish your protocols.</strong> A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.</p></li>
 </ul>
 <div class="orc-grid-tools">
-<!-- add a card to LMU supported ENL -->
+<!-- add a card to LMU supported ENL (LMU hosted version of this https://www.elabftw.net/ I believe -->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <i class="bi bi-file-earmark-code"></i>
@@ -687,7 +687,7 @@ Build quality into your data from the start
 </details>
 <details class="orc-details-panel">
 <summary>
-<i class="bi bi-clipboard-data"></i> Data Management
+<i class="bi bi-folder-check"></i> Data Management
 </summary>
 <p>In <a href="!-- internal link--">Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
 <!--maybe the two bullet points here should be cut as they are repeated across the sections? -->
@@ -722,6 +722,9 @@ Build quality into your data from the start
 <p>Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.</p>
 </div>
 </div>
+<!-- add LRZ Sync & Share card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share -->
+<!-- add LRZ DSS card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss -->
+<!-- add OSF card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#osf with the right OSF logo -->
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.</p>
@@ -731,13 +734,12 @@ Build quality into your data from the start
 <li><p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.</p></li>
 </ul>
 <!-- make a nested list -->
-<ul>
-<li>Use underscores or hyphens to separate elements, never spaces or special characters (<code>? ! &amp; * % # @</code>)</li>
-<li>Use ISO 8601 dates (<code>YYYYMMDD</code>) so files sort chronologically</li>
-<li>Include version numbers with leading zeros (<code>v01</code>, <code>v02</code>) so <code>v10</code> sorts after <code>v09</code></li>
-<li>Use meaningful abbreviations and document what they mean</li>
-</ul>
+<pre><code>- Use underscores or hyphens to separate elements, never spaces or special characters (`? ! &amp; * % # @`)
+- Use ISO 8601 dates (`YYYYMMDD`) so files sort chronologically
+- Include version numbers with leading zeros (`v01`, `v02`) so `v10` sorts after `v09`
+- Use meaningful abbreviations and document what they mean</code></pre>
 <p>A pattern like <code>YYYYMMDD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>20240315_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README.text file stored next to your data files so collaborators can parse filenames without asking.</p>
+<p><br></p>
 <p><strong>Follow domain standards where they exist.</strong> Many fields have established organizational conventions that tools and collaborators expect. Using these means your data works immediately with existing analysis pipelines and reviewers recognize the structure. Search <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> for standards in your domain.</p>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
@@ -810,6 +812,8 @@ Build quality into your data from the start
 <section id="research-project-template-1" class="level4">
 <h4 class="anchored" data-anchor-id="research-project-template-1"><a href="https://github.com/lmu-osc/research-project-template">Research Project Template</a></h4>
 <p>Project template with README and data dictionaries included</p>
+</section>
+</div>
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
@@ -828,8 +832,6 @@ Build quality into your data from the start
 <section id="data-documentation" class="level4">
 <h4 class="anchored" data-anchor-id="data-documentation"><a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html">Data Documentation</a></h4>
 <p>Principles of README files and data dictionaries.</p>
-</section>
-</div>
 </section>
 </div>
 </div>
@@ -882,7 +884,8 @@ Build quality into your data from the start
 <p>Learn Git basics integrated with RStudio (2h)</p>
 </section>
 </div>
-<!-- add github tutorial card -->
+<!-- add github tutorial card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#github-->
+<!-- add LRZ gitlab - LMU supported tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-gitlab-->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <i class="bi bi-hdd-stack"></i>
@@ -898,6 +901,7 @@ Build quality into your data from the start
 <summary>
 <i class="bi bi-shield-lock"></i> Ethics &amp; Privacy
 </summary>
+<p><!-- change logo to this one https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#quality-security --></p>
 <p>Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.</p>
 <p><br></p>
 <p>At LMU Munich, submit ethics applications to the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/">Ethics Committee</a> and allow 4-8 weeks for review. For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/">LMU Data Protection Officer</a> or the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p>
@@ -942,49 +946,85 @@ Implementing and evaluating data anonymization techniques for safely sharing sen
 <i class="bi bi-check2-square"></i> Quality Control
 </summary>
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
-<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient.</p>
+<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="!--internal link--">Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Exclusions</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Validation checks whether your data meets specifications. Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.</p>
-<p><strong>Automate what you can.</strong> Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.</p>
-<p><strong>Manual review catches what automation misses.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Automate what you can.</strong> Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.</p></li>
+<li><p><strong>Manual review catches what automation misses.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p></li>
+</ul>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
 </div>
 <section id="data-documentation-validation-1" class="level4">
-<h4 class="anchored" data-anchor-id="data-documentation-validation-1"><a href="https://lmu-osc.github.io/data-documentation-validation-R/">Data Documentation &amp; Validation</a></h4>
-<p>Automated validation checks in R</p>
-<details>
-<summary>
-Read more
-</summary>
-Learn to create validation rules and automated checks for your research data.
-</details>
+<h4 class="anchored" data-anchor-id="data-documentation-validation-1"><a href="https://lmu-osc.github.io/data-documentation-validation-R/">Data Documentation &amp; Validation</a> <!-- add OSC Tutorial tag --></h4>
+<p>Learn to create validation rules and automated checks for your research data.</p>
 </section>
 </div>
 </div>
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.</p>
-<p><strong>Correct unambiguous errors.</strong> Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.</p>
-<p><strong>Handle missing data consistently.</strong> Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.</p>
-<p><strong>Investigate outliers before acting.</strong> An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.</p>
-<p><strong>Write cleaning as a script.</strong> A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Correct unambiguous errors.</strong> Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.</p></li>
+<li><p><strong>Handle missing data consistently.</strong> Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.</p></li>
+<li><p><strong>Investigate outliers before acting.</strong> An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.</p></li>
+<li><p><strong>Write cleaning as a script.</strong> A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.</p></li>
+</ul>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results.</p>
-<p><strong>Common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p>
-<p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p>
+<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="!--internal link--">Study Design &amp; Analysis Plan</a>).</p>
+<p><br></p>
+<ul>
+<li><p><strong>Common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
+<li><p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p></li>
+</ul>
 </div>
 </div>
 </div>
 </details>
+<section id="data-management-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="data-management-checklist"><i class="bi bi-clipboard-check"></i> Data Management Checklist</h2>
+<div class="orc-gradient-box">
+<p><strong>Throughout Data Collection:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">Document data collection procedures</label></li>
+<li><label><input type="checkbox">Maintain organized directory structure</label></li>
+<li><label><input type="checkbox">Follow file naming conventions</label></li>
+<li><label><input type="checkbox">Back up data regularly (3-2-1 rule)</label></li>
+</ul>
+</div>
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox">Update data dictionary as needed</label></li>
+<li><label><input type="checkbox">Version control data and scripts</label></li>
+<li><label><input type="checkbox">Apply data (pseudo)anonymization procedures</label></li>
+<li><label><input type="checkbox">Apply quality control procedures</label></li>
+</ul>
+</div>
+</div>
+<p><strong>Before Moving to Analysis:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">All raw data backed up in multiple locations</label></li>
+<li><label><input type="checkbox">Data (pseudo)anonymized</label></li>
+<li><label><input type="checkbox">README files document project organization</label></li>
+<li><label><input type="checkbox">Data dictionary defines all variables</label></li>
+<li><label><input type="checkbox">Version control repository up to date</label></li>
+<li><label><input type="checkbox">Data quality control completed and documented</label></li>
+</ul>
+</div>
 
 
+</section>
 </main></div>
 
 
