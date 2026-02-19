@@ -634,7 +634,7 @@ Create reproducible analyses and collaborate effectively
 <li><strong>Create self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
 <li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the <a href="https://github.com/lmu-osc/research-project-template">OSC research project template</a>.</li>
 <li><strong>Stop clicking, start coding</strong>. Automatize all possible steps, including data acquisition (see <a href="!-- internal link--">2.1. Data Collection</a>), data processing and transformation, data analyses, data visualization, and results reporting (see <a href="!-- internal link--">3.2. Reproducible Reporting</a>)</li>
-<li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability(see <a href="!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 --">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free.</li>
+<li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 --">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free.</li>
 </ul>
 <!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
 </div>
@@ -674,12 +674,21 @@ Important
 <ul>
 <li><strong>Record your dependencies</strong> in your README file for possible reconstruction with <a href="https://repo2docker.readthedocs.io/en/latest/">repo2docker</a> or binder see <a href="https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies">Code Publishing tutorial</a></li>
 </ul>
-<!--renv osc tuto card, add code publishing tuto card, add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
+<!--renv osc tuto card, add code publishing tuto card; as tools add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>As with documentation for data (see <a href="!-- internal link--">2.2.4. Documentation</a>), documentation for code makes it usable by your future self, your collaborators, and anyone who might reuse it. Six months from now, you will not remember what each script was about, in which order they should be run, which parameters to input in a function.</p>
+<p><br></p>
+<ul>
+<li><strong>Create a README.md or README.txt file early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your code.</li>
+<li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values, or other decisions, should be justified minimally as comments in your code to later be transcribed in your manuscript.</li>
+<li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See <a href="!-- internal link--">2.2.4. Documentation</a>.</li>
+</ul>
+<p><br></p>
+<p>As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing <a href="!-- internal link--">see 4.2. Code Publishing</a>.</p>
 <!-- readable lecture card again
-data dictionary card -->
-<p>readme from code publishing? a bit too intense for this stage tho but something about internal, work in progress read me</p>
+data dictionary tuto card 
+code publishing tuto card-->
 </div>
 </div>
 </div>
@@ -688,20 +697,25 @@ data dictionary card -->
 <summary>
 <i class="bi bi-file-earmark-richtext"></i> 3.2. Reproducible Reporting
 </summary>
+<p>A practical way to make reporting decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation. For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for this approach, superseding R Markdown and enabling seamless <strong>rendering to formats such as HTML, PDF, and Word</strong>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.2.1. Analysis Report</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.2.2. Manuscript</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3.2.3. Presentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">3.2.4. Website</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>reproducible analyses report with quarto</p>
+<p><strong>Minimally, create an analyses report with Quarto.</strong> This will facilitate your own revisions, code-review by your team, reproducibility checks by some journals, and verification of results reproducibility by other researchers. The code repository will eventually be published with simulated, synthetic, or real data, depending on the project, together with the respective paper (see <a href="!--internal link--">4. Preserve &amp; Share</a>). You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
+<!-- quarto tuto card -->
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>reproducible manuscripts with quarto, zotero</p>
+<!-- quarto tuto card and zotero tuto card-->
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>reproducible presentation with quarto</p>
+<!-- quarto tuto card and zotero tuto card-->
 </div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <p>reproducible websites with quarto</p>
+<!-- quarto tuto card-->
 </div></div></div></details>
 <section id="analysis-collaboration-checklist" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-collaboration-checklist"><i class="bi bi-card-checklist"></i> Analysis &amp; Collaboration Checklist</h2>
