@@ -625,7 +625,7 @@ Build quality into your data from the start
 <summary>
 <i class="bi bi-journal-code"></i> 2.1. Data Collection
 </summary>
-<p>Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see <a href="!--internal link--">LMU good practices guidelines</a>). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.</p>
+<p>Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a>). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.</p>
 <p>State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->:</p>
 <ul>
 <li><strong>creating standard operating procedures</strong></li>
@@ -670,9 +670,9 @@ Open-Source Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and 
 <p>When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> or Nextflow ensure steps run in the correct order and can resume after failures.</p>
 <p><br></p>
 <ul>
-<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="!--internal link--">Data Management</a> for guidelines.</p></li>
+<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="!--internal link--">2.2. Data Management</a> for guidelines.</p></li>
 <li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
-<li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="!--internal link--">Version Control tab in Data Management</a> for details.</p></li>
+<li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="!--internal link--">2.2.6. Version Control</a> for details.</p></li>
 </ul>
 <!-- 2 cards in learn more: OSC R and Git tutorials  -->
 <div class="orc-grid-tools">
@@ -694,11 +694,11 @@ Open-Source Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and 
 <summary>
 <i class="bi bi-folder-check"></i> 2.2. Data Management
 </summary>
-<p>In <a href="!-- internal link--">Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
+<p>In <a href="!-- internal link--">1. Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
 <!--maybe the two bullet points here should be cut as they are repeated across the sections? -->
 <!-- again problem with display of list -->
 <ul>
-<li><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="!--internal link--">Reproducible Data Processing &amp; Analyses</a>).</li>
+<li><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="!--internal link--">3.1. Reproducible Data Processing &amp; Analyses</a>).</li>
 <li><strong>Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.</strong> Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.</li>
 </ul>
 <p>What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> provides detailed guidance organized by research area.</p>
@@ -789,7 +789,7 @@ Open-Source Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and 
 <li><p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the <a href="https://rdmkit.elixir-europe.org/your_domain">RDMKit</a> to find conventions for your field.</p></li>
 </ul>
 <p><br></p>
-<p>Format issues often surface during quality control. The <a href="!--internal link--">Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
+<p>Format issues often surface during quality control. The <a href="!--internal link--">2.4. Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -897,7 +897,7 @@ Important
 <li><strong>GitHub</strong> is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. <strong>You should not have any sensitive data on GitHub even in a private repository.</strong></li>
 <li><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</li>
 </ul>
-<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="!-- internal link --">3. Analyze &amp; Collaborate</a>).<br>
+<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="!-- internal link --">3. Analyze &amp; Collaborate</a> and <a href="!-- internal link --">4. Preserve &amp; Share</a>).<br>
 <br> In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 </div>
 </div>
@@ -972,7 +972,7 @@ Implementing and evaluating data anonymization techniques for safely sharing sen
 <i class="bi bi-check2-square"></i> 2.4. Quality Control
 </summary>
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
-<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="!--internal link--">Study Design &amp; Analysis Plan</a>).</p>
+<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="!--internal link--">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
 <div class="tab-content">
@@ -1006,7 +1006,7 @@ Implementing and evaluating data anonymization techniques for safely sharing sen
 </ul>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="!--internal link--">Study Design &amp; Analysis Plan</a>).</p>
+<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="!--internal link--">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <p><br></p>
 <ul>
 <li><p><strong>Common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
