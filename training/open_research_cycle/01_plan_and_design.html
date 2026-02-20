@@ -846,6 +846,7 @@ Important
 <h5 class="anchored">
 Appropriate level of documentation and standards to allow <strong>reproduction</strong>:
 </h5>
+<p><!-- individually remove anchor tags for these titles within pages --></p>
 <ul>
 <li>Reproducible methods must be used. (§11)</li>
 <li>When research software is developed, its source code must be documented. (§12)</li>
@@ -856,17 +857,17 @@ Appropriate level of documentation and standards to allow <strong>replication</s
 <ul>
 <li>All information relevant to the production of a research result must be documented comprehensively to enable replication. (§7 and §12)</li>
 <li>If specific professional recommendations exist for review and evaluation, the results must be documented in accordance with these respective specifications. (§12)</li>
-<li>Individual results that do not support the hypothesis must also be documented; a selection of results is not permitted. (§12)</li>
+<li>Individual results that do not support the hypothesis must also be documented; <strong>a selection of results is not permitted</strong>. (§12)</li>
 </ul>
 <h5 class="anchored">
 Public access to research results:
 </h5>
 <ul>
-<li>Apart from specific exceptions, <strong>all findings should be made public</strong>. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) <strong>according to the FAIR principles</strong>. (§13)</li>
+<li>Apart from specific exceptions, <strong>all findings should be made public</strong>. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) <strong>according to the <u>FAIR principles</u></strong>. (§13)</li>
 <li>Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).</li>
 </ul>
 <p><br></p>
-<p>In later sections, you will acquire skills in FAIR data management and reproducible workflows that will enable you to comply with these guidelines.</p>
+<p>In later sections, you will acquire skills in FAIR data management and reproducible workflow that will enable you to comply with these guidelines.</p>
 <p><br></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -878,7 +879,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The <strong>FAIR</strong> principles are defined as:</p>
+<p>The <strong><u>FAIR principles</u></strong> are defined as:</p>
 <ul>
 <li><strong>F</strong>indable: metadata should be deposited in a searchable repository and be assigned a permanent identifier<br>
 </li>
@@ -888,6 +889,8 @@ Note
 </li>
 <li><strong>R</strong>eusable: the data is richly documented (e.g.&nbsp;with a data dictionary) and is accompanied by a data usage license</li>
 </ul>
+<p><strong>Metadata</strong> are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.</p>
+<p><br></p>
 <p>See <a href="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</a> for more information and section <a href="../../02_collect_and_manage.qmd" class="mark">2. Collect &amp; Manage</a> to learn how to implement the FAIR principles in your research.</p>
 </div>
 </div>
@@ -912,20 +915,20 @@ Note
 <p><strong>Contact the <a href="https://www.lmu.de/en/research/research-services/contact.html">LMU Research Funding Unit</a> to review your grant proposal</strong> and assess if your proposal is meeting your funders’ open science requirements.</p>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty’s ethics committee (see e.g.&nbsp;<a href="https://www.med.lmu.de/de/fakultaet/wer-wir-sind/gremien-kommissionen/ethikkommission/">instructions for the LMU Faculty of Medicine</a> and <a href="https://www.lmu.de/psyedu/en/research/ethics-committee/#:~:text=The%20Ethics%20Committee%20advises%20and,and%20in%20security%2Drelevant%20areas.">instructions for the LMU Department of Psychology</a>) to make sure your research will be conducted responsibly and that participants’ data will be protected.</p>
+<p>Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty’s ethics committee to make sure your research will be conducted responsibly, and that participants’ data will be protected.</p>
 <p><br></p>
-<section id="your-ethics-proposal-will-typically-include-information-on" class="level4">
-<h4 class="anchored" data-anchor-id="your-ethics-proposal-will-typically-include-information-on"><i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:</h4>
+<section id="your-ethics-proposal-will-typically-include-information-on" class="level5">
+<h5 class="anchored"><i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:</h5>
 <ul>
 <li><strong>Data storage and retention</strong> – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see <a href="#1-3-research-data-management-plans" class="mark">1.3. Research Data Management Plans</a>).</li>
 <li><strong>Risks if the data were leaked</strong> – identifying potential consequences for participants or the research project if confidentiality is breached.</li>
-<li><strong>Data anonymization</strong> – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see <a href="../../02_collect_and_manage.qmd#2-3-2-anonymization" class="mark">2.3.2. Anonymization</a> for options).</li>
+<li><strong>Data anonymization</strong> – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see <a href="../../02_collect_and_manage.qmd#2-3-2-anonymization" class="mark">2.3.2. Anonymization</a> for options, from simple techniques of anonymization to the creation of synthetic data).</li>
 <li><strong>Language of the informed consent forms</strong> – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here.</li>
-<li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see <a href="#1-3-1-pre-analysis-planning" class="mark">1.3.1. Pre-analysis planning</a>).</li>
+<li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see <a href="#1-4-1-pre-analysis-planning" class="mark">1.4.1. Pre-analysis planning</a> and <a href="#1-4-1-power-analyses" class="mark">1.4.3. Power analyses</a>). <!-- wil these links work?? if not, let's not leave dead links all over the place, let's keep them makred with a comment, if needed we can tag the header of the section though leave the text identifying the subsection intact.--></li>
 </ul>
-<!-- resources: add example consent form text from Felix?? or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
+<!-- @Felix: can we add example consent form as resources or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
 <div class="container my-4 gap-3">
- <h4 class="fs-5 anchored"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+ <h4 class="fs-5 anchored" data-anchor-id="your-ethics-proposal-will-typically-include-information-on"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4">
     <div class="col">
       <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="card orc-card-tool h-100 text-decoration-none">
@@ -974,8 +977,8 @@ Note
 </h4>
 </summary>
 <p>A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.</p>
-<section id="your-dmp-will-ask" class="level4">
-<h4 class="anchored" data-anchor-id="your-dmp-will-ask"><i class="bi bi-list-check"></i> Your DMP will ask:</h4>
+<section id="your-dmp-will-ask" class="level5">
+<h5 class="anchored"><i class="bi bi-list-check"></i> Your DMP will ask:</h5>
 <ul>
 <li><strong>What data</strong> will you collect or generate (types, formats, volume, sources)?</li>
 <li><strong>How will you describe it</strong> (metadata standards, documentation practices)?</li>
@@ -989,7 +992,7 @@ Note
 <div class="container my-4"> <!-- put on one line given just 3 cards? -->
 
   <!-- Row 1: LEARN MORE -->
-<h4 class="fs-5 anchored"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<h4 class="fs-5 anchored" data-anchor-id="your-dmp-will-ask"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
     <div class="col">
       <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="card orc-card-tool h-100 text-decoration-none">
@@ -1042,22 +1045,31 @@ Note
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">1.4.1. Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">1.4.2. Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">1.4.3. Power analyses</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Why should you plan your statistical plan prior to collecting data?</p>
+<section id="why-should-you-plan-your-statistical-plan-prior-to-collecting-data" class="level5">
+<h5 class="anchored" data-anchor-id="why-should-you-plan-your-statistical-plan-prior-to-collecting-data">Why should you plan your statistical plan prior to collecting data?</h5>
+<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>.</p>
 <p><br></p>
-<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>, often unintentionally.</p>
+<p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration.</strong></p>
 <p><br></p>
-<p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration</strong>: specifying hypotheses, methods, and analysis plans before data collection or analysis. Preregistration constrains bias in confirmatory testing while still allowing exploratory analyses, clearly distinguishing robust hypothesis tests from hypothesis-generating work. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
+</section>
+<section id="benefits-of-preregistration" class="level5">
+<h5 class="anchored" data-anchor-id="benefits-of-preregistration">Benefits of preregistration</h5>
+<p>Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, constrains bias in confirmatory testing while still allowing exploratory analyses, clearly <strong>distinguishing robust hypothesis tests from hypothesis-generating work</strong>. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
 <p><br></p>
-<p>You will benefit from using a preregistration template for:</p>
+<p>Preregistration can be beneficial for various type of studies, including:</p>
 <ul>
-<li><p>experimental studies (i.a. with a manipulated variable): it will define what will be your confirmatory analysis and strengthens your claim</p></li>
-<li><p>observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum</p></li>
-<li><p>qualitative studies: it will provide a way to document e.g.&nbsp;your positionality towards a subject in the course of a project.</p></li>
+<li>experimental studies (i.e.&nbsp;studies with a manipulated variable): it will define what will be your confirmatory analysis and strengthens your claim</li>
+<li>observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum</li>
+<li>qualitative studies: it will provide a way to document e.g.&nbsp;your positionality towards a subject in the course of a project.</li>
 </ul>
+<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data and write the possible statistical test to analyze that data</strong> (see <a href="#" class="mark">1.3.2. Simulation of data</a> and <a href="#" class="mark">1.3.3. Power analyses</a>).</p>
+<p><br></p>
+</section>
+<section id="what-is-included-in-a-preregistration" class="level5">
+<h5 class="anchored" data-anchor-id="what-is-included-in-a-preregistration"><i class="bi bi-list-check"></i> What is included in a preregistration?</h5>
 <p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard OSF preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g.&nbsp;systematic review, qualitative work, secondary data analysis).</p>
 <p><br></p>
-<section id="your-preregistration-will-define-your-studys" class="level4">
-<h4 class="anchored" data-anchor-id="your-preregistration-will-define-your-studys"><i class="bi bi-list-check"></i> Your preregistration will define your study’s:</h4>
+<p>Your preregistration will define your study’s: <br></p>
 <ul>
 <li><strong>Hypothesis and predictions</strong></li>
 <li><strong>Data collection procedures</strong></li>
@@ -1065,30 +1077,29 @@ Note
 <li><strong>Variables</strong> (manipulated, measured, indices)</li>
 <li><strong>Statistical method</strong> (model, dependent and independent variables, covariables, transformations)</li>
 <li><strong>Data exclusion criteria</strong></li>
-<li><strong>How to deal with missing data</strong></li>
+<li><strong>How to deal with missing data</strong> <br></li>
 </ul>
-<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data and write the possible statistical test to analyze that data</strong> (see <a href="#" class="mark">1.3.2. Simulation of data</a> and <a href="#" class="mark">1.3.3. Power analyses</a>).</p>
+</section>
+<section id="publishing-process" class="level5">
+<h5 class="anchored" data-anchor-id="publishing-process">Publishing process</h5>
+<p>Once your study plan is finalized: <br></p>
+<ul>
+<li><strong>Submit your preregistration before collecting or analyzing existing data.</strong> You can do so on discipline specific registries (see <a href="!--internal link--">1.1.2. Preregistrations</a>) or discipline agnostic repositories such as the <a href="https://osf.io/">Open Science Framework (OSF)</a>.</li>
+<li><strong>Embargoe your plan if you are concerned about scooping.</strong> On the OSF, your preregistration can be kept private for a predetermine amount of time, and for a maximum of 4 years.</li>
+<li><strong>Include your pregistration’s DOI in your manuscript.</strong> Make your registration public upon the publication of your manuscript.</li>
+</ul>
+<p>This process improves transparency and is inviting valuable <strong>early feedback from collaborators</strong>. An even stronger approach is <strong>submitting preregistrations directly to journals (then called “Registered Reports”)</strong>, enabling peer review at a stage where methodological adjustments are still possible.</p>
 <p><br></p>
-<p>Once completed, you can submit your preregistration on e.g.&nbsp;the <a href="https://osf.io/">Open Science Framework (OSF)</a> before collecting or analyzing existing data. The plan can be <strong>embargoed</strong> (i.e.&nbsp;kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable <strong>early feedback from collaborators</strong>. An even stronger approach is <strong>submitting preregistrations directly to journals (then called “Registered Reports”)</strong>, enabling peer review at a stage where methodological adjustments are still possible.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Registered Reports
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where <strong>studies are peer-reviewed before data collection</strong>. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
+</section>
+<section id="registered-reports" class="level5">
+<h5 class="anchored">Registered Reports</h5>
+<p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where <strong>preregistrations are peer-reviewed before data collection</strong>. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
 <p><br></p>
 <p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts <strong>incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes</strong>.</p>
-</div>
-</div>
 <div class="container my-4">
 
   <!-- Row 1: LEARN MORE -->
-<h4 class="fs-5 anchored"><i class="bi bi-mortarboard"></i> LEARN MORE</h4> <!-- on one line given 3 cards? -->
+<h4 class="fs-5 anchored" data-anchor-id="registered-reports"><i class="bi bi-mortarboard"></i> LEARN MORE</h4> <!-- on one line given 3 cards? -->
   <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
     <div class="col">
       <a href="#" class="card orc-card-tool h-100 text-decoration-none"><!--FIXME-->
@@ -1113,7 +1124,7 @@ Note
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid">
         </div>
         <h4 class="card-title anchored">Center for Open Science</h4>
-        <p class="card-text">Preregistration templates, journals with Registered Reports</p>
+        <p class="card-text">Preregistration templates, list of journals offering Registered Reports</p>
       </a>
     </div>
     <div class="col">
@@ -1140,11 +1151,12 @@ Note
 <li><p><strong>Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.</strong><br>
 <em>Example: See whether simulated data drawn from specific distributions is comparable to real data.</em></p></li>
 <li><p><strong>Perform power analyses.</strong><br>
-<em>Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see <a href="#">1.3.3. Power analyses</a>)</em></p></li>
-<li><p><strong>Prepare a pre-analysis plan.</strong> <em>Example: To be confident about the (confirmatory) statistical analyses you want to commit to before data collection (e.g.&nbsp;through a preregistration or registered report), providing a simulated dataset to a statistician or mentor will allow them to provide concrete suggestions on the most appropriate statistical test to apply to your data. The code containing the analyses of simulated data can be submitted along with your preregistration or registered report for reviewers to exactly understand what analyses you intend to perform. Once you get your real data, you may simply plug them into this code and get the results of your confirmatory analyses immediately.</em></p></li>
+<em>Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see <a href="#">1.4.3. Power analyses</a><!--internal link formatting-->)</em></p></li>
+<li><p><strong>Prepare a pre-analysis plan.</strong><br>
+<em>Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see <a href="#pre-analysis-planning" class="mark">1.4.1. Pre-analysis planning</a><!--dead link-->) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results.</em></p></li>
 </ul>
 <p><br></p>
-<p>Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a>) is much easier than researchers often believe it to be and is helpful even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p>
+<p>Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a>) is much easier than researchers often believe it to be and is generally helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p>
 <div class="container my-4">
 
   <!-- Row 1: LEARN MORE -->
@@ -1169,9 +1181,11 @@ Note
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses:</p>
 <p><br></p>
-<section id="a-priori-power-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="a-priori-power-analysis">A priori power analysis</h4>
-<p>To calculate the smallest sample size required to detect the smallest effect of interest, simulate data following our <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/">advanced tutorial</a>. For a very basic power calculation, you can use simple R function if you know 3 out of 4 of these parameters:</p>
+<section id="a-priori-power-analysis" class="level5">
+<h5 class="anchored" data-anchor-id="a-priori-power-analysis">A priori power analysis</h5>
+<p><strong>Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.</strong> See our <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/">advanced tutorial</a>.</p>
+<p><br></p>
+<p>For a very basic power calculation, you can use simple R function if you know 3 out of 4 of these parameters:</p>
 <ul>
 <li>required sample size n (usually the one missing)</li>
 <li>desired power (default 0.80)</li>
@@ -1181,9 +1195,9 @@ Note
 <p>To get support with pre-analysis planning, you can book a consultation with the <a href="mailto:@stablab.stat.uni-muenchen.de">LMU statistical consulting unit</a> and visit the <a href="https://www.stat.lmu.de/stablab/de/">StaBLab website</a> for more information.</p>
 <p><br></p>
 </section>
-<section id="post-hoc-power-analysis" class="level4">
-<h4 class="anchored" data-anchor-id="post-hoc-power-analysis">Post-hoc power analysis</h4>
-<p>Sometimes, you may not be able to control the sample size for your project (e.g., because data collection has ended and you only have a certain number of good quality samples). In this situation, you can compute a so-called “post-hoc power”. Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible.</p>
+<section id="post-hoc-power-analysis" class="level5">
+<h5 class="anchored">Post-hoc power analysis</h5>
+<p><strong>Compute a post-hoc power when you are not be able to control the sample size for your project.</strong> Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible.</p>
 <p><br></p>
 <p>The <strong>legitimate post-hoc power</strong> is computed with your actual n, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.</p>
 <p><br></p>
@@ -1191,7 +1205,7 @@ Note
 <div class="container my-4">
 
   <!-- Row 1: LEARN MORE -->
-<h4 class="fs-5 anchored"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<h4 class="fs-5 anchored" data-anchor-id="post-hoc-power-analysis"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
     <div class="col">
       <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="card orc-card-tool h-100 text-decoration-none">
@@ -1201,7 +1215,7 @@ Note
             <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
           </div>
         </div>
-        <h4 class="card-title anchored">Simulation for Power Analyses</h4>
+        <h4 class="card-title anchored">Power Analyses</h4>
         <p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
       </a>
     </div>
@@ -1257,7 +1271,6 @@ Note
 <ul class="task-list">
 <li><label><input type="checkbox">Data Management Plan completed</label></li>
 <li><label><input type="checkbox">Consent forms prepared</label></li>
-<li><label><input type="checkbox">Data collection protocols tested</label></li>
 <li><label><input type="checkbox">Preregistration submitted</label></li>
 <li><label><input type="checkbox">Ethical approval obtained</label></li>
 </ul>
