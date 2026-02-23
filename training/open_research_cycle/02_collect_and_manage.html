@@ -652,22 +652,23 @@ Note
 <p>Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as “materials” varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.</p>
 <p><br></p>
 <ul>
-<li><p><strong>Track deviations in real time.</strong> Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. Electronic lab notebooks (ELNs) make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.</p></li>
-<li><p><strong>Publish your protocols.</strong> A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.</p></li>
+<li><p><strong>Track deviations in real time.</strong> Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. <strong>Electronic lab notebooks (ELNs)</strong> make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.</p></li>
+<li><p><strong>Publish your protocols.</strong> A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like <a href="https://www.protocols.io/">protocols.io</a> provide version control and DOI assignment.</p></li>
 </ul>
-<!-- add a card to LMU supported ENL:
+<!-- add 3 tool cards in one row:
 eLabFTW https://elab.ub.lmu.de/login.php with logo: https://www.elabftw.net/img/elabftw-logo-only.svg 
-Electronic Lab Notebook hosted by LMU Munich
+Electronic Lab Notebook hosted by LMU Munich. Tagged: LMU supported.
+
 Chemotion https://chemlab.cup.uni-muenchen.de/home logo: https://avatars.githubusercontent.com/u/83013380?v=4
-Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy
- -->
-<!-- Protocols.io [protocols.io](https://www.protocols.io/) icon: https://www.protocols.io/favicon.ico 
+Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy. Tagged: LMU supported.
+
+Protocols.io [protocols.io](https://www.protocols.io/) icon: https://www.protocols.io/favicon.ico 
 Share, discover, cite, and improve research protocols.
 -->
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Document both the instrument and the administration procedure completely. Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format.</p>
-<!-- [Content to be expanded] ??  @Felix: do we want anything else here?-->
+<p><strong>Document both the instrument and the administration procedure completely.</strong> Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format.</p>
+<!-- @Felix: do we want anything else here? minimally the definition of validated survey is really unclear to me given how people use it...-->
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> or Nextflow ensure steps run in the correct order and can resume after failures.</p>
@@ -677,7 +678,7 @@ Share, discover, cite, and improve research protocols.
 <li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
 <li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="!--internal link--">2.2.6. Version Control</a> for details.</p></li>
 </ul>
-<!-- 2 cards in learn more: OSC R and Git tutorials add git icon -->
+<!-- 2 cards in learn more in one row -->
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -686,6 +687,13 @@ Share, discover, cite, and improve research protocols.
 <section id="introduction-to-r" class="level4">
 <h4 class="anchored" data-anchor-id="introduction-to-r"><a href="https://lmu-osc.github.io/introduction-to-R/">Introduction to R</a> <!-- add R icon --></h4>
 <p>Programming fundamentals for research data processing</p>
+<div class="orc-card-tool-icon">
+<img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
+</div>
+</section>
+<section id="introduction-to-git" class="level4">
+<h4 class="anchored" data-anchor-id="introduction-to-git"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to Git</a> <!-- add OSC tutorial tag and git logo--></h4>
+<p>Learn Git basics integrated with RStudio (2h)</p>
 </section>
 </div>
 </div>
@@ -709,7 +717,7 @@ Share, discover, cite, and improve research protocols.
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="!-- internal link--">4. Preserve &amp; Share</a>].</p>
+<p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="!-- internal link--">4. Preserve &amp; Share</a>.</p>
 <p><br></p>
 <ul>
 <li><strong>Use institutional storage.</strong> Your institution provides storage with automated backups, access controls, and GDPR compliance. The specific options vary by department. Contact the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</li>
@@ -749,7 +757,9 @@ Share, discover, cite, and improve research protocols.
 </ul>
 <p>A pattern like <code>YYYYMMDD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>20240315_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.</p>
 <p><br></p>
-<p><strong>Follow domain standards where they exist.</strong> Many fields have established organizational conventions that tools and collaborators expect. Using these means your data works immediately with existing analysis pipelines and reviewers recognize the structure. Search <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> for standards in your domain.</p>
+<ul>
+<li><strong>Follow domain standards where they exist.</strong> Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> for standards in your domain.</li>
+</ul>
 <div class="orc-grid-tools">
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
@@ -878,31 +888,31 @@ Share, discover, cite, and improve research protocols.
 </div>
 </div>
 <div id="tabset-4-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-6-tab">
-<p>Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
+<p>Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
 <p><br></p>
 <ul>
 <li><p><strong>Git usually suffices for data files.</strong> Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.</p></li>
 <li><p><strong>Use specialized tools for large or frequently changing binary files.</strong> Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. <a href="https://www.datalad.org/">DataLad</a> builds on git-annex and works with standard Git workflows.</p></li>
 </ul>
-<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>Difference between Git, GitHub and GitLab</strong></p>
 <ul>
-<li><strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).<br>
+<li><strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).<br>
 </li>
-<li><strong>GitHub</strong> is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. <strong>You should not have any sensitive data on GitHub even in a private repository.</strong></li>
-<li><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</li>
+<li><strong>GitHub</strong> is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. <strong>You should not have any sensitive data on GitHub even in a private repository.</strong></li>
+<li><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</li>
 </ul>
 <p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="!-- internal link --">3. Analyze &amp; Collaborate</a> and <a href="!-- internal link --">4. Preserve &amp; Share</a>).<br>
-<br> In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
+<br> In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 </div>
 </div>
 <div class="orc-grid-tools">
@@ -910,13 +920,13 @@ Important
 <div class="orc-card-tool-icon">
 <img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
 </div>
-<section id="introduction-to-git" class="level4">
-<h4 class="anchored" data-anchor-id="introduction-to-git"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to Git</a> <!-- add OSC tutorial tag and git logo--></h4>
+<section id="introduction-to-git-1" class="level4">
+<h4 class="anchored" data-anchor-id="introduction-to-git-1"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Introduction to Git</a> <!-- add OSC tutorial tag and git logo - learn more section --></h4>
 <p>Learn Git basics integrated with RStudio (2h)</p>
 </section>
 </div>
-<!-- add github tutorial card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#github-->
-<!-- add LRZ gitlab - LMU supported tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-gitlab-->
+<!-- add github tutorial card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#github  with OSC tutorial tag and github logo - learn more section -->
+<!-- in tool section: add LRZ gitlab - LMU supported tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-gitlab  Institutional Git hosting for LMU Munich -->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon">
 <i class="bi bi-hdd-stack"></i>
