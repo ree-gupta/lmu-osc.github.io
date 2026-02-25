@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-933a2fdf0993aefea134bb7a54f7a656.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1d5d012bc621e25ef84868b3f4863c08.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -717,7 +717,7 @@ Share, discover, cite, and improve research protocols.
 <p>When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> or Nextflow ensure steps run in the correct order and can resume after failures.</p>
 <p><br></p>
 <ul>
-<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="#sec-data-management" class="quarto-xref">Section&nbsp;2.2</a> for guidelines.</p></li>
+<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="#sec-data-management" class="mark">2.2 Data Management</a> for guidelines.</p></li>
 <li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
 <li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="!--internal link--">2.2.6. Version Control</a> for details.</p></li>
 </ul>
@@ -976,7 +976,7 @@ Domain-specific data management standards
 <li><p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the <a href="https://rdmkit.elixir-europe.org/your_domain">RDMKit</a> to find conventions for your field.</p></li>
 </ul>
 <p><br></p>
-<p>Format issues often surface during quality control. The <a href="#sec-quality-control" class="quarto-xref">Section&nbsp;2.4</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
+<p>Format issues often surface during quality control. The <a href="#sec-quality-control" class="mark">2.4. Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -1084,7 +1084,7 @@ Project folder separating raw &amp; processed data, code, and outputs.
 <ul>
 <li><p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README.</p></li>
 <li><p><strong>Reporting guidelines</strong> specify what methodological details to document for different study types. The <a href="https://www.equator-network.org/">EQUATOR Network</a> maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.</p></li>
-<li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="../../training/open_research_cycle/04_preserve_and_share.html" class="mark">4. Preserve &amp; Sharing</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.</p></li>
+<li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="../../training/open_research_cycle/04_preserve_and_share.html" class="mark">4. Preserve &amp; Share</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.</p></li>
 </ul>
 <p><br></p>
 <p><strong>Think of your data as a first-class research output.</strong> Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.</p>
