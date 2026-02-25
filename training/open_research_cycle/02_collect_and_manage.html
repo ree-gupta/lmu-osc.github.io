@@ -624,11 +624,10 @@ Build quality into your data from the start
 </div>
 <details class="orc-details-panel">
 <summary>
-<i class="bi bi-journal-code"></i>
-<h4 class="anchored">
-2.1. Data Collection
-</h4>
-</summary>
+<p><i class="bi bi-journal-code"></i></p>
+<section id="sec-data-collection" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="sec-data-collection"><span class="header-section-number">2.1</span> Data Collection</h3>
+</section></summary>
 <p>Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a>). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.</p>
 <p>State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->: - <strong>creating standard operating procedures</strong> - <strong>recording <u>metadata</u> as data collection is taking place</strong> - <strong>build in automatization through programming</strong></p>
 <div class="mx-4 callout callout-style-default callout-note callout-titled">
@@ -718,7 +717,7 @@ Share, discover, cite, and improve research protocols.
 <p>When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> or Nextflow ensure steps run in the correct order and can resume after failures.</p>
 <p><br></p>
 <ul>
-<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="#2-2-data-management" class="mark">2.2. Data Management</a> for guidelines.</p></li>
+<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="#sec-data-management" class="quarto-xref">Section&nbsp;2.2</a> for guidelines.</p></li>
 <li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
 <li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="!--internal link--">2.2.6. Version Control</a> for details.</p></li>
 </ul>
@@ -779,11 +778,11 @@ Learn Git basics integrated with RStudio (2h).
 </details>
 <details class="orc-details-panel">
 <summary>
-<i class="bi bi-folder-check"></i>
-<h4 class="anchored">
-2.2. Data Management
-</h4>
-</summary>
+<p><i class="bi bi-folder-check"></i></p>
+
+<section id="sec-data-management" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="sec-data-management"><span class="header-section-number">2.2</span> Data Management</h3>
+</section></summary>
 <p>In <a href="../../training/open_research_cycle/01_plan_and_design.html" class="mark">1. Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
 <!-- adding space before list didnt work hence "faking" nested look by adding margin-->
 <div class="ms-1">
@@ -977,7 +976,7 @@ Domain-specific data management standards
 <li><p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the <a href="https://rdmkit.elixir-europe.org/your_domain">RDMKit</a> to find conventions for your field.</p></li>
 </ul>
 <p><br></p>
-<p>Format issues often surface during quality control. The <a href="#2-4-quality-control" class="mark">2.4. Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
+<p>Format issues often surface during quality control. The <a href="#sec-quality-control" class="quarto-xref">Section&nbsp;2.4</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -1249,11 +1248,10 @@ Version control for large datasets
 </div></div></div></details>
 <details class="orc-details-panel">
 <summary>
-<i class="bi bi-shield-lock"></i>
-<h4 class="anchored">
-2.3. Ethics &amp; Privacy
-</h4>
-</summary>
+<p><i class="bi bi-shield-lock"></i></p>
+<section id="sec-ethics-and-privacy" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="sec-ethics-and-privacy"><span class="header-section-number">2.3</span> Ethics &amp; Privacy</h3>
+</section></summary>
 <p>Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see <a href="!--internal link--">1.2.3. Ethics</a>) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
@@ -1350,13 +1348,13 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 </details>
 <details class="orc-details-panel">
 <summary>
-<i class="bi bi-check2-square"></i>
-<h4 class="anchored">
-2.4. Quality Control
-</h4>
-</summary>
+<p><i class="bi bi-check2-square"></i></p>
+
+<section id="sec-quality-control" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="sec-quality-control"><span class="header-section-number">2.4</span> Quality Control</h3>
+</section></summary>
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
-<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/open_research_cycle/01_plan_and_design.html#1-4-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
+<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/open_research_cycle/01_plan_and_design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
 <div class="tab-content">
@@ -1406,7 +1404,7 @@ Learn to create validation rules and automated checks for your research data.
 </ul>
 </div>
 <div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="../../training/open_research_cycle/01_plan_and_design.html#1-4-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
+<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="../../training/open_research_cycle/01_plan_and_design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <p><br></p>
 <ul>
 <li><p><strong>Common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
@@ -1416,8 +1414,9 @@ Learn to create validation rules and automated checks for your research data.
 </div>
 </div>
 </details>
-<section id="data-management-checklist" class="level2 orc-gradient-box data-management-checklist">
-<h2 class="anchored" data-anchor-id="data-management-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Data Management Checklist</h2>
+
+<section id="data-management-checklist" class="level2 unnumbered orc-gradient-box data-management-checklist">
+<h2 class="unnumbered anchored" data-anchor-id="data-management-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Data Management Checklist</h2>
 <p>To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.</p>
 <!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 <div class="row row-cols-1 row-cols-lg-2 g-4">
@@ -1455,6 +1454,7 @@ Learn to create validation rules and automated checks for your research data.
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training/open_research_cycle/02_collect_and_manage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer>
+
 
 
 
