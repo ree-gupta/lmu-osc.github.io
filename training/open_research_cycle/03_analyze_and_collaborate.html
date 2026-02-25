@@ -669,6 +669,7 @@ Note
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g.&nbsp;<a href="https://rstudio.github.io/renv/">Renv</a> for R pacakges, <a href="https://anaconda.org/channels/anaconda/packages/conda/overview">Conda</a> for Python packages) or broader containers (e.g.&nbsp;<a href="https://www.docker.com/">Docker</a> or <a href="https://mybinder.org/">Binder</a>) help stabilize workflows and prevent inconsistencies caused by packages or software updates.</p>
+<p><br></p>
 <p>For a R project repository:</p>
 <ul>
 <li><strong>Activate Renv to keep track of all packages versions</strong> (see <a href="">renv tutorial</a>). This way, you or someone else can reproduce your results on another computer or at a later time using the same R packages versions.</li>
@@ -698,7 +699,7 @@ code publishing tuto card-->
 </details>
 <details class="orc-details-panel">
 <summary>
-<i class="bi bi-file-earmark-richtext"></i> 3.2. Results Reporting
+<i class="bi bi-file-earmark-richtext"></i> 3.2. Reporting Results
 </summary>
 <p>The reporting of results needs to be <strong>computationally reproducible</strong>, as well as <strong>comprehensive and following reporting guidelines</strong>, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect--></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -707,15 +708,15 @@ code publishing tuto card-->
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>A practical way to make reporting decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation.</p>
 <p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling seamless <strong>rendering to formats such as HTML, PDF, and Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
-<section id="analysis-report-the-minimum-standard-for-computational-reproducibility" class="level4">
-<h4 class="anchored" data-anchor-id="analysis-report-the-minimum-standard-for-computational-reproducibility">Analysis Report: The Minimum Standard for Computational Reproducibility</h4>
+<section id="reproducible-analysis-report-the-minimum-standard-for-computational-reproducibility" class="level4">
+<h4 class="anchored" data-anchor-id="reproducible-analysis-report-the-minimum-standard-for-computational-reproducibility">Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility</h4>
 <ul>
 <li><strong>Create an analyses report with Quarto.</strong> You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>). This will facilitate your own revisions, code-review by your team, <strong>reproducibility checks</strong> by some journals, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see <a href="!--internal link--">4. Preserve &amp; Share</a>).</li>
 </ul>
 <p>This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. In reality, all reporting outputs such as manuscript, presentation and websites can be created in a reproducible fashion using Quarto:</p>
 </section>
-<section id="manuscript-the-ultimate-reproducible-report" class="level4">
-<h4 class="anchored" data-anchor-id="manuscript-the-ultimate-reproducible-report">Manuscript: The Ultimate Reproducible Report</h4>
+<section id="reproducible-manuscript-the-ultimate-reproducible-report" class="level4">
+<h4 class="anchored" data-anchor-id="reproducible-manuscript-the-ultimate-reproducible-report">Reproducible Manuscript: The Ultimate Reproducible Report</h4>
 <p>If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g.&nbsp;a Word document, you can Write your entire manuscript in Quarto.</p>
 <ul>
 <li><p><strong>Include bibliographic references in your Quarto document</strong>. You can directly source .bib files into your Quarto document or use the open source reference management software Zotero integrated in RStudio to cite articles and have them automatically formatted in any journal standards (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a> and <a href="https://lmu-osc.github.io/introduction-to-zotero/">Zotero tutorial</a>).</p></li>
@@ -723,8 +724,8 @@ code publishing tuto card-->
 <li><p><strong>Adapt your workflow to your collaborators.</strong> Ideally, all your team mates have also adopted the use of Git and GitHub or GitLab and the use of issues and branches to work collaboratively (see <a href="!--internal link--">3.2.1. Version Control</a>). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g.&nbsp;Word and share it through cloud-based collaborative document editing e.g.&nbsp;<a href="https://syncandshare.lrz.de/login">LRZ Sync &amp; Share</a> or <a href="https://docs.google.com/">Google Docs</a> with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g.&nbsp;R packages such as <code>trackdown</code> or <code>officer</code>, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.</p></li>
 </ul>
 </section>
-<section id="presentations-websites-further-reproducible-outputs-for-outreach" class="level4">
-<h4 class="anchored" data-anchor-id="presentations-websites-further-reproducible-outputs-for-outreach">Presentations &amp; Websites: Further Reproducible Outputs for Outreach</h4>
+<section id="reproducible-presentations-websites-further-reproducible-outputs-for-outreach" class="level4">
+<h4 class="anchored" data-anchor-id="reproducible-presentations-websites-further-reproducible-outputs-for-outreach">Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outreach</h4>
 <p>Using the same Quarto environment, you can also:</p>
 <ul>
 <li><p><strong>Convert your minimal analyses report into a reproducible presentation.</strong> To get feedback on your analyses, from early stages to a presentation at a conference, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.</p></li>

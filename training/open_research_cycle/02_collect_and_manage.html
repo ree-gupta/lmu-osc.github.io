@@ -654,16 +654,6 @@ Note
 <li><p><strong>Track deviations in real time.</strong> Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. <strong>Electronic lab notebooks (ELNs)</strong> make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.</p></li>
 <li><p><strong>Publish your protocols.</strong> A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like <a href="https://www.protocols.io/">protocols.io</a> provide version control and DOI assignment.</p></li>
 </ul>
-<!-- add 3 tool cards in one row:
-eLabFTW https://elab.ub.lmu.de/login.php with logo: https://www.elabftw.net/img/elabftw-logo-only.svg 
-Electronic Lab Notebook hosted by LMU Munich. Tagged: LMU supported.
-
-Chemotion https://chemlab.cup.uni-muenchen.de/home logo: https://avatars.githubusercontent.com/u/83013380?v=4
-Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy. Tagged: LMU supported.
-
-Protocols.io [protocols.io](https://www.protocols.io/) icon: https://www.protocols.io/favicon.ico 
-Share, discover, cite, and improve research protocols.
--->
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -697,7 +687,7 @@ Electronic Lab Notebook hosted by LMU Munich.
 Chemotion
 </h4>
 <p class="card-text">
-Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy.
+ELN hosted by the Faculty for Chemistry and Pharmacy.
 </p>
 <p><a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
@@ -754,7 +744,7 @@ Share, discover, cite, and improve research protocols.
 Introduction to R
 </h4>
 <p class="card-text">
-Programming fundamentals for research data processing
+Programming fundamentals for research data processing (3h)
 </p>
 <p><a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
@@ -795,10 +785,10 @@ Learn Git basics integrated with RStudio (2h).
 </h4>
 </summary>
 <p>In <a href="../../training/open_research_cycle/01_plan_and_design.html" class="mark">1. Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
-<!-- adding space before list didnt work hence "faking" nested look by adding margin  in case you choose to keep it.-->
-<div class="ms-2">
+<!-- adding space before list didnt work hence "faking" nested look by adding margin-->
+<div class="ms-1">
 <ul>
-<li><p><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="!-- to update once chapter 3 formatted--">3.1. Reproducible Data Processing &amp; Analyses</a>).</p></li>
+<li><p><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="!-- to update once chapter 3 formatted--">3.1. Data Processing &amp; Analyses</a>).</p></li>
 <li><p><strong>Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.</strong> Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.</p></li>
 </ul>
 <p>What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> provides detailed guidance organized by research area.</p>
@@ -828,9 +818,6 @@ Learn Git basics integrated with RStudio (2h).
 <p>Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.</p>
 </div>
 </div>
-<!-- add LRZ Sync & Share card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s-->
-<!-- add LRZ DSS card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss logo https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s-->
-<!-- add OSF card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#osf with the right OSF logo : https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png-->
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -841,6 +828,7 @@ Learn Git basics integrated with RStudio (2h).
 <div class="col">
 <!-- Actual card component -->
 <div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">LMU supported</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ sync and share logo"></p>
@@ -850,13 +838,14 @@ Learn Git basics integrated with RStudio (2h).
 LRZ Sync &amp; Share
 </h4>
 <p class="card-text">
-LRZ Sync &amp; Share
+Cloud storage service for LMU Munich
 </p>
 <p><a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
 </div>
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">LMU supported</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ DSS logo"></p>
@@ -866,7 +855,7 @@ LRZ Sync &amp; Share
 LRZ DSS
 </h4>
 <p class="card-text">
-LRZ DSS
+Long-term archival storage for LMU Munich
 </p>
 <p><a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -882,7 +871,7 @@ LRZ DSS
 OSF
 </h4>
 <p class="card-text">
-OSF
+Research project management platform including storage.
 </p>
 <p><a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#osf" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -946,21 +935,21 @@ Folder structure and naming conventions. (30 min)
 <p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
 </div>
 <div class="orc-card-tool-icon icon-2">
-<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub"></p>
+<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
 Research Project Template
 </h4>
+<!-- not sure why there is a white space after this title - can it be removed?-->
 <p class="card-text">
-Project folder that separates raw data, processed data, code, and outputs.
+Project folder separating raw &amp; processed data, code, and outputs.
 </p>
 <p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
 </div>
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tool</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <p><img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo"></p>
@@ -996,14 +985,16 @@ Domain-specific data management standards
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2">
-<p><i class="bi bi-book"></i></p>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo"></p>
+</div>
 </div>
 <h4 class="card-title anchored">
 RDMkit
 </h4>
 <p class="card-text">
-Find recommended file formats and conventions for your research field.
+Domain-specific file formats and conventions
 </p>
 <p><a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
@@ -1034,8 +1025,9 @@ Find recommended file formats and conventions for your research field.
 <h4 class="card-title anchored">
 Data Documentation &amp; Validation
 </h4>
+<!-- remove the line break after title?-->
 <p class="card-text">
-Create effective READMEs, data dictionaries, and validation checks for your research data.
+Create READMEs, data dictionaries, and validation checks for your data.
 </p>
 <p><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -1064,21 +1056,24 @@ Principles of README files and data dictionaries.
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 <!-- 1st card -->
 <div class="col">
-<!-- Actual card component -->
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tool</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
 </div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
+</div>
 </div>
 <h4 class="card-title anchored">
 Research Project Template
 </h4>
+<!-- not sure why there is a white space after this title - can it be removed?-->
 <p class="card-text">
-Project template with README and data dictionaries included.
+Project folder separating raw &amp; processed data, code, and outputs.
 </p>
-<p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+<p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
 </div>
 </div>
@@ -1104,7 +1099,7 @@ Project template with README and data dictionaries included.
 <div class="card orc-card-tool h-100 position-relative">
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
-<p><i class="bi bi-search"></i></p>
+<p><img src="https://avatars.githubusercontent.com/u/29867987?s=280&amp;v=4" class="img-fluid" alt="FAIRsharing logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
@@ -1117,20 +1112,19 @@ Search by discipline to find metadata standards, reporting guidelines, and data 
 </div>
 </div>
 <div class="col">
-<!-- Actual card component -->
 <div class="card orc-card-tool h-100 position-relative">
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
-<p><i class="bi bi-book"></i></p>
+<p><img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
 RDMkit
 </h4>
 <p class="card-text">
-Find metadata standards and requirements specific to your research field.
+Domain-specific metadata standards
 </p>
-<p><a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+<p><a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
 </div>
 </div>
@@ -1225,7 +1219,7 @@ Learn Git basics integrated with RStudio (2h).
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">LMU supported</span>
 <div class="orc-card-tool-icon mb-2">
-<p><img src="https://about.gitlab.com/images/press/gitlab-logo-100-rgb.svg" class="img-fluid" alt="GitLab icon"></p>
+<p><img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab icon"></p>
 </div>
 <h4 class="card-title anchored">
 LRZ Gitlab
@@ -1233,14 +1227,13 @@ LRZ Gitlab
 <p class="card-text">
 Institutional Git hosting for LMU Munich.
 </p>
-<p><a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-gitlab" class="stretched-link" target="_blank" rel="noopener"></a></p>
+<p><a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
 </div>
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">LMU supported</span>
 <div class="orc-card-tool-icon mb-2">
-<p><i class="bi bi-hdd-stack"></i></p>
+<p><img src="https://avatars.githubusercontent.com/u/8927200?s=280&amp;v=4" class="img-fluid" alt="GitLab icon"></p>
 </div>
 <h4 class="card-title anchored">
 DataLad
@@ -1318,6 +1311,7 @@ Note
 <h4 class="card-title anchored">
 Data Anonymization (tba)
 </h4>
+<!-- also a space here after the title - can it be removed? -->
 <p class="card-text">
 R anonymization techniques for safely sharing sensitive research data.
 </p>
@@ -1391,6 +1385,7 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 <h4 class="card-title anchored">
 Data Documentation &amp; Validation
 </h4>
+<!-- remove line break after title -->
 <p class="card-text">
 Learn to create validation rules and automated checks for your research data.
 </p>
@@ -1424,7 +1419,6 @@ Learn to create validation rules and automated checks for your research data.
 <section id="data-management-checklist" class="level2 orc-gradient-box data-management-checklist">
 <h2 class="anchored" data-anchor-id="data-management-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Data Management Checklist</h2>
 <p>To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.</p>
-<!-- add download button -->
 <!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 <div class="row row-cols-1 row-cols-lg-2 g-4">
 <div class="col">
@@ -1439,6 +1433,8 @@ Learn to create validation rules and automated checks for your research data.
 <li><label><input type="checkbox">Apply data (pseudo)anonymization procedures</label></li>
 <li><label><input type="checkbox">Apply quality control procedures</label></li>
 </ul>
+</div>
+<div class="col">
 <p><strong>Before Moving to Analysis:</strong></p>
 <ul class="task-list">
 <li><label><input type="checkbox">All raw data backed up in multiple locations</label></li>
@@ -1450,20 +1446,20 @@ Learn to create validation rules and automated checks for your research data.
 </ul>
 </div>
 </div>
+</section>
 <div class="d-flex justify-content-center mt-4 orc-checklist-download phase-2">
 <p><a href="#" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a></p>
 </div>
-</section>
-
-
 </main></div>
 
 
 
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training/open_research_cycle/02_collect_and_manage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer>
+
 
 
  <!-- /main -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training/open_research_cycle/02_collect_and_manage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script id="quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
