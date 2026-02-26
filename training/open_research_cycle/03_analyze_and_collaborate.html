@@ -630,22 +630,94 @@ Create reproducible analyses and collaborate effectively
 </section></summary>
 <p>Data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated, <strong>script-based workflows</strong> over manual point-and-click procedures, supported by <strong>adequate documentation</strong> and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is <strong>essential for both reproducibility and efficiency</strong>. This section outlines a recommended workflow for R users.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.1.1. Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.1.2. Version Control</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">3.1.3. Computational Environment Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">3.1.4. Documentation</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.1.1. Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.1.2. Version Control</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3.1.3. Computational Environment Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">3.1.4. Documentation</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <ul>
 <li><strong>Create self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
 <li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the <a href="https://github.com/lmu-osc/research-project-template">OSC research project template</a>.</li>
-<li><strong>Stop clicking, start coding</strong>. Automatize all possible steps, including data acquisition (see <a href="../../training/open_research_cycle/02_collect_and_manage.html#sec-data-collection" class="mark">2.1. Data Collection</a>), data processing and transformation, data analyses, data visualization, and results reporting (see <a href="#sec-reproducible-reporting" class="mark">3.2. Reproducible Reporting</a>)</li>
-<li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 --">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free.</li>
+<li><strong>Stop clicking, start coding</strong>. Automatize all possible steps, including data acquisition (see <a href="../../training/open_research_cycle/02_collect_and_manage.html#sec-data-collection" class="mark">2.1. Data Collection</a>), data processing and transformation, data analyses, data visualization, and results reporting (see <a href="#sec-reproducible-reporting" class="mark">3.2. Reporting Results</a>)</li>
+<li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free.</li>
 </ul>
-<!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+R Tutorial
+</h4>
+<p class="card-text">
+Process your data reproducibly in R. (3h)
+</p>
+<p><a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Readable code lecture
+</h4>
+<p class="card-text">
+Tips to write clear, understandable, and maintainable code.(1h)
+</p>
+<p><a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
+</div>
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- 1st card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tool</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Research Project Template
+</h4>
+<!-- not sure why there is a white space after this title - can it be removed?-->
+<p class="card-text">
+Project folder separating raw &amp; processed data, code, and outputs.
+</p>
+<p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
 <p>In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 <p><br></p>
-<p><strong>Learn to create git branches to collaborate on a same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="!-- internal link to internal card with this new page on catalogue Pat needs to create in issue #375 --">advanced Git tutorial</a>).</p>
+<p><strong>Learn to create git branches to collaborate on a same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html">Advanced Git tutorial</a>).</p>
 <p><strong>Maintain efficient communication to coordinate collaborative work.</strong> GitHub or GitLab facilitate collaboration through “issues” (a precise description of something to fix), “discussions” (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve “conflicts” (i.e.&nbsp;collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers <a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/">LMU chat (Matrix)</a>, a secured open source chat service with all LMU members on which you can also invite external collaborators.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -668,10 +740,107 @@ Note
 <p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code.</p>
 </div>
 </div>
-<!-- add Git tuto card, github tuto card, gitlab lrz - Supported at LMU , LMU chat - Supported at LMU-->
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for Learn More section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g.&nbsp;<a href="https://rstudio.github.io/renv/">Renv</a> for R pacakges, <a href="https://anaconda.org/channels/anaconda/packages/conda/overview">Conda</a> for Python packages) or broader containers (e.g.&nbsp;<a href="https://www.docker.com/">Docker</a> or <a href="https://mybinder.org/">Binder</a>) help stabilize workflows and prevent inconsistencies caused by packages or software updates.</p>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Git Tutorial
+</h4>
+<p class="card-text">
+Use version control system Git from within RStudio. (2h)
+</p>
+<p><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+GitHub Tutorial
+</h4>
+<p class="card-text">
+Collaborative coding with GitHub and RStudio (1h)
+</p>
+<p><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
+</div>
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo"></p>
+</div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+LRZ Gitlab
+</h4>
+<p class="card-text">
+Institutional Git hosting for LMU Munich.
+</p>
+<p><a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo"></p>
+</div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+LMU Chat (Matrix)
+</h4>
+<p class="card-text">
+Institutional open source chat service for LMU Munich.
+</p>
+<p><a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g.&nbsp;<a href="https://rstudio.github.io/renv/">Renv</a> for R packages, <a href="https://anaconda.org/channels/anaconda/packages/conda/overview">Conda</a> for Python packages) or broader containers (e.g.&nbsp;<a href="https://www.docker.com/">Docker</a> or <a href="https://mybinder.org/">Binder</a>) help stabilize workflows and prevent inconsistencies caused by packages or software updates.</p>
 <p><br></p>
 <p>For a R project repository:</p>
 <ul>
@@ -681,9 +850,23 @@ Note
 <ul>
 <li><strong>Record your dependencies</strong> in your README file for possible reconstruction with <a href="https://repo2docker.readthedocs.io/en/latest/">repo2docker</a> or binder see <a href="https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies">Code Publishing tutorial</a></li>
 </ul>
-<!--renv osc tuto card, add code publishing tuto card; as tools add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
+<!-- learn  more:
+
+renv OSC Tutorial https://lmu-osc.github.io/introduction-to-renv/ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8BF2VLSH1vzKlH0TOWxOjEURG4oADGhxuPg&s
+
+code publishing  https://lmu-osc.github.io/code-publishing/ OSC Tutorial
+
+tools:
+
+binder https://mybinder.org/favicon.ico  https://mybinder.org/ Create an executable environments in your browser for your Git repository 
+
+docker https://cdn.simpleicons.org/docker https://www.docker.com/ Containerization for full reproducibility
+
+repo2docker https://repo2docker.readthedocs.io/en/latest/_static/favicon.ico https://repo2docker.readthedocs.io/en/latest/ 
+
+ -->
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <p>As with documentation for data (see <a href="!-- internal link--">2.2.4. Documentation</a>), documentation for code makes it usable by your future self, your collaborators, and anyone who might reuse it. Six months from now, you will not remember what each script was about, in which order they should be run, which parameters to input in a function.</p>
 <p><br></p>
 <ul>
@@ -693,25 +876,22 @@ Note
 </ul>
 <p><br></p>
 <p>As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing <a href="../../training/open_research_cycle/04_preserve_and_share.html#sec-code-publishing" class="mark">see 4.2. Code Publishing</a>.</p>
-<!-- readable lecture card again
+<!--  learn more: 
+readable lecture card again
 data dictionary tuto card 
 code publishing tuto card-->
-</div>
-</div>
-</div>
-</details>
+</div></div></div></details>
 <details class="orc-details-panel">
 <summary>
 <p><i class="bi bi-file-earmark-richtext"></i></p>
-
 <section id="sec-reporting-results" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="sec-reporting-results"><span class="header-section-number">3.2</span> Reporting Results</h3>
 </section></summary>
 <p>The reporting of results needs to be <strong>computationally reproducible</strong>, as well as <strong>comprehensive and following reporting guidelines</strong>, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect--></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.2.1. Computational reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.2.1. Computational reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>A practical way to make reporting decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation.</p>
 <p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling seamless <strong>rendering to formats such as HTML, PDF, and Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
 <p><br></p>
@@ -835,14 +1015,14 @@ Collaborative coding with GitHub and RStudio (1h)
 <div class="card orc-card-tool h-100 position-relative">
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-2">
-<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
+<p><img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="GitHub logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
-GitHub Advanced Tutorial
+Advanced Git Tutorial
 </h4>
 <p class="card-text">
-Use branches and advance git collaborative features (2h)
+Use Git branches and advance GitHub collaborative features (2h)
 </p>
 <p><a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -875,7 +1055,7 @@ Cloud storage service for LMU Munich
 </div>
 </section>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 </div></div></div></details>
 <section id="analysis-collaboration-checklist" class="level2 unnumbered orc-gradient-box">
 <h2 class="unnumbered anchored" data-anchor-id="analysis-collaboration-checklist"><i class="bi bi-card-checklist"></i> Analysis &amp; Collaboration Checklist</h2>
@@ -958,6 +1138,10 @@ Cloud storage service for LMU Munich
 
 </div>
 </main></div>
+
+
+
+
 
 
 
