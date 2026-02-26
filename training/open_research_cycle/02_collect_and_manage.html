@@ -629,7 +629,15 @@ Build quality into your data from the start
 <h3 data-number="2.1" class="anchored" data-anchor-id="sec-data-collection"><span class="header-section-number">2.1</span> Data Collection</h3>
 </section></summary>
 <p>Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a>). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.</p>
-<p>State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->: - <strong>creating standard operating procedures</strong> - <strong>recording <u>metadata</u> as data collection is taking place</strong> - <strong>build in automatization through programming</strong></p>
+<p>State-of-the-art practices for reproducible data acquisition include:</p>
+<div class="ms-1">
+<ul>
+<li><strong>creating standard operating procedures</strong></li>
+<li><strong>recording <u>metadata</u> as data collection is taking place</strong></li>
+<li><strong>build in automation through programming</strong></li>
+</ul>
+</div>
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
 <div class="mx-4 callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -784,7 +792,7 @@ Learn Git basics integrated with RStudio (2h).
 <h3 data-number="2.2" class="anchored" data-anchor-id="sec-data-management"><span class="header-section-number">2.2</span> Data Management</h3>
 </section></summary>
 <p>In <a href="../../training/open_research_cycle/01_plan_and_design.html" class="mark">1. Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
-<!-- adding space before list didnt work hence "faking" nested look by adding margin-->
+<!-- adding space before list didnt work hence "faking" indented look by adding margin-->
 <div class="ms-1">
 <ul>
 <li><p><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="!-- to update once chapter 3 formatted--">3.1. Data Processing &amp; Analyses</a>).</p></li>
@@ -830,7 +838,7 @@ Learn Git basics integrated with RStudio (2h).
 <span class="orc-card-tool-badge recommended">Supported at LMU</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ sync and share logo"></p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
@@ -839,7 +847,7 @@ LRZ Sync &amp; Share
 <p class="card-text">
 Cloud storage service for LMU Munich
 </p>
-<p><a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+<p><a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
 </div>
 <div class="col">
@@ -847,7 +855,7 @@ Cloud storage service for LMU Munich
 <span class="orc-card-tool-badge recommended">Supported at LMU</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
-<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ DSS logo"></p>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
@@ -856,7 +864,7 @@ LRZ DSS
 <p class="card-text">
 Long-term archival storage for LMU Munich
 </p>
-<p><a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+<p><a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
 </div>
 <div class="col">
@@ -883,7 +891,7 @@ Research project management platform including storage.
 <p><br></p>
 <ul>
 <li><p><strong>Separate raw from processed data.</strong> Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.</p></li>
-<li><p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.<!-- make a nested list --></p>
+<li><p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.</p>
 <ul>
 <li>Use underscores or hyphens to separate elements, never spaces or special characters (<code>? ! &amp; * % # @</code>)</li>
 <li>Use ISO 8601 dates (<code>YYYYMMDD</code>) so files sort chronologically</li>
@@ -1217,8 +1225,13 @@ Learn Git basics integrated with RStudio (2h).
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icon mb-2">
-<p><img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab icon"></p>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo"></p>
+</div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo"></p>
+</div>
 </div>
 <h4 class="card-title anchored">
 LRZ Gitlab
