@@ -678,7 +678,7 @@ Process your data reproducibly in R. (3h)
 Readable code lecture
 </h4>
 <p class="card-text">
-Tips to write clear, understandable, and maintainable code.(1h)
+Tips to write clear, understandable, and maintainable code. (1h)
 </p>
 <p><a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -715,10 +715,14 @@ Project folder separating raw &amp; processed data, code, and outputs.
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
-<p>In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 <p><br></p>
-<p><strong>Learn to create git branches to collaborate on a same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html">Advanced Git tutorial</a>).</p>
-<p><strong>Maintain efficient communication to coordinate collaborative work.</strong> GitHub or GitLab facilitate collaboration through “issues” (a precise description of something to fix), “discussions” (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve “conflicts” (i.e.&nbsp;collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers <a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/">LMU chat (Matrix)</a>, a secured open source chat service with all LMU members on which you can also invite external collaborators.</p>
+<p>In a version controlled workflow, you back up your local Git repositories on the cloud-based platforms GitHub or LRZ GitLab and share access to the online version of your repositories with your collaborators.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Learn to create git branches to collaborate on a same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html">Advanced Git tutorial</a>).</p></li>
+<li><p><strong>Maintain efficient communication to coordinate collaborative work.</strong> GitHub or GitLab facilitate collaboration through “issues” (a precise description of something to fix), “discussions” (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve “conflicts” (i.e.&nbsp;collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers <a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/">LMU chat (Matrix)</a>, a secured open source chat service with all LMU members on which you can also invite external collaborators.</p></li>
+</ul>
+<p><br></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -729,15 +733,15 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<!-- copied from version control in data management - transfer edits manually between these 2 copies -->
+<!-- copied to 2.2.6 manually -->
 <p><strong>Difference between Git, GitHub and GitLab</strong></p>
 <ul>
-<li><strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).<br>
+<li><strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).<br>
 </li>
-<li><strong>GitHub</strong> is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. <strong>You should not have any sensitive information on GitHub even in a private repository.</strong></li>
+<li><strong>GitHub</strong> is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. <strong>You should not have any sensitive information on GitHub even in a private repository.</strong></li>
 <li><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</li>
 </ul>
-<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code.</p>
+<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="../../training/open_research_cycle/04_preserve_and_share.html" class="mark">4. Preserve &amp; Share</a>).</p>
 </div>
 </div>
 <div class="container my-4">
@@ -846,9 +850,9 @@ Institutional open source chat service for LMU Munich.
 <ul>
 <li><strong>Activate Renv to keep track of all packages versions</strong> (see <a href="">renv tutorial</a>). This way, you or someone else can reproduce your results on another computer or at a later time using the same R packages versions.</li>
 </ul>
-<p>Before <a href="../../training/open_research_cycle/04_preserve_and_share.html" class="mark">4. Preserve &amp; share</a>:</p>
+<p>Before publishing yoru project (see <a href="../../training/open_research_cycle/04_preserve_and_share.html" class="mark">4. Preserve &amp; share</a>):</p>
 <ul>
-<li><strong>Record your dependencies</strong> in your README file for possible reconstruction with <a href="https://repo2docker.readthedocs.io/en/latest/">repo2docker</a> or binder see <a href="https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies">Code Publishing tutorial</a></li>
+<li><strong>Record your dependencies</strong> in your README file for possible reconstruction with <a href="https://repo2docker.readthedocs.io/en/latest/">repo2docker</a> or binder (see <a href="https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies">Code Publishing tutorial</a>).</li>
 </ul>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -959,15 +963,13 @@ Build and run user environment containers.
 </div>
 </div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<p>As with documentation for data (see <a href="!-- internal link--">2.2.4. Documentation</a>), documentation for code makes it usable by your future self, your collaborators, and anyone who might reuse it. Six months from now, you will not remember what each script was about, in which order they should be run, which parameters to input in a function.</p>
+<p>As with all documentation, your project repository’s documentation should be written early: initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing <a href="../../training/open_research_cycle/04_preserve_and_share.html#sec-code-publishing" class="mark">see 4.2. Code Publishing</a>.</p>
 <p><br></p>
 <ul>
-<li><strong>Create a README.md or README.txt file early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your code.</li>
-<li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values, or other decisions, should be justified minimally as comments in your code to later be transcribed in your manuscript.</li>
+<li><strong>Create a README.md or README.txt file early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, and whether it can be reused.</li>
+<li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript.</li>
 <li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See <a href="!-- internal link--">2.2.4. Documentation</a>.</li>
 </ul>
-<p><br></p>
-<p>As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing <a href="../../training/open_research_cycle/04_preserve_and_share.html#sec-code-publishing" class="mark">see 4.2. Code Publishing</a>.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -1042,13 +1044,13 @@ Publish your reproducible project on Zenodo (2h)
 <section id="sec-reporting-results" class="level3" data-number="3.2">
 <h3 data-number="3.2" class="anchored" data-anchor-id="sec-reporting-results"><span class="header-section-number">3.2</span> Reporting Results</h3>
 </section></summary>
-<p>The reporting of results needs to be <strong>computationally reproducible</strong>, as well as <strong>comprehensive and following reporting guidelines</strong>, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect--></p>
+<p>Your results needs to be <strong>computationally reproducible</strong>, and their reporting needs to be <strong>comprehensive and following reporting guidelines</strong>, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect--></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.2.1. Computational reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.2.1. Results reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>A practical way to make reporting decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation.</p>
-<p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling seamless <strong>rendering to formats such as HTML, PDF, and Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
+<p>A practical way to make results and analysis decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation.</p>
+<p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling <strong>rendering to formats such as HTML, PDF, and Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
 <p><br></p>
 <section id="reproducible-analysis-report-the-minimum-standard-for-computational-reproducibility" class="level5">
 <h5 class="anchored" data-anchor-id="reproducible-analysis-report-the-minimum-standard-for-computational-reproducibility">Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility <!--I don't want numbers here --></h5>
