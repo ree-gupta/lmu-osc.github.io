@@ -1394,87 +1394,55 @@ Comprehensive database of reporting guidelines.
 
 <section id="analysis-collaboration-checklist" class="level2 unnumbered orc-gradient-box">
 <h2 class="unnumbered anchored" data-anchor-id="analysis-collaboration-checklist"><i class="bi bi-card-checklist"></i> Analysis &amp; Collaboration Checklist</h2>
-<p>To complete before repository and code peer-review by the research team and before the presentation of the results.</p>
-<p><strong>Project repository:</strong></p>
+<p>To complete before the presentation of the results to the research group.</p>
+<p><strong>1. Before and during data analyses</strong></p>
+<p><strong>Repository Setup &amp; Content:</strong></p>
 <ul class="task-list">
-<li><label><input type="checkbox">uses the lab’s standard folder structure</label></li>
-<li><label><input type="checkbox">shared with the LRZ GitLab or GitHub organization of the research group</label></li>
-<li><label><input type="checkbox">use Renv for package management</label></li>
-<li><label><input type="checkbox">contain raw data and/or processed data</label></li>
-<li><label><input type="checkbox">have a descriptive README file explaining how to use and run the codes, and in what order</label></li>
-<li><label><input type="checkbox">contain a data dictionary</label></li>
-<li><label><input type="checkbox">contain a Quarto reproducible analyses report</label></li>
+<li><label><input type="checkbox">Uses the lab’s standard folder structure</label></li>
+<li><label><input type="checkbox">Version-controlled with Git and shared via the LRZ GitLab or GitHub organization</label></li>
+<li><label><input type="checkbox">Uses Renv for package management</label></li>
+<li><label><input type="checkbox">Contains raw data and/or processed data</label></li>
+<li><label><input type="checkbox">Includes a data dictionary (codebook)</label></li>
+<li><label><input type="checkbox">Includes scripts for raw data extraction, processing, and analysis</label></li>
+<li><label><input type="checkbox">Includes a Quarto reproducible analysis report</label></li>
+<li><label><input type="checkbox">Contains a descriptive README explaining usage, code order, and dependencies</label></li>
 </ul>
-<p><strong>R scripts should have appropriate:</strong></p>
+<p><strong>R Script Standards:</strong></p>
 <ul class="task-list">
-<li><label><input type="checkbox">metadata / header to e.g.&nbsp;identify author, state the purpose of the script</label></li>
-<li><label><input type="checkbox">structure to increase readability</label></li>
-<li><label><input type="checkbox">informative comments, which do not contain any sensitive information (e.g.&nbsp;password, patient information)</label></li>
-<li><label><input type="checkbox">meaningful and consistent naming convention</label></li>
-<li><label><input type="checkbox">style following a programming language guide (e.g.&nbsp;using styler or lintR)</label></li>
-<li><label><input type="checkbox">functions breaking down actions in readable snippets, and avoiding duplication</label></li>
-<li><label><input type="checkbox">seeds for any random number generation to allow reproducibility</label></li>
+<li><label><input type="checkbox">Includes metadata/header identifying author, date, and purpose</label></li>
+<li><label><input type="checkbox">Structured for readability</label></li>
+<li><label><input type="checkbox">Contains informative comments about analytic decisions</label></li>
+<li><label><input type="checkbox">Does not contain sensitive information (e.g., passwords, patient data)</label></li>
+<li><label><input type="checkbox">Uses meaningful and consistent naming conventions</label></li>
+<li><label><input type="checkbox">Breaks actions into functions to avoid duplication and improve clarity</label></li>
+<li><label><input type="checkbox">Sets seeds for random processes to allow reproducible computation</label></li>
+<li><label><input type="checkbox">Follows a programming style guide (e.g., styler, lintR)</label></li>
 </ul>
-<p><strong>Any co-authors may additionally want to check:</strong></p>
+<p><strong>2. During Repository and Code Peer-Review:</strong></p>
 <ul class="task-list">
-<li><label><input type="checkbox">the functionality of the code (e.g.&nbsp;does it technically do what is stated in the header? Are there any errors?)</label></li>
-<li><label><input type="checkbox">the reproducibility of the results</label></li>
+<li><label><input type="checkbox">Collaboration workflow established (e.g., branch or live review)</label></li>
+<li><label><input type="checkbox">Session info captured and dependencies listed in README</label></li>
+<li><label><input type="checkbox">Code performs tasks documented in the headers</label></li>
+<li><label><input type="checkbox">Code runs without errors on a fresh environment / different computer</label></li>
+<li><label><input type="checkbox">Code is well-organized, readable, and commented</label></li>
+<li><label><input type="checkbox">All functions are documented</label></li>
+<li><label><input type="checkbox">Sensitive information removed</label></li>
+<li><label><input type="checkbox">Results, figures, tables are reproducible</label></li>
+<li><label><input type="checkbox">(for co-authors): Methods used correct</label></li>
+<li><label><input type="checkbox">(for co-authors): Methods match the analysis plan or deviation are reported</label></li>
+</ul>
+<p><strong>3. Before Sharing</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">README provides complete instructions</label></li>
+<li><label><input type="checkbox">Results reproducible</label></li>
+<li><label><input type="checkbox">Sensitive information removed</label></li>
+<li><label><input type="checkbox">Code peer-reviewed by co-authors</label></li>
+<li><label><input type="checkbox">Documentation of results follow reporting guidelines<br>
+(e.g.&nbsp;presentation and manuscript include e.g.&nbsp;effect size, confidence intervals)</label></li>
 </ul>
 </section>
-<div class="orc-gradient-box">
-<p><strong>Before Starting Analysis:</strong></p>
-<div class="orc-grid-2col">
-<div>
-<ul class="task-list">
-<li><label><input type="checkbox">Analysis plan documented</label></li>
-<li><label><input type="checkbox">Project uses version control (Git)</label></li>
-<li><label><input type="checkbox">Directory structure organized</label></li>
-<li><label><input type="checkbox">Dependencies managed</label></li>
-</ul>
-</div>
-<div>
-<ul class="task-list">
-<li><label><input type="checkbox">README file initiated</label></li>
-<li><label><input type="checkbox">Data dictionary available</label></li>
-<li><label><input type="checkbox">Code style guide chosen</label></li>
-<li><label><input type="checkbox">Collaboration workflow established</label></li>
-</ul>
-</div>
-</div>
-<p><strong>During Analysis:</strong></p>
-<div class="orc-grid-2col">
-<div>
-<ul class="task-list">
-<li><label><input type="checkbox">Scripts well-commented</label></li>
-<li><label><input type="checkbox">Commit changes regularly</label></li>
-<li><label><input type="checkbox">Random seeds set</label></li>
-<li><label><input type="checkbox">Intermediate results saved</label></li>
-</ul>
-</div>
-<div>
-<ul class="task-list">
-<li><label><input type="checkbox">Analysis decisions documented</label></li>
-<li><label><input type="checkbox">Code reviewed by collaborators</label></li>
-<li><label><input type="checkbox">Results cross-checked</label></li>
-<li><label><input type="checkbox">Figures reproducible</label></li>
-</ul>
-</div>
-</div>
-<p><strong>Before Sharing:</strong></p>
-<ul class="task-list">
-<li><label><input type="checkbox">Code runs without errors on fresh environment</label></li>
-<li><label><input type="checkbox">README provides complete instructions</label></li>
-<li><label><input type="checkbox">All functions documented</label></li>
-<li><label><input type="checkbox">Session info captured</label></li>
-<li><label><input type="checkbox">Sensitive information removed</label></li>
-<li><label><input type="checkbox">Code peer-reviewed</label></li>
-</ul>
-<p>Code review checklist:</p>
-<p>Code runs without errors Methods match analysis plan Results reproducible on different machine Code well-organized and commented No sensitive data included What reviewers check:</p>
-<p>Functionality and correctness Reproducibility Readability and organization Best practices</p>
 
 
-</div>
 </main></div>
 
 
