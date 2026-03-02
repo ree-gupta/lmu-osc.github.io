@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -637,7 +672,13 @@ Create reproducible analyses and collaborate effectively
 <li><strong>Create self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
 <li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the <a href="https://github.com/lmu-osc/research-project-template">OSC research project template</a>.</li>
 <li><strong>Stop clicking, start coding</strong>. Automatize all possible steps, including data acquisition (see <a href="../../training/open_research_cycle/02_collect_and_manage.html#sec-data-collection" class="mark">2.1. Data Collection</a>), data processing and transformation, data analyses, data visualization, and results reporting (see <a href="#sec-reproducible-reporting" class="mark">3.2. Reporting Results</a>)</li>
-<li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free.</li>
+<li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, any known limitations to your code, and citations of methods. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong>
+<ul>
+<li><strong>Define your own functions</strong> rather than copy and pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a> and <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a> for examples.</li>
+<li><strong>Set seeds for random processes</strong> to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g.&nbsp;our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a> for examples.</li>
+<li><strong>Follow a style guide</strong> to increase readability. Use automated styling tools (e.g.&nbsp;<code>styler</code>, <code>lintR</code>)</li>
+</ul></li>
+<li><strong>Use LRZ Compute Cloud for data-intensive analyses</strong>. <a href="https://www.lrz.de/en/technologies/supercomputing">LRZ Supercomputing</a> provide virtual machines, high-performance computing, storage ect to researchers of LMU Munich.</li>
 </ul>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -667,6 +708,24 @@ Process your data reproducibly in R. (3h)
 </div>
 <!-- card -->
 <div class="col">
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Data simulation in R
+</h4>
+<p class="card-text">
+Set seeds and define functions to generate random data (2h)
+</p>
+<p><a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+<!-- card -->
+<div class="col">
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Lecture</span>
 <div class="orc-card-tool-icons mb-2">
@@ -688,7 +747,7 @@ Tips to write clear, understandable, and maintainable code. (1h)
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
 </h4>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-<!-- 1st card -->
+<!-- card -->
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tool</span>
@@ -708,6 +767,24 @@ Research Project Template
 Project folder separating raw &amp; processed data, code, and outputs.
 </p>
 <p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+LRZ Supercomputing
+</h4>
+<p class="card-text">
+Virtual machines and HPC for LMU Munich
+</p>
+<p><a href="https://www.lrz.de/en/technologies/supercomputing" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
 </div>
 </div>
@@ -828,7 +905,7 @@ Institutional Git hosting for LMU Munich.
 <p><img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo"></p>
 </div>
 <div class="orc-card-tool-icon icon-2">
-<p><img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo"></p>
+<p><img src="https://cdn.simpleicons.org/matrix" class="img-fluid" alt="Matrix logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
@@ -967,9 +1044,19 @@ Build and run user environment containers.
 <p><br></p>
 <ul>
 <li><strong>Create a README.md or README.txt file early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, and whether it can be reused.</li>
-<li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript.</li>
+<li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong></li>
 <li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See <a href="!-- internal link--">2.2.4. Documentation</a>.</li>
 </ul>
+<p>Example README:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Analysis of Treatment Effects</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Requirements</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>R version 4.3+</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Packages listed in renv.lock</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Running the Analysis</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Install dependencies: <span class="in">`renv::restore()`</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Run scripts in order: 01_preprocessing.R, 02_analysis.R</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -1059,11 +1146,11 @@ Publish your reproducible project on Zenodo (2h)
 <ul>
 <li><strong>Create an analyses report with Quarto.</strong> To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>). This will facilitate your own revisions, code-review by your team, <strong>reproducibility checks</strong> that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see <a href="../../training/open_research_cycle/04_preserve_and_share.html" class="mark">4. Preserve &amp; Share</a>).</li>
 </ul>
-<p>This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups..."
-
-<br>
-
-##### Reproducible Manuscript: The Ultimate Reproducible Report <!--no numbers no anchor here --></p>
+<p>This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups...--></p>
+<p><br></p>
+</section>
+<section id="reproducible-manuscript-the-ultimate-reproducible-report" class="level5">
+<h5 class="anchored" data-anchor-id="reproducible-manuscript-the-ultimate-reproducible-report">Reproducible Manuscript: The Ultimate Reproducible Report <!--no numbers no anchor here --></h5>
 <p>If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g.&nbsp;a Word document, you can write your entire manuscript in Quarto.</p>
 <p><br></p>
 <ul>
@@ -1103,7 +1190,7 @@ Publish your reproducible project on Zenodo (2h)
 Quarto Tutorial
 </h4>
 <p class="card-text">
-Write reproducible analyses reports or more (2h)
+Reproducible documents combining code and narrative (2h)
 </p>
 <p><a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -1242,7 +1329,7 @@ Cloud storage service for LMU Munich
 <p><img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo"></p>
 </div>
 <div class="orc-card-tool-icon icon-2">
-<p><img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo"></p>
+<p><img src="https://cdn.simpleicons.org/matrix" class="img-fluid" alt="Matrix logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
@@ -1382,6 +1469,9 @@ Comprehensive database of reporting guidelines.
 <li><label><input type="checkbox">Sensitive information removed</label></li>
 <li><label><input type="checkbox">Code peer-reviewed</label></li>
 </ul>
+<p>Code review checklist:</p>
+<p>Code runs without errors Methods match analysis plan Results reproducible on different machine Code well-organized and commented No sensitive data included What reviewers check:</p>
+<p>Functionality and correctness Reproducibility Readability and organization Best practices</p>
 
 
 </div>
