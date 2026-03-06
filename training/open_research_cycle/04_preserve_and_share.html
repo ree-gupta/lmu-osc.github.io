@@ -72,6 +72,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -988,24 +991,127 @@ License decision flowchart for data and code
 <section id="sec-open-access-articles" class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="sec-open-access-articles"><span class="header-section-number">4.3</span> Open Access Articles</h3>
 </section></summary>
-<p><strong>Publishing open access articles (free to readers) increases the visibility, citation, and impact</strong> of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also <strong>accelerates knowledge dissemination and promotes equity</strong> in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.</p>
-<p>They are several pathways to make your your articles free to read: <!-- weird no margin format to FIX again --> - <strong>Diamond Open Access</strong>: journals that provide immediate open access without charging authors any Article Processing Charges (APCs), as publication costs are covered by institutions, consortia, or public funding. Visit the <a href="https://doaj.org/">Directory of Open Access Journals (DOAJ)</a> to find them. - <strong>Gold Open Access</strong>: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an APC. - <strong>Green Open Access</strong>: self-archiving of a preprint or postprint in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher, without cost to the author.</p>
-<p>However, the payment of APCs can also be requested by publishers regardless of the article’s accessibility status depending on the contract negotiated by the University and each publisher(see <a href="!--internal link--">4.3.1. Contract with Publishers</a>).</p>
-<!-- Doaj card https://doaj.org/ ?-->
+<p>Publishing open access articles (i.e.&nbsp;which are free to readers) <strong>increases the visibility, citation, and impact</strong> of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also <strong>accelerates knowledge dissemination and promotes equity</strong> in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">4.3.1. Contracts with Publishers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">4.3.2. Publishing Preprints and Retaining Rights</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">4.3.1. Pathways to Open Access</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">4.3.2. Contracts with Publishers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">4.3.3. Publishing Preprints and Retaining Rights</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<p>Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an Article Processing Charge (APC) to make their work immediately open access upon publication, a model commonly referred to as ‘<em>gold open access</em>’. To avoid these fees while still ensuring public accessibility, authors were encouraged to <strong>disseminate a preprint and/or postprint, or to deposit the publisher’s version in an institutional repository after the embargo period had expired</strong>. These procedures, which are <strong>free to the authors</strong>, are collectively known as <strong>‘<em>green open access</em>’</strong>.</p>
+<p>They are several pathways to make your your articles free to read, e.g.:</p>
+<ul>
+<li><strong>Diamond Open Access</strong>: journals that provide immediate open access without charging authors any Article Processing Charges (APCs), as publication costs are covered by institutions, consortia, or public funding. Visit the <a href="https://doaj.org/">Directory of Open Access Journals (DOAJ)</a> to find them.</li>
+<li><strong>Gold Open Access</strong>: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an APC.</li>
+<li><strong>Green Open Access</strong>: self-archiving of a <u><strong>preprint or postprint</strong></u> in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher, without cost to the author. Visit the <a href="https://openpolicyfinder.jisc.ac.uk/">Open Policy Finder</a> to know whether and where your publishers allow you to publish preprint or postprints.</li>
+</ul>
+<p>However, the payment of APCs can also be requested by publishers regardless of the article’s accessibility status depending on the contract negotiated by the University and each publisher (see <a href="!--internal link--">4.3.1. Contract with Publishers</a>).</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><u><strong>preprint</strong></u>: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e.&nbsp;available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.</p>
 <p><br></p>
-<p><strong>Since 2025</strong>, however, at LMU Munich and other universities that are part of the <a href="https://deal-konsortium.de/en/">DEAL Konsortium</a> in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the <strong>authors publishing in hybrid journals</strong> (i.e., journals offering both subscription-based and open access options) <strong>incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access</strong>. Therefore, authors choosing to publish there and paying the Article Processing Charge may as well request an open access article from the publisher directly. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.</p>
+<p><u><strong>postprint</strong></u>: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e.&nbsp;available to the public to view online, or download, without registration, payment, or approval)</p>
+</div>
+</div>
+<div class="container my-4">
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<p><img src="https://doaj.org/assets/img/favicon/apple-touch-icon.png" class="img-fluid" alt="DOAJ logo"></p>
+</div>
+<h4 class="card-title anchored">
+Directory of Open Access Journals (DOAJ)
+</h4>
+<p class="card-text">
+Index of trusted open access journals.
+</p>
+<p><a href="https://doaj.org/" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<p><img src="https://openpolicyfinder.jisc.ac.uk/images/jisc-logo.svg" class="img-fluid" alt="Jisc logo"></p>
+</div>
+<h4 class="card-title anchored">
+Jisc’ Open Policy Finder
+</h4>
+<p class="card-text">
+Clear summary of journals’ open access policies.
+</p>
+<p><a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an <strong>Article Processing Charge (APC)</strong> to make their work immediately open access upon publication, the model commonly referred to as ‘<em>gold open access</em>’. To <strong>avoid these fees</strong> while still ensuring public accessibility, authors were encouraged to <strong>disseminate a preprint and/or postprint, or to deposit the publisher’s version in an institutional repository after the embargo period had expired</strong>. These procedures, which are <strong>free to the authors</strong>, are collectively known as ‘<em>green open access</em>’.</p>
+<p><br></p>
+<p><strong>Since 2025</strong>, however, at LMU Munich and other universities that are part of the <a href="https://deal-konsortium.de/en/">DEAL Konsortium</a> in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the <strong>authors publishing in hybrid journals</strong> (i.e., journals offering both subscription-based and open access options) <strong>incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access</strong>. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.</p>
 <p><br></p>
 <p>The current contract conditions for LMU Munich can be accessed on the <a href="https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html">University Library Publication Fees Webpage (in german)</a>. To get support with Article Processing Charges and open access policies, contact the <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html">University Library Open Access team</a>.</p>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<p>To increase the accessibility of your article and its components, for free (unless you anyway have to pay the publishers to publish your article (see <a href="!-- internal link--">4.3.1. Contracts with Publishers</a>)), we recommend to:</p>
-<p><br> <br> <!-- figure left and text right --> <br></p>
-<p>To get support the institutional repository <a href="https://epub.ub.uni-muenchen.de/">LMU Open Access</a> contact the <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html">University Library Open Access team</a>.</p>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>To increase the accessibility and impact of your article we recommend you to:</p>
+<p><br></p>
+<ul>
+<li><p><strong>Check what your target journal open access policies are.</strong> <a href="https://openpolicyfinder.jisc.ac.uk/">Jisc’ Open Policy Finder</a> provides clear information about whether you are allowed to archive various versions of the manuscripts. For instance, your target journal may, or may not, allow you to deposit:</p>
+<ul>
+<li>the version submitted to the journal (preprint)</li>
+<li>the accepted manuscript version (postprint)</li>
+<li>the published version
+<ul>
+<li>on a specific location (e.g.&nbsp;preprint repository, institutional repository, funders repository, Author’s personal website)</li>
+<li>after a specific amount of time (e.g.&nbsp;6 or 12-month embargo)</li>
+<li>under a specific license (e.g.&nbsp;CC.BY. (recommended for maximum reuse), CC.BY-NC-ND)</li>
+</ul></li>
+</ul></li>
+<li><p><strong>Disclose the state of peer review on each preprint version.</strong> Use watermarks such as ‘Draft’ and ‘Revised Draft’ for your preprint, with a statement on the title page highlighting that the work has not been peer reviewed. For postprints, indicate that the version was accepted through peer review, and link to the DOI of the official journal version.</p></li>
+<li><p><strong>Get a DOI for each public version of your manuscript.</strong> When updating your preprint through the revision cycle, get a citable DOI (as provided by the repository).</p></li>
+<li><p><strong>Maintain as much rights to your own work as possible</strong>.</p>
+<ul>
+<li>Prior to submitting your mansucript, deposit your manuscript’s conceptual figures on a repository (e.g.&nbsp;the OSF or Zenodo), under an open license (e.g.&nbsp;CC.BY 4.0 requiring the authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.</li>
+<li>When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0 license (https://deal-konsortium.de/warum-ccby), so the right to distribution is included. It is possible your publisher will request a CC.BY. NC (Non-Commercial) which means you cannot deposit it on commercial platforms, but would typically be allowed to deposit it on preprint servers or institutional repositories (see <a href="https://openpolicyfinder.jisc.ac.uk/">Jisc’ Open Policy Finder</a>)</li>
+</ul></li>
+</ul>
+<p>In practice, we recommend to follow the process of version releases illustrated in the figure(<!-- fix me where-->), starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g.&nbsp;accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone.</p>
+<!-- include figure in a left column, and the paragraph above in a right column?-->
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">---
+config:
+  look: classic
+---
+flowchart TB
+    A("**Manuscript Draft
+    Preprint v.0.0**") -- community feedback --&gt; B("**Submitted Manuscript
+    Preprint v.1.0**")
+    B -- journal peer review --&gt; C("**Revised Manuscript
+    Preprint v.2.0**")
+    C -- journal acceptance --&gt; D("**Postprint
+    Preprint v.3.0**")
+    D -- "journal copy-editing and formatting" --&gt; E("**Published Article**")
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<p>To get support for <a href="https://epub.ub.uni-muenchen.de/">Open Access LMU</a>, the LMU Munich institutional repository for articles and books, contact the <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html">University Library Open Access team</a>.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -1018,10 +1124,10 @@ License decision flowchart for data and code
 <p><img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo"></p>
 </div>
 <h4 class="card-title anchored">
-LMU Open Access
+Open Access LMU
 </h4>
 <p class="card-text">
-Institutional preprint repository.
+Institutional publication repository.
 </p>
 <p><a href="https://epub.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
@@ -1141,7 +1247,7 @@ Note
 <p><br></p>
 <p>LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is <a href="https://ror.org/018mejw64">https://ror.org/018mejw64</a></p>
 <p><br></p>
-<p>The LMU Open Science Center is one of the many child organization of LMU Munich; it’s ROR ID is <a href="https://ror.org/029e6qe04">https://ror.org/029e6qe04</a>. The funder of this handbook’s project is the Volkswagen Foundation, <a href="https://ror.org/03bsmfz84">https://ror.org/03bsmfz84</a>.</p>
+<p>The LMU Open Science Center is one of the many child organizations of LMU Munich; it’s ROR ID is <a href="https://ror.org/029e6qe04">https://ror.org/029e6qe04</a>. The funder of this handbook’s project is the Volkswagen Foundation, <a href="https://ror.org/03bsmfz84">https://ror.org/03bsmfz84</a>.</p>
 </div>
 </div>
 <div class="container my-4">
