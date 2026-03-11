@@ -282,6 +282,12 @@ Make your research outputs accessible, reusable, and citable
 <li>If you generate research outputs that could lead to <strong>dual use</strong> (e.g.&nbsp;that could also be applied for military or malicious purposes), please refer to the European Commission’s policy (<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&amp;from=EN">Dual-Use Regulation 2021/821</a>) and get support from the <a href="mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE">LMU Export Control service</a>.</li>
 <li>If your research could lead to <strong>patents or commercialization</strong>, get the support of the <a href="https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/">IP Management team</a>.</li>
 </ul>
+<!-- Before releasing or licensing data/materials/software, a risk evaluation is performed to
+consider potential dual-use or misuse (appropriate to the field and data type).
+
+If patents may result from the work, rules about data sharing and publications are
+clarified with the patent/technology transfer office before public release (e.g., what must be delayed
+and what can be shared). -->
 <!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)-->
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -603,7 +609,7 @@ License decision flowchart for data and code.
 <div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
 <p><em>in construction</em></p>
 <ul>
-<li>Description of what it is, when it is needed, what the process to create one is</li>
+<li>Description of what it is, when it is needed, what the process to create one is (SOP for handling access requests (who receives them, how decisions are made, what must be documented, and response timelines)</li>
 <li>LMU contact for legal department</li>
 <li>Examples DUA</li>
 </ul>
@@ -749,6 +755,11 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 <li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.</li>
 <li><strong>Apache 2.0</strong> requires users to credit you. A good default when you want recognition while enabling broad reuse.</li>
 </ul>
+<!-- MIT: Permissive, widely adopted
+Apache 2.0: Patent protection
+GPL-3.0: Derivatives must be open 
+
+https://creativecommons.org/chooser/ -->
 <p><br></p>
 <p>Learn more about open licenses for data and code in our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a>.</p>
 <div class="container my-4">
@@ -778,11 +789,29 @@ License decision flowchart for data and code.
 </div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<!--
+GitHub to Zenodo Workflow
+Standard workflow for citable code:
+
+Prepare Repository: Add README, license, example data
+Link to Zenodo: Enable integration via GitHub
+Create Release: Tag version (e.g., v1.0.0)
+Obtain DOI: Zenodo automatically archives and assigns DOI
+Cite: Include DOI in manuscript 
+
+Before publishing code:
+
+Remove API keys, passwords, credentials
+Remove personal or participant data
+Review entire git history
+Add simulated data if needed
+Document dependencies clearly-->
 <!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
 </div>
 </div>
 </div>
 </details>
+<!-- add a section on material publishing, e.g. protocols, survey text, OSF Zenodo, choose a licence https://creativecommons.org/chooser/ -->
 <details class="orc-details-panel">
 <summary>
 <p><i class="bi bi-journal-arrow-up"></i></p>
@@ -933,6 +962,53 @@ flowchart TB
 </div>
 <p><br></p>
 <p>To get support for <a href="https://epub.ub.uni-muenchen.de/">Open Access LMU</a>, the LMU Munich institutional repository for articles and books, contact the <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html">University Library Open Access team</a>.</p>
+<!-- Preprint Servers
+
+Share manuscripts before peer review to get early feedback and establish priority:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF Preprints](https://osf.io/preprints/)</h4>
+<p>Multidisciplinary preprint service</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>All disciplines welcome. Integration with OSF projects, flexible requirements.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-medical"></i></div>
+<h4>[bioRxiv](https://www.biorxiv.org/)</h4>
+<p>Biological sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-heart-pulse"></i></div>
+<h4>[medRxiv](https://www.medrxiv.org/)</h4>
+<p>Medical and health sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Medical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
+<h4>[arXiv](https://arxiv.org/)</h4>
+<p>Physics, mathematics, computer science</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Established 1991. Moderation system, LaTeX support. Standard in quantitative fields.</p>
+</details>
+</div>
+
+::: -->
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -1184,6 +1260,21 @@ Persistent identifiers for research and funding organizations
 <li><label><input type="checkbox">Monitor citations and usage metrics</label></li>
 </ul>
 </section>
+<!--Before Depositing Data
+Essential steps:
+
+Complete anonymization of personal information
+README file with study description and methods
+Data dictionary with variable descriptions
+Appropriate license (CC0 or CC BY recommended)
+Ethics committee approval if required-->
+<!--Before publishing code:
+
+Remove API keys, passwords, credentials
+Remove personal or participant data
+Review entire git history
+Add simulated data if needed
+Document dependencies clearly -->
 
 
 </main></div>

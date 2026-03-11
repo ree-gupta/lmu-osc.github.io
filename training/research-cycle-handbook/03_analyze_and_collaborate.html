@@ -703,6 +703,16 @@ Build and run user environment containers.
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Running the Analysis</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Install dependencies: <span class="in">`renv::restore()`</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Run scripts in order: 01_preprocessing.R, 02_analysis.R</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<!--README files are essential for understanding how to use your code repository.
+
+**Required elements:**
+
+- **Project title and description**
+- **How to run the analysis**: Step-by-step instructions
+- **Software requirements**: Language versions, dependencies
+- **Input data**: Where to obtain or how to access
+- **Output**: What files are produced
+- **Project structure**: Explanation of directories -->
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -793,6 +803,14 @@ Publish your reproducible project on Zenodo (2h)
 <li><strong>Create an analyses report with Quarto.</strong> To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>). This will facilitate your own revisions, code-review by your team, <strong>reproducibility checks</strong> that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see <a href="../../training/research-cycle-handbook/04_preserve_and_share.html" class="mark">4. Preserve &amp; Share</a>).</li>
 </ul>
 <p>This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups...--></p>
+<!-- **What to include in analysis notebooks:**
+
+1. Introduction: Research question
+2. Methods: Statistical procedures
+3. Data loading: Source and preprocessing
+4. Main analysis: Tests and models
+5. Results: Tables and figures
+6. Session info: Software versions -->
 <p><br></p>
 </section>
 <section id="reproducible-manuscript-the-ultimate-reproducible-report" class="level5">
@@ -993,6 +1011,7 @@ Institutional open source chat service for LMU Munich.
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <!-- this is chat GPT text, I'm sure it could be made more meaningful -->
+<!-- need to distinguish confirmatory from exploratory analyses, see prereg section and p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results -->
 <p>Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the <strong>minimum information that should be included when describing study design, data collection, analysis, and results</strong>. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.</p>
 <p><br></p>
 <p>A central resource for such guidelines is the <a href="https://www.equator-network.org/reporting-guidelines/">EQUATOR Network</a>, an international initiative collecting and promoting reporting standards across many study types and disciplines.</p>

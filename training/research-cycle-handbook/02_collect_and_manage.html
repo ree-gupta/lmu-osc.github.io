@@ -288,6 +288,12 @@ Note
 <li><p><strong>Track deviations in real time.</strong> Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. <strong>Electronic lab notebooks (ELNs)</strong> make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.</p></li>
 <li><p><strong>Publish your protocols.</strong> A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like <a href="https://www.protocols.io/">protocols.io</a> provide version control and DOI assignment.</p></li>
 </ul>
+<!-- SOP lab wide on data acquisition 
++
+add 2 lectures 
+Report Detailed Methods & Protocols (30 min) - ReproducibiliTeach lecture
+Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
+-->
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -899,7 +905,8 @@ Version control for large datasets
 <li><p><strong>Use tiered consent when you plan to share data.</strong> Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.</p></li>
 <li><p><strong>Store consent forms separately from data.</strong> The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.</p></li>
 </ul>
-<!-- @Felix: can we add example consent form as resources or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
+<!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
+<!-- Many labs maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference. -->
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Anonymization protects privacy and determines what you can share.</p>
@@ -988,6 +995,22 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 <section id="sec-quality-control" class="level3" data-number="2.4">
 <h3 data-number="2.4" class="anchored" data-anchor-id="sec-quality-control"><span class="header-section-number">2.4</span> Quality Control</h3>
 </section></summary>
+<!-- Quality control identifies errors and issues before analysis.
+
+**Common QC checks:**
+
+1. **Completeness**: Check for missing data
+2. **Range checks**: Verify values within expected ranges
+3. **Consistency**: Check logical relationships
+4. **Duplicates**: Identify duplicate records
+5. **Format**: Ensure consistent data types
+
+**Document QC decisions:**
+
+- Procedures and criteria
+- Cases flagged or excluded
+- Reasons for exclusions
+- Date and reviewer -->
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
 <p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/research-cycle-handbook/01_plan_and_design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">

@@ -264,6 +264,54 @@ Set the foundation for open &amp; reliable research
 <li><strong>Review existing literature</strong> on open source registries like <a href="https://openalex.org/">OpenAlex</a> to come up with a well-founded research question,</li>
 <li><strong>Use a reference manager</strong> to keep track of your bibliography. <a href="https://www.zotero.org/">Zotero</a> is an open source software that can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see <a href="../../training/research-cycle-handbook/03_analyze_and_collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>).</li>
 </ul>
+<!-- need to include cards and text for Open Alex PuMed -> Europe PMC and preprint servers -->
+<!-- Preprint Servers
+
+Share manuscripts before peer review to get early feedback and establish priority:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF Preprints](https://osf.io/preprints/)</h4>
+<p>Multidisciplinary preprint service</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>All disciplines welcome. Integration with OSF projects, flexible requirements.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-medical"></i></div>
+<h4>[bioRxiv](https://www.biorxiv.org/)</h4>
+<p>Biological sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-heart-pulse"></i></div>
+<h4>[medRxiv](https://www.medrxiv.org/)</h4>
+<p>Medical and health sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Medical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
+<h4>[arXiv](https://arxiv.org/)</h4>
+<p>Physics, mathematics, computer science</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Established 1991. Moderation system, LaTeX support. Standard in quantitative fields.</p>
+</details>
+</div>
+
+::: -->
 <!-- 
 This section uses Bootstrap structure to create a responsive card layout.
 - The main .container div must always be present.
@@ -711,6 +759,7 @@ Implementation of the German Research Foundation’s (DFG) Code of Conduct
 <li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see <a href="!--internal link--">1.4.1. Pre-analysis planning</a> and <a href="!--internal link--">1.4.3. Power analyses</a>). <!-- wil these links work?? if not, let's not leave dead links all over the place, let's keep them makred with a comment, if needed we can tag the header of the section though leave the text identifying the subsection intact.  those linking panel tabsets dont work--></li>
 </ul>
 <p>For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/">LMU Data Protection Officer</a> or the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p>
+<!-- should be a team SOP with application language, consent form language ect -->
 <div class="container my-4">
 <h4 class="fs-5 anchored" data-anchor-id="your-ethics-proposal-will-typically-include-information-on">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -795,6 +844,9 @@ Data simulations for GLMs, LMEs, and SEMs in R. (6h)
 <li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)? See also <a href="" class="mark">1.2.3. Ethics</a> and <a href="02_collect_and_manage.html#sec-ethics-and-privacy" class="mark">2.3. Ethics &amp; Privacy</a></li>
 </ul>
 <p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like <a href="https://rdmo.ub.lmu.de/">RDMO</a> guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see <a href="../../training/research-cycle-handbook/02_collect_and_manage.html#sec-data-management" class="mark">2.2. Data Management</a>, <a href="03_analyze_and_collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analysis</a>, and <a href="04_preserve_and_share.html#sec-data-sharing" class="mark">4.1. Data Sharing</a>).</p>
+<!-- should be a team SOP 
+Policies / SOPs support consistent DMP updates (lab-level) that define when a DMP must be updated, who is
+responsible, and how updates are reviewed/approved and communicated. -->
 <div class="container my-4">
 <h4 class="fs-5 anchored" data-anchor-id="your-dmp-will-ask">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -907,7 +959,7 @@ Examples of DMPs by discipline.
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <section id="why-should-you-plan-your-statistical-plan-prior-to-collecting-data" class="level5">
 <h5 class="anchored" data-anchor-id="why-should-you-plan-your-statistical-plan-prior-to-collecting-data">Why should you plan your statistical plan prior to collecting data?</h5>
-<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>.</p>
+<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>. <!-- p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results --></p>
 <p><br></p>
 <p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration.</strong></p>
 <p><br></p>
