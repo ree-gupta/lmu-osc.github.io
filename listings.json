@@ -279,6 +279,31 @@
     ]
   },
   {
+    "listing": "/training/publishing_outputs/index.html",
+    "items": [
+      "/training/publishing_outputs/code_publishing.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html"
+    ]
+  },
+  {
+    "listing": "/training/principles/index.html",
+    "items": [
+      "/training/principles/replicability_crisis.html",
+      "/training/principles/credible_science.html"
+    ]
+  },
+  {
+    "listing": "/training/data_management/index.html",
+    "items": [
+      "/training/data_management/open_data.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/synthetic_data.html"
+    ]
+  },
+  {
     "listing": "/training/self_training.html",
     "items": [
       "/training/principles/index.html",
@@ -306,39 +331,14 @@
       "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/preregistration_why_how.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html",
-      "/training/open_research_cycle/01_plan_and_design.html",
-      "/training/open_research_cycle/01_plan_and_design_test.html",
-      "/training/open_research_cycle/02_collect_and_manage.html",
-      "/training/open_research_cycle/02_collect_and_manage_test.html",
-      "/training/open_research_cycle/03_analyze_and_collaborate.html",
-      "/training/open_research_cycle/03_analyze_and_collaborate_test.html",
-      "/training/open_research_cycle/04_preserve_and_share.html",
-      "/training/open_research_cycle/04_preserve_and_share_test.html"
-    ]
-  },
-  {
-    "listing": "/training/data_management/index.html",
-    "items": [
-      "/training/data_management/open_data.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/synthetic_data.html"
-    ]
-  },
-  {
-    "listing": "/training/principles/index.html",
-    "items": [
-      "/training/principles/replicability_crisis.html",
-      "/training/principles/credible_science.html"
-    ]
-  },
-  {
-    "listing": "/training/publishing_outputs/index.html",
-    "items": [
-      "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html"
+      "/training/research-cycle-handbook/01_plan_and_design.html",
+      "/training/research-cycle-handbook/01_plan_and_design_test.html",
+      "/training/research-cycle-handbook/02_collect_and_manage.html",
+      "/training/research-cycle-handbook/02_collect_and_manage_test.html",
+      "/training/research-cycle-handbook/03_analyze_and_collaborate.html",
+      "/training/research-cycle-handbook/03_analyze_and_collaborate_test.html",
+      "/training/research-cycle-handbook/04_preserve_and_share.html",
+      "/training/research-cycle-handbook/04_preserve_and_share_test.html"
     ]
   },
   {
