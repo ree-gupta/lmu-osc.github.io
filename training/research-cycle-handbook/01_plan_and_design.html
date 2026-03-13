@@ -1001,8 +1001,9 @@ Implementation of the German Research Foundation’s (DFG) Code of Conduct
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Data collection and analyses involving human participants or animal subjects typically require approval from Faculties ethics committees to ensure responsible conduct and the protection of data.</p>
 <p><br></p>
-<section id="your-ethics-proposal-will-typically-include-information-on" class="level5">
-<h5 class="anchored"><i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:</h5>
+<h5 class="fs-5 no-anchor">
+<i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:
+</h5>
 <ul>
 <li><strong>Data storage and retention</strong> – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see <a href="sec-research-data-management" class="mark">1.3. Research Data Management Plans</a>).</li>
 <li><strong>Risks if the data were leaked</strong> – identifying potential consequences for participants or the research project if confidentiality is breached.</li>
@@ -1029,7 +1030,7 @@ Implementation of the German Research Foundation’s (DFG) Code of Conduct
 </div>
 </div>
 <div class="container my-4">
-<h4 class="fs-5 anchored" data-anchor-id="your-ethics-proposal-will-typically-include-information-on">
+<h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
 </h4>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -1087,7 +1088,6 @@ Data simulations for GLMs, LMEs, and SEMs in R. (6h)
 </div>
 </div>
 </div>
-</section>
 </div>
 </div>
 </div>
@@ -1099,22 +1099,43 @@ Data simulations for GLMs, LMEs, and SEMs in R. (6h)
 <section id="sec-research-data-management" class="level3" data-number="1.3">
 <h3 data-number="1.3" class="anchored" data-anchor-id="sec-research-data-management"><span class="header-section-number">1.3</span> Research Data Management Plans</h3>
 </section></summary>
-<p>A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit. For instance, you must decide before data collection whether you will eventually share your data publicly and where, in order to get ethics approval on the right plan, design consent form for participants, collect appropriate metadata for the target repository, ect (see lectures “<a href="https://lmu-osc.github.io/training/data-management/open-data.html">Why share data openly?</a>” and “<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html">Maintaining privacy with open data</a>”).</p>
+<p>A <strong>Data Management Plan (DMP)</strong> documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.</p>
+<div class="ms-1">
+<ul>
+<li><strong>Decide <em>before</em> data collection whether you will eventually share your data publicly (and where)</strong>, in order to (i) get ethics approval on the right plan, (ii) design consent form for participants, (iii) collect appropriate metadata for the target repository, ect.</li>
+<li><strong>Start with what you know, and refine the details as your project develops.</strong> Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see <a href="../../training/research-cycle-handbook/02_collect_and_manage.html#sec-data-management" class="mark">2.2. Data Management</a>), <a href="03_analyze_and_collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analysis</a>, and <a href="04_preserve_and_share.html#sec-data-sharing" class="mark">4.1. Data Sharing</a>).</li>
+</ul>
+</div>
 <section id="your-dmp-will-ask" class="level5">
 <h5 class="anchored"><i class="bi bi-list-check"></i> Your DMP will ask:</h5>
 <ul>
-<li><strong>What data</strong> will you collect or generate (types, formats, volume, sources)? See also <a href="02_collect_and_manage.html#sec-data-collection" class="mark">2.1. Data Collection</a>.</li>
-<li><strong>How will you describe it</strong> (metadata standards, documentation practices)? See also <a href="02_collect_and_manage.html#sec-data-management" class="mark">2.2. Data Management</a> for these and the next questions.</li>
+<li><strong>What data</strong> will you collect or generate (types, formats, volume, sources)? See <a href="02_collect_and_manage.html#sec-data-collection" class="mark">2.1. Data Collection</a>.</li>
+<li><strong>How will you describe it</strong> (metadata standards, documentation practices)? See <a href="02_collect_and_manage.html#sec-data-management" class="mark">2.2. Data Management</a> for these and the next questions.</li>
 <li><strong>How will you organize files</strong> (naming conventions, folder structure, versioning)?</li>
 <li><strong>Where will you store it</strong> (locations, backups, access controls)?</li>
 <li><strong>How will you ensure quality</strong> (validation checks, error-handling)?</li>
-<li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)? See also <a href="04_preserve_and_share.html#sec-data-sharing" class="mark">4.1. Data Sharing</a></li>
-<li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)? See also <a href="" class="mark">1.2.3. Ethics</a> and <a href="02_collect_and_manage.html#sec-ethics-and-privacy" class="mark">2.3. Ethics &amp; Privacy</a></li>
+<li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/open-data.html">Why share data openly?</a>” and <a href="04_preserve_and_share.html#sec-data-sharing" class="mark">4.1. Data Sharing</a></li>
+<li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html">Maintaining privacy with open data</a>”, <a href="" class="mark">1.2.3. Ethics</a> and <a href="02_collect_and_manage.html#sec-ethics-and-privacy" class="mark">2.3. Ethics &amp; Privacy</a>.</li>
 </ul>
-<p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like <a href="https://rdmo.ub.lmu.de/">RDMO</a> guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see <a href="../../training/research-cycle-handbook/02_collect_and_manage.html#sec-data-management" class="mark">2.2. Data Management</a>, <a href="03_analyze_and_collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analysis</a>, and <a href="04_preserve_and_share.html#sec-data-sharing" class="mark">4.1. Data Sharing</a>).</p>
-<!-- should be a team SOP 
-Policies / SOPs support consistent DMP updates (lab-level) that define when a DMP must be updated, who is
-responsible, and how updates are reviewed/approved and communicated. -->
+<p><br></p>
+<p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like <a href="https://rdmo.ub.lmu.de/">RDMO</a> guide you through the relevant questions with funder-specific templates.</p>
+<p><br></p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for research groups to streamline this process
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Share templates and example DMP amongst team members</strong> on a common server space.</li>
+<li><strong>Create Standard Operating Procedures for the team.</strong> Define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.</li>
+</ul>
+</div>
+</div>
 <div class="container my-4">
 <h4 class="fs-5 anchored" data-anchor-id="your-dmp-will-ask">
 <i class="bi bi-mortarboard"></i> LEARN MORE
