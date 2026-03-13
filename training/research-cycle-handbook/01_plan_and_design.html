@@ -1280,9 +1280,9 @@ Benefits of preregistration
 <li><strong>Data exclusion criteria</strong></li>
 <li><strong>How to deal with missing data</strong> <br></li>
 </ul>
-<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data, and write the possible statistical test to analyze that data</strong> (see <a href="#sec-study-design-analysis-plan" class="mark">1.4.2. Simulation of data</a> and <a href="#sec-study-design-analysis-plan" class="mark">1.4.3. Power analyses</a>).</p>
+<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data, and write the possible statistical tests to analyze that data</strong> (see <a href="#sec-study-design-analysis-plan" class="mark">1.4.2. Simulation of data</a> and <a href="#sec-study-design-analysis-plan" class="mark">1.4.3. Power analyses</a>). Including an analyses script (developed on simulated data) with your preregistration is optional but recommended.</p>
 <p><br></p>
-<p>Including an <strong>analyses script</strong> (developed on simulated data) with your preregistration is optional, but gives you the advantage of obtaining the results of your confirmatory analyses extremely rapidly once your data is collected.</p>
+<p>To get support with pre-analysis planning, you can book a consultation with the <a href="mailto:@stablab.stat.uni-muenchen.de">LMU statistical consulting unit</a> and visit the <a href="https://www.stat.lmu.de/stablab/de/">StaBLab website</a> for more information.</p>
 <p><br></p>
 <h5 class="fs-5 no-anchor">
 Publishing process
@@ -1388,12 +1388,12 @@ Preregistration templates, embargoes, file storage.
 <li><p><strong>Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.</strong><br>
 <em>Example: See whether simulated data drawn from specific distributions is comparable to real data.</em></p></li>
 <li><p><strong>Perform power analyses.</strong><br>
-<em>Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see <a href="#">1.4.3. Power analyses</a><!--internal link formatting-->)</em></p></li>
+<em>Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see <a href="#sec-explore-and-reuse" class="mark">1.4.3. Power analyses</a>)</em></p></li>
 <li><p><strong>Prepare a pre-analysis plan.</strong><br>
-<em>Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see <a href="!--internal link--">1.4.1. Pre-analysis planning</a>) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results.</em></p></li>
+<em>Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see <a href="#sec-explore-and-reuse" class="mark">1.4.1. Pre-analysis planning</a>) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results.</em></p></li>
 </ul>
 <p><br></p>
-<p>Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a>) is much easier than researchers often believe it to be and is generally helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p>
+<p>Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a>) is much easier than researchers often believe it to be and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -1443,11 +1443,12 @@ Easy data simulations in R. (2h)
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses:</p>
 <p><br></p>
-<section id="a-priori-power-analysis" class="level5">
-<h5 class="anchored" data-anchor-id="a-priori-power-analysis">A priori power analysis</h5>
-<p><strong>Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.</strong> See our <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/">advanced tutorial</a>.</p>
+<h5 class="fs-5 no-anchor">
+A priori power analysis
+</h5>
+<p><strong>Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.</strong> See our <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/">advanced power analyses tutorial</a>.</p>
 <p><br></p>
-<p>For a very basic power calculation, you can use simple R function if you know 3 out of 4 of these parameters:</p>
+<p>For a very basic power calculation, you can use simple R functions if you know 3 out of 4 of these parameters:</p>
 <ul>
 <li>required sample size n (usually the one missing)</li>
 <li>desired power (default 0.80)</li>
@@ -1456,16 +1457,16 @@ Easy data simulations in R. (2h)
 </ul>
 <p>To get support with pre-analysis planning, you can book a consultation with the <a href="mailto:@stablab.stat.uni-muenchen.de">LMU statistical consulting unit</a> and visit the <a href="https://www.stat.lmu.de/stablab/de/">StaBLab website</a> for more information.</p>
 <p><br></p>
-</section>
-<section id="post-hoc-power-analysis" class="level5">
-<h5 class="anchored">Post-hoc power analysis</h5>
+<h5 class="fs-5 no-anchor">
+Post-hoc power analysis
+</h5>
 <p><strong>Compute a post-hoc power when you are not be able to control the sample size for your project.</strong> Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible.</p>
 <p><br></p>
 <p>The <strong>legitimate post-hoc power</strong> is computed with your actual n, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.</p>
 <p><br></p>
 <p>The <strong>flawed version of post-hoc power</strong> is called <strong>“observed power”</strong>: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power &lt; 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!</p>
 <div class="container my-4">
-<h4 class="fs-5 anchored" data-anchor-id="post-hoc-power-analysis">
+<h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
 </h4>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
@@ -1509,7 +1510,6 @@ Data simulations for GLMs, LMEs, and SEMs in R. (6h)
 </div>
 </div>
 </div>
-</section>
 </div>
 </div>
 </div>
