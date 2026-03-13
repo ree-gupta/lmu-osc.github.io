@@ -1249,14 +1249,14 @@ Examples of DMPs by discipline.
 <h5 class="fs-5 no-anchor">
 Why should you plan your statistical plan prior to collecting data?
 </h5>
-<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>. <!-- p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results --></p>
+<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>. See how easy it is to find false “significant” results by using our <a href="https://shinyapps.org/apps/p-hacker/">p-hacking tool</a>.</p>
 <p><br></p>
 <p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration.</strong></p>
 <p><br></p>
 <h5 class="fs-5 no-anchor">
 Benefits of preregistration
 </h5>
-<p>Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, constrains bias in confirmatory testing while still allowing exploratory analyses, clearly <strong>distinguishing robust hypothesis tests from hypothesis-generating work</strong>. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
+<p>Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, limits bias in confirmatory testing while still allowing exploratory analyses, clearly <strong>distinguishing robust hypothesis tests from hypothesis-generating work</strong>. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
 <p><br></p>
 <p>Preregistration can be beneficial for various type of studies, including:</p>
 <ul>
@@ -1264,12 +1264,11 @@ Benefits of preregistration
 <li>observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum</li>
 <li>qualitative studies: it will provide a way to document e.g.&nbsp;your positionality towards a subject in the course of a project.</li>
 </ul>
-<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data and write the possible statistical test to analyze that data</strong> (see <a href="!--internal link--">1.3.2. Simulation of data</a> and <a href="!--internal link--">1.3.3. Power analyses</a>).</p>
 <p><br></p>
 <h5 class="fs-5 no-anchor">
 <i class="bi bi-list-check"></i> What is included in a preregistration?
 </h5>
-<p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard OSF preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g.&nbsp;systematic review, qualitative work, secondary data analysis).</p>
+<p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard Open Science Framework (OSF) preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g.&nbsp;systematic review, qualitative work, secondary data analysis).</p>
 <p><br></p>
 <p>Your preregistration will define your study’s: <br></p>
 <ul>
@@ -1281,23 +1280,28 @@ Benefits of preregistration
 <li><strong>Data exclusion criteria</strong></li>
 <li><strong>How to deal with missing data</strong> <br></li>
 </ul>
+<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data, and write the possible statistical test to analyze that data</strong> (see <a href="#sec-study-design-analysis-plan" class="mark">1.4.2. Simulation of data</a> and <a href="#sec-study-design-analysis-plan" class="mark">1.4.3. Power analyses</a>).</p>
+<p><br></p>
+<p>Including an <strong>analyses script</strong> (developed on simulated data) with your preregistration is optional, but gives you the advantage of obtaining the results of your confirmatory analyses extremely rapidly once your data is collected.</p>
+<p><br></p>
 <h5 class="fs-5 no-anchor">
 Publishing process
 </h5>
-<p>Once your study plan is finalized: <br></p>
+<p>Once your study plan is finalized:</p>
+<p><br></p>
 <ul>
-<li><strong>Submit your preregistration before collecting or analyzing existing data.</strong> You can do so on discipline specific registries (see <a href="!--internal link--">1.1.2. Preregistrations</a>) or discipline agnostic repositories such as the <a href="https://osf.io/">Open Science Framework (OSF)</a>.</li>
-<li><strong>Embargoe your plan if you are concerned about scooping.</strong> On the OSF, your preregistration can be kept private for a predetermine amount of time, and for a maximum of 4 years.</li>
+<li><strong>Submit your preregistration before collecting new or analyzing existing data.</strong> You can do so on discipline specific registries (see <a href="#sec-explore-and-reuse" class="mark">1.1.2. Preregistrations</a>) or discipline agnostic repositories such as the <a href="https://osf.io/">OSF</a>.</li>
+<li><strong>Embargoe your plan if you are concerned about scooping.</strong> On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.</li>
 <li><strong>Include your pregistration’s DOI in your manuscript.</strong> Make your registration public upon the publication of your manuscript.</li>
 </ul>
-<p>This process improves transparency and is inviting valuable <strong>early feedback from collaborators</strong>. An even stronger approach is <strong>submitting preregistrations directly to journals (then called “Registered Reports”)</strong>, enabling peer review at a stage where methodological adjustments are still possible.</p>
+<p>Creating a preregistration improves transparency and allows for valuable <strong>early feedback from collaborators</strong>. An even stronger approach is <strong>submitting preregistrations directly to journals</strong> (then called <strong>“Registered Reports”</strong>), enabling peer review at a stage where methodological adjustments are still possible.</p>
 <p><br></p>
 <h5 class="fs-5 no-anchor">
 Registered Reports
 </h5>
 <p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where <strong>preregistrations are peer-reviewed before data collection</strong>. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
 <p><br></p>
-<p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts <strong>incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes</strong>.</p>
+<p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model <strong>shifts incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes</strong>.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -1305,19 +1309,21 @@ Registered Reports
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-4">
 <div class="col">
 <div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial (tba)</span>
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
 </div>
 </div>
 <h4 class="card-title anchored">
-Preregistration tutorial
+TBA: Preregistration tutorial
 </h4>
+<!-- edit when available -->
 <p class="card-text">
-Step-by-step guide to creating preregistration. (TBA h)
+Step-by-step guide to creating preregistration. (Xh)
 </p>
-<p><a href="#" class="stretched-link"></a></p>
+<!-- edit when available -->
+<p><a href="#" class="stretched-link"></a><!-- edit when available --></p>
 </div>
 </div>
 </div>
@@ -1327,6 +1333,23 @@ Step-by-step guide to creating preregistration. (TBA h)
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 <div class="col">
 <div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tool</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+P-hacking tool
+</h4>
+<p class="card-text">
+Interactive app to realize how easy it is to find false “significant” results.
+</p>
+<p><a href="https://shinyapps.org/apps/p-hacker/" class="stretched-link"></a></p>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool w-100 h-100 position-relative">
 <div class="orc-card-tool-icon mb-2">
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid"></p>
 </div>
@@ -1334,7 +1357,7 @@ Step-by-step guide to creating preregistration. (TBA h)
 Center for Open Science
 </h4>
 <p class="card-text">
-Preregistration templates, list of journals offering Registered Reports.
+List of journals offering Registered Reports.
 </p>
 <p><a href="https://www.cos.io/initiatives/registered-reports" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
