@@ -1134,21 +1134,21 @@
     ]
   },
   {
-    "objectID": "training/research-cycle-handbook/01_plan_and_design.html#plan-design-checklist",
-    "href": "training/research-cycle-handbook/01_plan_and_design.html#plan-design-checklist",
-    "title": "1. Plan & Design",
-    "section": " Plan & Design Checklist",
-    "text": "Plan & Design Checklist\nTo complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study type.\n\n\nBackground Information\n\nLiterature reviewed\nExisting research outputs searched\nFunder’s Open Science requirements identified\nEthics committee instructions consulted\n\nStudy Design\n\nResearch questions clearly defined\nHypotheses and predictions specified\nStudy design chosen and justified\nVariables and measures to collect identified\nAnalysis plan prepared (with simulated data)\nSample size determined (with power analysis)\nInclusion/exclusion criteria defined\nHandling of missing data defined\n\n\n\nData Management Planning\n\nData storage and backup solutions documented\nFile organization and naming conventions established\nAnonymization procedures defined\nRepository for data publishing selected\n\nProject Management\n\nTeam roles and responsibilities defined\nResources needed for the project identified\nTimeline estimated and milestones defined\n\nBefore Data Collection\n\nData Management Plan completed\nConsent forms prepared\nPreregistration submitted\nEthical approval obtained\n\n\n\n\nDownload checklist",
+    "objectID": "training/research-cycle-handbook/02-collect-and-manage.html#data-management-checklist",
+    "href": "training/research-cycle-handbook/02-collect-and-manage.html#data-management-checklist",
+    "title": "2. Collect & Manage",
+    "section": " Data Management Checklist",
+    "text": "Data Management Checklist\nTo complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.\n\n\n\nThroughout Data Collection:\n\nDocument data collection procedures\nMaintain organized directory structure\nFollow file naming conventions\nBack up data regularly (3-2-1 rule)\nUpdate data dictionary as needed\nVersion control data and scripts\nApply data (pseudo)anonymization procedures\nApply quality control procedures\n\n\n\nBefore Moving to Analysis:\n\nAll raw data backed up in multiple locations\nData (pseudo)anonymized\nREADME files document project organization\nData dictionary defines all variables\nVersion control repository up to date\nData quality control completed and documented\n\n\n\n\nDownload checklist",
     "crumbs": [
       "Home",
       "Training Tracks",
       "Research Cycle Handbook",
-      "Plan & Design"
+      "Collect & Manage"
     ]
   },
   {
-    "objectID": "training/research-cycle-handbook/03_analyze_and_collaborate.html#analysis-collaboration-checklist",
-    "href": "training/research-cycle-handbook/03_analyze_and_collaborate.html#analysis-collaboration-checklist",
+    "objectID": "training/research-cycle-handbook/03-analyze-and-collaborate.html#analysis-collaboration-checklist",
+    "href": "training/research-cycle-handbook/03-analyze-and-collaborate.html#analysis-collaboration-checklist",
     "title": "3. Analyze & Collaborate",
     "section": " Analysis & Collaboration Checklist",
     "text": "Analysis & Collaboration Checklist\nTo complete before the presentation of the results to the research group.\n1. Before and during data analyses\nRepository Setup & Content: \n\nUses the lab’s standard folder structure\nVersion-controlled with Git and shared via the LRZ GitLab or GitHub organization\nUses Renv for package management\nContains raw data and/or processed data\nIncludes a data dictionary (codebook)\nIncludes scripts for raw data extraction, processing, and analysis\nIncludes a Quarto reproducible analysis report\nContains a descriptive README explaining usage, code order, and dependencies\n\nR Script Standards: \n\nIncludes metadata/header identifying author, date, and purpose\nStructured for readability\nContains informative comments about analytic decisions\nDoes not contain sensitive information (e.g., passwords, patient data)\nUses meaningful and consistent naming conventions\nBreaks actions into functions to avoid duplication and improve clarity\nSets seeds for random processes to allow reproducible computation\nFollows a programming style guide (e.g., styler, lintR)\n\n2. During Repository and Code Peer-Review:\n\nCollaboration workflow established (e.g., branch or live review)\nSession info captured and dependencies listed in README\nCode performs tasks documented in the headers\nCode runs without errors on a fresh environment / different computer\nCode is well-organized, readable, and commented\nAll functions are documented\nSensitive information removed\nResults, figures, tables are reproducible\n(for co-authors): Methods used correct\n(for co-authors): Methods match the analysis plan or deviation are reported\n\n3. Before Sharing\n\nREADME provides complete instructions\nResults reproducible\nSensitive information removed\nCode peer-reviewed by co-authors\nDocumentation of results follow reporting guidelines\n(e.g. presentation and manuscript include e.g. effect size, confidence intervals)",
@@ -1479,21 +1479,8 @@
     ]
   },
   {
-    "objectID": "training/research-cycle-handbook/02_collect_and_manage.html#data-management-checklist",
-    "href": "training/research-cycle-handbook/02_collect_and_manage.html#data-management-checklist",
-    "title": "2. Collect & Manage",
-    "section": " Data Management Checklist",
-    "text": "Data Management Checklist\nTo complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.\n\n\n\nThroughout Data Collection:\n\nDocument data collection procedures\nMaintain organized directory structure\nFollow file naming conventions\nBack up data regularly (3-2-1 rule)\nUpdate data dictionary as needed\nVersion control data and scripts\nApply data (pseudo)anonymization procedures\nApply quality control procedures\n\n\n\nBefore Moving to Analysis:\n\nAll raw data backed up in multiple locations\nData (pseudo)anonymized\nREADME files document project organization\nData dictionary defines all variables\nVersion control repository up to date\nData quality control completed and documented\n\n\n\n\nDownload checklist",
-    "crumbs": [
-      "Home",
-      "Training Tracks",
-      "Research Cycle Handbook",
-      "Collect & Manage"
-    ]
-  },
-  {
-    "objectID": "training/research-cycle-handbook/04_preserve_and_share.html#preservation-checklist",
-    "href": "training/research-cycle-handbook/04_preserve_and_share.html#preservation-checklist",
+    "objectID": "training/research-cycle-handbook/04-preserve-and-share.html#preservation-checklist",
+    "href": "training/research-cycle-handbook/04-preserve-and-share.html#preservation-checklist",
     "title": "4. Preserve & Share",
     "section": " Preservation Checklist",
     "text": "Preservation Checklist\nBefore Publication:\n\n\n\nData deposited in appropriate repository\nMetadata complete and discoverable\nCode published with documentation\nDOIs obtained for data and code\n\n\n\n\nAll authors have ORCIDs linked\nLicenses applied (CC0/CC BY, MIT/Apache)\nSensitive data removed and verified\nEthics approval for sharing (if required)\n\n\n\nAt Submission:\n\n\n\nData Availability Statement with DOIs\nCode availability materials linked\nOpen access option selected\n\n\n\n\nORCID, ROR, funder IDs included\nAuthor contributions (CRediT) specified\nPreprint posted (if applicable)\n\n\n\nAfter Acceptance:\n\nPostprint uploaded to institutional repository\nPreprint updated with link to published version\nRepository READMEs updated with citation\nCo-authors receive final citation and PDF\n\nLong-term:\n\nVerify DOIs resolve correctly\nRespond to data/code access requests\nMonitor citations and usage metrics",
@@ -1502,6 +1489,19 @@
       "Training Tracks",
       "Research Cycle Handbook",
       "Preserve & Share"
+    ]
+  },
+  {
+    "objectID": "training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist",
+    "href": "training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist",
+    "title": "1. Plan & Design",
+    "section": " Plan & Design Checklist",
+    "text": "Plan & Design Checklist\nTo complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study type.\n\n\nBackground Information\n\nLiterature reviewed\nExisting research outputs searched\nFunder’s Open Science requirements identified\nEthics committee instructions consulted\n\nStudy Design\n\nResearch questions clearly defined\nHypotheses and predictions specified\nStudy design chosen and justified\nVariables and measures to collect identified\nAnalysis plan prepared (with simulated data)\nSample size determined (with power analysis)\nInclusion/exclusion criteria defined\nHandling of missing data defined\n\n\n\nData Management Planning\n\nData storage and backup solutions documented\nFile organization and naming conventions established\nAnonymization procedures defined\nRepository for data publishing selected\n\nProject Management\n\nTeam roles and responsibilities defined\nResources needed for the project identified\nTimeline estimated and milestones defined\n\nBefore Data Collection\n\nData Management Plan completed\nConsent forms prepared\nPreregistration submitted\nEthical approval obtained\n\n\n\n\nDownload checklist",
+    "crumbs": [
+      "Home",
+      "Training Tracks",
+      "Research Cycle Handbook",
+      "Plan & Design"
     ]
   },
   {
