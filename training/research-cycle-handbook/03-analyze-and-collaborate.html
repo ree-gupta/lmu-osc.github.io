@@ -549,22 +549,22 @@ Create reproducible analyses and collaborate effectively
 <section id="sec-data-processing-analysis" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sec-data-processing-analysis"><span class="header-section-number">3.1</span> Data Processing &amp; Analysis</h3>
 </section></summary>
-<p>Data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated, <strong>script-based workflows</strong> over manual point-and-click procedures, supported by <strong>adequate documentation</strong> and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is <strong>essential for both reproducibility and efficiency</strong>. This section outlines a recommended workflow for R users.</p>
+<p>Data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated <strong>script-based workflows</strong> (over manual point-and-click procedures), and supported by <strong>adequate documentation</strong> and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is <strong>essential for both reproducibility and efficiency</strong>. This section outlines a recommended workflow for R users.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.1.1. Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.1.2. Version Control</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3.1.3. Computational Environment Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">3.1.4. Documentation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <ul>
-<li><strong>Create self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
-<li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the <a href="https://github.com/lmu-osc/research-project-template">OSC research project template</a>.</li>
+<li><strong>Create a self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
+<li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our <a href="https://github.com/lmu-osc/research-project-template">research project template</a>.</li>
 <li><strong>Stop clicking, start coding</strong>. Automatize all possible steps, including data acquisition (see <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-collection" class="mark">2.1. Data Collection</a>), data processing and transformation, data analyses, data visualization, and results reporting (see <a href="#sec-reproducible-reporting" class="mark">3.2. Reporting Results</a>)</li>
 <li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, any known limitations to your code, and citations of methods. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong>
 <ul>
-<li><strong>Define your own functions</strong> rather than copy and pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a> and <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a> for examples.</li>
-<li><strong>Set seeds for random processes</strong> to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g.&nbsp;our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a> for examples.</li>
-<li><strong>Follow a style guide</strong> to increase readability. Use automated styling tools (e.g.&nbsp;<code>styler</code>, <code>lintR</code>)</li>
+<li><strong>Define your own functions</strong> rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a> and <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">data simulation tutorial</a> for examples.</li>
+<li><strong>Set seeds for random processes</strong> to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g.&nbsp;our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">data simulation tutorial</a> for examples.</li>
+<li><strong>Follow a style guide</strong> to increase readability. Use automated styling tools (e.g.&nbsp;<code>styler</code>, <code>lintR</code>).</li>
 </ul></li>
-<li><strong>Use LRZ Compute Cloud for data-intensive analyses</strong>. <a href="https://www.lrz.de/en/technologies/supercomputing">LRZ Supercomputing</a> provide virtual machines, high-performance computing, storage ect to researchers of LMU Munich.</li>
+<li><strong>Use LRZ Compute Cloud for data-intensive analyses</strong>. <a href="https://www.lrz.de/en/technologies/supercomputing">LRZ Supercomputing</a> provide virtual machines, high-performance computing, and storage to researchers of LMU Munich.</li>
 </ul>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -703,6 +703,7 @@ Virtual machines and HPC for LMU Munich
 <li><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</li>
 </ul>
 <p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).</p>
+<p>In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see GitHub tutorial) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled">
@@ -826,9 +827,9 @@ Institutional open source chat service for LMU Munich.
 <p><br></p>
 <p>For a R project repository:</p>
 <ul>
-<li><strong>Activate Renv to keep track of all packages versions</strong> (see <a href="">renv tutorial</a>). This way, you or someone else can reproduce your results on another computer or at a later time using the same R packages versions.</li>
+<li><strong>Activate Renv to keep track of all packages versions</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-renv/">renv tutorial</a>). This way, you or someone else can reproduce your results on another computer or at a later time using the same R packages versions.</li>
 </ul>
-<p>Before publishing yoru project (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; share</a>):</p>
+<p>Before publishing your project (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; share</a>):</p>
 <ul>
 <li><strong>Record your dependencies</strong> in your README file for possible reconstruction with <a href="https://repo2docker.readthedocs.io/en/latest/">repo2docker</a> or binder (see <a href="https://lmu-osc.github.io/code-publishing/make_readme.qmd#nte-dependencies">Code Publishing tutorial</a>).</li>
 </ul>
@@ -941,14 +942,14 @@ Build and run user environment containers.
 </div>
 </div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<p>As with all documentation, your project repository’s documentation should be written early: initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-code-publishing" class="mark">see 4.2. Code Publishing</a>.</p>
+<p>As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-code-publishing" class="mark">4.2. Code Publishing</a>).</p>
 <p><br></p>
 <ul>
-<li><strong>Create a README.md or README.txt file early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, and whether it can be reused.</li>
+<li><strong>Create a README (e.g.&nbsp;a .md or .txt file) early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, waht the dependencies of the project are, how to obtain/access the input data, whether the code can be reused.</li>
 <li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong></li>
-<li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2.4. Documentation</a>.</li>
+<li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. (see <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2.4. Documentation</a>).</li>
 </ul>
-<p>Example README:</p>
+<p>Example README to allow team members to review your code:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Analysis of Treatment Effects</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Requirements</span></span>
@@ -958,16 +959,6 @@ Build and run user environment containers.
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## Running the Analysis</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Install dependencies: <span class="in">`renv::restore()`</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Run scripts in order: 01_preprocessing.R, 02_analysis.R</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<!--README files are essential for understanding how to use your code repository.
-
-**Required elements:**
-
-- **Project title and description**
-- **How to run the analysis**: Step-by-step instructions
-- **Software requirements**: Language versions, dependencies
-- **Input data**: Where to obtain or how to access
-- **Output**: What files are produced
-- **Project structure**: Explanation of directories -->
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -986,7 +977,6 @@ Build and run user environment containers.
 <h4 class="card-title anchored">
 Readable code lecture
 </h4>
-<!-- remove linebreak after title? -->
 <p class="card-text">
 Tips to write clear, understandable, and maintainable code.(1h)
 </p>
@@ -1005,9 +995,8 @@ Tips to write clear, understandable, and maintainable code.(1h)
 <h4 class="card-title anchored">
 Data Documentation &amp; Validation
 </h4>
-<!-- remove line break after title -->
 <p class="card-text">
-Learn to create validation rules and automated checks for your research data.
+Create validation rules and automated checks for your research data. (1h)
 </p>
 <p><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
