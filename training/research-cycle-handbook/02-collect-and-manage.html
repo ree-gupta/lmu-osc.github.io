@@ -1213,13 +1213,12 @@ Version control for large datasets
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.</p>
+<p>Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary see <a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form">How to write an informed consent form</a> from the University to Utrecht.</p>
 <p><br></p>
 <ul>
 <li><p><strong>Use tiered consent when you plan to share data.</strong> Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.</p></li>
 <li><p><strong>Store consent forms separately from data.</strong> The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.</p></li>
 </ul>
-<!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1233,13 +1232,37 @@ Version control for large datasets
 <p><strong>Maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference by team members.</strong></p>
 </div>
 </div>
+<div class="container my-4">
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<p><img src="https://www.uu.nl//themes/custom/corp/src/images/favicons/apple-touch-icon.png" class="img-fluid" alt="University of Utrecht icon"></p>
+</div>
+<h4 class="card-title anchored">
+How to write an informed consent form
+</h4>
+<p class="card-text">
+University of Utrecht RDM guide.
+</p>
+<p><a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
+</div>
+</div>
+<!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Anonymization protects privacy and determines what you can share.</p>
 <p><br></p>
 <ul>
 <li><p><strong>Remove direct identifiers during collection.</strong> Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.</p></li>
-<li><p><strong>Assess indirect identifiers carefully.</strong> A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [anonymization tutorial]<!-- link tba--> to learn to evaluate and implement anonymization techniques in R.</p></li>
+<li><p><strong>Assess indirect identifiers carefully.</strong> A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our <a href="!-- link tba--">anonymization tutorial (TBA)</a> to learn to evaluate and implement anonymization techniques in R.</p></li>
 <li><p><strong>Generate synthetic data when full anonymization or real data sharing is not possible.</strong> Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).</p></li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled">
