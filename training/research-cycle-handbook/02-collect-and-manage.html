@@ -528,7 +528,7 @@ Build quality into your data from the start
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>Definition
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -719,7 +719,24 @@ Learn Git basics integrated with RStudio (2h).
 <li><p><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analyses</a>).</p></li>
 <li><p><strong>Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.</strong> Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.</p></li>
 </ul>
-<p>What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> provides detailed guidance organized by research area.</p>
+<p>What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> provides detailed guidance organized by research area.<!-- include ref to discipline specific section when available --></p>
+</div>
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+<div class="mx-4 callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for research groups to streamline this process
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Create standard operating procedures within the team.</strong> For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved.</li>
+<li><strong>Assign responsibilities.</strong> For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g.&nbsp;hold a data quality validation meeting prior to starting data analyses, see <a href="#collect-manage-checklist" class="mark">Collect &amp; Manage Checklist</a>).</li>
+</ul>
+</div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
@@ -728,7 +745,7 @@ Learn Git basics integrated with RStudio (2h).
 <p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>.</p>
 <p><br></p>
 <ul>
-<li><strong>Use institutional storage.</strong> Your institution provides storage with automated backups, access controls, and GDPR compliance. The specific options vary by department. Contact the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</li>
+<li><strong>Use institutional storage.</strong> LMU Munich provides storage such as <a href="https://syncandshare.lrz.de/login">LRZ Sync and Share</a> or <a href="https://doku.lrz.de/data-science-storage-10745685.html">LRZ DSS</a> with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</li>
 <li><strong>Follow the 3-2-1 backup rule.</strong> Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple “equal” copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.</li>
 <li><strong>Control access from the start.</strong> Grant access only to those who need it. Use institutional sharing tools, not email attachments or personal cloud links. For collaborations, agree at the start who can read, who can edit, and who manages permissions. When team members leave, remove their access promptly.</li>
 <li><strong>Test your backups.</strong> A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.</li>
@@ -930,10 +947,10 @@ Domain-specific file formats and conventions
 </div>
 </div>
 <div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
-<p>Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and anyone who might reuse it.</p>
+<p>Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.</p>
 <p><br></p>
 <ul>
-<li><strong>Create a README file (as .md or .txt) early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: <strong>who</strong> created the data, <strong>what</strong> it contains, <strong>when</strong> and <strong>where</strong> it was collected, <strong>why</strong> it was generated, <strong>how</strong> it was produced, and whether it <strong>can be reused</strong>. These answers let someone unfamiliar with your project understand and work with your data.</li>
+<li><strong>Create a README file (as .md or .txt) early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the data, what it contains, when and where it was collected, why it was generated, how it was produced, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your data.</li>
 <li><strong>Create a data dictionary defining every variable.</strong> A data dictionary (or “codebook”) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.</li>
 </ul>
 <div class="container my-4">
@@ -941,6 +958,23 @@ Domain-specific file formats and conventions
 <i class="bi bi-mortarboard"></i> LEARN MORE
 </h4>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Principles of Data Documentation
+</h4>
+<p class="card-text">
+Principles of README files and data dictionaries.
+</p>
+<p><a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
@@ -959,49 +993,6 @@ Create READMEs, data dictionaries, and validation checks for your data.
 <p><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
 </div>
-<div class="col">
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
-</div>
-</div>
-<h4 class="card-title anchored">
-Data Documentation
-</h4>
-<p class="card-text">
-Principles of README files and data dictionaries.
-</p>
-<p><a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
-</div>
-</div>
-</div>
-<h4 class="fs-5 mt-3 anchored">
-<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
-</h4>
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-<!-- card -->
-<div class="col">
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tool</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
-</div>
-<div class="orc-card-tool-icon icon-2">
-<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
-</div>
-</div>
-<h4 class="card-title anchored">
-Research Project Template
-</h4>
-<p class="card-text">
-Project folder separating raw &amp; processed data, code, and outputs.
-</p>
-<p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a></p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1009,17 +1000,33 @@ Project folder separating raw &amp; processed data, code, and outputs.
 <p>Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:</p>
 <p><br></p>
 <ul>
-<li><p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README.</p></li>
+<li><p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README. See for instance our <a href="https://github.com/lmu-osc/research-project-template">research project template</a>.</p></li>
 <li><p><strong>Reporting guidelines</strong> specify what methodological details to document for different study types. The <a href="https://www.equator-network.org/">EQUATOR Network</a> maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.</p></li>
-<li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.</p></li>
+<li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available --></p></li>
 </ul>
-<p><br> <!-- inlcude ref to discipline specific section currently in devpt --></p>
+<p><br></p>
 <p><strong>Think of your data as a first-class research output.</strong> Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
 </h4>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&amp;s" class="img-fluid" alt="EQUATOR logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+EQUATOR Network
+</h4>
+<p class="card-text">
+Comprehensive database of reporting guidelines.
+</p>
+<p><a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
 <div class="col">
 <div class="card orc-card-tool h-100 position-relative">
 <div class="orc-card-tool-icons mb-2">
@@ -1052,6 +1059,27 @@ Domain-specific metadata standards
 <p><a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
 </div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tool</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></p>
+</div>
+<div class="orc-card-tool-icon icon-2">
+<p><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Research Project Template
+</h4>
+<p class="card-text">
+Project folder separating raw &amp; processed data, code, and outputs.
+</p>
+<p><a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a></p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -1068,15 +1096,18 @@ Domain-specific metadata standards
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>Difference between Git, GitHub and GitLab
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Difference between Git, GitHub and GitLab</strong><br>
-<!-- copied to 3.1.2. manually --> - <strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).<br>
-- <strong>GitHub</strong> is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>). <strong>You should not have any sensitive data on GitHub even in a private repository.</strong> - <strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</p>
-<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="03_analyze_and_collaborate.qmd" class="mark">3. Analyze &amp; Collaborate</a> and <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).<br>
-<br></p>
+<!-- copied to 3.1.2. manually -->
+<ul>
+<li><p><strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).</p></li>
+<li><p><strong>GitHub</strong> is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>). <strong>You should not have any sensitive data on GitHub even in a private repository.</strong></p></li>
+<li><p><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</p></li>
+</ul>
+<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="03_analyze_and_collaborate.qmd" class="mark">3. Analyze &amp; Collaborate</a> and <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).</p>
+<p><br></p>
 <p>In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 </div>
 </div>
@@ -1217,11 +1248,10 @@ Version control for large datasets
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>Distinction between pseudonymization and anonymization
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Distinction between pseudonymization and anonymization</strong></p>
 <ul>
 <li><p><strong>Pseudonymization</strong> replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.</p></li>
 <li><p><strong>Anonymization</strong> removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.</p></li>
@@ -1367,8 +1397,8 @@ Learn to create validation rules and automated checks for your research data.
 </div>
 </details>
 
-<section id="data-management-checklist" class="level2 unnumbered orc-gradient-box data-management-checklist">
-<h2 class="unnumbered anchored" data-anchor-id="data-management-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Data Management Checklist</h2>
+<section id="collect-manage-checklist" class="level2 unnumbered orc-gradient-box collect-manage-checklist">
+<h2 class="unnumbered anchored" data-anchor-id="collect-manage-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Collect &amp; Manage Checklist</h2>
 <p>To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.</p>
 <!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 <div class="row row-cols-1 row-cols-lg-2 g-4">
