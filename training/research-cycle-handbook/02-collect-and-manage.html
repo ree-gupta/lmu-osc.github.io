@@ -1343,22 +1343,6 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 <section id="sec-quality-control" class="level3" data-number="2.4">
 <h3 data-number="2.4" class="anchored" data-anchor-id="sec-quality-control"><span class="header-section-number">2.4</span> Quality Control</h3>
 </section></summary>
-<!-- Quality control identifies errors and issues before analysis.
-
-**Common QC checks:**
-
-1. **Completeness**: Check for missing data
-2. **Range checks**: Verify values within expected ranges
-3. **Consistency**: Check logical relationships
-4. **Duplicates**: Identify duplicate records
-5. **Format**: Ensure consistent data types
-
-**Document QC decisions:**
-
-- Procedures and criteria
-- Cases flagged or excluded
-- Reasons for exclusions
-- Date and reviewer -->
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
 <p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -1369,7 +1353,7 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 <p><br></p>
 <ul>
 <li><p><strong>Automate what you can.</strong> Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.</p></li>
-<li><p><strong>Manual review catches what automation misses.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p></li>
+<li><p><strong>Catch what automation misses with manual review.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p></li>
 </ul>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -1412,8 +1396,8 @@ Learn to create validation rules and automated checks for your research data.
 <p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <p><br></p>
 <ul>
-<li><p><strong>Common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
-<li><p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p></li>
+<li><p><strong>Review common exclusion criteria:</strong> technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
+<li><p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer’s identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p></li>
 </ul>
 </div>
 </div>
@@ -1423,10 +1407,9 @@ Learn to create validation rules and automated checks for your research data.
 <section id="collect-manage-checklist" class="level2 unnumbered orc-gradient-box collect-manage-checklist">
 <h2 class="unnumbered anchored" data-anchor-id="collect-manage-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Collect &amp; Manage Checklist</h2>
 <p>To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.</p>
-<!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 <div class="row row-cols-1 row-cols-lg-2 g-4">
 <div class="col">
-<p><strong>Throughout Data Collection:</strong></p>
+<p><strong>Throughout Data Collection</strong></p>
 <ul class="task-list">
 <li><label><input type="checkbox">Document data collection procedures</label></li>
 <li><label><input type="checkbox">Maintain organized directory structure</label></li>
@@ -1439,7 +1422,7 @@ Learn to create validation rules and automated checks for your research data.
 </ul>
 </div>
 <div class="col">
-<p><strong>Before Moving to Analysis:</strong></p>
+<p><strong>Before Moving to Analysis</strong></p>
 <ul class="task-list">
 <li><label><input type="checkbox">All raw data backed up in multiple locations</label></li>
 <li><label><input type="checkbox">Data (pseudo)anonymized</label></li>
@@ -1451,7 +1434,7 @@ Learn to create validation rules and automated checks for your research data.
 </div>
 </div>
 <div class="d-flex justify-content-center mt-4 orc-checklist-download phase-2">
-<p><a href="#" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a></p>
+<p><a href="assets/checklists/Collect-Manage-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a> <!-- need to update manually the  downloadable file with checklist in word doc--></p>
 </div>
 </section>
 
