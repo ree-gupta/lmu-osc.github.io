@@ -511,12 +511,12 @@ Make your research outputs accessible, reusable, and citable
 </div>
 <details class="orc-details-panel">
 <summary>
-<p><i class="bi bi-database-check"></i></p>
+<p><i class="bi bi-database-up"></i></p>
 <section id="sec-data-sharing" class="level3" data-number="4.1">
 <h3 data-number="4.1" class="anchored" data-anchor-id="sec-data-sharing"><span class="header-section-number">4.1</span> Data Sharing</h3>
 </section></summary>
 <p>Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.</p>
-<p>In <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, you wrote a Data Management Plan, in <a href="02_collect_and_manage.qmd" class="mark">2. Collect &amp; Manage</a>, you created documentation for yourself, and in <a href="03_analyze_and_collaborate.qmd" class="mark">3. Analyze &amp; Collaborate</a> you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:</p>
+<p>In <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, you wrote a Data Management Plan, in <a href="../../training/research-cycle-handbook/02-collect-and-manage.html" class="mark">2. Collect &amp; Manage</a>, you created documentation for yourself, and in <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a> you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:</p>
 <div class="ms-1">
 <ul>
 <li><strong>Make a final decision on how openly your data will be shared.</strong></li>
@@ -535,7 +535,7 @@ Make your research outputs accessible, reusable, and citable
 <ul>
 <li><p><strong>Open data</strong> can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.</p></li>
 <li><p><strong>Restricted access</strong> means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4.1. Pre-analysis planning</a>), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection.</p></li>
-<li><p><strong>Metadata only</strong> describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU guidelines</a> (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2.1. LMU guidelines</a>)</p></li>
+<li><p><strong>Metadata only</strong> describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU guidelines</a> (see also <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2. Legal Requirements</a>)</p></li>
 </ul>
 <p><br></p>
 <p>When deciding whether data should be shared, consider the following:</p>
@@ -872,26 +872,40 @@ License decision flowchart for data and code.
 </div></div></div></details>
 <details class="orc-details-panel">
 <summary>
-<p><i class="bi bi-code-square"></i></p>
+<p><i class="bi bi-file-code"></i></p>
 <section id="sec-code-publishing" class="level3" data-number="4.2">
 <h3 data-number="4.2" class="anchored" data-anchor-id="sec-code-publishing"><span class="header-section-number">4.2</span> Code Publishing</h3>
 </section></summary>
 <p>Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.</p>
-<p>So far, your code repository for internal use developed in <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a> was either on the secured <a href="https://gitlab.lrz.de/">LRZ Gitlab</a> (e.g.&nbsp;if your data and/or code are sensitive), or on a <a href="https://github.com/">GitHub</a> repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e.&nbsp;archive its current version and get a DOI) on e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a>.</p>
-<p>Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e.&nbsp;preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#analyze-collaborate-checklist" class="mark">Analysis &amp; Collaboration Checklist</a>).</p>
-<p>However, if you work with sensitive data that cannot be anonymized and shared, you may still need to generate a simulated random dataset to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan">1.4. Study Design &amp; Analysis Plan</a>), or chose to create a synthetic dataset with the same properties as the original dataset to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.</p>
+<p>So far, your code was either backed up on the secured <a href="https://gitlab.lrz.de/">LRZ Gitlab</a> (e.g.&nbsp;if your data and/or code are sensitive), or on <a href="https://github.com/">GitHub</a> (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.</p>
+<div class="ms-1">
+<ul>
+<li><strong>verify</strong> the structure of your repository, the readability of your scripts, the completeness of the documentation (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#analyze-collaborate-checklist" class="mark">Analyze &amp; Collaborate Checklist</a>).</li>
+<li><strong>make a clean version public</strong> e.g.&nbsp;to <a href="https://github.com/">GitHub</a></li>
+<li><strong>add a license</strong></li>
+<li><strong>get a DOI</strong> through e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a></li>
+</ul>
+</div>
+<p>If you work with <strong>sensitive data that cannot be anonymized</strong> and shared:</p>
+<div class="ms-1">
+<ul>
+<li><strong>generate a simulated random dataset</strong> to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>), <em>or</em></li>
+<li><strong>create a synthetic dataset with the same properties as the original dataset</strong> to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.</li>
+</ul>
+</div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">4.2.1. Preparing Your Code Repository</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">4.2.2. Real, Simulated, or Synthetic Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">4.2.3. Code Licenses</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">4.2.4. Archiving &amp; DOIs</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.</p>
+<p><br></p>
 <ul>
 <li><strong>Expand your README</strong> to include a description, involved data, computational requirements and dependencies (i.e.&nbsp;what software, packages, and their version, need to be installed to run the analyses), list of results.</li>
 <li><strong>Document your code</strong> from an external perspective, using literate programming (e.g.&nbsp;Quarto) or comments.</li>
 <li><strong>Double check that no sensitive information remains in your repository</strong> (e.g.&nbsp;code comments, history of sensitive data)</li>
 </ul>
-<p><br></p>
 <p>See our <a href="https://lmu-osc.github.io/code-publishing/">code publishing tutorial</a> for more information on how to prepare your code repository for sharing.</p>
+<p><br></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -937,8 +951,8 @@ Add all elements of a reproducible project to your repository.
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.</p>
-<p>You can provide the data required to run the code in several ways:</p>
 <p><br></p>
+<p>You can provide the data required to run the code in several ways:</p>
 <ul>
 <li><strong>The real (anonymized) data.</strong> This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository.</li>
 <li><strong>Simulated random data.</strong> This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">data simulation tutorial</a>.</li>
@@ -1009,15 +1023,11 @@ Synthetic data creation in R to balance utility and privacy when sharing data.
 <p><br></p>
 <ul>
 <li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.</li>
-<li><strong>Apache 2.0</strong> requires users to credit you. A good default when you want recognition while enabling broad reuse.</li>
+<li><strong>MIT</strong> is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.</li>
+<li><strong>Apache 2.0</strong> is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.</li>
 </ul>
-<!-- MIT: Permissive, widely adopted
-Apache 2.0: Patent protection
-GPL-3.0: Derivatives must be open 
-https://choosealicense.com/
-https://creativecommons.org/chooser/ -->
 <p><br></p>
-<p>Learn more about open licenses for data and code in our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a>.</p>
+<p>Learn more about open licenses for data and code in our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a> or using the tool ‘<a href="https://choosealicense.com/licenses/">Choose an open source license</a>’.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -1039,6 +1049,22 @@ Choose a License
 License decision flowchart for data and code.
 </p>
 <p><a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a></p>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<p><img src="https://choosealicense.com/favicon.ico" class="img-fluid" alt="Choose an open source license logo"></p>
+</div>
+</div>
+<h4 class="card-title anchored">
+Choose an open source license
+</h4>
+<p class="card-text">
+Tool comparing open software licenses.
+</p>
+<p><a href="https://choosealicense.com/" class="stretched-link" target="_blank" rel="noopener"></a></p>
 </div>
 </div>
 </div>
@@ -1089,24 +1115,21 @@ Document dependencies clearly-->
 </section></summary>
 <!-- add a section on material publishing, e.g. protocols, survey text, OSF Zenodo, choose a licence https://creativecommons.org/chooser/ -->
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Title</a></li></ul>
 <div class="tab-content">
-
-</div>
-</div>
-</details>
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+</div></div></div></details>
 <details class="orc-details-panel">
 <summary>
-<p><i class="bi bi-journal-arrow-up"></i></p>
-
+<p><i class="bi bi-unlock2"></i></p>
 <section id="sec-open-access-articles" class="level3" data-number="4.4">
 <h3 data-number="4.4" class="anchored" data-anchor-id="sec-open-access-articles"><span class="header-section-number">4.4</span> Open Access Articles</h3>
 </section></summary>
 <p>Publishing open access articles (i.e.&nbsp;which are free to readers) <strong>increases the visibility, citation, and impact</strong> of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also <strong>accelerates knowledge dissemination and promotes equity</strong> in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">4.4.1. Pathways to Open Access</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">4.4.2. Contracts with Publishers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">4.4.3. Publishing Preprints and Retaining Rights</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">4.4.1. Pathways to Open Access</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">4.4.2. Contracts with Publishers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">4.4.3. Publishing Preprints and Retaining Rights</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>They are several pathways to make your your articles free to read, e.g.:</p>
 <ul>
 <li><strong>Diamond Open Access</strong>: journals that provide immediate open access without charging authors any Article Processing Charges (APCs), as publication costs are covered by institutions, consortia, or public funding. Visit the <a href="https://doaj.org/">Directory of Open Access Journals (DOAJ)</a> to find them.</li>
@@ -1165,7 +1188,7 @@ Clear summary of journals’ open access policies.
 </div>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an <strong>Article Processing Charge (APC)</strong> to make their work immediately open access upon publication, the model commonly referred to as ‘<em>gold open access</em>’. To <strong>avoid these fees</strong> while still ensuring public accessibility, authors were encouraged to disseminate a <strong>preprint and/or postprint</strong>, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. These procedures, which are <strong>free to the authors</strong>, are collectively known as ‘<em>green open access</em>’.</p>
 <p><br></p>
 <p><strong>Since 2025</strong>, however, at LMU Munich and other universities that are part of the <a href="https://deal-konsortium.de/en/">DEAL Konsortium</a> in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the <strong>authors publishing in hybrid journals</strong> (i.e., journals offering both subscription-based and open access options) <strong>incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access</strong>. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.</p>
@@ -1194,7 +1217,7 @@ Publisher contracts and publication fees.
 </div>
 </div>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>To increase the accessibility and impact of your article we recommend you to:</p>
 <p><br></p>
 <ul>
@@ -1337,9 +1360,9 @@ Institutional publication repository.
 </section></summary>
 <p>All research outputs and their specific versions should be linked to their authors, organisations, and funders through persistent identifiers.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">4.5.1. Authorship, Contributorship, and ORCID</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">4.5.2. Institution, Funders, and ROR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">4.5.3. Connecting Your Work</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">4.5.1. Authorship, Contributorship, and ORCID</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">4.5.2. Institution, Funders, and ROR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">4.5.3. Connecting Your Work</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <h5 class="anchored">
 Authorship
 </h5>
@@ -1422,7 +1445,7 @@ Free, unique, persistent identifier for researchers.
 </div>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <ul>
 <li><strong>Disclose your institutional affiliations and funders</strong> as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people’s profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.</li>
 <li><strong>Use your institution and funders’ ROR</strong>. The <a href="https://ror.org/">Research Organization Registry (ROR)</a> is a global, community-led registry of open persistent identifiers for research and funding organizations.</li>
@@ -1466,7 +1489,7 @@ Persistent identifiers for research and funding organizations
 </div>
 </div>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <ul>
 <li><strong>Request a Digital Object Identifiers (DOI) for each of your research outputs</strong> (data, code, preprint, preregistration)
 <ul>
@@ -1561,6 +1584,10 @@ Document dependencies clearly -->
 
 
 </main></div>
+
+
+
+
 
 
 
