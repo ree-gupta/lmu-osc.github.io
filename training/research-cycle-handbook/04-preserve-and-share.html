@@ -1010,7 +1010,7 @@ Easy data simulations in R. (2h)
 Synthetic Data
 </h4>
 <p class="card-text">
-Synthetic data creation in R to balance utility and privacy when sharing data.
+Synthetic data creation in R to balance utility and privacy when sharing data. (3h)
 </p>
 <p><a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a></p>
 </div>
@@ -1071,23 +1071,15 @@ Tool comparing open software licenses.
 </div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<!--
-GitHub to Zenodo Workflow
-Standard workflow for citable code:
-
-Prepare Repository: Add README, license, example data
-Link to Zenodo: Enable integration via GitHub
-Create Release: Tag version (e.g., v1.0.0)
-Obtain DOI: Zenodo automatically archives and assigns DOI
-Cite: Include DOI in manuscript 
-
-Before publishing code:
-
-Remove API keys, passwords, credentials
-Remove personal or participant data
-Review entire git history
-Add simulated data if needed
-Document dependencies clearly-->
+<p>To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html --></p>
+<ul>
+<li><strong>Push your clean repository to GitHub</strong> (see GitHub tutorial).</li>
+<li><strong>Create an account on <a href="https://zenodo.org/">Zenodo</a>.</strong></li>
+<li><strong>Link your GitHub account to Zenodo.</strong> Navigate to your profile &gt; account settings &gt; link external accounts &gt; GitHub &gt; authorize Zenodo to access your GitHub account &gt; a list of your GitHub repositories should appear. Enable the repository by toggling the switch next to it; refresh the page to check to see if the visual indicator that the repository is connected appears</li>
+<li><strong>Go to GitHub and create a release.</strong> Zenodo will automatically download a .zip-ball of each new release and register a DOI.</li>
+<li><strong>Add DOI badge to your README.</strong> After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in the your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code</li>
+<li><strong>Create new release when needed.</strong> If you make a new release, it will create a new version on Zenodo, under the same overall DOI, with a ‘sub-DOI’ to identify a specific version.</li>
+</ul>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1098,10 +1090,9 @@ Document dependencies clearly-->
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>Create a Zenodo “community” for the team.</strong></p>
+<p><strong>Create a Zenodo “community” for the team.</strong> After team members connect their repositories from their personal GitHub account to Zenodo, and archive releases with a DOI, these records can be added to a shared Zenodo <em>community</em>. A community provides a central space where all software and other research outputs produced by the group can be collected and displayed, making them easier to find, cite, and showcase at the team level.</p>
 </div>
 </div>
-<!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
 </div>
 </div>
 </div>
