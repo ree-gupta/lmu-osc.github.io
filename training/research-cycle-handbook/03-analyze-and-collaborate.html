@@ -723,6 +723,19 @@ Important
 <p>Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">rewrite the repository history</a> to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for research groups:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Create a LRZ GitLab “organization” for the team.</strong> This allows repositories, permissions, and project resources to be managed centrally rather than under individual accounts. This ensures continuity when team members leave, as ownership can be transferred to e.g.&nbsp;the PI and other administrators of the organization.</p>
+</div>
+</div>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
 <i class="bi bi-mortarboard"></i> LEARN MORE
@@ -945,7 +958,7 @@ Build and run user environment containers.
 <p>As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-code-publishing" class="mark">4.2. Code Publishing</a>).</p>
 <p><br></p>
 <ul>
-<li><strong>Create a README (e.g.&nbsp;a .md or .txt file) early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, waht the dependencies of the project are, how to obtain/access the input data, whether the code can be reused.</li>
+<li><strong>Create a README (e.g.&nbsp;a .md or .txt file) early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused.</li>
 <li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong></li>
 <li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. (see <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2.4. Documentation</a>).</li>
 </ul>
@@ -1270,7 +1283,7 @@ Institutional open source chat service for LMU Munich.
 </ul>
 <p>A lot of these elements are those of a preregistration (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan">1.4.1. Pre-analysis planning</a>). Describe them in your methods section, adding they were <strong>planned a priori in your preregistration</strong> and citing its DOI, and <strong>separate results into e.g.&nbsp;preregistered confirmatory analyses and non-preregistered exploratory analyses</strong>.</p>
 <p><br></p>
-<p>These element will be refined depending on your study type. Widely used examples of guidelines include <a href="https://www.equator-network.org/reporting-guidelines/consort/">CONSORT</a> for randomized controlled trials, <a href="https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/">ARRIVE</a> for animal studies, and <a href="https://www.equator-network.org/reporting-guidelines/prisma/">PRISMA</a> for systematic reviews.</p>
+<p>Some of these elements will be refined depending on your study type. Widely used examples of guidelines include <a href="https://www.equator-network.org/reporting-guidelines/consort/">CONSORT</a> for randomized controlled trials, <a href="https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/">ARRIVE</a> for animal studies, and <a href="https://www.equator-network.org/reporting-guidelines/prisma/">PRISMA</a> for systematic reviews.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored" data-anchor-id="typical-items-that-should-be-reported-include">
 <i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
@@ -1300,52 +1313,56 @@ Comprehensive database of reporting guidelines.
 <!-- RL still working on ::: {.orc-gradient-box .analysis-collaboration-checklist} -->
 <section id="analysis-collaboration-checklist" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="analysis-collaboration-checklist"><i class="bi bi-card-checklist"></i> Analysis &amp; Collaboration Checklist</h2>
-<p>To complete before the presentation of the results to the research group.</p>
-<p><strong>1. Before and during data analyses</strong></p>
-<p><strong>Repository Setup &amp; Content:</strong> <!-- don't manage to make this one indented--></p>
+<p>This assumes a reproducible workflow using R. Not all items are relevant for all fields of research or study types.</p>
+<p><strong>1. During data analyses: create and maintain a repository</strong></p>
+<p><strong>Repository Setup</strong> <!-- don't manage to make this one indented--></p>
 <ul class="task-list">
-<li><label><input type="checkbox">Uses the lab’s standard folder structure</label></li>
-<li><label><input type="checkbox">Version-controlled with Git and shared via the LRZ GitLab or GitHub organization</label></li>
-<li><label><input type="checkbox">Uses Renv for package management</label></li>
-<li><label><input type="checkbox">Contains raw data and/or processed data</label></li>
-<li><label><input type="checkbox">Includes a data dictionary (codebook)</label></li>
-<li><label><input type="checkbox">Includes scripts for raw data extraction, processing, and analysis</label></li>
-<li><label><input type="checkbox">Includes a Quarto reproducible analysis report</label></li>
-<li><label><input type="checkbox">Contains a descriptive README explaining usage, code order, and dependencies</label></li>
+<li><label><input type="checkbox">Use the lab’s standard folder structure</label></li>
+<li><label><input type="checkbox">Use version-control with Git and LRZ GitLab or GitHub</label></li>
+<li><label><input type="checkbox">Use Renv or equivalent for package management</label></li>
 </ul>
-<p><strong>R Script Standards:</strong> <!-- don't manage to make this one indented--></p>
+<p><strong>Repository Content</strong> <!-- don't manage to make this one indented--></p>
 <ul class="task-list">
-<li><label><input type="checkbox">Includes metadata/header identifying author, date, and purpose</label></li>
-<li><label><input type="checkbox">Structured for readability</label></li>
-<li><label><input type="checkbox">Contains informative comments about analytic decisions</label></li>
-<li><label><input type="checkbox">Does not contain sensitive information (e.g., passwords, patient data)</label></li>
-<li><label><input type="checkbox">Uses meaningful and consistent naming conventions</label></li>
-<li><label><input type="checkbox">Breaks actions into functions to avoid duplication and improve clarity</label></li>
-<li><label><input type="checkbox">Sets seeds for random processes to allow reproducible computation</label></li>
-<li><label><input type="checkbox">Follows a programming style guide (e.g., styler, lintR)</label></li>
+<li><label><input type="checkbox">Raw data or access procedure documented</label></li>
+<li><label><input type="checkbox">Data dictionary (codebook) available</label></li>
+<li><label><input type="checkbox">Scripts ordered for raw data extraction, processing, and analysis</label></li>
+<li><label><input type="checkbox">Results generated from a Quarto reproducible analysis report</label></li>
+<li><label><input type="checkbox">README describing usage, dependencies, and session info</label></li>
 </ul>
-<p><strong>2. During Repository and Code Peer-Review:</strong></p>
+<p><strong>R Scripts</strong> <!-- don't manage to make this one indented--></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Metadata/header identifying author, date, and purpose</label></li>
+<li><label><input type="checkbox">Readable structure and consistent naming</label></li>
+<li><label><input type="checkbox">Informative comments about analytic decisions</label></li>
+<li><label><input type="checkbox">No sensitive information in the code (e.g., passwords, patient identifiers)</label></li>
+<li><label><input type="checkbox">Functions used to avoid duplication</label></li>
+<li><label><input type="checkbox">Seeds set to create reproducible random computations</label></li>
+<li><label><input type="checkbox">Style guide followed (e.g., styler, lintR)</label></li>
+</ul>
+<p><strong>2. Before presenting results to the research group: conduct internal code peer review</strong></p>
 <ul class="task-list">
 <li><label><input type="checkbox">Collaboration workflow established (e.g., branch or live review)</label></li>
-<li><label><input type="checkbox">Session info captured and dependencies listed in README</label></li>
-<li><label><input type="checkbox">Code performs tasks documented in the headers</label></li>
 <li><label><input type="checkbox">Code runs without errors on a fresh environment / different computer</label></li>
+<li><label><input type="checkbox">Results, figures, tables are reproducible</label></li>
 <li><label><input type="checkbox">Code is well-organized, readable, and commented</label></li>
 <li><label><input type="checkbox">All functions are documented</label></li>
 <li><label><input type="checkbox">Sensitive information removed</label></li>
-<li><label><input type="checkbox">Results, figures, tables are reproducible</label></li>
-<li><label><input type="checkbox">(for co-authors): Methods used correct</label></li>
-<li><label><input type="checkbox">(for co-authors): Methods match the analysis plan or deviation are reported</label></li>
+<li><label><input type="checkbox">(for co-authors): Methods used are correct</label></li>
+<li><label><input type="checkbox">(for co-authors): Methods match the pre-analysis plan or deviation are documented</label></li>
 </ul>
-<p><strong>3. Before Sharing</strong></p>
+<p><strong>3. Before sharing outside the group</strong></p>
 <ul class="task-list">
-<li><label><input type="checkbox">README provides complete instructions</label></li>
-<li><label><input type="checkbox">Results reproducible</label></li>
-<li><label><input type="checkbox">Sensitive information removed</label></li>
+<li><label><input type="checkbox">README provides complete instructions to reproduce results</label></li>
+<li><label><input type="checkbox">Results reproducible from the report</label></li>
+<li><label><input type="checkbox">Sensitive information removed and restricted data protected</label></li>
 <li><label><input type="checkbox">Code peer-reviewed by co-authors</label></li>
-<li><label><input type="checkbox">Documentation of results follow reporting guidelines<br>
-(e.g.&nbsp;presentation and manuscript include e.g.&nbsp;effect size, confidence intervals)</label></li>
+<li><label><input type="checkbox">Reporting of results follow relevant guidelines (e.g.&nbsp;effect size, confidence intervals, model specification)</label></li>
+<li><label><input type="checkbox">Results are separated in preregistered confirmatory vs non preregistered exploratory analyses</label></li>
 </ul>
+<div class="d-flex justify-content-center mt-4 orc-checklist-download phase-1">
+<!-- RL hasn't created button for checklist 3 yet -->
+<p><a href="assets/checklists/Analyze-Collaborate-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a> <!-- need to update manually the  downloadable file with checklist in word doc--></p>
+</div>
 </section>
 </div>
 
