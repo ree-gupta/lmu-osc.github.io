@@ -1483,20 +1483,7 @@
     "href": "training/research-cycle-handbook/04-preserve-and-share.html#preserve-share-checklist",
     "title": "4. Preserve & Share",
     "section": " Preserve & Share Checklist",
-    "text": "Preserve & Share Checklist\nBefore Publication:\n\n\n\nData deposited in appropriate repository\nMetadata complete and discoverable\nCode published with documentation\nDOIs obtained for data and code\n\n\n\n\nAll authors have ORCIDs linked\nLicenses applied (CC0/CC BY, MIT/Apache)\nSensitive data removed and verified\nEthics approval for sharing (if required)\n\n\n\nAt Submission:\n\n\n\nData Availability Statement with DOIs\nCode availability materials linked\nOpen access option selected\n\n\n\n\nORCID, ROR, funder IDs included\nAuthor contributions (CRediT) specified\nPreprint posted (if applicable)\n\n\n\nAfter Acceptance:\n\nPostprint uploaded to institutional repository\nPreprint updated with link to published version\nRepository READMEs updated with citation\nCo-authors receive final citation and PDF\n\nLong-term:\n\nVerify DOIs resolve correctly\nRespond to data/code access requests\nMonitor citations and usage metrics",
-    "crumbs": [
-      "Home",
-      "Training Tracks",
-      "Research Cycle Handbook",
-      "Preserve & Share"
-    ]
-  },
-  {
-    "objectID": "training/research-cycle-handbook/04-preserve-and-share.html#preserve-share-checklist-1",
-    "href": "training/research-cycle-handbook/04-preserve-and-share.html#preserve-share-checklist-1",
-    "title": "4. Preserve & Share",
-    "section": " Preserve & Share Checklist",
-    "text": "Preserve & Share Checklist\nBefore sharing resources\n\nComplete metadata, README (with instructions), and documentation (e.g. data dictionary)\nNo sensitive information in any files to be shared\nData quality validated, code peer-reviewed, materials checked and cleaned\nResults reproducible, following reporting guidelines, separated in preregistered vs exploratory\nAll authors have ORCID",
+    "text": "Preserve & Share Checklist\nBefore sharing resources\n\nComplete metadata, README (with instructions), and documentation (e.g. data dictionary)\nNo sensitive information in any files to be shared\nSimulated or synthetic data created to run the code instead of real data (if needed)\nData quality validated, code peer-reviewed, materials checked and cleaned\nResults reproducible, following reporting guidelines, separated in preregistered vs exploratory\nAll authors have ORCID\n\nUpon publishing resources\n\nAdd an open licence (e.g. CC.BY 4.0 for data and materials, Apache 2.0 for code)\nFill out the metadata of the repository where the resources are deposited\nLink authors’s ORCID, and the ROR of their organisation and funders to all resources\nRelease publically and get a DOI\nModify the metadata of all resources to include the DOIs of other conencted resources\n\nUpon submitting an article\n\nInclude the DOI of all resources in MS (data, code, materials, conceptual figures)\nUse CRediT taxinomy to give attribution to all contributors\nDeposit a preprint on preprint server or institutional repository (if allowed)\nRequest an open licence (CC.BY 4.0) for the article if possible to allow redistribution\n\nAfter acceptance of an article\n\nUdate the preprint with a postprint (if allowed)\nLink the DOI of the published article to the preprint/postprint\nHandle data accesss requests if only metadat were shared\nMonitor citations and usage metrics of all research otuputs",
     "crumbs": [
       "Home",
       "Training Tracks",
