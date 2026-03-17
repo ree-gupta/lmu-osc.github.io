@@ -512,8 +512,8 @@ Make your research outputs accessible, reusable, and citable
 <details class="orc-details-panel">
 <summary>
 <p><i class="bi bi-database-up"></i></p>
-<section id="sec-data-sharing" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="sec-data-sharing"><span class="header-section-number">4.1</span> Data Sharing</h3>
+<section id="sec-fair-data-sharing" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="sec-fair-data-sharing"><span class="header-section-number">4.1</span> FAIR Data Sharing</h3>
 </section></summary>
 <p>Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.</p>
 <p>In <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, you wrote a Data Management Plan, in <a href="../../training/research-cycle-handbook/02-collect-and-manage.html" class="mark">2. Collect &amp; Manage</a>, you created documentation for yourself, and in <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a> you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:</p>
@@ -878,8 +878,8 @@ License decision flowchart for data and code.
 <details class="orc-details-panel">
 <summary>
 <p><i class="bi bi-file-code"></i></p>
-<section id="sec-code-publishing" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="sec-code-publishing"><span class="header-section-number">4.2</span> Code Publishing</h3>
+<section id="sec-open-source-code" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="sec-open-source-code"><span class="header-section-number">4.2</span> Open Source Code</h3>
 </section></summary>
 <p>Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.</p>
 <p>So far, your code was either backed up on the secured <a href="https://gitlab.lrz.de/">LRZ Gitlab</a> (e.g.&nbsp;if your data and/or code are sensitive), or on <a href="https://github.com/">GitHub</a> (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.</p>
@@ -1076,7 +1076,7 @@ Tool comparing open software licenses.
 </div>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html --></p>
+<p>To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html but see https://github.com/lmu-osc/code-publishing/issues/86 --></p>
 <ul>
 <li><strong>Push your clean repository to GitHub</strong> (see GitHub tutorial).</li>
 <li><strong>Create an account on <a href="https://zenodo.org/">Zenodo</a>.</strong></li>
@@ -1152,8 +1152,8 @@ General-purpose repository for data, software, reports.
 <summary>
 <p><i class="bi bi-journal-arrow-up"></i></p>
 
-<section id="sec-materials-sharing" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="sec-materials-sharing"><span class="header-section-number">4.3</span> Materials Sharing</h3>
+<section id="sec-open-materials" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="sec-open-materials"><span class="header-section-number">4.3</span> Open Materials</h3>
 </section></summary>
 <p>Any material needed to reproduce or replicate your study should also be shared openly unless there are dual-use, patent, or privacy concerns.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -1705,6 +1705,17 @@ Remove personal or participant data
 Review entire git history
 Add simulated data if needed
 Document dependencies clearly -->
+<section id="preserve-share-checklist-1" class="level2 unnumbered orc-gradient-box">
+<h2 class="unnumbered anchored" data-anchor-id="preserve-share-checklist-1"><i class="bi bi-card-checklist"></i> Preserve &amp; Share Checklist</h2>
+<p><strong>Before sharing resources</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Complete metadata, README (with instructions), and documentation (e.g.&nbsp;data dictionary)</label></li>
+<li><label><input type="checkbox">No sensitive information in any files to be shared</label></li>
+<li><label><input type="checkbox">Data quality validated, code peer-reviewed, materials checked and cleaned</label></li>
+<li><label><input type="checkbox">Results reproducible, following reporting guidelines, separated in preregistered vs exploratory</label></li>
+<li><label><input type="checkbox">All authors have ORCID</label></li>
+</ul>
+</section>
 
 
 </main></div>

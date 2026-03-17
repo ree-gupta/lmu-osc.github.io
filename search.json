@@ -1492,6 +1492,19 @@
     ]
   },
   {
+    "objectID": "training/research-cycle-handbook/04-preserve-and-share.html#preserve-share-checklist-1",
+    "href": "training/research-cycle-handbook/04-preserve-and-share.html#preserve-share-checklist-1",
+    "title": "4. Preserve & Share",
+    "section": " Preserve & Share Checklist",
+    "text": "Preserve & Share Checklist\nBefore sharing resources\n\nComplete metadata, README (with instructions), and documentation (e.g. data dictionary)\nNo sensitive information in any files to be shared\nData quality validated, code peer-reviewed, materials checked and cleaned\nResults reproducible, following reporting guidelines, separated in preregistered vs exploratory\nAll authors have ORCID",
+    "crumbs": [
+      "Home",
+      "Training Tracks",
+      "Research Cycle Handbook",
+      "Preserve & Share"
+    ]
+  },
+  {
     "objectID": "training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist",
     "href": "training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist",
     "title": "1. Plan & Design",
