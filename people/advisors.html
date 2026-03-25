@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Advisors – LMU Open Science Center</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -30,22 +33,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../people/members.html" rel="next">
-<link href="../people/scientific-board.html" rel="prev">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-944ffb2256ae3a090915c915bbe5aa52.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d7b91f30f29b7a43461c98fe7bc3730b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -83,9 +83,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-affiliation','listing-membertype','listing-display_weight','listing-photo','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-affiliation","listing-membertype","listing-display_weight","listing-photo","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-categories','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-personal','listing-display_weight_staff','listing-osc_staff_title','listing-research_interests','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-categories","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-personal","listing-display_weight_staff","listing-osc_staff_title","listing-research_interests","listing-display_weight","listing-display_weight_management","listing-publications"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -111,13 +112,43 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-membertype','listing-email','listing-photo','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-membertype","listing-email","listing-photo","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-categories','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-personal','listing-display_weight_staff','listing-osc_staff_title','listing-research_interests','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-categories","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-personal","listing-display_weight_staff","listing-osc_staff_title","listing-research_interests","listing-display_weight","listing-display_weight_management","listing-publications"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-special-advisors'] = new List('listing-special-advisors', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-past-advisory-board .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-categories','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-personal','listing-display_weight_staff','listing-osc_staff_title','listing-research_interests','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-categories","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-personal","listing-display_weight_staff","listing-osc_staff_title","listing-research_interests","listing-display_weight","listing-display_weight_management","listing-publications"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-past-advisory-board'] = new List('listing-past-advisory-board', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -146,10 +177,9 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-<link href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -179,6 +209,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+<link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../assets/fontawesome-free-7.1.0-web/css/all.min.css">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../footer/footer-style.css">
@@ -227,7 +258,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../people/staff.html">
- <span class="dropdown-text">Staff &amp; HiWis</span></a>
+ <span class="dropdown-text">Staff</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../people/scientific-board.html">
@@ -245,10 +276,6 @@ window.Quarto = {
     <a class="dropdown-item" href="../people/fellows.html">
  <span class="dropdown-text">Fellows</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../people/alumnae.html">
- <span class="dropdown-text">Alumnae</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -259,19 +286,19 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
         <li>
-    <a class="dropdown-item" href="../partners/institutional_members.html">
+    <a class="dropdown-item" href="../partners/institutional-members.html">
  <span class="dropdown-text">Institutional Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/local_os_initiatives.html">
+    <a class="dropdown-item" href="../partners/local-os-initiatives.html">
  <span class="dropdown-text">Local Open Science Initiatives</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/other_lmu_support_services.html">
+    <a class="dropdown-item" href="../partners/other-lmu-support-services.html">
  <span class="dropdown-text">Other LMU Support Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/externals.html">
+    <a class="dropdown-item" href="../partners/external-partners.html">
  <span class="dropdown-text">External Partners</span></a>
   </li>  
         <li>
@@ -336,7 +363,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../people/staff.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Staff &amp; HiWis</span></a>
+ <span class="menu-text">Staff &amp; Research Assistants</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -361,12 +388,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../people/fellows.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Fellows</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/alumnae.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Alumnae</span></a>
   </div>
 </li>
       </ul>
@@ -399,12 +420,12 @@ window.Quarto = {
 </header>
 
 
-<p>The OSC is advised by key internal and external actors appointed for 3-year terms. Advisory board members for the term 2024 - 2027 are:</p>
 <section id="current-advisory-board" class="level2">
 <h2 class="anchored" data-anchor-id="current-advisory-board">Current Advisory Board</h2>
+<p>The OSC is advised by key internal and external actors appointed for 3-year terms. Advisory board members for the term 2024 - 2027 are:</p>
 <div id="listing-current-advisory-board" class="quarto-listing quarto-listing-container-custom">
 <div class="advisory-board-grid">
-<div class="card" data-index="0" data-listing-file-modified-sort="1774006079158" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card" data-index="0" data-listing-file-modified-sort="1774430386773" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
 <p><a href="https://staff.web.ox.ac.uk/redirects-research" target="_blank"> <img src="people/images/tanita_casci.jpg" class="profile-image" alt="Profile photo of Tanita Casci"> </a></p>
@@ -423,26 +444,26 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="card" data-index="1" data-listing-file-modified-sort="1774006079159" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card" data-index="1" data-listing-file-modified-sort="1774430386771" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
-<p><a href="https://schlaganfallcentrum.charite.de/metas/person/person/address_detail/prof_dr_med_ulrich_dirnagl-1" target="_blank"> <img src="people/images/ulrich_dirnagl.png" class="profile-image" alt="Profile photo of Ulrich Dirnagl"> </a></p>
+<p><a href="https://os.helmholtz.de/en/about/team-and-contact/#c122678" target="_blank"> <img src="people/images/mathijs_vluegel.webp" class="profile-image" alt="Profile photo of Mathijs Vleugel"> </a></p>
 </div>
 <div class="card-body">
-<a class="card-title" href="https://schlaganfallcentrum.charite.de/metas/person/person/address_detail/prof_dr_med_ulrich_dirnagl-1" target="_blank">Ulrich Dirnagl</a>
+<a class="card-title" href="https://os.helmholtz.de/en/about/team-and-contact/#c122678" target="_blank">Mathijs Vleugel</a>
 <div class="card-subtitle card-subtitle-one mb-0 text-muted">
-<p>Prof.&nbsp;Dr.</p>
+<p>Dr.</p>
 </div>
 <div class="card-subtitle card-subtitle-two text-muted">
-<p>Founding Director of the QUEST Center for Responsible Research</p>
+<p>Head Helmholtz Open Science Office</p>
 </div>
 <div class="card-subtitle card-subtitle-three">
-<p>Berlin Institute of Health</p>
+<p>Helmholtz Association</p>
 </div>
 </div>
 </div>
 </div>
-<div class="card" data-index="2" data-listing-file-modified-sort="1774006079036" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card" data-index="2" data-listing-file-modified-sort="1774430386655" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
 <p><a href="https://cgentemann.github.io" target="_blank"> <img src="people/images/chelle_gentemann.jpg" class="profile-image" alt="Profile photo of Chelle Gentemann"> </a></p>
@@ -461,7 +482,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="card" data-index="3" data-listing-file-modified-sort="1774006079036" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card" data-index="3" data-listing-file-modified-sort="1774430386655" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
 <p><a href="https://www.lmu.de/mzn/de/mitglieder/kontaktseite/bernhard-goodwin-518b73ed.html" target="_blank"> <img src="people/images/bernhard_goodwin.webp" class="profile-image" alt="Profile photo of Bernhard Goodwin"> </a></p>
@@ -480,7 +501,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="card" data-index="4" data-listing-file-modified-sort="1774006079158" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card" data-index="4" data-listing-file-modified-sort="1774430386773" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
 <p><a href="https://www.philosophie.lmu.de/de/personenuebersicht/kontaktseite/stephan-hartmann-6dff5dee.html" target="_blank"> <img src="people/images/stephan_hartmann.jpg" class="profile-image" alt="Profile photo of Stephan Hartmann"> </a></p>
@@ -499,7 +520,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="card" data-index="5" data-listing-file-modified-sort="1774006079158" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card" data-index="5" data-listing-file-modified-sort="1774430386773" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
 <p><a href="https://www.eva.mpg.de/ecology/staff/richard-mcelreath/" target="_blank"> <img src="people/images/richard_mcelreath.png" class="profile-image" alt="Profile photo of Richard McElreath"> </a></p>
@@ -526,7 +547,6 @@ window.Quarto = {
 }
 .advisory-board-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
   grid-auto-rows: 1fr;
   grid-gap: 5px;
   width: auto;
@@ -605,24 +625,28 @@ window.Quarto = {
 
 </style>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="current-advisory-board-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 </section>
 <section id="special-advisors" class="level2">
 <h2 class="anchored" data-anchor-id="special-advisors">Special Advisors</h2>
+<p>We benefit from the expertise of additional advisors on specific topics such as politics and didactics.</p>
 <div id="listing-special-advisors" class="quarto-listing quarto-listing-container-custom">
 <div class="advisory-board-grid">
-<div class="card" data-index="0" data-listing-file-modified-sort="1774006079156" data-listing-reading-time-sort="1" data-listing-word-count-sort="161">
+<div class="card" data-index="0" data-categories="UHN5Y2hvbG9neSUyMCUyNiUyMEVkdWNhdGlvbg==" data-listing-file-modified-sort="1774430386772" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
-<p><a href="" target="_blank"> <img src="people/images/frank_maximilian.jpg" class="profile-image" alt="Profile photo of Maximilian Frank"> </a></p>
+<p><a href="https://www.psy.lmu.de/ffp_en/persons/w2-professorship/edelsbrunner_peter1/index.html" target="_blank"> <img src="people/images/edelsbrunner_peter.png" class="profile-image" alt="Profile photo of Peter Edelsbrunner"> </a></p>
 </div>
 <div class="card-body">
-<a class="card-title" href="" target="_blank">Maximilian Frank</a>
+<a class="card-title" href="https://www.psy.lmu.de/ffp_en/persons/w2-professorship/edelsbrunner_peter1/index.html" target="_blank">Peter Edelsbrunner</a>
 <div class="card-subtitle card-subtitle-one mb-0 text-muted">
-<p>MSc</p>
+<p>Prof.&nbsp;Dr.</p>
 </div>
 <div class="card-subtitle card-subtitle-two text-muted">
-<p>PhD Candidate</p>
+<p>Chair</p>
 </div>
 <div class="card-subtitle card-subtitle-three">
 <p>Psychology &amp; Education</p>
@@ -630,18 +654,18 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="card" data-index="1" data-listing-file-modified-sort="1774006079157" data-listing-reading-time-sort="1" data-listing-word-count-sort="161">
+<div class="card" data-index="1" data-categories="UHN5Y2hvbG9neSUyMCUyNiUyMEVkdWNhdGlvbg==" data-listing-file-modified-sort="1774430386771" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
-<p><a href="" target="_blank"> <img src="people/images/edelsbrunner_peter.png" class="profile-image" alt="Profile photo of Peter Edelsbrunner"> </a></p>
+<p><a href="https://www.meta-rep.uni-muenchen.de/people/team_heene/index.html" target="_blank"> <img src="people/images/frank_maximilian.jpg" class="profile-image" alt="Profile photo of Maximilian Frank"> </a></p>
 </div>
 <div class="card-body">
-<a class="card-title" href="" target="_blank">Peter Edelsbrunner</a>
+<a class="card-title" href="https://www.meta-rep.uni-muenchen.de/people/team_heene/index.html" target="_blank">Maximilian Frank</a>
 <div class="card-subtitle card-subtitle-one mb-0 text-muted">
-<p>Prof.&nbsp;Dr.</p>
+<p>M.Sc.</p>
 </div>
 <div class="card-subtitle card-subtitle-two text-muted">
-<p>Chair</p>
+<p>Ph.D.&nbsp;Candidate</p>
 </div>
 <div class="card-subtitle card-subtitle-three">
 <p>Psychology &amp; Education</p>
@@ -736,6 +760,23 @@ window.Quarto = {
 
 </style>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="special-advisors-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+</section>
+<section id="former-advisory-board-members" class="level2">
+<h2 class="anchored" data-anchor-id="former-advisory-board-members">Former Advisory Board Members</h2>
+<div id="listing-past-advisory-board" class="quarto-listing quarto-listing-container-custom">
+<ul>
+<li>
+<a href="https://schlaganfallcentrum.charite.de/metas/person/person/address_detail/prof_dr_med_ulrich_dirnagl-1"> Prof.&nbsp;Dr.&nbsp;Ulrich Dirnagl (2024 - 2025): Founding Director of the QUEST Center for Responsible Research, Berlin Institute of Health </a>
+</li>
+</ul>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="past-advisory-board-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 
@@ -1148,105 +1189,91 @@ window.Quarto = {
     }
   });
   </script>
-<nav class="page-navigation column-page-right">
-  <div class="nav-page nav-page-previous">
-      <a href="../people/scientific-board.html" class="pagination-link" aria-label="Scientific Board">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Scientific Board</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../people/members.html" class="pagination-link" aria-label="Members">
-        <span class="nav-page-text">Members</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
-
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/people/advisors.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><footer class="osc-footer-card py-5">
-  <div class="osc-footer-container">
-
-    <div class="gy-4 osc-footer-row">
-
-      <!-- Postal Address -->
-      <div class="col-12 col-md-3 osc-footer-address">
-        <strong>Ludwig-Maximilians-Universität<br>LMU Open Science Center</strong>
-        <p class="mb-0">
+<footer class="osc-footer-card text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3 ">
+        <h4 class="fw-bold fs-5 fs-lg-4 text-white">
+          Ludwig-Maximilians-Universität<br>
+          LMU Open Science Center
+        </h4>
+        <p class="mb-0 mt-1 fw-normal fs-5">
           Leopoldstr. 13<br>
           80802 München
         </p>
       </div>
 
-      <!-- Contact -->
-      <div class="col-12 col-md-3 osc-footer-contact">
-        <strong class="mb-0">Contact</strong>
-        <ul class="list-unstyled mt-1 mb-0 osc-footer-contact-list">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Contact</h4>
+        <ul class="list-unstyled mt-2 mb-0">
           <li>
-            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="osc-footer-link text-decoration-none text-white">
-              <i class="bi bi-envelope me-1"></i>Prof. Dr. Felix Schönbrodt (Managing Director)
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Prof. Dr. Felix Schönbrodt (Managing Director)
             </a>
           </li>
           <li>
-            <a href="mailto:malika.ihle@lmu.de" class="osc-footer-link text-decoration-none text-white">
-              <i class="bi bi-envelope me-1"></i>Dr. Malika Ihle (Coordinator)
+            <a href="mailto:malika.ihle@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Dr. Malika Ihle (Coordinator) 
             </a>
           </li>
           <li>
-            <a href="mailto:osc@lmu.de" class="osc-footer-link text-decoration-none text-white">
-              <i class="bi bi-envelope me-1"></i>OSC team
+            <a href="mailto:osc@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              OSC team
             </a>
           </li>
         </ul>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-12 col-md-3 osc-footer-join">
-        <strong class="">Join Us</strong>
-        <ul class="list-unstyled mt-1 mb-0 osc-footer-links-list">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Join Us</h4>
+        <ul class="list-unstyled mt-2 mb-0">
           <li>
-            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="osc-footer-link text-white text-decoration-underline">
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="text-white text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
               Subscribe to our announcement list
             </a>
           </li>
           <li>
-            <a href="../about/joinus.html" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+            <a href="../about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
               Become a member
             </a>
           </li>
           <li>
-            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="osc-footer-link text-decoration-underline text-white">
-              LMU chat on Matrix
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="text-white text-decoration-underline" aria-label="Chat with us on Matrix (opens in new window)">
+              Chat with us on Matrix
             </a>
           </li>
         </ul>
       </div>
 
-      <!-- Social icons -->
-      <div class="d-flex gap-2 ps-3 justify-content-end osc-footer-socials">
-            <a href="https://github.com/lmu-osc" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-github text-white"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-linkedin text-white"></i>
-            </a>
-            <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-bluesky text-white"></i>
-            </a>
-            <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-mastodon text-white"></i>
-            </a>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
+        <a href="https://github.com/lmu-osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on LinkedIn (opens in new window)">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Bluesky (opens in new window)">
+          <i class="bi bi-bluesky"></i>
+        </a>
+        <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Mastodon (opens in new window)">
+          <i class="bi bi-mastodon"></i>
+        </a>
       </div>
 
     </div>
 
-    <hr class="osc-footer-hr my-4">
+    <hr class="my-4 border-light">
 
-    <!-- Extra links -->
-    <div class="d-flex flex-wrap gap-3 osc-footer-extra-links">
-      <a href="../footer/imprint.html" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
-      <span class="text-white">|</span>
-      <a href="../footer/privacy.html" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
-      <span class="text-white">|</span>
-      <a href="../footer/accessibilty.html" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
+    <div class="d-flex flex-wrap gap-3 small">
+      <a href="../footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
     </div>
 
   </div>

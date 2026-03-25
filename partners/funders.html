@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Funders – LMU Open Science Center</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -30,19 +33,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../partners/externals.html" rel="prev">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ce2f2effc2aa454d766f5ae11f483c0f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-d954d250cd50d83b0fa59a4a270bc203.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-image_url','listing-website_url','listing-funding','listing-press_release_url',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-image_url","listing-website_url","listing-funding","listing-press_release_url"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -86,8 +118,38 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+<link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="../assets/fontawesome-free-7.1.0-web/css/all.min.css">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../footer/footer-style.css">
@@ -136,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../people/staff.html">
- <span class="dropdown-text">Staff &amp; HiWis</span></a>
+ <span class="dropdown-text">Staff</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../people/scientific-board.html">
@@ -154,10 +216,6 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="../people/fellows.html">
  <span class="dropdown-text">Fellows</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../people/alumnae.html">
- <span class="dropdown-text">Alumnae</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -168,19 +226,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
         <li>
-    <a class="dropdown-item" href="../partners/institutional_members.html">
+    <a class="dropdown-item" href="../partners/institutional-members.html">
  <span class="dropdown-text">Institutional Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/local_os_initiatives.html">
+    <a class="dropdown-item" href="../partners/local-os-initiatives.html">
  <span class="dropdown-text">Local Open Science Initiatives</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/other_lmu_support_services.html">
+    <a class="dropdown-item" href="../partners/other-lmu-support-services.html">
  <span class="dropdown-text">Other LMU Support Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/externals.html">
+    <a class="dropdown-item" href="../partners/external-partners.html">
  <span class="dropdown-text">External Partners</span></a>
   </li>  
         <li>
@@ -238,13 +296,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/institutional_members.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/institutional-members.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Institutional Members</span></a>
   </div>
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../partners/local_os_initiatives.html" class="sidebar-item-text sidebar-link">
+            <a href="../partners/local-os-initiatives.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Local Open Science Initiatives</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -253,37 +311,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/local_os_initiatives/osim.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/local-os-initiatives/osim.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OSIM</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/local_os_initiatives/osis.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/local-os-initiatives/osis.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OSIS</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/local_os_initiatives/osip.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/local-os-initiatives/osip.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OSIP</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/local_os_initiatives/reproducibilitea.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/local-os-initiatives/reproducibilitea.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ReproducibiliTea</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/local_os_initiatives/hackyhour.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/local-os-initiatives/hacky-hour.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hacky Hour</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/local_os_initiatives/munich_rse.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/local-os-initiatives/munich-rse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Munich RSE</span></a>
   </div>
 </li>
@@ -291,13 +349,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/other_lmu_support_services.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/other-lmu-support-services.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Other LMU Support Services</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/externals.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/external-partners.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">External Partners</span></a>
   </div>
 </li>
@@ -316,372 +374,194 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/funders.html">Funders</a></li></ol></nav></header>
+<main class="content column-page-right" id="quarto-document-content">
 
-
-
-
-<style>
-:root {
-  --theme-main: #00883A;
-  --theme-bg: #f5f6fa;
-  --theme-card-bg: #fff;
-  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
-  --theme-border: #e3e7ed;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-
-.content-container{
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-}
-
-
-.header-section {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color:var(--theme-main);
-  letter-spacing: -0.5px;
-}
-
-.intro-text {
-  font-size: 1.3rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top:0.6rem;
-  margin-bottom: 1.1rem;
-  text-align: justify;
-  width:100%;
-}
-
-/* styling for logo*/
-.logo-img{
-  padding:1rem;
-  padding-top:2rem;
-  align-content: center;
-}
-.logo-img img {
-  width: 100px;   
-  height: auto;   
-  object-fit: contain; 
-}
-
-.vw-logo img{
-  width: 170px;   
-  height: auto;   
-  object-fit: contain; 
-}
-
-
-.member-grid {
-  display: grid;
-  grid-template-columns: 280px 800px;
-  grid-template-rows: auto;
-  gap: 1rem;
-}
-
-.member-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: var(--theme-card-bg);
-  border-radius: 5px;
-  box-shadow: var(--theme-card-shadow);
-  border: 1.5px solid var(--theme-border);
-  padding: 0.5rem;
-  text-align: center;
-  transition: transform 0.13s, box-shadow 0.13s;
-  height: 300px; 
-  min-width: 200px;
-  max-width: 320px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.member-grid-item:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
-  border-color: var(--theme-main);
-}
-
-
-.profile-link {
-  display: contents;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-}
-
-.member-grid-name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--bs-gray-700);
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  cursor: default;
-  min-height: 2em;
-}
-
-.social-link {
-  display: inline-flex;         
-  align-items: center;
-  gap: 0.4rem;
-  background: none;              
-  box-shadow: none;               
-  color: var(--theme-main);                 
-  text-decoration: none;
-  font-size: 0.9rem;              
-  width: auto;                  
-  height: auto;                 
-  border: 1px solid #e3e7ed;                  
-  border-radius: 4px;              
-  padding: 0.3rem 0.6rem;                   
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.social-link i {
-  font-size: 0.9rem;
-  line-height: 1;      
-  margin: 0; 
-}
-
-.social-link:hover {
-  background-color:rgba(43, 134, 75, 0.98);
-  color: white;
-  border-color:var(--theme-main);
-  transform: translateY(-2px);
-}
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.description-text {
-  font-size: 1.2rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-  max-height: calc(1.2rem * 1.85 * 8);
-  width: 100%;
-  text-align: justify;
-
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    margin: 20px 0;
-    grid-column: 1 / -1; 
-  }
-
-.funding-details{
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
-  gap: 0.5rem;
-  justify-content: flex-start;
-}
-
-.funding-list .funding-name,
-.funding-project{
-  font-size: 1.2rem;
-  color: #4a5568;
-  line-height: 1.85;
-}
-.funding-list .funding-date{
-  font-size: 1rem;
-  line-height: 1.85;
-}
-.funding-list .funding-amt{
-  border-radius: 14px;
-  cursor: default;
-  color: #4a5568;
-}
-.funding-list .funding-amt:hover{
-  background-color: #00883b45;
-  color:white;
-}
-
-@media (max-width: 900px) {
-  .member-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .member-grid-item,
-  .description-container {
-    text-align: center;
-  }
-
-  .description-text {
-    text-align: left;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-section {
-    font-size: 2.2rem;
-  }
-  .intro-text {
-    font-size: 1.05rem;
-  }
-}
-
-</style>
-<div class="content-container">
-  <div class="header-section">Funders</div>
-    <p class="intro-text">The LMU Open Science Center is a volunteer based organisation supported by coordinators and assistants generously funded by:</p>
-      <div class="member-grid">
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="https://www.lmu.de/de/index.html" target="_blank">
-                      <img src="images/lmu_logo.jpg" alt="lmu-logo">
-                      </a>
-                  </div>
-                  <div class="member-grid-name">LMU Central Funding</div> 
-              </div>
-          </div>
-
-          <div class="description-container">  
-              <div class="description-text">
-                <div class="funding-list funding-one mb-2">
-                  <div class="funding-details">
-                    <span class="funding-name fw-bolder">Frontiers LMU Excellence</span>
-                    <span class="funding-date text-muted">2022 - 2024</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                      €250K
-                    </span>
-                  </div>
-                  <span class="funding-project text-muted">Meta-Research Hub</span>
-                </div>
-                <div class="funding-list funding-two mb-2">
-                  <div class="funding-details">
-                    <span class="funding-name fw-bolder">Fund for the Promotion of Teaching </span>
-                    <span class="funding-date text-muted">2022</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                      €15K+
-                    </span>
-                  </div>
-                  <span class="funding-project text-muted">Hybrid Open Science Summer School 2023</span>
-                </div>
-                <div class="funding-list funding-three">
-                  <div class="funding-details">
-                    <span class="funding-name fw-bolder">Central Study Grant</span>
-                    <span class="funding-date text-muted">2024 - 2025</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                      €140K+
-                    </span>
-                  </div>
-                  <span class="funding-project text-muted">Open Hybrid Facilitated Self-paced Tutorial (Open HyFaST)</span>
-                </div>
-              </div>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img vw-logo">
-                      <a href="https://www.volkswagenstiftung.de/en" target="_blank">
-                      <img src="images/VW.png" alt="VW-logo">
-                      </a>
-                  </div> 
-                  <div class="member-grid-name">Volkswagen Foundation</div>  
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text mb-2">
-                  <div class="funding-list funding-one">
-                    <div class="funding-details">
-                        <span class="funding-name fw-bolder">Pioneer Project – Impetus for the German Science System</span>
-                        <span class="funding-date text-muted">2025 - 2027</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                          €550K
-                        </span>
-                    </div>
-                    <span class="funding-project text-muted">
-                      From local to systemic implementation: Embedding open research in institutional practices
-                    </span>
-                  </div>
-               </div>
-              <a href="https://www.lmu.de/en/newsroom/news-overview/news/bringing-transparency-to-research-practice-28b91a8c.html" target="_blank" class="social-link">Press Release <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="../partners/funding_institutional_members.html">
-                      <img src="images/lmu_logo.jpg" alt="VW-logo">
-                      </a>
-                  </div>  
-                  <div class="member-grid-name">LMU Funding Institutional Members</div> 
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text mb-3">
-                  <div class="funding-list funding-one">
-                    <div class="funding-details">
-                        <span class="funding-name fw-bolder">Yearly membership fee</span>
-                        <span class="funding-date text-muted">Ongoing</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                          €10K+/year
-                        </span>
-                    </div>
-                    <span class="funding-project text-muted">
-                      Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee of a few thousand euros to get priority in our training programmes and consultations.
-                    </span>
-                  </div>
-              </div>
-              <a href="../partners/funding_institutional_members.html" target="_blank" class="social-link">View Funding Institutional Members <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-          <hr> 
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="https://www.lmu.de/psy/de/" target="_blank">
-                      <img src="images/lmu_logo.jpg" alt="lmu-logo">
-                      </a>
-                  </div> 
-                  <div class="member-grid-name">LMU Psychology Department</div> 
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  <div class="funding-list funding-one">
-                    <div class="funding-details">
-                        <span class="funding-name fw-bolder">Departmental Study Grant</span>
-                        <span class="funding-date text-muted">2026</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                         €5K+
-                        </span>
-                    </div>
-                    <span class="funding-project text-muted">
-                      Integration of Open Science training material in Psychology Curriculum
-                    </span>
-              </div>
-          </div>
-        </div>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/funders.html">Funders</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Funders</h1>
 </div>
 
 
 
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="container">
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="LMU Project Funding" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">LMU Project Funding</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.lmu.de/de/index.html" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+<span class="funding-name fw-bold">Frontiers LMU Excellence</span>
+
+<span class="funding-date text-muted">2022 - 2024</span>
+
+<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style="--bs-bg-opacity: .1;">€250K</span>
+
+</div>
+
+<small class="funding-project text-muted d-block mb-2">Meta-Research Hub</small>
+
+<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+<span class="funding-name fw-bold">Fund for the Promotion of Teaching</span>
+
+<span class="funding-date text-muted">2022</span>
+
+<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style="--bs-bg-opacity: .1;">€15K+</span>
+
+</div>
+
+<small class="funding-project text-muted d-block mb-2">Hybrid Open Science Summer School 2023</small>
+
+<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+<span class="funding-name fw-bold">Central Study Grant</span>
+
+<span class="funding-date text-muted">2024 - 2025</span>
+
+<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style="--bs-bg-opacity: .1;">€140K+</span>
+
+</div>
+
+<small class="funding-project text-muted d-block mb-2">Open Hybrid Facilitated Self-paced Tutorial (Open HyFaST)</small>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/VW.png" alt="Volkswagen Foundation" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Volkswagen Foundation</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.volkswagenstiftung.de/en" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+<span class="funding-name fw-bold">Pioneer Project – Impetus for the German Science System</span>
+
+<span class="funding-date text-muted">2025 - 2027</span>
+
+<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style="--bs-bg-opacity: .1;">€550K</span>
+
+</div>
+
+<small class="funding-project text-muted d-block mb-2">From local to systemic implementation: Embedding open research in institutional practices</small>
+
+<a href="https://www.lmu.de/en/newsroom/news-overview/news/bringing-transparency-to-research-practice-28b91a8c.html" class="btn btn-primary primary-social-link">Press Release <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="LMU Funding Institutional Members" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">LMU Funding Institutional Members</h5>
+
+<div class="mt-3 website-button">
+<a href="funding-institutional-members.html" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+<span class="funding-name fw-bold">Yearly membership fee</span>
+
+<span class="funding-date text-muted">Ongoing</span>
+
+<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style="--bs-bg-opacity: .1;">€10K+/year</span>
+
+</div>
+
+<small class="funding-project text-muted d-block mb-2">Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee to get priority access to our training programmes and consultations.</small>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="LMU Psychology Department" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">LMU Psychology Department</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.lmu.de/psy/de/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+<span class="funding-name fw-bold">Departmental Study Grant</span>
+
+<span class="funding-date text-muted">2026</span>
+
+<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style="--bs-bg-opacity: .1;">€5K+</span>
+
+</div>
+
+<small class="funding-project text-muted d-block mb-2">Integration of Open Science training material into the Psychology curriculum</small>
+
+</div>
+</div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -1088,102 +968,91 @@ hr {
     }
   });
   </script>
-<nav class="page-navigation column-page-right">
-  <div class="nav-page nav-page-previous">
-      <a href="../partners/externals.html" class="pagination-link" aria-label="External Partners">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">External Partners</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
-
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/partners/funders.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><footer class="osc-footer-card py-5">
-  <div class="osc-footer-container">
-
-    <div class="gy-4 osc-footer-row">
-
-      <!-- Postal Address -->
-      <div class="col-12 col-md-3 osc-footer-address">
-        <strong>Ludwig-Maximilians-Universität<br>LMU Open Science Center</strong>
-        <p class="mb-0">
+<footer class="osc-footer-card text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3 ">
+        <h4 class="fw-bold fs-5 fs-lg-4 text-white">
+          Ludwig-Maximilians-Universität<br>
+          LMU Open Science Center
+        </h4>
+        <p class="mb-0 mt-1 fw-normal fs-5">
           Leopoldstr. 13<br>
           80802 München
         </p>
       </div>
 
-      <!-- Contact -->
-      <div class="col-12 col-md-3 osc-footer-contact">
-        <strong class="mb-0">Contact</strong>
-        <ul class="list-unstyled mt-1 mb-0 osc-footer-contact-list">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Contact</h4>
+        <ul class="list-unstyled mt-2 mb-0">
           <li>
-            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="osc-footer-link text-decoration-none text-white">
-              <i class="bi bi-envelope me-1"></i>Prof. Dr. Felix Schönbrodt (Managing Director)
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Prof. Dr. Felix Schönbrodt (Managing Director)
             </a>
           </li>
           <li>
-            <a href="mailto:malika.ihle@lmu.de" class="osc-footer-link text-decoration-none text-white">
-              <i class="bi bi-envelope me-1"></i>Dr. Malika Ihle (Coordinator)
+            <a href="mailto:malika.ihle@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Dr. Malika Ihle (Coordinator) 
             </a>
           </li>
           <li>
-            <a href="mailto:osc@lmu.de" class="osc-footer-link text-decoration-none text-white">
-              <i class="bi bi-envelope me-1"></i>OSC team
+            <a href="mailto:osc@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              OSC team
             </a>
           </li>
         </ul>
       </div>
 
-      <!-- Quick Links -->
-      <div class="col-12 col-md-3 osc-footer-join">
-        <strong class="">Join Us</strong>
-        <ul class="list-unstyled mt-1 mb-0 osc-footer-links-list">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Join Us</h4>
+        <ul class="list-unstyled mt-2 mb-0">
           <li>
-            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="osc-footer-link text-white text-decoration-underline">
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="text-white text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
               Subscribe to our announcement list
             </a>
           </li>
           <li>
-            <a href="../about/joinus.html" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+            <a href="../about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
               Become a member
             </a>
           </li>
           <li>
-            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="osc-footer-link text-decoration-underline text-white">
-              LMU chat on Matrix
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="text-white text-decoration-underline" aria-label="Chat with us on Matrix (opens in new window)">
+              Chat with us on Matrix
             </a>
           </li>
         </ul>
       </div>
 
-      <!-- Social icons -->
-      <div class="d-flex gap-2 ps-3 justify-content-end osc-footer-socials">
-            <a href="https://github.com/lmu-osc" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-github text-white"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-linkedin text-white"></i>
-            </a>
-            <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-bluesky text-white"></i>
-            </a>
-            <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="osc-footer-social-link">
-              <i class="bi bi-mastodon text-white"></i>
-            </a>
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
+        <a href="https://github.com/lmu-osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on LinkedIn (opens in new window)">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Bluesky (opens in new window)">
+          <i class="bi bi-bluesky"></i>
+        </a>
+        <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Mastodon (opens in new window)">
+          <i class="bi bi-mastodon"></i>
+        </a>
       </div>
 
     </div>
 
-    <hr class="osc-footer-hr my-4">
+    <hr class="my-4 border-light">
 
-    <!-- Extra links -->
-    <div class="d-flex flex-wrap gap-3 osc-footer-extra-links">
-      <a href="../footer/imprint.html" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
-      <span class="text-white">|</span>
-      <a href="../footer/privacy.html" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
-      <span class="text-white">|</span>
-      <a href="../footer/accessibilty.html" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
+    <div class="d-flex flex-wrap gap-3 small">
+      <a href="../footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a href="../footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
     </div>
 
   </div>
