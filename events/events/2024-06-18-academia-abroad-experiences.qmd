@@ -1,6 +1,6 @@
 ---
 title: 'Making Tacit Knowledge Open - Part II: Hello World - Academia Abroad'
-categories: Panel Discussion Series
+categories: Discussion
 event:
   description: ''
   start_date: '2024-06-18'
@@ -11,7 +11,7 @@ event:
     address: ''
     map_url: ''
   format:
-    type: Panel Discussion Series
+    type: Online
     detail: ''
   language:
     primary: English

@@ -11,7 +11,7 @@ event:
     address: ''
     map_url: ''
   format:
-    type: Workshop
+    type: Hybrid
     detail: ''
   language:
     primary: German/English
@@ -19,25 +19,24 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/j3mnc/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Prof. Dr. Felix Schönbrodt
-    url: ''
-  - name: Maximilian Frank
-    url: ''
+- name: Prof. Dr. Felix Schönbrodt
+  url: ''
+- name: Maximilian Frank
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
   name: ''
 host:
-  - name: Open Science Initiative in Psychology (OSIP)
-    url: ''
-
+- name: Open Science Initiative in Psychology (OSIP)
+  url: ''
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

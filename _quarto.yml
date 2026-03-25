@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: _site
-  pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss -o lmu-osc-custom.scss
   resources:
     - assets/
 
@@ -9,9 +8,9 @@ website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
   search: true
-  page-navigation: true
+  page-navigation: false
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
-  repo-actions: [none]
+
 
   announcement: 
     icon: info-circle
@@ -54,7 +53,7 @@ website:
           - text: Other LMU Support Services
             href: partners/other-lmu-support-services.qmd
           - text: External Partners
-            href: partners/externals.qmd
+            href: partners/external-partners.qmd
           - text: Funders
             href: partners/funders.qmd
       - icon: mortarboard
@@ -108,10 +107,19 @@ website:
                   contents: 
                     - auto: "training/publishing-outputs/*.qmd"
                     - training/publishing-outputs/publishing-outputs-tutorials.yaml
-            - text: "Research Cycle Handbook"
-              href: training/open-research-cycle.qmd
+            - section: "Research Cycle Handbook"
+              href: training/research-cycle-handbook.qmd
+              contents:
+                - text: "Plan & Design"
+                  href: training/research-cycle-handbook/01-plan-and-design.qmd
+                - text: "Collect & Manage"
+                  href: training/research-cycle-handbook/02-collect-and-manage.qmd
+                - text: "Analyze & Collaborate"
+                  href: training/research-cycle-handbook/03-analyze-and-collaborate.qmd
+                - text: "Preserve & Share"
+                  href: training/research-cycle-handbook/04-preserve-and-share.qmd
             - text: "Educator Toolkit"
-              href: training/train-the-trainer.qmd
+              href: training/educator-toolkit.qmd
         
     - id: partners
       collapse-level: 3
@@ -140,7 +148,7 @@ website:
             - text: "Other LMU Support Services"
               href: partners/other-lmu-support-services.qmd 
             - text: "External Partners"
-              href: partners/externals.qmd 
+              href: partners/external-partners.qmd 
             - text: "Funders"
               href: partners/funders.qmd
 

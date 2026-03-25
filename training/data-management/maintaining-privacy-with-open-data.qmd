@@ -7,18 +7,13 @@ categories:
   - Data Anonymity
 content_category:
   - Data Management
-format:
-  html: 
-    grid:
-      body-width: 1000px
-      sidebar-width: 200px
 within_cat_order: 40
 type: Lecture
 ---
 
 # OSF Link
 
-The Open Science Framework page for this video and the associated slides are available at https://osf.io/6sdcw/.
+The Open Science Framework page for this video and the associated slides are available at [https://osf.io/6sdcw/](https://osf.io/6sdcw/).
 
 
 # Presentation

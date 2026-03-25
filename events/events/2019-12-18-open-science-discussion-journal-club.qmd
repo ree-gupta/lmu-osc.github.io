@@ -12,7 +12,7 @@ event:
     address: ''
     map_url: ''
   format:
-    type: ReproducibiliTea Journal Club
+    type: In-Person
     detail: ''
   language:
     primary: English
@@ -20,30 +20,29 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://doi.org/10.1371/journal.pmed.0020124
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: ReproducibiliTea
   email: reproducibilitea.munich@gmail.com
 organizers:
-  - name: Prof. Dr. Felix Schönbrodt
-    url: ''
-  - name: Laura Goetz
-    url: ''
-  - name: Stephan Nuding
-    url: ''
-  - name: Leonhard Schramm
-    url: ''
+- name: Prof. Dr. Felix Schönbrodt
+  url: ''
+- name: Laura Goetz
+  url: ''
+- name: Stephan Nuding
+  url: ''
+- name: Leonhard Schramm
+  url: ''
 host:
-  - name: ReproducibiliTea Team
-    url: ''
-
+- name: ReproducibiliTea Team
+  url: ''
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

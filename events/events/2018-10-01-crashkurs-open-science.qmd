@@ -1,6 +1,6 @@
 ---
 title: 'Crash Course (Crashkurs): Open Science'
-categories: Crash course
+categories: Workshop
 event:
   description: ''
   start_date: '2018-10-01'
@@ -11,7 +11,7 @@ event:
     address: ''
     map_url: ''
   format:
-    type: Crash course
+    type: In-Person
     detail: ''
   language:
     primary: German
